@@ -46,8 +46,10 @@ To forcefully stop VNC Servers:
 
 ## Before You Begin
 
-### Purpose
-This lab shows how to show the power of the individual "engines" that are part of DIPCS. DIPCS is powerful on its own but this power is increased with the possibility of accessing and working directly with the "engines" underneath.
+### Objectives
+- Demonstrate how to work directly with underneath DIPC GG "engine"
+- Demonstrate how to work directly with underneath DIPC ODI "engine"
+- Demonstrate how to work directly with underneath DIPC EDQ "engine"
 
 ### Time to Complete 
 GG: Approximately ** minutes

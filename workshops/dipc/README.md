@@ -1,6 +1,7 @@
-# DIPC Workshop Introduction
+# Data Integration Platform Cloud Workshop
 
-## How to Prepare for This Workshop
+## How to Prepare for This Workshop 
+*** Need to change these links ***
 
 - To log issues and view the lab guide source, go to the [github oracle](https://github.com/oracle/learning-library/tree/master/workshops/dbcs-dba) repository.
 
@@ -8,11 +9,9 @@
 
 - Once you are viewing the workshop's gitHub page's website, you can see a list of Lab Guides at any time by clicking on the **Menu Icon**
 
-![](images/100/image80_workshoplayout.png)  
-
 ## Oracle Data Integration Platform Cloud (DIPC) Services Workshop
 
-Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The labs simulate instances in Oracle Compute Infrastructure (OCI) services along with on premise evironments.  The content will give you a basic understanding of Oracle Data Integration Platform Cloud Service and many of the capabilities related to provisioning, elevated tasks, agent install, data preparation and internals.  The labs are as follows:
+Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The content will give you a basic understanding of Oracle Data Integration Platform Cloud Service and many of the capabilities related to provisioning, elevated tasks, agent install, data preparation and internals.  The labs are as follows:
 -  Lab 100 - Provisioning DIPCS
 -  Lab 200 - Sync Elevated Task
 -  Lab 300 - Remote Agent Install & Sync on-prem database
@@ -20,11 +19,23 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The labs
 -  Lab 500 - Prepare Data
 -  Lab 600 - ODI Execution Task
 -  Lab 700 - Under the covers DIPCS
+-  Lab 800 - DIPCS integrating with ADWC
+-  Lab 900 - MySQL integration
+-  Lab 1000 - BigData Integration
+
+## Workshop architecture
+![](images/100/image80_workshoplayout.png) 
+
+- Source: DBCS instance
+- Target: DBCS Instance
+- On-Prem: Cloud Compute Instance that will simulate an On-Prem environment
 
 
 ## Workshop Details
 
 **Reference the following Lab Guides by opening their Documentation Files:**
+
+*** Need to change these links ***
 
 ## Lab 100: Provisioning DIPCS
 
@@ -39,26 +50,16 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The labs
 **Documentation**: [CloudWorkshop\_DIPCS\_200.md](CloudWorkshop\_DIPCS\_200.md)
 
 ### Objectives
-Review the following elevated tasks
--   Sync Data
--   Create Data Lake
--   Add Data to Data Mart
--   Data Replication
--   Data Validation
+- Review how to create connections
+- Review how to execute a Synchonize Data elevated task
 
 ## Lab 300: Remote Agent Install & Sync on-prem databases
 
 **Documentation**: [CloudWorkshop\_DIPCS\_300.md](CloudWorkshop\_DIPCS\_300.md)
 
 ### Objectives
-
--   Ensure Ravello VMs for DIPC and DB 
--	Ensure Remote Agent is trusted by DIPC instance *MODIFY FOR GSE*
--   Agent Download
--   Agent Installation and Configuration
--   Configure Agent SSL *MODIFY FOR GSE*
--	Agent Administration - Starting and Stopping.
--   Synchronize On-Premise Database
+-	Review downloading process, installation and configuration of DIPC remote agent
+-   Synchronize two On-Premise Databases
 
 
 ## Lab 400:  Migrate on-prem to Cloud
@@ -66,10 +67,8 @@ Review the following elevated tasks
 **Documentation**: [CloudWorkshop\_DIPCS\_400.md](CloudWorkshop\_DIPCS\_400.md)
 
 ### Objectives
-
--   Install on-prem and cloud agent
--   configure connections to target and source from DIPC console
--   Sync target and source
+-   Review downloading process, installation and configuration of DIPC remote agent
+-   Migrate an on-prem database to a database cloud service
 
 
 ## Lab 500:  Prepare Data
@@ -77,7 +76,6 @@ Review the following elevated tasks
 **Documentation**: [CloudWorkshop\_DIPCS\_500.md](CloudWorkshop\_DIPCS\_500.md)
 
 ### Objectives
-
 -   Prepare data from flat files
 -   Transform data elements
 -   Administer transformations
@@ -88,17 +86,39 @@ Review the following elevated tasks
 **Documentation**: [CloudWorkshop\_DIPCS\_600.md](CloudWorkshop\_DIPCS\_600.md)
 
 ### Objectives
-
--   Explore ODI Interface
--   Load data from target to source
+-   Undertsand how to import ODI scenarios
+-   Execute and monitor ODI scenarios using DIPC
 
 ## Lab 700:  Under the covers DIPCS
 
 **Documentation**: [CloudWorkshop\_DIPCS\_700.md](CloudWorkshop\_DIPCS\_700.md)
 
 ### Objectives
+- Demonstrate how to work directly with underneath DIPC GG "engine"
+- Demonstrate how to work directly with underneath DIPC ODI "engine"
+- Demonstrate how to work directly with underneath DIPC EDQ "engine"
+-   Understand underlying DIPC architecture ??
+-   Review default Oracle Golden Gate configurations ??
+-   Review weblogic components ??
+-   Revew required ports for communication between agent and DIPC console ??
 
--   Understand underlying DIPC architecture
--   Review default Oracle Golden Gate configurations
--   Review weblogic components
--   Revew required ports for communication between agent and DIPC console
+## Lab 800:  DIPCS integrating with ADWCS
+
+**Documentation**: [CloudWorkshop\_DIPCS\_700.md](CloudWorkshop\_DIPCS\_800.md)
+
+### Objectives
+- ***
+
+## Lab 900:  MySQL integration
+
+**Documentation**: [CloudWorkshop\_DIPCS\_700.md](CloudWorkshop\_DIPCS\_900.md)
+
+### Objectives
+- ***
+
+## Lab 1000:  BigData Integration
+
+**Documentation**: [CloudWorkshop\_DIPCS\_700.md](CloudWorkshop\_DIPCS\_1000.md)
+
+### Objectives
+- ***
