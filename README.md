@@ -26,8 +26,8 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 ## Workshop architecture
 ![](images/100/image80_workshoplayout.png) 
 
-- Source: DBCS instance
-- Target: DBCS Instance
+- Source: DIPC instance
+- Target: DIPC Instance
 - On-Prem: Cloud Compute Instance that will simulate an On-Prem environment
 
 
@@ -39,7 +39,7 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 
 ## Lab 100: Provisioning DIPCS
 
-**Documentation**: [CloudWorkshop\_DIPCS\_100.md](CloudWorkshop\_DIPCS\_100.md)
+**Documentation**: [CloudWorkshop\_DIPC\_100.md](CloudWorkshop\_DIPC\_100.md)
 
 ### Objectives
 
@@ -47,7 +47,7 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 
 ## Lab 200: Sync Elevated Task
 
-**Documentation**: [CloudWorkshop\_DIPCS\_200.md](CloudWorkshop\_DIPCS\_200.md)
+**Documentation**: [CloudWorkshop\_DIPC\_200.md](CloudWorkshop\_DIPC\_200.md)
 
 ### Objectives
 - Review how to create connections
@@ -55,7 +55,7 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 
 ## Lab 300: Remote Agent Install & Sync on-prem databases
 
-**Documentation**: [CloudWorkshop\_DIPCS\_300.md](CloudWorkshop\_DIPCS\_300.md)
+**Documentation**: [CloudWorkshop\_DIPC\_300.md](CloudWorkshop\_DIPC\_300.md)
 
 ### Objectives
 -	Review downloading process, installation and configuration of DIPC remote agent
@@ -64,7 +64,7 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 
 ## Lab 400:  Migrate on-prem to Cloud
 
-**Documentation**: [CloudWorkshop\_DIPCS\_400.md](CloudWorkshop\_DIPCS\_400.md)
+**Documentation**: [CloudWorkshop\_DIPC\_400.md](CloudWorkshop\_DIPC\_400.md)
 
 ### Objectives
 -   Review downloading process, installation and configuration of DIPC remote agent
@@ -73,7 +73,7 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 
 ## Lab 500:  Prepare Data
 
-**Documentation**: [CloudWorkshop\_DIPCS\_500.md](CloudWorkshop\_DIPCS\_500.md)
+**Documentation**: [CloudWorkshop\_DIPC\_500.md](CloudWorkshop\_DIPC\_500.md)
 
 ### Objectives
 -   Prepare data from flat files
@@ -83,7 +83,7 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 
 ## Lab 600:  ODI Execution Task
 
-**Documentation**: [CloudWorkshop\_DIPCS\_600.md](CloudWorkshop\_DIPCS\_600.md)
+**Documentation**: [CloudWorkshop\_DIPC\_600.md](CloudWorkshop\_DIPC\_600.md)
 
 ### Objectives
 -   Undertsand how to import ODI scenarios
@@ -91,7 +91,7 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 
 ## Lab 700:  Under the covers DIPCS
 
-**Documentation**: [CloudWorkshop\_DIPCS\_700.md](CloudWorkshop\_DIPCS\_700.md)
+**Documentation**: [CloudWorkshop\_DIPC\_700.md](CloudWorkshop\_DIPC\_700.md)
 
 ### Objectives
 - Demonstrate how to work directly with underneath DIPC GG "engine"
@@ -104,21 +104,21 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 
 ## Lab 800:  DIPCS integrating with ADWCS
 
-**Documentation**: [CloudWorkshop\_DIPCS\_700.md](CloudWorkshop\_DIPCS\_800.md)
+**Documentation**: [CloudWorkshop\_DIPC\_800.md](CloudWorkshop\_DIPC\_800.md)
 
 ### Objectives
 - ***
 
 ## Lab 900:  MySQL integration
 
-**Documentation**: [CloudWorkshop\_DIPCS\_700.md](CloudWorkshop\_DIPCS\_900.md)
+**Documentation**: [CloudWorkshop\_DIPC\_900.md](CloudWorkshop\_DIPC\_900.md)
 
 ### Objectives
 - ***
 
 ## Lab 1000:  BigData Integration
 
-**Documentation**: [CloudWorkshop\_DIPCS\_700.md](CloudWorkshop\_DIPCS\_1000.md)
+**Documentation**: [CloudWorkshop\_DIPC\_1000.md](CloudWorkshop\_DIPC\_1000.md)
 
 ### Objectives
 - ***

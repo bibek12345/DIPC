@@ -1,4 +1,4 @@
-# Oracle Database Cloud Service for DBAs Workshop
+# Oracle Data Integration Platform Cloud Service for DBAs Workshop
 
 ## How to use this workshop
 
