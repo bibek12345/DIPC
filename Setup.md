@@ -2,7 +2,7 @@ Update January 22, 2018
 
 # Setup
 
-This workshop requires several setups steps that are normally done in advance as part of an automated process prior to running the labs.  In cases where a customer wishes to run through the workshop themselves on their own without the support of Global Services Engineering (GSE) they must first walk through the following steps.  
+This workshop requires several setups steps that are normally done in advance as part of an automated process prior to running the labs.  In cases where a customer wishes to run through the workshop themselves on their own, they must first walk through the following steps.  
 
 ### **STEP 1**: Log into the Cloud Console and create DBCS_WorkshopImage
 

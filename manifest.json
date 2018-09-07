@@ -26,43 +26,43 @@
             {
                 "number": "100",
                 "filename": "CloudWorkshop_DIPC_100.md",
-                "title": "Lab 100: Provisioning DIPCS",
-                "description": "Provisioning DIPCS",
+                "title": "Lab 100:  Provisioning Data Integration Platform Cloud",
+                "description": "Steps to Provision DIPCS",
                 "labels": {"version": "Instructor Led"}
             },
             {
                 "number": "200",
                 "filename": "CloudWorkshop_DIPC_200.md",
-                "title": "Lab 200: Sync Elevated Task",
-                "description": "Sync Elevated Task",
+                "title": "Lab 200: Data Synch Elevated Task",
+                "description": "Data Sync Elevated Task",
                 "labels": {"version": "Instructor Led"}
             },
             {
                 "number": "300",
                 "filename": "CloudWorkshop_DIPC_300.md",
                 "title": "Lab 300: Remote Agent Install & Sync on-prem databases",
-                "description": "Remote Agent Install & Sync on-prem databases",
+                "description": "Remote Agent Install and On-prem to On-prem DB Synchronization",
                 "labels": {"version": "Instructor Led"}
             },
             {
                 "number": "400",
                 "filename": "CloudWorkshop_DIPC_400.md",
                 "title": "Lab 400: Migrate on-prem to Cloud",
-                "description": "Migrate on-prem to Cloud",
+                "description": "Migrate On-Prem Database to Cloud",
                 "labels": {"version": "Instructor Led"}
             },
             {
                 "number": "500",
                 "filename": "CloudWorkshop_DIPC_500.md",
-                "title": "Lab 500: Prepare Data",
-                "description": "Prepare Data",
+                "title": "Lab 500: Data Preparation",
+                "description": "Data Preparation",
                 "labels": {"version": "Instructor Led"}
             },
             {
                 "number": "600",
                 "filename": "CloudWorkshop_DIPC_600.md",
-                "title": "Lab 600: ODI Execution Task",
-                "description": "ODI Execution Task",
+                "title": "Lab 600: ODI Execution Elevated Task",
+                "description": "ODI Execution Elevated Task",
                 "labels": {"version": "Instructor Led"}
             },
             {
@@ -74,7 +74,7 @@
             },
             {
                 "number": "0",
-                "filename": "SS-README.md",
+                "filename": "README.md",
                 "title": "README First",
                 "description": "Step-by-step workshop instructions",
                 "labels": {"version": "Self-Guided"}
@@ -89,29 +89,29 @@
             {
                 "number": "100",
                 "filename": "CloudWorkshop_DIPC_100.md",
-                "title": "Lab 100: Provisioning DIPCS",
-                "description": "Provisioning DIPCS",
+                "title": "Lab 100: Creating a Data Integration Platform Cloud Instance",
+                "description": "Steps to Provision DIPCS",
                 "labels": {"version": "Self-Guided"}
             },
             {
                 "number": "200",
                 "filename": "CloudWorkshop_DIPC_200.md",
-                "title": "Lab 200: Sync Elevated Task",
-                "description": "Sync Elevated Task",
+                "title": "Lab 200: Data Synch Elevated Task",
+                "description": "Data Synch Elevated Task",
                 "labels": {"version": "Self-Guided"}
             },
             {
                 "number": "300",
                 "filename": "CloudWorkshop_DIPC_300.md",
                 "title": "Lab 300: Remote Agent Install & Sync on-prem databases",
-                "description": "Remote Agent Install & Sync on-prem databases",
+                "description": "RRemote Agent Install and On-prem to On-prem DB Synchronization",
                 "labels": {"version": "Self-Guided"}
             },
             {
                 "number": "400",
                 "filename": "CloudWorkshop_DIPC_400.md",
                 "title": "Lab 400: Migrate on-prem to Cloud",
-                "description": "Migrate on-prem to Cloud",
+                "description": "Migrate On-Prem Database to Cloud",
                 "labels": {"version": "Self-Guided"}
             }
         ]

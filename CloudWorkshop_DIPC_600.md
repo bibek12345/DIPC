@@ -1,5 +1,5 @@
 
-# Lab 600 - ODI Execution elevated Task 
+# Lab 600 - ODI Execution Elevated Task 
 ![](images/600/image600_0.png)
 
 ## Before You Begin

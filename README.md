@@ -34,8 +34,6 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 
 **Reference the following Lab Guides by opening their Documentation Files:**
 
-*** Need to change these links ***
-
 ## Lab 100: Provisioning DIPCS
 
 **Documentation**: [CloudWorkshop\_DIPC\_100.md](CloudWorkshop\_DIPC\_100.md)
