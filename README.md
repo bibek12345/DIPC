@@ -1,11 +1,10 @@
 # Data Integration Platform Cloud Workshop
 
 ## How to Prepare for This Workshop 
-*** Need to change these links ***
 
-- To log issues and view the lab guide source, go to the [github oracle](https://github.com/oracle/learning-library/tree/master/workshops/dbcs-dba) repository.
+- To log issues and view the lab guide source, go to the [github oracle](https://github.com/OracleCPS/DIPC) repository.
 
-- The Labguides are best viewed using the workshop's [GitHub Pages Website URL](https://oracle.github.io/learning-library/workshops/dbcs-dba) 
+- The Labguides are best viewed using the workshop's [GitHub Pages Website URL](https://oraclecps.github.io/DIPC/) 
 
 - Once you are viewing the workshop's gitHub page's website, you can see a list of Lab Guides at any time by clicking on the **Menu Icon**
 
