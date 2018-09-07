@@ -25,8 +25,8 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 ## Workshop architecture
 ![](images/100/image80_workshoplayout.png) 
 
-- Source: DIPC instance
-- Target: DIPC Instance
+- Source: DBCS instance
+- Target: DBCS Instance
 - On-Prem: Cloud Compute Instance that will simulate an On-Prem environment
 
 
