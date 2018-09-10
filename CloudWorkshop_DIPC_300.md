@@ -50,12 +50,13 @@ Your will need:
 
 ![](images/300/image300_3.png)
 
-8.	Select drop down menu and select zip file for your Operating System 
-9.	Select the “Linux” option
-
+8.	Click on "Download Installer" button
 ![](images/300/image300_4.png)
 
-10.	Click "OK" to confirm selection
+9. Open the drop down menu and select the Operating System of your choice; in our case “Linux”
+![](images/300/image300_4a.png)
+
+10.	Once you have selected the operating system, you can choose the components that you would need in your remote agent. Select "Oracle 12c" and then click on "Download" button.
 
 ![](images/300/image300_5.png)
  
@@ -70,7 +71,7 @@ Your will need:
 ### Install Agent
 1.	Create a directory for the agent, execute: mkdir dipcagent
 2.	Move the downloaded file to that new directory, execute: mv Downloads/* dipcagent
-3.	MOve to the new directory, execute: cd dipcagent
+3.	Move to the new directory, execute: cd dipcagent
 4.	Unzip the file, execute: unzip agent-linux.64.bit.zip
 5.	Move to the agent directory, execute: cd dicloud
 6.	Execute command to install agent: 
