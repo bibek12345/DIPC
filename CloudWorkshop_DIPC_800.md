@@ -46,104 +46,80 @@ Before we execute the task, we will navigate to the Object Storage container and
 
 8. Store it in a notepad or other text editor, you will need this URL later/
 
-
-## Create Connection to Object Storage
+## Create Connection to File (Source)
 1. Log into your Workshop DIPC Server
-2.	In the Home Page click “Create Connection” from top section
+2.	In the Home Page click “Create" button on the "Connection” box from top section
 
 ![](images/800/image800_6.png)
-*** HERE ***
 
-2.	Once opened, copy and paste the following statements in the panel on the right:
-SELECT COUNT(*) FROM TRG_SALES;
-
-	![](images/600/image600_2.png)
-
-3.	Execute the statements by clicking on the “Run script” icon (first one from left to right on the icon bar)
-4.	This will show the count on the results panel (lower section)
- 
-	![](images/600/image600_3.png)
-
-
-### Create ODI Execution task
-1.	Log into your DIPC server, provide the URL (it should look like this): 
-https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
-2.	Provide your user name and password, then click "Sign In" button
-
-![](images/300/image300_2.png)
-
-Or, if you are already in the application, go to the "Home" page by selecting the "Home"hyperlink from the left panel. 
- 
-
-3.	In the Home Page click on "Next" icon (>) located at the far right side of the top panel to locate the "ODI Execution" task icon
-
-![](images/500/image500_3.png) 
-
-4.	Once you have located the “ODI Execution” task icon, click on it.  
-
-![](images/600/image600_4.png)
-
-5.	Provide the following information:
-	- Name:  Load Sales DWH
-	- Description: Execute ODI Scenario to load OLTP data into DWH
-
-![](images/600/image600_5.png)
-
-6.	In the “Connections” section, click on “Import" button to import a deployment archive created in ODI Studio that contains the Scenario we want to execute.
-7.	Navigate to the directory in which you copied the files provided for the labs and select “LD_SALES_DIPC_18.2.3.zip”. Click on “Open” button.
-
-![](images/600/image600_6.png)
-
-8.	Wait for the import operation to complete (this will take some time). Once completed, click on “Scenario” drop-down menu
-
-![](images/600/image600_7.png)
- 
-9.	Select “LD_TRG_SALES_001”. This will show the connections the scenario uses and that we need to map
-
-![](images/600/image600_8.png)
-
-10.	We already have some connections defined but we will define a new connection to our DWH. Click on the plus icon on the first row
-
-![](images/600/image600_9.png)
-
-11.	Provide the following information:
-	- Name: DIPC_DWH
-	- Description: Data Warehouse
+3. 	Enter the following information:
+	- Name: FILE_SRC
+	- Description: Read Files
 	- Agent: <LOCAL_AGENT>
-	- Type Oracle
-	- Hostname: <TARGET_DB>
-	- Port: 1521
-	- Username: TRG_AGG_SALES
-	- Password: Welcome#123
-	- Service Name: <TARGET_DB_SERVICE_NAME>
-	- Schema Name: TRG_AGG_SALES (Default)
-12.	Click on “Test Connection” button at the bottom. A green message should appear on top when everything is in order 
+	- Type: File
+	- Directory: /home/DIPC
+ 4. Click "Test Connection" button and when the test is successful click "Save" button
 
-![](images/600/image600_10.png)
-
-13.	Click on “Save” button at the bottom. DIPC will create the connection and return to the original screen with that connection selected.
-
-![](images/600/image600_11.png)
-
-14.	Using the drop-down menu on the “Schema” attribute of the first row, select “TRG_AGG_SALES”
-
-![](images/600/image600_12.png)
-
-15.	Using the drop-down menu on the “Connection” attribute of the second row, select “SALES_SRC”
-16.	Using the drop-down menu on the “Schema” attribute of the second row, select “SALES_SRC”
-
-![](images/600/image600_13.png)
-
-17.	Click on “Save and Run” button located on the top right corner of the screen to execute the task
-18.	You will be navigated to the “Jobs” screen. After some time, a message will appear in the notification bar
-
-![](images/600/image600_14.png)
-
-19.	The job will automatically appear within the "Jobs" page. This may take up to 1 minute
-
-![](images/600/image600_15.png)
+![](images/800/image800_7.png)
 
 
+## Create Connection to Object Storage (Target)
+1. From the "Create" drop down menu on the top right corner select "Connection"
+
+![](images/800/image800_8.png)
+
+2.	Enter the following information:
+    - Name: DATA_LAKE
+    - Description: Connection to Object Storage to create a Data Lake
+    - Agent: <LOCAL_AGENT>
+    - Type: Oracle Object Storage Classic.
+    - Domain: Storage-oscnas001. **From the Rest EndPoint URL you saved previously copy and paste the last part. That is from "https://uscom-east-1.storage.oraclecloud.com/v1/Storage-oscnas100" copy "Storage-oscnas001"**
+	- Service URL: https://oscnas001.us.storage.oraclecloud.com. **From the Rest EndPoint URL you saved previously copy and paste the server URL. That is from "https://uscom-east-1.storage.oraclecloud.com/v1/Storage-oscnas100" copy "https://uscom-east-1.storage.oraclecloud.com"**
+	- Container: DIPC_Workshop
+    - Username: <YOUR_USERNAME>. **For example: osc.dipcws01**
+    - Password: <YOUR_PASSWORD>
+
+3. Click "Test Connection" button and when the test is successful click "Save" button. 
+
+![](images/800/image800_9.png)
+
+
+### Data Lake Builder task
+1.	From the "Create" drop down menu on the top right corner select "Datalake Builder"
+
+![](images/800/image800_10.png)
+
+2.	Provide the following information:
+	- Name:  DATA_LAKE
+	- Description: Create Datalake pipeline
+	- Connection: FILE_SRC
+	- Directory: /home/DIPC/Files. 
+		- Click on the "Select" button on the right of the field
+		![](images/800/image800_11.png)
+
+		- Cl;ick on "Files" directory and then click on "Select" button
+		![](images/800/image800_12.png)
+	- File: webclicks.txt
+		- Click on the "Select" button on the right of the field
+		![](images/800/image800_13.png)
+
+		- Click on  "webclicks.txt" file and then click on "Select" button
+		![](images/800/image800_14.png)
+	- Connection: DATA_LAKE
+	- Data Entity: Web_Clicks
+	- Type: Parquet
+	- File Path: leave it blank
+3. Click on "Save & Execute" button located on the top right corner of the screen to execute the task
+
+![](images/800/image800_15.png)
+
+4.	A meesage  will appear in the notification bar to inform that the test has been created and you will be navigated to the “Monitor” screen. 
+
+5.	The job will appear in the "Monitor" page. This may take up to 1 minute
+
+![](images/800/image800_16.png)
+
+*** HERE ***
 ### Review Job in DIPC
 1.	You should be in the “Jobs” screen. Click on the job to see details. The "ODI Execution" action will show "Successful" after a little while
 
