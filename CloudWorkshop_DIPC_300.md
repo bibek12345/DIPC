@@ -23,13 +23,14 @@ Approximately 45 minutes.
 Your will need:
 - DIPC Instance URL
 - DIPC User and Password
-- DB information for on-prem source system: server name, user/password and service name
-- DB information for on-prem target system: server name, user/password and service name
+- DB information for on-prem source system: server name/ip address, user/password and service name
+- DB information for on-prem target system: server name/ip address, user/password and service name
 - Private keys in OpenSSH format for all instances 
 - OnPremiseVM public IP address
 - Putty for SSH connection to instances
 - VNC viewer
 - SQL developer
+
 
 ## Remote Agent
 
@@ -56,7 +57,7 @@ Your will need:
 9. Open the drop down menu and select the Operating System of your choice; in our case “Linux”
 ![](images/300/image300_4a.png)
 
-10.	Once you have selected the operating system, you can choose the components that you would need in your remote agent. Select "Oracle 12c" and then click on "Download" button.
+10.	Once you have selected the operating system, you can choose the components that you would need in your remote agent. Select "Oracle 12c" and "Data Integrator (ODI)" then click on "Download" button.
 
 ![](images/300/image300_5.png)
  
@@ -68,6 +69,7 @@ Your will need:
 
 ![](images/300/image300_7.png)
 
+
 ### Install Agent
 1.	Create a directory for the agent, execute: mkdir dipcagent
 2.	Move the downloaded file to that new directory, execute: mv Downloads/* dipcagent
@@ -76,6 +78,10 @@ Your will need:
 5.	Move to the agent directory, execute: cd dicloud
 6.	Execute command to install agent: 
 ./dicloudConfigureAgent.sh -user=DIPCADMIN -dipchost=<DIPC_IP_ADDRESS> -dipcport=7003  -authType=BASIC
+
+./dicloudConfigureAgent.sh  -dipchost=https://919181A11AC6494CBCFA146EBC9A2A48.uscom-central-1.oraclecloud.com -dipcport=443 -user=**<YOUR_USER>** -password=**<YOUR_PASSWORD>** -authType=OAUTH2 -idcsServerUrl=https://idcs-bfb16122271a47fc91ada73842325e52.identity.oraclecloud.com -agentIdcsScope=https://919181A11AC6494CBCFA146EBC9A2A48.uscom-central-1.oraclecloud.com:443external -agentClientId=ec9958f548e7414f872cc480c0bf3455 -agentClientSecret=77321de1-6f4a-4997-945e-8acb271b0473
+
+
 7.	New directories will be created, to look at then execute: ls
 8.	We will take a look at the configuration file (agent.properties) and we will change the port in which this agent will talk to DIPC
 9.	Open the editor, select “Applications > Accessories > Editor” from the top left corner of the screen
@@ -94,14 +100,10 @@ Your will need:
 
 ![](images/300/image300_12.png)
  
-13.	Now look for “ggccServicePort” and change it to 80
-
-![](images/300/image300_13.png)
- 
-14.	Save and close. Click on “Save” button then on "Close" icon (top right corner)
+13.	Save and close. Click on “Save” button then on "Close" icon (top right corner)
 
 ### Execute the Agent
-1.	We installed with defaults so we will move to the directory with the necessary commands to start the agent; execute: cd agent/dipcagent001/bin
+1.	We will move to the directory with the necessary commands to start the agent; execute: cd agent/dipcagent001/bin
 2.	We will start the agent by executing:
 ./startAgentInstance.sh
 3.	Your agent is now running. Go back to Firefox and look the “Agent” screen in DIPC
