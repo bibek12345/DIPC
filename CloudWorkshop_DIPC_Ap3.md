@@ -61,3 +61,25 @@ You will need to define the following connections:
 >   - Hostname: **<TRG_DB_IP_ADDRESS>**
 >   - Port: 1521
 >   - Service Name: **<TRG_DB_SERVICE_NAME>**
+
+
+4. WS - AMER_SRC
+>   - Connection Name: WS - AMER_SRC
+>   - Username: AMER_SRC
+>   - Password: Welcome#123
+>   - Save Password: SELECTED
+>   - Connector Type: Basic
+>   - Hostname: **<ON_PREM_IP_ADDRESS>**
+>   - Port: 1521
+>   - Service Name: PDB1
+
+
+4. WS - EMEA_TRG
+>   - Connection Name: WS - EMEA_TRG
+>   - Username: EMEA_TRG
+>   - Password: Welcome#123
+>   - Save Password: SELECTED
+>   - Connector Type: Basic
+>   - Hostname: **<ON_PREM_IP_ADDRESS>**
+>   - Port: 1521
+>   - Service Name: PDB1

@@ -55,11 +55,29 @@ You will be navigated to your DIPC server Home page.
 
 ## Create Connections and Review Catalog
 1. Log into your Workshop DIPC Server
-2.	In the Home Page click “Create Connection” from top section
+2. For synchronization jobs we will need a CDB (Container DB) connection to our DB. In the Home Page click “Create Connection” from top section
 
 ![](images/200/image200_5.png)
 
 3.	Enter the following information:
+    - Name: SRC_CDB
+    - Description: CDB User for Source DB
+    - Agent: <LOCAL_AGENT>
+    - Type: Oracle CDB. 
+    - Hostname: <SOURCE_DB>
+    - Port: 1521
+    - Username: SRC_CDB
+    - Password: Welcome#123
+    - Service Name: <CDB_SOURCE_SERVICE_NAME>
+
+    ![](images/200/image200_5a.png)
+
+4. Click "Test Connection" button and when the test is successful click "Save" button.
+5. Open the drop-down menu from the top far right corner and then select “Connection”. 
+
+![](images/200/image200_15.png)
+
+6. Enter the following information:
     - Name: SALES_SRC
     - Description: Sales OLTP Source Data
     - Agent: \<LOCAL_AGENT>
@@ -77,19 +95,19 @@ You will be navigated to your DIPC server Home page.
 
     ![](images/200/image200_7.png)
 
-4. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
+ 7. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
 
 **Note: Data Entities are harvested and profiled at the time the connection is created, their popularity is also calculated by reviewing the DB query logs. This process may take some time (5 minutes or so), the Catalog will show a message when new updates are available**
 
 ![](images/200/image200_8.png)
 
-5.	Click on entity “SRC_CUSTOMER” to drill down in it and look at the information DIPC brought in
+8.	Click on entity “SRC_CUSTOMER” to drill down in it and look at the information DIPC brought in
 
 ![](images/200/image200_9.png) 
 
 If you would like to associate a tag or a contact to this entity, click on “Edit” button on the top right corner.
 
-6.	Click on the “Metadata” tab on top
+9.	Click on the “Metadata” tab on top
 
 ![](images/200/image200_10.png) 
 
@@ -97,24 +115,24 @@ DIPCS shows attributes, primary keys, data types and some sample values of the s
 
 ![](images/200/image200_11.png)  
 
-7.	Click on the “Data” tab on top
+10.	Click on the “Data” tab on top
 
 ![](images/200/image200_12.png) 
 
-8.	Click on the back icon, located on the top left corner (left of the entity name) to go back to the Catalog
-9.	In the catalog you can use the drop-down menu located at the top to select the type of object that will be shown
+11.	Click on the back icon, located on the top left corner (left of the entity name) to go back to the Catalog
+12.	In the catalog you can use the drop-down menu located at the top to select the type of object that will be shown
 
 ![](images/200/image200_13.png)
 
-10.	It is also possible to use the filter to search for a specific object
+13.	It is also possible to use the filter to search for a specific object
 
 ![](images/200/image200_14.png)
 
-11.	Now, we are going to create the target connection. From the top bar, Open the drop-down menu from the top far right corner and then select “Connection” 
+14.	Now, we are going to create the target connection. Open the drop-down menu from the top far right corner and then select “Connection” 
 
 ![](images/200/image200_15.png)
 
-12.	Enter the following information:
+15.	Enter the following information:
     - Name: SALES_TRG 
     - Description: Sales OLTP Replicated Data
     - Agent: <LOCAL_AGENT>
@@ -128,11 +146,10 @@ DIPCS shows attributes, primary keys, data types and some sample values of the s
 
 ![](images/200/image200_16.png)
 
-13. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
+16. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
 
 
 ## Create Synchronize Data Elevated Task
-
 1.	Connections have been defined. We are ready to create and execute our “Synch Data” elevated task. From the top bar, open the drop-down menu from the top far right corner and then select “Synchronize Data”
 
 ![](images/200/image200_15.png) 
