@@ -104,7 +104,7 @@ $JAVA_HOME/bin/keytool -import -alias uscom-central-1oraclecloudcom  -keystore $
 
 
 ### Install Agent
-1.	In the terminal you opened in your on-prem machine, create a directory for the agent, execute: mkdir dipcagent
+1.	In the terminal you opened in your on-prem machine, create a directory for the agent's files, execute: mkdir dipcagent
 3.	Move the downloaded file to that new directory, execute: mv Downloads/* dipcagent
 4.	Move to the new directory, execute: cd dipcagent
 5.	Unzip the file, execute: unzip agent-linux.64.bit.zip
@@ -138,7 +138,7 @@ $JAVA_HOME/bin/keytool -import -alias uscom-central-1oraclecloudcom  -keystore $
 14.	Save and close. Click on “Save” button then on "Close" icon (top right corner)
 
 
-### Execute the Agent
+### Start the Agent
 1.	We will move to the directory with the necessary commands to start the agent; execute: cd agent/dipcagent001/bin
 2.	We will start the agent by executing:
 nohup ./startAgentInstance.sh &
@@ -149,22 +149,33 @@ nohup ./startAgentInstance.sh &
 
 ## On-Prem to On-Prem synchronization
 
-### Verify Data in Source and Target DBs (Optional)
-** MISSING STEPS
-** Saves images 15 to 29 for this section
-
-
 ### Execute Data Synch Elevated Task
 1. You should be logged into DIPC, if that is NOT the case, log in.
 2. From the left side panel, SELECT "Home"
 
 ![](images/300/image300_30.png)
 
-3. In the Home Page click "Create Connections" from the top section
+3. For synchronization jobs we will need a CDB (Container DB) connection to our DB. In the Home Page click "Create Connections" from the top section
 
 ![](images/300/image300_31.png)
 
 4. Enter the following information:
+    - Name: ONPREM_SRC_CDB
+    - Description:  CDB User for on-prem source DB
+	- Agent: <REMOTE_AGENT>
+	- Type: Oracle
+  	- Hostname: <COMPUTE_INSTANCE_IP>
+	- Port: 1521
+	- Username: C##GGSRC
+	- Password: Welcome#123
+	- Service Name: onprem
+
+5. Click "Test Connection" button and when the test is successful click "Save" button.
+6. Open the drop-down menu from the top far right corner and then select “Connection”.
+
+![](images/300/image300_37.png)
+
+7. Enter the following information:
     - Name: ONPREM_SRC
     - Description: Connection to on-prem database schema with source tables. AMER
 	- Agent: <REMOTE_AGENT>
@@ -173,18 +184,18 @@ nohup ./startAgentInstance.sh &
 	- Port: 1521
 	- Username: AMER_SRC
 	- Password: Welcome#123
-	- Service Name: orcl
+	- Service Name: PDB1
     - Schema Name: AMER_SRC (Default)	
-5. Click on "Test Connection" button at the bottom. a green message should appear on top when everything is in order
-6. Click on "Save"
+8. Click on "Test Connection" button at the bottom. a green message should appear on top when everything is in order
+9. Click on "Save"
 
 ![](images/300/image300_32.png)
 
-7. From the top bar, open the drop-down menu and the select "Connection"
+10. From the top bar, open the drop-down menu and the select "Connection"
 
 ![](images/300/image300_34.png)
 
-8. Enter the following information:
+11. Enter the following information:
     - Name: ONPREM_TRG
     - Description: Connection to target schema onprem_trg EMEA
 	- Agent: <REMOTE_AGENT>
@@ -193,18 +204,18 @@ nohup ./startAgentInstance.sh &
 	- Port: 1521
 	- Username: EMEA_TRG
 	- Password: Welcome#123
-	- Service Name: orcl
+	- Service Name: PDB1
     - Schema Name: EMEA_TRG (Default)	
-5. Click on "Test Connection" button at the bottom. a green message should appear on top when everything is in order
-6. Click on "Save"
+12. Click on "Test Connection" button at the bottom. a green message should appear on top when everything is in order
+13. Click on "Save"
 
 ![](images/300/image300_35.png)
 
-7. From the top bar, open the drop-down menu and the select "Synchronize Data"
+14. From the top bar, open the drop-down menu and the select "Synchronize Data"
 
 ![](images/300/image300_37.png)
 
-8. Enter the following information:
+15. Enter the following information:
 	- Name: Sync OnPrem Schemas
 	- Description: Sync on-prem schemas AMER to EMEA
 	- Connection: ONPREM_SRC
@@ -214,25 +225,57 @@ nohup ./startAgentInstance.sh &
 	- Advanced - Include Initial Load: SELECTED
 	- Advanced - Include Replication: SELECTED
 
-** MISSING ![](images/300/image300_38.png)
+![](images/300/image300_38.png)
 
-9. Click on "Save & Run" button on the top right of the screen to execute the task
-10. You will be navigated to teh "Jobs"screen. After some time, a message will appear in the notification bar
+16. Click on "Save & Run" button on the top right of the screen to execute the task
+17. A message will appear in the notification bar and you will be navigated to the "Monitor" screen. 
+18. The job will automatically appear within the "Monitor" page
 
-** MISSING ![](images/300/image300_39.png)
+![](images/300/image300_39.png)
 
-11. The job will automatically appear within the "Jobs" page
+19. Click job to review details
 
 ** MISSING ![](images/300/image300_40.png)
 
-12. Click job to review details
 
-** MISSING ![](images/300/image300_41.png)
+### Verify Data in Source and Target DBs (Optional)
+Up until this point, we have monitored the job within DIPC but it would nice to see the data in both source and target to verify that they are the same. For such task, we will use SQL Developer; please refer to Appendix 3 to learn how to create connections against the workshop databases.
+
+1. Start SQL Developer. On the connections panel, select your source database WS - AMER_SRC) and click on the plus (+) sign to open the connection
+
+![](images/300/image300_41.png)
+ 
+2.	Once opened, copy and paste the following statements in the panel on the right:
+
+SELECT COUNT(*)CATEGORIES FROM CATEGORIES;
+
+SELECT COUNT(*)CUSTOMERS FROM CUSTOMERS;
+
+SELECT COUNT(*)CUSTOMERS_INFO FROM CUSTOMERS_INFO;
+
+SELECT COUNT(*)ORDERS FROM ORDERS;
+
+SELECT COUNT(*)ORDERS_TOTAL FROM ORDERS_TOTAL;
+
+SELECT COUNT(*)PRODUCTS FROM PRODUCTS;
+
+SELECT COUNT(*)PRODUCTS_DESCRIPTION FROM PRODUCTS_DESCRIPTION;
 
 
-### Verify Data in Target DB (Optional)
-** MISSING STEPS
-** MISSING IMAGES
+3.	Execute the statements by clicking on the “Run script” icon (second icon from left to right on the icon bar; right-ponting green arrow head on top of a page)
+
+![](images/300/image300_42.png)
+
+4.	This will show all entities count on the results panel (lower section)
+
+![](images/300/image300_43.png)
+
+5.	Repeat steps 1 through 4 for connection “WS - EMEA_TRG”
+
+![](images/300/image300_44.png)
+ 
+This will show that the count in both data bases is exactly the same.
+
 
 ## Summary
 You have now successfully completed the Hands-on Lab, and have successfully installed the remote agent and synchronized two on-prem databases.

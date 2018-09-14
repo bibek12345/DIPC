@@ -185,7 +185,7 @@ https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
 ** MISSING ![](images/400/image400_4.png)
 
 9. Click on "Save & Run" button on the top right of the screen to execute the task
-10. You will be navigated to teh "Jobs"screen. After some time, a message will appear in the notification bar
+10. You will be navigated to teh "Monitor"screen. After some time, a message will appear in the notification bar
 
 ** MISSING ![](images/400/image400_5.png)
 

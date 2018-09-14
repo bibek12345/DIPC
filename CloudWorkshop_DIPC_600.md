@@ -115,7 +115,7 @@ Or, if you are already in the application, go to the "Home" page by selecting th
 
 ![](images/600/image600_14.png)
 
-19.	The job will automatically appear within the "Jobs" page. This may take up to 1 minute
+19.	The job will automatically appear within the "Monitor" page. This may take up to 1 minute
 
 ![](images/600/image600_15.png)
 

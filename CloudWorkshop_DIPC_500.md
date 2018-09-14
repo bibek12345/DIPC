@@ -167,7 +167,7 @@ Clicking apply updates data, metadata and profiling statistics.  Also note the t
 ![](images/500/image500_21.png)
 
 20.	You will be navigated to the “Jobs” screen. After some time, a message will appear in the notification bar
-21.	The job will automatically appear within the "Jobs" page. This may take up to 1 minute
+21.	The job will automatically appear within the "Monitor" page. This may take up to 1 minute
 
 ![](images/500/image500_22.png)
 
