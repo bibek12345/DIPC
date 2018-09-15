@@ -235,7 +235,7 @@ nohup ./startAgentInstance.sh &
 
 19. Click job to review details
 
-** MISSING ![](images/300/image300_40.png)
+![](images/300/image300_40.png)
 
 
 ### Verify Data in Source and Target DBs (Optional)
