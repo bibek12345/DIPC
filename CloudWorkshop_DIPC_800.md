@@ -1,6 +1,5 @@
 
 # Lab 600 - Data Lake Builder Elevated Task 
-*** NEED TO CREATE THIS CHAPTER ***
 
 ![](images/800/image800_0.png)
 
