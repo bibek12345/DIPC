@@ -54,7 +54,7 @@ You will be navigated to your DIPC server Home page.
 
 
 ## Create Connections and Review Catalog
-1. Log into your Workshop DIPC Server
+1. Log into your Workshop DIPC Server.
 2. For synchronization jobs we will need a CDB (Container DB) connection to our DB. In the Home Page click “Create Connection” from top section
 
 ![](images/200/image200_5.png)
