@@ -1,4 +1,4 @@
-# Appendix1: SSH Session Configuration
+# Appendix 1: SSH Session Configuration
 
 ## Create SSH Configuration
 

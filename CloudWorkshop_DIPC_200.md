@@ -24,7 +24,7 @@ Your will need:
 
 ### Login into DIPC using Oracle Cloud Services Dashboard
 1. In your web browser, navigate to cloud.oracle.com, then click Sign in.
-2. Provide the cloud account: oscnas001 then [Enter]
+2. Provide the cloud account: oscnas001 then **{Enter]
 3. Provide your user name and password, then click "Sign In" button. You will land in the Dasboard screen
 
 	![](images/200/image200_1.png)
@@ -62,13 +62,13 @@ You will be navigated to your DIPC server Home page.
 3.	Enter the following information:
     - Name: SRC_CDB
     - Description: CDB User for Source DB
-    - Agent: [LOCAL_AGENT]
+    - Agent: **{LOCAL_AGENT]
     - Type: Oracle CDB. 
-    - Hostname: [SOURCE_DB]
+    - Hostname: **{SOURCE_DB]
     - Port: 1521
     - Username: SRC_CDB
     - Password: Welcome#123
-    - Service Name: [CDB_SOURCE_SERVICE_NAME]
+    - Service Name: **{CDB_SOURCE_SERVICE_NAME]
 
     ![](images/200/image200_5a.png)
 
@@ -80,16 +80,16 @@ You will be navigated to your DIPC server Home page.
 6. Enter the following information:
     - Name: SALES_SRC
     - Description: Sales OLTP Source Data
-    - Agent: [LOCAL_AGENT]
+    - Agent: **{LOCAL_AGENT]
     - Type Oracle: selecting Oracle will expand the Connection Settings
 
     ![](images/200/image200_6.png)
 
-    - Hostname: [SOURCE_DB]
+    - Hostname: **{SOURCE_DB]
     - Port: 1521
     - Username: SALES_SRC
     - Password: Welcome#123
-    - Service Name: [SOURCE_DB_SERVICE_NAME]
+    - Service Name: **{SOURCE_DB_SERVICE_NAME]
     - Schema Name: SALES_SRC (Default) – When you try to select the schema, you are testing the connection at the same time
     - CDB Connection: SRC_CDB
 
@@ -135,13 +135,13 @@ DIPCS shows attributes, primary keys, data types and some sample values of the s
 15.	Enter the following information:
     - Name: SALES_TRG 
     - Description: Sales OLTP Replicated Data
-    - Agent: [LOCAL_AGENT]
+    - Agent: **{LOCAL_AGENT]
     - Type Oracle – selecting Oracle will expand the Connection Settings
-    - Hostname: [TARGET_DB]
+    - Hostname: **{TARGET_DB]
     - Port: 1521
     - Username: SALES_TRG 
     - Password: Welcome#123
-    - Service Name: [TARGET_DB_SERVICE_NAME]
+    - Service Name: **{TARGET_DB_SERVICE_NAME}**
     - Schema Name: SALES_TRG  (Default)
 
 ![](images/200/image200_16.png)
@@ -211,7 +211,7 @@ The Initial Load process uses Data Pump and can be monitored within ODI Console.
 
 ![](images/200/image200_25.png)  
 
-3.	On the hierarchical panel on the left select “Runtime ] Sessions ] Sessions”. Then select the row.
+3.	On the hierarchical panel on the left select “Runtime > Sessions > Sessions”. Then select the row.
 
 ![](images/200/image200_26.png)
 

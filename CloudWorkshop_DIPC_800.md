@@ -1,5 +1,5 @@
 
-# Lab 600 - Data Lake Builder Elevated Task 
+# Lab 800 - Data Lake Builder Elevated Task 
 
 ![](images/800/image800_0.png)
 

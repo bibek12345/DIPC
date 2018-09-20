@@ -18,9 +18,11 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 -  Lab 500 - Prepare Data
 -  Lab 600 - ODI Execution Task
 -  Lab 700 - Under the covers DIPCS
--  Lab 800 - DIPCS integrating with ADWC
--  Lab 900 - MySQL integration
--  Lab 1000 - BigData Integration
+-  Lab 800 - Data Lake Builder Elevated Task
+- Appendix 1 - SSH Session Configuration
+- Appendix 2 - VNC Viewer Configuration
+- Appendix 3 - SQL Developer
+
 
 ## Workshop architecture
 ![](images/100/image80_workshoplayout.png) 
@@ -94,28 +96,27 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 - Demonstrate how to work directly with underneath DIPC GG "engine"
 - Demonstrate how to work directly with underneath DIPC ODI "engine"
 - Demonstrate how to work directly with underneath DIPC EDQ "engine"
--   Understand underlying DIPC architecture ??
--   Review default Oracle Golden Gate configurations ??
--   Review weblogic components ??
--   Revew required ports for communication between agent and DIPC console ??
+- Understand underlying DIPC architecture
+- Review default Oracle Golden Gate configurations
+- Review weblogic components
+- Revew required ports for communication between agent and DIPC console
 
-## Lab 800:  DIPCS integrating with ADWCS
+## Lab 800:  Data Lake Builder Elevated Task
 
 **Documentation**: [CloudWorkshop\_DIPC\_800.md](CloudWorkshop\_DIPC\_800.md)
 
 ### Objectives
-- ***
+-   Review how to create connections to Oracle Object Storage
+-   Review how to execute a Data Lake Builder task
 
-## Lab 900:  MySQL integration
+## Appendix 1:  SSH Session Configuration
 
-**Documentation**: [CloudWorkshop\_DIPC\_900.md](CloudWorkshop\_DIPC\_900.md)
+**Documentation**: [CloudWorkshop\_DIPC\_Ap1.md](CloudWorkshop\_DIPC\_Ap1.md)
 
-### Objectives
-- ***
+## Appendix 2:  VNC Viewer Configuration
 
-## Lab 1000:  BigData Integration
+**Documentation**: [CloudWorkshop\_DIPC\_Ap2.md](CloudWorkshop\_DIPC\_Ap2.md)
 
-**Documentation**: [CloudWorkshop\_DIPC\_1000.md](CloudWorkshop\_DIPC\_1000.md)
+## Appendix 3:  SQL Developer
 
-### Objectives
-- ***
+**Documentation**: [CloudWorkshop\_DIPC\_Ap3.md](CloudWorkshop\_DIPC\_Ap3.md)
