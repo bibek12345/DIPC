@@ -57,7 +57,7 @@ Your will need:
 9. Open the drop down menu and select the Operating System of your choice; in our case “Linux”
 ![](images/300/image300_4a.png)
 
-10.	Once you have selected the operating system, you can choose the components that you would need in your remote agent. Select "Oracle 12c" and "Data Integrator (ODI)" then click on "Download" button.
+10.	Once you have selected the operating system, you can choose the components that you would need in your remote agent. Select "Oracle 12c" then click on "Download" button.
 
 ![](images/300/image300_5.png)
  
