@@ -55,7 +55,7 @@ You will be navigated to your DIPC server Home page.
 
 ## Create Connections and Review Catalog
 1. Log into your Workshop DIPC Server.
-2. For synchronization jobs we will need a CDB (Container DB) connection to our DB. In the Home Page click “Create Connection” from top section.
+2. For synchronization jobs we will need a CDB (Container DB) connection to our DB. In the Home Page click the “Create" button in the "Connection” box from top section.
 
 ![](images/200/image200_5.png)
 
@@ -63,10 +63,10 @@ You will be navigated to your DIPC server Home page.
     - Name: SRC_CDB
     - Description: CDB User for Source DB
     - Agent: **{LOCAL_AGENT}**
-    - Type: Oracle CDB. 
-    - Hostname: **{SOURCE_DB}**
+    - Type: Oracle CDB
+    - Hostname: **{SOURCE_DB_NAME}**
     - Port: 1521
-    - Username: SRC_CDB
+    - Username: C##GGSRC
     - Password: Welcome#123
     - Service Name: **{CDB_SOURCE_SERVICE_NAME}**
 
@@ -85,7 +85,7 @@ You will be navigated to your DIPC server Home page.
 
     ![](images/200/image200_6.png)
 
-    - Hostname: **{SOURCE_DB}**
+    - Hostname: **{SOURCE_DB_NAME}**
     - Port: 1521
     - Username: SALES_SRC
     - Password: Welcome#123
@@ -137,7 +137,7 @@ DIPCS shows attributes, primary keys, data types and some sample values of the s
     - Description: Sales OLTP Replicated Data
     - Agent: **{LOCAL_AGENT}**
     - Type Oracle – selecting Oracle will expand the Connection Settings
-    - Hostname: **{TARGET_DB}**
+    - Hostname: **{TARGET_DB_NAME}**
     - Port: 1521
     - Username: SALES_TRG 
     - Password: Welcome#123
