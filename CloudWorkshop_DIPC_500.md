@@ -114,8 +114,8 @@ Click on "Select a default staging connection" hyperlink. You will navigate to t
 	- Edcoding: UTF-8
 	- Delimiter: Comma
 	- Text Qualifier: Leave blank
-	- Header: UNSELECTED 
-	- First Data Row: 1 
+	- Header: SELECTED 
+	- First Data Row: 2
 8. Click on "OK" button
 
 ![](images/500/image500_13.png)

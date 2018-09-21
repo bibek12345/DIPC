@@ -1,6 +1,6 @@
 # Appendix 2: VNC Viewer Configuration
 
-** Note: Before you start your VNC Viewer session, an SSH session SHOULD to be up and running **
+**Note: Before you start your VNC Viewer session, an SSH session SHOULD to be up and running**
 1.	Start VNC Viewer
 
 ![](images/Ap2/imageAp2_10.png)

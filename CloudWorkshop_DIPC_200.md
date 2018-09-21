@@ -174,23 +174,20 @@ The “Advanced Options” allow you to optionally enable or disable the initial
 
 ![](images/200/image200_18.png)
  
-4.	The “Configure Entities” screen allows you to create include or exclude rules to define precisely which database objects will be moved over to the target schema. By default, all data entities are transferred. Enter SRC* in the "Rules" field and click on “Include” button.
+4.	The “Configure Entities” screen allows you to create include or exclude rules to define precisely which database objects will be moved over to the target schema. By default, all data entities are transferred. Enter SRC_C* in the "Rules" field and click on “-” button.
 
 ![](images/200/image200_19.png)  
 
-5.	Select the hamburger menu   (located on the right side of the row) of the rule you just created and select “Delete”. You should end up with the original rule only
-
-![](images/200/image200_20.png)
- 
+5.	Please note how the "Selected Data Entities" list changes when the rule is applied. Select the hamburger menu   (located on the right side of the row) of the rule you just created and select “Delete". You should end up with the original rule only
 6.	Click on “Save & Run” button on the top right to execute the task
 
-![](images/200/image200_21.png)
+![](images/200/image200_20.png)
 
-7.	You will be navigated to the “Jobs” screen. After some time, a message will appear in the notification bar
+7.	A message will appear in the notification bar and you will be navigated to the “Monitor” screen.
 
 ![](images/200/image200_22.png)
 
-8.	The job will automatically appear within the Jobs page. This may take up to 1 minute
+8.	The job will automatically appear within the Jobs page. This may take some time
 
 ![](images/200/image200_23.png) 
 
