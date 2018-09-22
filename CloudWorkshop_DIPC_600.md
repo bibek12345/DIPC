@@ -1,4 +1,3 @@
-
 # Lab 600 - ODI Execution Elevated Task 
 ![](images/600/image600_0.png)
 
@@ -55,7 +54,7 @@ Or, if you are already in the application, go to the "Home" page by selecting th
 
 ![](images/500/image500_3.png) 
 
-4.	Once you have located the “ODI Execution” task icon, click on it.  
+4.	Once you have located the “ODI Execution” task icon, click on the “Create" button.  
 
 ![](images/600/image600_4.png)
 
@@ -85,14 +84,23 @@ Or, if you are already in the application, go to the "Home" page by selecting th
 11.	Provide the following information:
 	- Name: DIPC_DWH
 	- Description: Data Warehouse
-	- Agent: <LOCAL_AGENT>
+	- Agent: **{LOCAL_AGENT}**
 	- Type Oracle
-	- Hostname: <TARGET_DB>
+	- Hostname: **{TARGET_DB_NAME}**
 	- Port: 1521
 	- Username: TRG_AGG_SALES
 	- Password: Welcome#123
-	- Service Name: <TARGET_DB_SERVICE_NAME>
+	- Service Name: **{TARGET_DB_SERVICE_NAME}**
 	- Schema Name: TRG_AGG_SALES (Default)
+
+where:
+
+{LOCAL_AGENT} - Select the local DIPC agent
+
+{TARGET_DB_NAME} - Name of the target database server
+
+{TARGET_DB_SERVICE_NAME} - Service name string for the target database server
+
 12.	Click on “Test Connection” button at the bottom. A green message should appear on top when everything is in order 
 
 ![](images/600/image600_10.png)
@@ -111,7 +119,7 @@ Or, if you are already in the application, go to the "Home" page by selecting th
 ![](images/600/image600_13.png)
 
 17.	Click on “Save and Run” button located on the top right corner of the screen to execute the task
-18.	You will be navigated to the “Jobs” screen. After some time, a message will appear in the notification bar
+18.	You will be navigated to the “Monitor” screen. After some time, a message will appear in the notification bar
 
 ![](images/600/image600_14.png)
 
@@ -121,7 +129,7 @@ Or, if you are already in the application, go to the "Home" page by selecting th
 
 
 ### Review Job in DIPC
-1.	You should be in the “Jobs” screen. Click on the job to see details. The "ODI Execution" action will show "Successful" after a little while
+1.	You should be in the “Monitor” screen. Click on the job to see details. The "ODI Execution" action will show "Successful" after a little while
 
 ![](images/600/image600_16.png)
 

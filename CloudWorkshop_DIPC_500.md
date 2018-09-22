@@ -37,11 +37,11 @@ You will be navigated to your DIPC server Home page.
 
 ![](images/500/image500_2.png)
 
-3. In the Home Page click on "Next" icon (>) located at the far right side of the top panel to locate the "Data Preparation" task icon
+3. In the Home Page click on "Next" icon (>) located at the far right side of the top panel or the dots on the bottom of the panel to locate the "Data Preparation" task icon
 
 ![](images/500/image500_3.png)
 
-4. Once you have located the "Data Preparation" task icon, click on it
+4. Once you have located the "Data Preparation" task icon, click on the “Create" button
 
 ![](images/500/image500_4.png)
 
