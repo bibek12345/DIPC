@@ -55,9 +55,14 @@ Before we execute the task, we will navigate to the Object Storage container and
 3. 	Enter the following information:
 	- Name: FILE_SRC
 	- Description: Read Files
-	- Agent: <LOCAL_AGENT>
+	- Agent: **{LOCAL_AGENT}**
 	- Type: File
 	- Directory: /home/DIPC
+
+where:
+
+{LOCAL_AGENT} - Select the local DIPC agent 
+
  4. Click "Test Connection" button and when the test is successful click "Save" button
 
 ![](images/800/image800_7.png)
@@ -71,13 +76,17 @@ Before we execute the task, we will navigate to the Object Storage container and
 2.	Enter the following information:
     - Name: DATA_LAKE
     - Description: Connection to Object Storage to create a Data Lake
-    - Agent: <LOCAL_AGENT>
+    - Agent: **{LOCAL_AGENT}**
     - Type: Oracle Object Storage Classic.
     - Domain: Storage-oscnas001. **From the Rest EndPoint URL you saved previously copy and paste the last part. That is from "https://uscom-east-1.storage.oraclecloud.com/v1/Storage-oscnas100" copy "Storage-oscnas001"**
 	- Service URL: https://oscnas001.us.storage.oraclecloud.com. **From the Rest EndPoint URL you saved previously copy and paste the server URL. That is from "https://uscom-east-1.storage.oraclecloud.com/v1/Storage-oscnas100" copy "https://uscom-east-1.storage.oraclecloud.com"**
 	- Container: DIPC_Workshop
     - Username: <YOUR_USERNAME>. **For example: osc.dipcws01**
     - Password: <YOUR_PASSWORD>
+
+where:
+
+{LOCAL_AGENT} - Select the local DIPC agent 
 
 3. Click "Test Connection" button and when the test is successful click "Save" button. 
 
