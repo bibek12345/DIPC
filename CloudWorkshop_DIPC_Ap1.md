@@ -73,44 +73,62 @@ If you have saved the SSH configuration previously.
 
 
 ## Mac OS
-### Prerequisite
+### Open Terminal
+1. Open your Applications folder
+2. Open the Utilities folder
+3. Open the Terminal application
 
-1.	If Homebrew is NOT installed on your machine, execute:
+![](images/Ap1/imageAp1_110.png)
 
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+or 
 
-2. Install PuTTY via Homebrew, execute:
+1. Open the Launchpad
 
-brew install putty
+![](images/Ap1/imageAp1_120.png) 
 
-3. Convert the PPK to PEM, execute:
+2. Search for "Terminal"
 
-puttygen **{dipc_demo_keys.ppk}** -O private-openssh -o **{nameOfNewPemFile.pem}**
+![](images/Ap1/imageAp1_130.png) 
+
+3. An empty terminal window should open.
+
+![](images/Ap1/imageAp1_140.png)
+
+
+### Key File
+
+1. Copy the key file that the instructor provided into your machine
+2. In the terminal window, change to the directory where you copied the key (e.g. cd oracle/dipc/)
+
+![](images/Ap1/imageAp1_150.png)
+
+3. Change permission to the key file. Execute:
+
+chmod 0600 **{NameOfKeyFile}** 
 
 where:
 
-{dipc_demo_keys.ppk} - is the private key (PPK) file provided by the instructor
+{NameOfKeyFile} - is the key file that the instructor provided and you copied to your machine (e.g. chmod 0600 dipc_demo_keys.pem)
 
-{nameOfNewPemFile.pem} - is the name you want to assign to the key file. Respect the "pem" extension.
+![](images/Ap1/imageAp1_160.png)
 
-4. Verify that the file you just created with the key have permissions of 600. If this is NOT the case, execute:
-
-chmod 600 **{nameOfNewPemFile.pem}**
-
-where:
-
-{nameOfNewPemFile.pem} - is the name you assigned to the key file.
 
 ### Start the SSH session
 
-1. To start the SSH session, execute:
+1. To start the SSH session and open the tunnel, execute:
 
-ssh -i **{pathtokeyfile}**/**{nameOfNewPemFile.pem}** -L 6905:localhost:5901 opc@**{SERVER_IP_ADDRESS}**
+ssh -i **{PathToKeyFile}**/**{NameOfKeyFile}** -L 6905:localhost:5901 opc@**{SERVER_IP_ADDRESS}**
 
 where:
 
-{pathtokeyfile} - is path to the file you created in the previous section step 3.
+{PathToKeyFile} - is path to the file you created in the previous section step 3.
 
-{nameOfNewPemFile.pem} - is the name you assigned to the key file.
+{NameOfKeyFile} - is the name you assigned to the key file.
 
 {SERVER_IP_ADDRESS} - is the IP address of the server you want to connect (DIPC server, OnPrem server)
+
+(e.g. ssh -i /Users/lloywill/oracle/dipc/dipc_demo_keys.pem -L 6905:localhost:5901 opc@129.150.69.118)
+
+![](images/Ap1/imageAp1_170.png)
+
+You will see a warning message from Oracle saying that this system is only for authorized users. You are now connected to your Oracle cloud instance and have established an SSH tunnel to forward your local port 6905 to port 5901 on the cloud instance.
