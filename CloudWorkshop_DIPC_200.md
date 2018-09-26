@@ -37,23 +37,23 @@ Your will need:
 
     ![](images/200/image200_3.png)
 
-You will be navigated to your DIPC server Home page.
+    You will be navigated to your DIPC server Home page.
 
     ![](images/200/image200_4.png)
 
 ### Login into DIPC using direct URL
 **1.** Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one
 
-https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
+        https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
 
 **2.** Provide your user name and password, then click "Sign In" button
 
     ![](images/200/image200_1.png)
 
-You will be navigated to your DIPC server Home page.
+    You will be navigated to your DIPC server Home page.
 
 
-## Create Connections and Review Catalog
+### Create Connections and Review Catalog
 **1.** Log into your Workshop DIPC Server.
 **2.** For synchronization jobs we will need a CDB (Container DB) connection to our DB. In the Home Page click the “Create" button in the "Connection” box from top section.
 
@@ -173,7 +173,7 @@ You will be navigated to your DIPC server Home page.
 **16.** Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
 
 
-## Create Synchronize Data Elevated Task
+### Create Synchronize Data Elevated Task
 **1.**	Connections have been defined. We are ready to create and execute our “Synch Data” elevated task. From the top bar, open the drop-down menu from the top far right corner and then select “Synchronize Data”
 
     ![](images/200/image200_15.png) 
