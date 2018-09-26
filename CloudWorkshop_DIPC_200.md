@@ -21,24 +21,24 @@ Your will need:
 - General understanding of RDBMS and data integration concepts
 
 ## Log into DIPC Server
----
+
 ### Login into DIPC using Oracle Cloud Services Dashboard
----
-**1.** In your web browser, navigate to cloud.oracle.com, then click Sign in.
-**2.** Provide the cloud account: oscnas001 then **{Enter}**
-**3.** Provide your user name and password, then click "Sign In" button. You will land in the Dasboard screen ![](images/200/image200_1.png)
 
-**4.** In the "Data Integration Platform Cloud" service box click on the hamburguer menu and then select "Open Service Console" ![](images/200/image200_2.png)
+1. In your web browser, navigate to cloud.oracle.com, then click Sign in.
+2. Provide the cloud account: oscnas001 then **{Enter}**
+3. Provide your user name and password, then click "Sign In" button. You will land in the Dasboard screen ![](images/200/image200_1.png)
 
-**5.** Click on the hamburger menu of the DIPC server assigned to you, then click "Data Integration Platform Console" ![](images/200/image200_3.png)
+4. In the "Data Integration Platform Cloud" service box click on the hamburguer menu and then select "Open Service Console" ![](images/200/image200_2.png)
+
+5. Click on the hamburger menu of the DIPC server assigned to you, then click "Data Integration Platform Console" ![](images/200/image200_3.png)
 
 ...You will be navigated to your DIPC server Home page. ![](images/200/image200_4.png)
 
 ### Login into DIPC using direct URL
----
-**1.** Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one <https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud>
 
-**2.** Provide your user name and password, then click "Sign In" button ![](images/200/image200_1.png)
+1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one <https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud>
+
+2. Provide your user name and password, then click "Sign In" button ![](images/200/image200_1.png)
 
 ...You will be navigated to your DIPC server Home page.
 
@@ -62,7 +62,7 @@ Your will need:
 
     ![](images/200/image200_5a.png)
 
-'''
+```
 where:
 
 {LOCAL_AGENT} - Select the local DIPC agent 
@@ -70,7 +70,7 @@ where:
 {SOURCE_DB_NAME} - Name of the source database server
 
 {CDB_SOURCE_SERVICE_NAME} - CDB Service name string for the source database server
-'''
+```
 
 4. Click "Test Connection" button and when the test is successful click "Save" button.
 5. Open the drop-down menu from the top far right corner and then select “Connection”. 
@@ -94,7 +94,7 @@ where:
     - CDB Connection: SRC_CDB
 
     ![](images/200/image200_7.png)
-'''
+```
 where:
 
 {LOCAL_AGENT} - Select the local DIPC agent 
@@ -102,7 +102,7 @@ where:
 {SOURCE_DB_NAME} - Name of the source database server
 
 {SOURCE_DB_SERVICE_NAME} - Service name string for the source database server
-'''
+```
 
  7. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
 
@@ -120,7 +120,7 @@ If you would like to associate a tag or a contact to this entity, click on “Ed
 
 ![](images/200/image200_10.png) 
 
-DIPCS shows attributes, primary keys, data types and some sample values of the selected entity. If you click in one of the attributes, profiling information will be shown on the right side of the screen.
+...DIPCS shows attributes, primary keys, data types and some sample values of the selected entity. If you click in one of the attributes, profiling information will be shown on the right side of the screen.
 
 ![](images/200/image200_11.png)  
 
@@ -155,6 +155,7 @@ DIPCS shows attributes, primary keys, data types and some sample values of the s
 
 ![](images/200/image200_16.png)
 
+```
 where:
 
 {LOCAL_AGENT} - Select the local DIPC agent 
@@ -162,7 +163,7 @@ where:
 {TARGET_DB_NAME} - Name of the target database server
 
 {TARGET_DB_SERVICE_NAME} - Service name string for the target database server
-
+```
 16. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
 
 
@@ -181,7 +182,7 @@ where:
     - Advanced – Include Initial Load: SELECTED
     - Advanced – Include Replication: SELECTED
 
-The “Advanced Options” allow you to optionally enable or disable the initial load and/or the on-going schema replication.
+...The “Advanced Options” allow you to optionally enable or disable the initial load and/or the on-going schema replication.
 
 **Note: If you run into any issues when trying to select a Connection refresh the page manually. The Schemas may take some time to appear as well, this is expected.**
 
@@ -208,14 +209,14 @@ The “Advanced Options” allow you to optionally enable or disable the initial
 
 ![](images/200/image200_23.png) 
 
-Auto-refresh is on, statuses will be updated frequently.
+...Auto-refresh is on, statuses will be updated frequently.
 
-As the job executes, the Initial Load process is created in ODI while DIPC configures OGG for the Source Capture and Target Delivery.
+...As the job executes, the Initial Load process is created in ODI while DIPC configures OGG for the Source Capture and Target Delivery.
 
 ## Review Task Execution
 
 ### In ODI Console (Optional)
-The Initial Load process uses Data Pump and can be monitored within ODI Console. 
+...The Initial Load process uses Data Pump and can be monitored within ODI Console. 
 
 1.	Click on the picture icon located on the top right corner of the screen and then select “Open ODI”
 
@@ -261,10 +262,10 @@ The Initial Load process uses Data Pump and can be monitored within ODI Console.
 
 ![](images/200/image200_33.png)
 
-DIPC has created and orchestrated the initial load and the data synchronization processes between the source (for example, an OLTP system) and the target (for example, an operational data store, stand-by copy, etc.) -- (additional details can be seen in the GG logs as well as within ODI Studio)
+...DIPC has created and orchestrated the initial load and the data synchronization processes between the source (for example, an OLTP system) and the target (for example, an operational data store, stand-by copy, etc.) -- (additional details can be seen in the GG logs as well as within ODI Studio)
 
 ### Verify Data in Source and Target DBs (Optional)
-Up until this point, we have monitored the job within DIPC but it would nice to see the data in both source and target to verify that they are the same. For such task, we will use SQL Developer; please refer to Appendix 3 to learn how to create connections against the workshop databases.
+...Up until this point, we have monitored the job within DIPC but it would nice to see the data in both source and target to verify that they are the same. For such task, we will use SQL Developer; please refer to Appendix 3 to learn how to create connections against the workshop databases.
 
 1.	Start SQL Developer. On the connections panel, select your source database (WS - SALES_SRC) and click on the plus (+) sign to open the connection
 
@@ -272,6 +273,7 @@ Up until this point, we have monitored the job within DIPC but it would nice to 
  
 2.	Once opened, copy and paste the following statements in the panel on the right:
 
+```
 SELECT COUNT(*) AGE_GROUP FROM SRC_AGE_GROUP;
 
 SELECT COUNT(*) CITY FROM SRC_CITY;
@@ -287,6 +289,7 @@ SELECT COUNT(*) PRODUCTS FROM SRC_PRODUCT;
 SELECT COUNT(*) REGION FROM SRC_REGION;
 
 SELECT COUNT(*) SALES_PERSON FROM SRC_SALES_PERSON;
+```
 
 3.	Execute the statements by clicking on the “Run script” icon (second icon from left to right on the icon bar; right-ponting green arrow head on top of a page)
 
@@ -300,7 +303,7 @@ SELECT COUNT(*) SALES_PERSON FROM SRC_SALES_PERSON;
 
     ![](images/200/image200_37.png)
  
-This will show that the count in both data bases is exactly the same.
+...This will show that the count in both data bases is exactly the same.
 
 ### Verify GG processes (Optional)
 If you want to take a look and verify that the GG processes (extract and replicat) are running, these are the steps:
@@ -315,7 +318,7 @@ If you want to take a look and verify that the GG processes (extract and replica
 
 ![](images/200/image200_39.png)
 
-Now you have verified that both Extract and Replicat are running. Exit from GGSCI
+...Now you have verified that both Extract and Replicat are running. Exit from GGSCI
 
 ## Monitor Data Changes 
 
