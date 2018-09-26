@@ -31,15 +31,15 @@ Your will need:
 
 4. In the "Data Integration Platform Cloud" service box click on the hamburguer menu and then select "Open Service Console"
 
-![](images/200/image200_2.png)
+    ![](images/200/image200_2.png)
 
 5. Click on the hamburger menu of the DIPC server assigned to you, then click "Data Integration Platform Console"
 
-![](images/200/image200_3.png)
+    ![](images/200/image200_3.png)
 
 You will be navigated to your DIPC server Home page.
 
-![](images/200/image200_4.png)
+    ![](images/200/image200_4.png)
 
 ### Login into DIPC using direct URL
 1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one
@@ -48,7 +48,7 @@ https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
 
 2. Provide your user name and password, then click "Sign In" button
 
-![](images/200/image200_1.png)
+    ![](images/200/image200_1.png)
 
 You will be navigated to your DIPC server Home page.
 
@@ -83,7 +83,7 @@ where:
 4. Click "Test Connection" button and when the test is successful click "Save" button.
 5. Open the drop-down menu from the top far right corner and then select “Connection”. 
 
-![](images/200/image200_15.png)
+    ![](images/200/image200_15.png)
 
 6. Enter the following information:
     - Name: SALES_SRC
@@ -115,38 +115,38 @@ where:
 
 **Note: Data Entities are harvested and profiled at the time the connection is created, their popularity is also calculated by reviewing the DB query logs. This process may take some time (5 minutes or so), the Catalog will show a message when new updates are available**
 
-![](images/200/image200_8.png)
+    ![](images/200/image200_8.png)
 
 8.	Click on entity “SRC_CUSTOMER” to drill down in it and look at the information DIPC brought in
 
-![](images/200/image200_9.png) 
+    ![](images/200/image200_9.png) 
 
 If you would like to associate a tag or a contact to this entity, click on “Edit” button on the top right corner.
 
 9.	Click on the “Metadata” tab on top
 
-![](images/200/image200_10.png) 
+    ![](images/200/image200_10.png) 
 
 DIPCS shows attributes, primary keys, data types and some sample values of the selected entity. If you click in one of the attributes, profiling information will be shown on the right side of the screen.
 
-![](images/200/image200_11.png)  
+    ![](images/200/image200_11.png)  
 
 10.	Click on the “Data” tab on top
 
-![](images/200/image200_12.png) 
+    ![](images/200/image200_12.png) 
 
 11.	Click on the back icon, located on the top left corner (left of the entity name) to go back to the Catalog
 12.	In the catalog you can use the drop-down menu located at the top to select the type of object that will be shown
 
-![](images/200/image200_13.png)
+    ![](images/200/image200_13.png)
 
 13.	It is also possible to use the filter to search for a specific object
 
-![](images/200/image200_14.png)
+    ![](images/200/image200_14.png)
 
 14.	Now, we are going to create the target connection. Open the drop-down menu from the top far right corner and then select “Connection” 
 
-![](images/200/image200_15.png)
+    ![](images/200/image200_15.png)
 
 15.	Enter the following information:
     - Name: SALES_TRG 
@@ -188,32 +188,32 @@ where:
     - Advanced – Include Initial Load: SELECTED
     - Advanced – Include Replication: SELECTED
 
-The “Advanced Options” allow you to optionally enable or disable the initial load and/or the on-going schema replication.
+    The “Advanced Options” allow you to optionally enable or disable the initial load and/or the on-going schema replication.
 
-**Note: If you run into any issues when trying to select a Connection refresh the page manually. The Schemas may take some time to appear as well, this is expected.**
+    **Note: If you run into any issues when trying to select a Connection refresh the page manually. The Schemas may take some time to appear as well, this is expected.**
 
-![](images/200/image200_17.png)
+    ![](images/200/image200_17.png)
 
 3.	Next click on “Configure Entities” on the top bar to filter the objects that will be transferred from source into target.
 
-![](images/200/image200_18.png)
+    ![](images/200/image200_18.png)
  
 4.	The “Configure Entities” screen allows you to create include or exclude rules to define precisely which database objects will be moved over to the target schema. By default, all data entities are transferred. Enter SRC_C* in the "Rules" field and click on “-” button.
 
-![](images/200/image200_19.png)  
+    ![](images/200/image200_19.png)  
 
 5.	Please note how the "Selected Data Entities" list changes when the rule is applied. Select the hamburger menu   (located on the right side of the row) of the rule you just created and select “Delete". You should end up with the original rule only
 6.	Click on “Save & Run” button on the top right to execute the task
 
-![](images/200/image200_20.png)
+    ![](images/200/image200_20.png)
 
 7.	A message will appear in the notification bar and you will be navigated to the “Monitor” screen.
 
-![](images/200/image200_22.png)
+    ![](images/200/image200_22.png)
 
 8.	The job will automatically appear within the Jobs page. This may take some time
 
-![](images/200/image200_23.png) 
+    ![](images/200/image200_23.png) 
 
 Auto-refresh is on, statuses will be updated frequently.
 
@@ -226,52 +226,52 @@ The Initial Load process uses Data Pump and can be monitored within ODI Console.
 
 1.	Click on the picture icon located on the top right corner of the screen and then select “Open ODI”
 
-![](images/200/image200_24.png)  
+    ![](images/200/image200_24.png)  
 
 2.	Click on “Proceed” button
 
-![](images/200/image200_25.png)  
+    ![](images/200/image200_25.png)  
 
 3.	On the hierarchical panel on the left select “Runtime > Sessions > Sessions”. Then select the row.
 
-![](images/200/image200_26.png)
+    ![](images/200/image200_26.png)
 
 4.	Now click on the “View” icon (sunglasses located on top left corner). This will open a tab on the right side with information about the executed sessions.
 
-![](images/200/image200_27.png)
+    ![](images/200/image200_27.png)
 
 5.	Click on the session name to drill down and look at more detail
 
-![](images/200/image200_28.png)
+    ![](images/200/image200_28.png)
 
 6.	Scroll down to see the detailed steps. When finished, you can close the browser tab with ODI Console
 
-![](images/200/image200_29.png)
+    ![](images/200/image200_29.png)
 
 
 
 ### Review Job in DIPC
 1.	You should be in the “Jobs” screen. Click on the Job to see the Job Details. The Initial load Action will show Successful after a little while
 
-![](images/200/image200_30.png) 
+    ![](images/200/image200_30.png) 
 
 2.	Once done, the “Initial Load” Action can be expanded to review the various steps underneath
 
-![](images/200/image200_31.png) 
+    ![](images/200/image200_31.png) 
 
 3.	Click on “Procedure:Initial load_PROC:DBLINK_DATAPUMP” to review the code generated by DIPC for the Initial Load. 
 
-![](images/200/image200_32.png) 
+    ![](images/200/image200_32.png) 
 
 4.	Click Done when you’ve completed the code review
 5.	Close “Initial Load” action. Let’s review what else has been created. You should see 5 Actions
 
-![](images/200/image200_33.png)
+    ![](images/200/image200_33.png)
 
-DIPC has created and orchestrated the initial load and the data synchronization processes between the source (for example, an OLTP system) and the target (for example, an operational data store, stand-by copy, etc.) -- (additional details can be seen in the GG logs as well as within ODI Studio)
+    DIPC has created and orchestrated the initial load and the data synchronization processes between the source (for example, an OLTP system) and the target (for example, an operational data store, stand-by copy, etc.) -- (additional details can be seen in the GG logs as well as within ODI Studio)
 
 ### Verify Data in Source and Target DBs (Optional)
-Up until this point, we have monitored the job within DIPC but it would nice to see the data in both source and target to verify that they are the same. For such task, we will use SQL Developer; please refer to Appendix 3 to learn how to create connections against the workshop databases.
+    Up until this point, we have monitored the job within DIPC but it would nice to see the data in both source and target to verify that they are the same. For such task, we will use SQL Developer; please refer to Appendix 3 to learn how to create connections against the workshop databases.
 
 1.	Start SQL Developer. On the connections panel, select your source database (WS - SALES_SRC) and click on the plus (+) sign to open the connection
 
@@ -297,11 +297,11 @@ SELECT COUNT(*) SALES_PERSON FROM SRC_SALES_PERSON;
 
 3.	Execute the statements by clicking on the “Run script” icon (second icon from left to right on the icon bar; right-ponting green arrow head on top of a page)
 
-![](images/200/image200_35.png)
+    ![](images/200/image200_35.png)
 
 4.	This will show all entities count on the results panel (lower section)
 
-![](images/200/image200_36.png)
+    ![](images/200/image200_36.png)
 
 5.	Repeat steps 1 through 4 for connection “WS - SALES_TRG ”
 
@@ -316,13 +316,13 @@ If you want to take a look and verify that the GG processes (extract and replica
 2.	Execute: source .ggsetup 
 3.	Execute: /u01/app/oracle/suite/gghome/ggsci
 
-![](images/200/image200_38.png)
+    ![](images/200/image200_38.png)
 
 4.	You are now in GG console, execute: info all
 
-![](images/200/image200_39.png)
+    ![](images/200/image200_39.png)
 
-Now you have verified that both Extract and Replicat are running. Exit from GGSCI
+    Now you have verified that both Extract and Replicat are running. Exit from GGSCI
 
 ## Monitor Data Changes 
 
@@ -330,12 +330,12 @@ We are going to apply some changes to the source DB and verify how our “Synchr
 
 1.	Go to your SQL Developer and expand “WS - SALES_SRC” connection and its tables.
 
-![](images/200/image200_40.png)
+    ![](images/200/image200_40.png)
  
 2.	Select “SRC_CUSTOMER” table
 3.	On the right panel, select “Data” tab
 
-![](images/200/image200_41.png)
+    ![](images/200/image200_41.png)
 
 4.	Click on “Insert Row” icon and provide the following data:
     - CUSTID: 1000
@@ -348,7 +348,7 @@ We are going to apply some changes to the source DB and verify how our “Synchr
     - AGE: 48
     - SALES_PERS_ID: 12
  
-![](images/200/image200_42.png)
+    ![](images/200/image200_42.png)
 
 5.	Click on “Commit” icon to insert the row into the DB (fifth icon from left to right on the icon bar; green checkmark on top of a disk)
 6.	Verify the insert in the target. Go to SQL developer and expand “WS - SALES_TRG ” connection and its tables
