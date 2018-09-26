@@ -42,9 +42,7 @@ Your will need:
     ![](images/200/image200_4.png)
 
 ### Login into DIPC using direct URL
-**1.** Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one
-
-        https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
+**1.** Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
 
 **2.** Provide your user name and password, then click "Sign In" button
 
