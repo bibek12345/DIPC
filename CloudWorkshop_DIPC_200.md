@@ -57,7 +57,7 @@ You will be navigated to your DIPC server Home page.
 **1.** Log into your Workshop DIPC Server.
 **2.** For synchronization jobs we will need a CDB (Container DB) connection to our DB. In the Home Page click the “Create" button in the "Connection” box from top section.
 
-![](images/200/image200_5.png)
+    ![](images/200/image200_5.png)
 
 **3.**	Enter the following information:
     - Name: SRC_CDB
@@ -72,13 +72,13 @@ You will be navigated to your DIPC server Home page.
 
     ![](images/200/image200_5a.png)
 
-where:
+    where:
 
-{LOCAL_AGENT} - Select the local DIPC agent 
+    {LOCAL_AGENT} - Select the local DIPC agent 
 
-{SOURCE_DB_NAME} - Name of the source database server
+    {SOURCE_DB_NAME} - Name of the source database server
 
-{CDB_SOURCE_SERVICE_NAME} - CDB Service name string for the source database server
+    {CDB_SOURCE_SERVICE_NAME} - CDB Service name string for the source database server
 
 **4.** Click "Test Connection" button and when the test is successful click "Save" button.
 **5.** Open the drop-down menu from the top far right corner and then select “Connection”. 
@@ -103,15 +103,15 @@ where:
 
     ![](images/200/image200_7.png)
 
-where:
+    where:
 
-{LOCAL_AGENT} - Select the local DIPC agent 
+    {LOCAL_AGENT} - Select the local DIPC agent 
 
-{SOURCE_DB_NAME} - Name of the source database server
+    {SOURCE_DB_NAME} - Name of the source database server
 
-{SOURCE_DB_SERVICE_NAME} - Service name string for the source database server
+    {SOURCE_DB_SERVICE_NAME} - Service name string for the source database server
 
- **7.** Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
+ **7.** Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You    will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
 
 **Note: Data Entities are harvested and profiled at the time the connection is created, their popularity is also calculated by reviewing the DB query logs. This process may take some time (5 minutes or so), the Catalog will show a message when new updates are available**
 
@@ -121,13 +121,13 @@ where:
 
     ![](images/200/image200_9.png) 
 
-If you would like to associate a tag or a contact to this entity, click on “Edit” button on the top right corner.
+    If you would like to associate a tag or a contact to this entity, click on “Edit” button on the top right corner.
 
 **9.**	Click on the “Metadata” tab on top
 
     ![](images/200/image200_10.png) 
 
-DIPCS shows attributes, primary keys, data types and some sample values of the selected entity. If you click in one of the attributes, profiling information will be shown on the right side of the screen.
+    DIPCS shows attributes, primary keys, data types and some sample values of the selected entity. If you click in one of the attributes, profiling information will be shown on the right side of the screen.
 
     ![](images/200/image200_11.png)  
 
@@ -160,25 +160,25 @@ DIPCS shows attributes, primary keys, data types and some sample values of the s
     - Service Name: **{TARGET_DB_SERVICE_NAME}**
     - Schema Name: SALES_TRG  (Default)
 
-![](images/200/image200_16.png)
+    ![](images/200/image200_16.png)
 
-where:
+    where:
 
-{LOCAL_AGENT} - Select the local DIPC agent 
+    {LOCAL_AGENT} - Select the local DIPC agent 
 
-{TARGET_DB_NAME} - Name of the target database server
+    {TARGET_DB_NAME} - Name of the target database server
 
-{TARGET_DB_SERVICE_NAME} - Service name string for the target database server
+    {TARGET_DB_SERVICE_NAME} - Service name string for the target database server
 
 **16.** Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
 
 
 ## Create Synchronize Data Elevated Task
-1.	Connections have been defined. We are ready to create and execute our “Synch Data” elevated task. From the top bar, open the drop-down menu from the top far right corner and then select “Synchronize Data”
+**1.**	Connections have been defined. We are ready to create and execute our “Synch Data” elevated task. From the top bar, open the drop-down menu from the top far right corner and then select “Synchronize Data”
 
-![](images/200/image200_15.png) 
+    ![](images/200/image200_15.png) 
 
-2.	Provide the following information:
+**2.**	Provide the following information:
     - Name: Sync Sales Data
     - Description: Sync Schemas - SALES_SRC to SALES_TRG  
     - Source – Connection: SALES_SRC
@@ -194,77 +194,77 @@ where:
 
     ![](images/200/image200_17.png)
 
-3.	Next click on “Configure Entities” on the top bar to filter the objects that will be transferred from source into target.
+**3.**	Next click on “Configure Entities” on the top bar to filter the objects that will be transferred from source into target.
 
     ![](images/200/image200_18.png)
  
-4.	The “Configure Entities” screen allows you to create include or exclude rules to define precisely which database objects will be moved over to the target schema. By default, all data entities are transferred. Enter SRC_C* in the "Rules" field and click on “-” button.
+**4.**	The “Configure Entities” screen allows you to create include or exclude rules to define precisely which database objects will be moved over to the target schema. By default, all data entities are transferred. Enter SRC_C* in the "Rules" field and click on “-” button.
 
     ![](images/200/image200_19.png)  
 
-5.	Please note how the "Selected Data Entities" list changes when the rule is applied. Select the hamburger menu   (located on the right side of the row) of the rule you just created and select “Delete". You should end up with the original rule only
-6.	Click on “Save & Run” button on the top right to execute the task
+**5.**	Please note how the "Selected Data Entities" list changes when the rule is applied. Select the hamburger menu   (located on the right side of the row) of the rule you just created and select “Delete". You should end up with the original rule only
+**6.**	Click on “Save & Run” button on the top right to execute the task
 
     ![](images/200/image200_20.png)
 
-7.	A message will appear in the notification bar and you will be navigated to the “Monitor” screen.
+**7.**	A message will appear in the notification bar and you will be navigated to the “Monitor” screen.
 
     ![](images/200/image200_22.png)
 
-8.	The job will automatically appear within the Jobs page. This may take some time
+**8.**	The job will automatically appear within the Jobs page. This may take some time
 
     ![](images/200/image200_23.png) 
 
-Auto-refresh is on, statuses will be updated frequently.
+    Auto-refresh is on, statuses will be updated frequently.
 
-As the job executes, the Initial Load process is created in ODI while DIPC configures OGG for the Source Capture and Target Delivery.
+    As the job executes, the Initial Load process is created in ODI while DIPC configures OGG for the Source Capture and Target Delivery.
 
 ## Review Task Execution
 
 ### In ODI Console (Optional)
-The Initial Load process uses Data Pump and can be monitored within ODI Console. 
+    The Initial Load process uses Data Pump and can be monitored within ODI Console. 
 
-1.	Click on the picture icon located on the top right corner of the screen and then select “Open ODI”
+**1.**	Click on the picture icon located on the top right corner of the screen and then select “Open ODI”
 
     ![](images/200/image200_24.png)  
 
-2.	Click on “Proceed” button
+**2.**	Click on “Proceed” button
 
     ![](images/200/image200_25.png)  
 
-3.	On the hierarchical panel on the left select “Runtime > Sessions > Sessions”. Then select the row.
+**3.**	On the hierarchical panel on the left select “Runtime > Sessions > Sessions”. Then select the row.
 
     ![](images/200/image200_26.png)
 
-4.	Now click on the “View” icon (sunglasses located on top left corner). This will open a tab on the right side with information about the executed sessions.
+**4.**	Now click on the “View” icon (sunglasses located on top left corner). This will open a tab on the right side with information about the executed sessions.
 
     ![](images/200/image200_27.png)
 
-5.	Click on the session name to drill down and look at more detail
+**5.**	Click on the session name to drill down and look at more detail
 
     ![](images/200/image200_28.png)
 
-6.	Scroll down to see the detailed steps. When finished, you can close the browser tab with ODI Console
+**6.**	Scroll down to see the detailed steps. When finished, you can close the browser tab with ODI Console
 
     ![](images/200/image200_29.png)
 
 
 
 ### Review Job in DIPC
-1.	You should be in the “Jobs” screen. Click on the Job to see the Job Details. The Initial load Action will show Successful after a little while
+**1.**	You should be in the “Jobs” screen. Click on the Job to see the Job Details. The Initial load Action will show Successful after a little while
 
     ![](images/200/image200_30.png) 
 
-2.	Once done, the “Initial Load” Action can be expanded to review the various steps underneath
+**2.**	Once done, the “Initial Load” Action can be expanded to review the various steps underneath
 
     ![](images/200/image200_31.png) 
 
-3.	Click on “Procedure:Initial load_PROC:DBLINK_DATAPUMP” to review the code generated by DIPC for the Initial Load. 
+**3.**	Click on “Procedure:Initial load_PROC:DBLINK_DATAPUMP” to review the code generated by DIPC for the Initial Load. 
 
     ![](images/200/image200_32.png) 
 
-4.	Click Done when you’ve completed the code review
-5.	Close “Initial Load” action. Let’s review what else has been created. You should see 5 Actions
+**4.**	Click Done when you’ve completed the code review
+**5.**	Close “Initial Load” action. Let’s review what else has been created. You should see 5 Actions
 
     ![](images/200/image200_33.png)
 
@@ -273,37 +273,37 @@ The Initial Load process uses Data Pump and can be monitored within ODI Console.
 ### Verify Data in Source and Target DBs (Optional)
     Up until this point, we have monitored the job within DIPC but it would nice to see the data in both source and target to verify that they are the same. For such task, we will use SQL Developer; please refer to Appendix 3 to learn how to create connections against the workshop databases.
 
-1.	Start SQL Developer. On the connections panel, select your source database (WS - SALES_SRC) and click on the plus (+) sign to open the connection
+**1.**	Start SQL Developer. On the connections panel, select your source database (WS - SALES_SRC) and click on the plus (+) sign to open the connection
 
     ![](images/200/image200_34.png)
  
-2.	Once opened, copy and paste the following statements in the panel on the right:
+**2.**	Once opened, copy and paste the following statements in the panel on the right:
 
-SELECT COUNT(*) AGE_GROUP FROM SRC_AGE_GROUP;
+    SELECT COUNT(*) AGE_GROUP FROM SRC_AGE_GROUP;
 
-SELECT COUNT(*) CITY FROM SRC_CITY;
+    SELECT COUNT(*) CITY FROM SRC_CITY;
 
-SELECT COUNT(*) CUSTOMER FROM SRC_CUSTOMER;
+    SELECT COUNT(*) CUSTOMER FROM SRC_CUSTOMER;
 
-SELECT COUNT(*) ORDER_LINES FROM SRC_ORDER_LINES;
+    SELECT COUNT(*) ORDER_LINES FROM SRC_ORDER_LINES;
 
-SELECT COUNT(*) ORDERS FROM SRC_ORDERS;
+    SELECT COUNT(*) ORDERS FROM SRC_ORDERS;
 
-SELECT COUNT(*) PRODUCTS FROM SRC_PRODUCT;
+    SELECT COUNT(*) PRODUCTS FROM SRC_PRODUCT;
 
-SELECT COUNT(*) REGION FROM SRC_REGION;
+    SELECT COUNT(*) REGION FROM SRC_REGION;
 
-SELECT COUNT(*) SALES_PERSON FROM SRC_SALES_PERSON;
+    SELECT COUNT(*) SALES_PERSON FROM SRC_SALES_PERSON;
 
-3.	Execute the statements by clicking on the “Run script” icon (second icon from left to right on the icon bar; right-ponting green arrow head on top of a page)
+**3.**	Execute the statements by clicking on the “Run script” icon (second icon from left to right on the icon bar; right-ponting green arrow head on top of a page)
 
     ![](images/200/image200_35.png)
 
-4.	This will show all entities count on the results panel (lower section)
+**4.**	This will show all entities count on the results panel (lower section)
 
     ![](images/200/image200_36.png)
 
-5.	Repeat steps 1 through 4 for connection “WS - SALES_TRG ”
+**5.**	Repeat steps 1 through 4 for connection “WS - SALES_TRG ”
 
     ![](images/200/image200_37.png)
  
@@ -312,13 +312,13 @@ This will show that the count in both data bases is exactly the same.
 ### Verify GG processes (Optional)
 If you want to take a look and verify that the GG processes (extract and replicat) are running, these are the steps:
 
-1.	Open an SSH session into the DIPC server; please refer to Appendix 1 to learn how to establish a SSH session against the DIPC server
-2.	Execute: source .ggsetup 
-3.	Execute: /u01/app/oracle/suite/gghome/ggsci
+**1.**	Open an SSH session into the DIPC server; please refer to Appendix 1 to learn how to establish a SSH session against the DIPC server
+**2.**	Execute: source .ggsetup 
+**3.**	Execute: /u01/app/oracle/suite/gghome/ggsci
 
     ![](images/200/image200_38.png)
 
-4.	You are now in GG console, execute: info all
+**4.**	You are now in GG console, execute: info all
 
     ![](images/200/image200_39.png)
 
@@ -326,18 +326,18 @@ If you want to take a look and verify that the GG processes (extract and replica
 
 ## Monitor Data Changes 
 
-We are going to apply some changes to the source DB and verify how our “Synchronize Data” task takes care of these changes and replicates them to the target.
+    We are going to apply some changes to the source DB and verify how our “Synchronize Data” task takes care of these changes and replicates them to the target.
 
-1.	Go to your SQL Developer and expand “WS - SALES_SRC” connection and its tables.
+**1.**	Go to your SQL Developer and expand “WS - SALES_SRC” connection and its tables.
 
     ![](images/200/image200_40.png)
  
-2.	Select “SRC_CUSTOMER” table
-3.	On the right panel, select “Data” tab
+**2.**	Select “SRC_CUSTOMER” table
+**3.**	On the right panel, select “Data” tab
 
     ![](images/200/image200_41.png)
 
-4.	Click on “Insert Row” icon and provide the following data:
+**4.**	Click on “Insert Row” icon and provide the following data:
     - CUSTID: 1000
     - DEAR: 0
     - LAST_NAME: Parker
@@ -350,69 +350,69 @@ We are going to apply some changes to the source DB and verify how our “Synchr
  
     ![](images/200/image200_42.png)
 
-5.	Click on “Commit” icon to insert the row into the DB (fifth icon from left to right on the icon bar; green checkmark on top of a disk)
-6.	Verify the insert in the target. Go to SQL developer and expand “WS - SALES_TRG ” connection and its tables
+**5.**	Click on “Commit” icon to insert the row into the DB (fifth icon from left to right on the icon bar; green checkmark on top of a disk)
+**6.**	Verify the insert in the target. Go to SQL developer and expand “WS - SALES_TRG ” connection and its tables
 
-![](images/200/image200_43.png)
+    ![](images/200/image200_43.png)
  
-7.	Select “SRC_CUSTOMER”  table
-8.	On the right panel, select “Data” tab. You will need to scroll all the way down to see the new row
+**7.**	Select “SRC_CUSTOMER”  table
+**8.**	On the right panel, select “Data” tab. You will need to scroll all the way down to see the new row
 
-![](images/200/image200_44.png)
+    ![](images/200/image200_44.png)
  
-As data is updated, inserted or deleted from the source the data will be automatically synchronized with the replicated schema by the DIPC Sync Sales Data Job. 
+    As data is updated, inserted or deleted from the source the data will be automatically synchronized with the replicated schema by the DIPC Sync Sales Data Job. 
 
-9.	Go back to DIPC, you should be in the detail screen of the Data Synch job
-10.	Verify that the screen has auto refresh ON so you will see the changes 
+**9.**	Go back to DIPC, you should be in the detail screen of the Data Synch job
+**10.**	Verify that the screen has auto refresh ON so you will see the changes 
 
-![](images/200/image200_45.png)
+    ![](images/200/image200_45.png)
  
-11.	It might take some time. The screen will reflect the insertion in the source
+**11.**	It might take some time. The screen will reflect the insertion in the source
  
-![](images/200/image200_46.png)
+    ![](images/200/image200_46.png)
 
-12.	And the insertion in the target
+**12.**	And the insertion in the target
 
-![](images/200/image200_47.png)
+    ![](images/200/image200_47.png)
  
-13.	Now, we will perform a delete. On your “WS - SALES_SRC” connection (SQL Developer) select “SRC_CUSTOMER” table
-14.	On the right panel, select “Data” tab and look for “Peter Parker”, select it.
+**13.**	Now, we will perform a delete. On your “WS - SALES_SRC” connection (SQL Developer) select “SRC_CUSTOMER” table
+**14.**	On the right panel, select “Data” tab and look for “Peter Parker”, select it.
 
-![](images/200/image200_48.png)
+    ![](images/200/image200_48.png)
 
-15.	Click on “delete icon (fourth icon from left to right on the icon bar; red X) 
-16.	Click on “Commit” (fifth icon from left to right on the icon bar; green checkmark on top of a disk) icon 
-17.	Let’s verify the deletion in the target. On your “WS - SALES_TRG ” connection (SQL Developer) select “SRC_CUSTOMER” table
-18.	Look for “Peter Parker”, it will not be there
-19.	Go back to DIPC, you should be in the detail screen of the Data Synch job
-20.	It might take some time. The screen will reflect the deletion in the source
+**15.**	Click on “delete icon (fourth icon from left to right on the icon bar; red X) 
+**16.**	Click on “Commit” (fifth icon from left to right on the icon bar; green checkmark on top of a disk) icon 
+**17.**	Let’s verify the deletion in the target. On your “WS - SALES_TRG ” connection (SQL Developer) select “SRC_CUSTOMER” table
+**18.**	Look for “Peter Parker”, it will not be there
+**19.**	Go back to DIPC, you should be in the detail screen of the Data Synch job
+**20.**	It might take some time. The screen will reflect the deletion in the source
 
-![](images/200/image200_49.png)
+    ![](images/200/image200_49.png)
 
-21.	And the deletion in the target
+**21.**	And the deletion in the target
 
-![](images/200/image200_50.png)
+    ![](images/200/image200_50.png)
 
-22.	Now let’s perform an update. On your “WS - SALES_SRC” connection (SQL Developer) select “SRC_CUSTOMER” table
-23.	On the right panel, select “Data” tab and look for “Paul Brendt”, double click in his age
+**22.**	Now let’s perform an update. On your “WS - SALES_SRC” connection (SQL Developer) select “SRC_CUSTOMER” table
+**23.**	On the right panel, select “Data” tab and look for “Paul Brendt”, double click in his age
 
-![](images/200/image200_51.png)
+    ![](images/200/image200_51.png)
 
-24.	Change it to 25
+**24.**	Change it to 25
 
-![](images/200/image200_52.png)
+    ![](images/200/image200_52.png)
 
-25.	Click on “Commit” (fifth icon from left to right on the icon bar; green checkmark on top of a disk) icon. This row will be automatically updated on the target as the DIPC Job picks up the change
-26.	Let’s verify the update in the target. On your “WS - SALES_TRG ” connection (SQL Developer) select “SRC_CUSTOMER” table
-27.	On the right panel, select “Data” tab and look for “Paul Brendt”, his age has change to 25
-28.	Go back to DIPC, you should be in the detail screen of the Data Synch job
-29.	It might take some time. The screen will reflect the update in the source
+**25.**	Click on “Commit” (fifth icon from left to right on the icon bar; green checkmark on top of a disk) icon. This row will be automatically updated on the target as the DIPC Job picks up the change
+**26.**	Let’s verify the update in the target. On your “WS - SALES_TRG ” connection (SQL Developer) select “SRC_CUSTOMER” table
+**27.**	On the right panel, select “Data” tab and look for “Paul Brendt”, his age has change to 25
+**28.**	Go back to DIPC, you should be in the detail screen of the Data Synch job
+**29.**	It might take some time. The screen will reflect the update in the source
 
-![](images/200/image200_53.png)
+    ![](images/200/image200_53.png)
 
-30.	And the update in the target
+**30.**	And the update in the target
 
-![](images/200/image200_54.png)
+    ![](images/200/image200_54.png)
 
 
 ## Summary
