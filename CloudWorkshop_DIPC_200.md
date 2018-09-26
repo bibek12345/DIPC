@@ -37,7 +37,7 @@ Your will need:
 
     ![](images/200/image200_3.png)
 
-    You will be navigated to your DIPC server Home page.
+    **You will be navigated to your DIPC server Home page.**
 
     ![](images/200/image200_4.png)
 
@@ -70,13 +70,11 @@ Your will need:
 
     ![](images/200/image200_5a.png)
 
-    where:
+    where: **{LOCAL_AGENT}** - Select the local DIPC agent 
 
-    {LOCAL_AGENT} - Select the local DIPC agent 
+    **{SOURCE_DB_NAME}** - Name of the source database server
 
-    {SOURCE_DB_NAME} - Name of the source database server
-
-    {CDB_SOURCE_SERVICE_NAME} - CDB Service name string for the source database server
+    **{CDB_SOURCE_SERVICE_NAME}** - CDB Service name string for the source database server
 
 **4.** Click "Test Connection" button and when the test is successful click "Save" button.
 **5.** Open the drop-down menu from the top far right corner and then select “Connection”. 
@@ -103,11 +101,11 @@ Your will need:
 
     where:
 
-    {LOCAL_AGENT} - Select the local DIPC agent 
+    **{LOCAL_AGENT}** - Select the local DIPC agent 
 
-    {SOURCE_DB_NAME} - Name of the source database server
+    **{SOURCE_DB_NAME}** - Name of the source database server
 
-    {SOURCE_DB_SERVICE_NAME} - Service name string for the source database server
+    **{SOURCE_DB_SERVICE_NAME}** - Service name string for the source database server
 
  **7.** Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You    will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
 
@@ -162,11 +160,11 @@ Your will need:
 
     where:
 
-    {LOCAL_AGENT} - Select the local DIPC agent 
+    **{LOCAL_AGENT}** - Select the local DIPC agent 
 
-    {TARGET_DB_NAME} - Name of the target database server
+    **{TARGET_DB_NAME}** - Name of the target database server
 
-    {TARGET_DB_SERVICE_NAME} - Service name string for the target database server
+    **{TARGET_DB_SERVICE_NAME}** - Service name string for the target database server
 
 **16.** Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
 
