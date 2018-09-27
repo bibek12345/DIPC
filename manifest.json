@@ -73,6 +73,13 @@
                 "labels": {"version": "Instructor Led"}
             },
             {
+                "number": "800",
+                "filename": "CloudWorkshop_DIPC_800.md",
+                "title": "Lab 800: Data Lake Builder Elevated Task",
+                "description": "Data Lake Builder Elevated Task",
+                "labels": {"version": "Instructor Led"}
+            },
+            {
                 "number": "10100",
                 "filename": "CloudWorkshop_DIPC_Ap1.md",
                 "title": "Appendix1: SSH Session Configuration",
@@ -133,6 +140,55 @@
                 "filename": "CloudWorkshop_DIPC_400.md",
                 "title": "Lab 400: Migrate on-prem to Cloud",
                 "description": "Migrate On-Prem Database to Cloud",
+                "labels": {"version": "Self-Guided"}
+            },
+            {
+                "number": "500",
+                "filename": "CloudWorkshop_DIPC_500.md",
+                "title": "Lab 500: Data Preparation",
+                "description": "Data Preparation",
+                "labels": {"version": "Self-Guided"}
+            },
+            {
+                "number": "600",
+                "filename": "CloudWorkshop_DIPC_600.md",
+                "title": "Lab 600: ODI Execution Elevated Task",
+                "description": "ODI Execution Elevated Task",
+                "labels": {"version": "Self-Guided"}
+            },
+            {
+                "number": "700",
+                "filename": "CloudWorkshop_DIPC_700.md",
+                "title": "Lab 700: Under the covers DIPCS",
+                "description": "Under the covers DIPCS",
+                "labels": {"version": "Self-Guided"}
+            },
+            {
+                "number": "800",
+                "filename": "CloudWorkshop_DIPC_800.md",
+                "title": "Lab 800: Data Lake Builder Elevated Task",
+                "description": "Data Lake Builder Elevated Task",
+                "labels": {"version": "Self-Guided"}
+            },
+            {
+                "number": "10100",
+                "filename": "CloudWorkshop_DIPC_Ap1.md",
+                "title": "Appendix1: SSH Session Configuration",
+                "description": "SSH configuration to connecto to DIPC Server",
+                "labels": {"version": "Self-Guided"}
+            },
+            {
+                "number": "10200",
+                "filename": "CloudWorkshop_DIPC_Ap2.md",
+                "title": "Appendix2: VNC Viewer Configuration",
+                "description": "VNC Viewer configuration to connecto to DIPC Server",
+                "labels": {"version": "Self-Guided"}
+            },
+            {
+                "number": "10300",
+                "filename": "CloudWorkshop_DIPC_Ap3.md",
+                "title": "Appendix 3: SQL Developer",
+                "description": "SQL Developer configuration to connect to DIPC workshop DBs",
                 "labels": {"version": "Self-Guided"}
             }
         ]
