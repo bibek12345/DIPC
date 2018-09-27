@@ -67,16 +67,14 @@ You will be navigated to your DIPC server Home page.
     - Name: SALES_SRC
     - Description: Sales OLTP Source Data
     - Agent: **{LOCAL_AGENT}**
-    - Type Oracle: selecting Oracle will expand the Connection Settings
-    ![](images/200/image200_6.png)
+    - Type Oracle: selecting Oracle will expand the Connection Settings ![](images/200/image200_6.png)
     - Hostname: **{SOURCE_DB_NAME}**
     - Port: 1521
     - Username: SALES_SRC
     - Password: Welcome#123
     - Service Name: **{SOURCE_DB_SERVICE_NAME}**
     - Schema Name: SALES_SRC (Default) – When you try to select the schema, you are testing the connection at the same time
-    - CDB Connection: SRC_CDB
-    ![](images/200/image200_7.png)
+    - CDB Connection: SRC_CDB ![](images/200/image200_7.png)
     ```
     where:
 
@@ -86,7 +84,7 @@ You will be navigated to your DIPC server Home page.
 
     {SOURCE_DB_SERVICE_NAME} - Service name string for the source database server
     ```
- 7. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
+7. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
     **Note: Data Entities are harvested and profiled at the time the connection is created, their popularity is also calculated by reviewing the DB query logs. This process may take some time (5 minutes or so), the Catalog will show a message when new updates are available**
     ![](images/200/image200_8.png)
 8. Click on entity “SRC_CUSTOMER” to drill down in it and look at the information DIPC brought in ![](images/200/image200_9.png) 
@@ -150,7 +148,7 @@ As the job executes, the Initial Load process is created in ODI while DIPC confi
 ## Review Task Execution
 
 ### In ODI Console (Optional)
-...The Initial Load process uses Data Pump and can be monitored within ODI Console. 
+The Initial Load process uses Data Pump and can be monitored within ODI Console. 
 
 1.	Click on the picture icon located on the top right corner of the screen and then select “Open ODI” ![](images/200/image200_24.png)  
 2.	Click on “Proceed” button ![](images/200/image200_25.png)  
@@ -174,7 +172,7 @@ As the job executes, the Initial Load process is created in ODI while DIPC confi
 DIPC has created and orchestrated the initial load and the data synchronization processes between the source (for example, an OLTP system) and the target (for example, an operational data store, stand-by copy, etc.) -- (additional details can be seen in the GG logs as well as within ODI Studio)
 
 ### Verify Data in Source and Target DBs (Optional)
-...Up until this point, we have monitored the job within DIPC but it would nice to see the data in both source and target to verify that they are the same. For such task, we will use SQL Developer; please refer to Appendix 3 to learn how to create connections against the workshop databases.
+Up until this point, we have monitored the job within DIPC but it would nice to see the data in both source and target to verify that they are the same. For such task, we will use SQL Developer; please refer to Appendix 3 to learn how to create connections against the workshop databases.
 1.	Start SQL Developer. On the connections panel, select your source database (WS - SALES_SRC) and click on the plus (+) sign to open the connection
     ![](images/200/image200_34.png)
 2.	Once opened, copy and paste the following statements in the panel on the right:
