@@ -26,13 +26,13 @@ Your will need:
 
 ### Login to DIPC
 1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one
-
 https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
-
 2. Provide your user name and password, then click "Sign In" button ![](images/500/image500_1.png)
 You will be navigated to your DIPC server Home page. ![](images/500/image500_2.png)
-3. In the Home Page click on "Next" icon (>) located at the far right side of the top panel or the dots on the bottom of the panel to locate the "Data Preparation" task icon ![](images/500/image500_3.png)
-4. Once you have located the "Data Preparation" task icon, click on the “Create" button ![](images/500/image500_4.png)
+3. In the Home Page click on "Next" icon (>) located at the far right side of the top panel or the dots on the bottom of the panel to locate the "Data Preparation" task icon 
+![](images/500/image500_3.png)
+4. Once you have located the "Data Preparation" task icon, click on the “Create" button 
+![](images/500/image500_4.png)
 
 
 ### Staging Connection Definition (Optional)
@@ -40,10 +40,13 @@ If you receive the following error message: ![](images/500/image500_5.png)
 
 Click on "Select a default staging connection" hyperlink. You will navigate to the admin screen in which you can define this defualt connection.
 
-1. Click on "Edit" ![](images/500/image500_6.png)
+1. Click on "Edit" 
+![](images/500/image500_6.png)
 2. Open the "Oracle" field drop-down menu and select "SALES_TRG"
-3. Click "Save" button. ![](images/500/image500_7.png)
-4. You are now ready to run your "Data Preparation" task. Using the left panel, click on "Home". ![](images/500/image500_8.png)
+3. Click "Save" button. 
+![](images/500/image500_7.png)
+4. You are now ready to run your "Data Preparation" task. Using the left panel, click on "Home". 
+![](images/500/image500_8.png)
 5. In the Home Page click on "Next" icon (>) located at the far right side of the top panel to locate the "Data Preparation" task icon ![](images/500/image500_3.png)
 4. Once you have located the "Data Preparation" task icon, click on it ![](images/500/image500_4.png)
 
