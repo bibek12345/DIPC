@@ -36,37 +36,18 @@ If you have already downloaded the agent to your "On-Prem" environment, please s
 ### Download Agent
 1.	Open an SSH session into your compute server (we will simulate on-prem with a compute instance); please refer to Appendix 1 to learn how to establish a SSH session
 2.	Open a VNC viewer; please refer to Appendix 2 to learn how to establish a VNC session
-3.	Open a terminal; select “Applications > Favorites > Firefox” from the top left corner of the screen
-
-![](images/300/image300_1.png)
- 
+3.	Open a terminal; select “Applications > Favorites > Firefox” from the top left corner of the screen ![](images/300/image300_1.png)
 4.	Navigate to your DIPC server, provide the URL (it should look like this): 
 https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
-5.	Provide your user name and password, then click "Sign In" button
-
-![](images/300/image300_2.png)
- 
+5.	Provide your user name and password, then click "Sign In" button ![](images/300/image300_2.png)
 6.	This will bring you to your DIPC server’s  home page
-7.	Click on “Agents” (left part of your screen)
-
-![](images/300/image300_3.png)
-
+7.	Click on “Agents” (left part of your screen) ![](images/300/image300_3.png)
 8.	Select drop down menu and select zip file for your Operating System 
-9.	Select the “Linux” option
+9.	Select the “Linux” option ![](images/300/image300_4.png)
+10.	Click "OK" to confirm selection ![](images/300/image300_5.png)
+11.	Select “Save File” and the click “OK”, to download the file to your “on-premise” machine ![](images/300/image300_6.png)
+12.	Open a terminal, select “Applications > Favorites > Terminal” from the top left corner of the screen ![](images/300/image300_7.png)
 
-![](images/300/image300_4.png)
-
-10.	Click "OK" to confirm selection
-
-![](images/300/image300_5.png)
- 
-11.	Select “Save File” and the click “OK”, to download the file to your “on-premise” machine
-
-![](images/300/image300_6.png)
-
-12.	Open a terminal, select “Applications > Favorites > Terminal” from the top left corner of the screen
-
-![](images/300/image300_7.png)
 
 ### Install Agent
 1.	Create a directory for the agent, execute: mkdir dipcagent
@@ -78,35 +59,19 @@ https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
 ./dicloudConfigureAgent.sh -user=DIPCADMIN -dipchost=<DIPC_IP_ADDRESS> -dipcport=7003  -authType=BASIC
 7.	New directories will be created, to look at then execute: ls
 8.	We will take a look at the configuration file (agent.properties) and we will change the port in which this agent will talk to DIPC
-9.	Open the editor, select “Applications > Accessories > Editor” from the top left corner of the screen
-
-![](images/300/image300_9.png)
- 
-10.	Click on “Open” then “Other Documents”
-
-![](images/300/image300_10.png)
-
-11.	Browse to “/home/oracle/dipcagent/dicloud/agent/dipcagent001/conf/agent.properties”
-
-![](images/300/image300_11.png)
- 
-12.	Modify agent port "agentPort" in parameter file "agent.properties" to 7010
-
-![](images/300/image300_12.png)
- 
-13.	Now look for “ggccServicePort” and change it to 80
-
-![](images/300/image300_13.png)
- 
+9.	Open the editor, select “Applications > Accessories > Editor” from the top left corner of the screen ![](images/300/image300_9.png)
+10.	Click on “Open” then “Other Documents” ![](images/300/image300_10.png)
+11.	Browse to “/home/oracle/dipcagent/dicloud/agent/dipcagent001/conf/agent.properties” ![](images/300/image300_11.png)
+12.	Modify agent port "agentPort" in parameter file "agent.properties" to 7010 ![](images/300/image300_12.png)
+13.	Now look for “ggccServicePort” and change it to 80 ![](images/300/image300_13.png)
 14.	Save and close. Click on “Save” button then on "Close" icon (top right corner)
+
 
 ### Execute the Agent
 1.	We installed with defaults so we will move to the directory with the necessary commands to start the agent; execute: cd agent/dipcagent001/bin
 2.	We will start the agent by executing:
 ./startAgentInstance.sh
-3.	Your agent is now running. Go back to Firefox and look the “Agent” screen in DIPC
- 
-![](images/300/image300_14.png)
+3.	Your agent is now running. Go back to Firefox and look the “Agent” screen in DIPC ![](images/300/image300_14.png)
 
 
 ## Migrate On-Prem to the Cloud
@@ -119,14 +84,8 @@ https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
 
 ### Execute Data Synch Elevated Task
 1. You should be logged into DIPC, if that is NOT the case, log in.
-2. From the left side panel, SELECT "Home"
-
-![](images/300/image300_30.png)
-
-3. If you have already created connection "ONPREM_SRC", skip to step 7. If connection "ONPREM_SRC" has NOT yet been created, in the Home Page click "Create Connections" from the top section
-
-![](images/300/image300_31.png)
-
+2. From the left side panel, SELECT "Home" ![](images/300/image300_30.png)
+3. If you have already created connection "ONPREM_SRC", skip to step 7. If connection "ONPREM_SRC" has NOT yet been created, in the Home Page click "Create Connections" from the top section ![](images/300/image300_31.png)
 4. Enter the following information:
     - Name: ONPREM_SRC
     - Description: Connection to on-prem database schema with source tables. AMER

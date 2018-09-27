@@ -192,9 +192,7 @@ where:
 ### Verify Data in Source and Target DBs (Optional)
 Up until this point, we have monitored the job within DIPC but it would nice to see the data in both source and target to verify that they are the same. For such task, we will use SQL Developer; please refer to Appendix 3 to learn how to create connections against the workshop databases.
 
-1. Start SQL Developer. On the connections panel, select your source database WS - AMER_SRC) and click on the plus (+) sign to open the connection
-
-![](images/300/image300_41.png)
+1. Start SQL Developer. On the connections panel, select your source database WS - AMER_SRC) and click on the plus (+) sign to open the connection ![](images/300/image300_41.png)
  
 2.	Once opened, copy and paste the following statements in the panel on the right:
 
@@ -213,18 +211,10 @@ SELECT COUNT(*)PRODUCTS FROM PRODUCTS;
 SELECT COUNT(*)PRODUCTS_DESCRIPTION FROM PRODUCTS_DESCRIPTION;
 
 
-3.	Execute the statements by clicking on the “Run script” icon (second icon from left to right on the icon bar; right-ponting green arrow head on top of a page)
+3.	Execute the statements by clicking on the “Run script” icon (second icon from left to right on the icon bar; right-ponting green arrow head on top of a page) ![](images/300/image300_42.png)
+4.	This will show all entities count on the results panel (lower section) ![](images/300/image300_43.png)
+5.	Repeat steps 1 through 4 for connection “WS - EMEA_TRG” ![](images/300/image300_44.png)
 
-![](images/300/image300_42.png)
-
-4.	This will show all entities count on the results panel (lower section)
-
-![](images/300/image300_43.png)
-
-5.	Repeat steps 1 through 4 for connection “WS - EMEA_TRG”
-
-![](images/300/image300_44.png)
- 
 This will show that the count in both data bases is exactly the same.
 
 
