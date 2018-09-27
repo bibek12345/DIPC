@@ -54,11 +54,8 @@ You will be navigated to your DIPC server Home page.
     ![](images/200/image200_5a.png)    
     ```
     where:
-
     {LOCAL_AGENT} - Select the local DIPC agent 
-
     {SOURCE_DB_NAME} - Name of the source database server
-
     {CDB_SOURCE_SERVICE_NAME} - CDB Service name string for the source database server
     ```
 4. Click "Test Connection" button and when the test is successful click "Save" button.
