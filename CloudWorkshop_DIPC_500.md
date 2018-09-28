@@ -1,5 +1,5 @@
 
-# Lab 500 - Data Preparation
+# Lab 500 - Data Preparation1
 ![](images/500/image500_0.png)
 
 
@@ -37,7 +37,8 @@ You will be navigated to your DIPC server Home page.
 
 
 ### Staging Connection Definition (Optional)
-If you receive the following error message: ![](images/500/image500_5.png)
+If you receive the following error message: 
+![](images/500/image500_5.png)
 Click on "Select a default staging connection" hyperlink. You will navigate to the admin screen in which you can define this defualt connection.
 
 1. Click on "Edit" 
