@@ -1,5 +1,4 @@
-
-# Lab 500 - Data Preparation1
+# Lab 500 - Data Preparation
 ![](images/500/image500_0.png)
 
 
@@ -20,10 +19,11 @@ Your will need:
 - DB information for target system: server name, user/password and service name
 - Flat file "webclicks.txt"
 - SQL Developer
+![](images/500/image500_3.png)
 
 
 ## Execute Data Preparation Elevated Task
-![](images/500/image500_3.png)
+
 ### Login to DIPC
 1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one
 https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
