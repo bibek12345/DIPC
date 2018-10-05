@@ -27,15 +27,13 @@ Your will need:
 ### Login to DIPC
 1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one
 https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
-2. Provide your user name and password, then click "Sign In" button ![](images/500/image500_1.png)
+2. Provide your user name and password, then click "Sign In" button 
+![](images/500/image500_1.png)
 You will be navigated to your DIPC server Home page. 
 ![](images/500/image500_2.png)
 3. In the Home Page click on "Next" icon (>) located at the far right side of the top panel or the dots on the bottom of the panel to locate the "Data Preparation" task icon 
-
 ![](images/500/image500_3.png)
-
 4. Once you have located the "Data Preparation" task icon, click on the “Create" button 
-
 ![](images/500/image500_4.png)
 
 
@@ -62,7 +60,8 @@ Click on "Select a default staging connection" hyperlink. You will navigate to t
 1.	Provide the following information:
 	- Name: PrepWebData 
 	- Description:  Prep External Website Data
-2. For "Source Configuration" click on "Create Connection" button ![](images/500/image500_9.png)
+2. For "Source Configuration" click on "Create Connection" button 
+![](images/500/image500_9.png)
 3. Provide the following information:
 	- Name: WebClicks_File
 	- Description: Website Clicks information

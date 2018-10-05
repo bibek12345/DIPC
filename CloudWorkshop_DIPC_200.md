@@ -71,7 +71,8 @@ You will be navigated to your DIPC server Home page.
     - Password: Welcome#123
     - Service Name: **{SOURCE_DB_SERVICE_NAME}**
     - Schema Name: SALES_SRC (Default) – When you try to select the schema, you are testing the connection at the same time
-    - CDB Connection: SRC_CDB ![](images/200/image200_7.png)
+    - CDB Connection: SRC_CDB 
+    ![](images/200/image200_7.png)
     ```
     where:
         {LOCAL_AGENT} - Select the local DIPC agent 
