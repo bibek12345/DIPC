@@ -23,7 +23,7 @@ Your will need:
 
 
 ## Execute Data Preparation Elevated Task
-
+![](images/500/image500_3.png)
 ### Login to DIPC
 1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one
 https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
@@ -31,7 +31,7 @@ https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
 ![](images/500/image500_1.png)
 You will be navigated to your DIPC server Home page. 
 ![](images/500/image500_2.png)
-3. In the Home Page click on "Next" icon (>) located at the far right side of the top panel or the dots on the bottom of the panel to locate the "Data Preparation" task icon 
+3. In the Home Page click on "Next" icon (>) located at the far right side of the top panel or the dots on the bottom of the panel to locate the "Data Preparation" task icon
 ![](images/500/image500_3.png)
 4. Once you have located the "Data Preparation" task icon, click on the “Create" button 
 ![](images/500/image500_4.png)
