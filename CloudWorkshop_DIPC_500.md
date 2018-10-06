@@ -37,8 +37,10 @@ You will be navigated to your DIPC server Home page.
 
 
 ### Staging Connection Definition (Optional)
-If you receive the following error message: 
+If you receive the following error message:
+
 ![](images/500/Image500_5.png)
+
 Click on "Select a default staging connection" hyperlink. You will navigate to the admin screen in which you can define this defualt connection.
 
 1. Click on "Edit" 
@@ -70,12 +72,12 @@ Click on "Select a default staging connection" hyperlink. You will navigate to t
 4. Click "Test Connection" button and when the test is successful click "Save" button 
 ![](images/500/image500_10.png)
 5. Provide the following information:
-	**Source Configuration**
+	- **Source Configuration**
 	- Connection: WebClicks_File
 	- Directory: /home/DIPC
 	- File: Click on "Select" button, click on "webclicks.txt" hyperlink and then the "Select" button 
 	![](images/500/image500_11.png)
-	**Target Configuration**
+	- **Target Configuration**
 	- Connection: SALES_TRG
 	- Schema: SALES_TRG 
 	- Data Entity: WEB_CLICKS 
@@ -88,7 +90,7 @@ Click on "Select a default staging connection" hyperlink. You will navigate to t
 	- Header: SELECTED 
 	- First Data Row: 2
 8. Click on "OK" button
-![](images/500/Image500_13.png)
+![](images/500/image500_13.png)
 9. Execute the task, click on "Save and Transform" button 
 ![](images/500/image500_14.png)
 10.	As the file is being parsed and profiled, the following screen will appear  
