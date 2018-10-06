@@ -19,7 +19,6 @@ Your will need:
 - DB information for target system: server name, user/password and service name
 - Flat file "webclicks.txt"
 - SQL Developer
-![](images/500/Image500_3.png)
 
 
 ## Execute Data Preparation Elevated Task
@@ -32,27 +31,27 @@ https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
 You will be navigated to your DIPC server Home page. 
 ![](images/500/image500_2.png)
 3. In the Home Page click on "Next" icon (>) located at the far right side of the top panel or the dots on the bottom of the panel to locate the "Data Preparation" task icon
-![](images/500/image500_3.png)
+![](images/500/Image500_3.png)
 4. Once you have located the "Data Preparation" task icon, click on the “Create" button 
-![](images/500/image500_4.png)
+![](images/500/Image500_4.png)
 
 
 ### Staging Connection Definition (Optional)
 If you receive the following error message: 
-![](images/500/image500_5.png)
+![](images/500/Image500_5.png)
 Click on "Select a default staging connection" hyperlink. You will navigate to the admin screen in which you can define this defualt connection.
 
 1. Click on "Edit" 
-![](images/500/image500_6.png)
+![](images/500/Image500_6.png)
 2. Open the "Oracle" field drop-down menu and select "SALES_TRG"
 3. Click "Save" button. 
-![](images/500/image500_7.png)
+![](images/500/Image500_7.png)
 4. You are now ready to run your "Data Preparation" task. Using the left panel, click on "Home".
 ![](images/500/image500_8.png)
 5. In the Home Page click on "Next" icon (>) located at the far right side of the top panel to locate the "Data Preparation" task icon 
 ![](images/500/image500_3.png)
 4. Once you have located the "Data Preparation" task icon, click on it 
-![](images/500/image500_4.png)
+![](images/500/Image500_4.png)
 
 
 ### Execute Data Preparation Task
