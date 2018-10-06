@@ -88,7 +88,7 @@ Click on "Select a default staging connection" hyperlink. You will navigate to t
 	- Header: SELECTED 
 	- First Data Row: 2
 8. Click on "OK" button
-![](images/500/image500_13.png)
+![](images/500/Image500_13.png)
 9. Execute the task, click on "Save and Transform" button 
 ![](images/500/image500_14.png)
 10.	As the file is being parsed and profiled, the following screen will appear  
@@ -103,7 +103,7 @@ Click on "Select a default staging connection" hyperlink. You will navigate to t
 15. Provide the following information:
 	- Search String: SHoe.html
 	- Replace String: shoes.html
-16. Click the "Apply" button. 
+16. Click the "Apply" button.
 ![](images/500/image500_19.png)
 Clicking apply updates data, metadata and profiling statistics.  Also note the transform is saved and displayed in the left-hand drawer.  This transform can be deleted and the data, metadata and profiling statistics will be updated accordingly. 
 ![](images/500/image500_20.png)
