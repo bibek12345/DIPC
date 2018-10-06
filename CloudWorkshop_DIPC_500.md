@@ -89,6 +89,7 @@ Click on "Select a default staging connection" hyperlink. You will navigate to t
 	- Text Qualifier: Leave blank
 	- Header: SELECTED 
 	- First Data Row: 2
+
 8. Click on "OK" button
 ![](images/500/image500_13.png)
 9. Execute the task, click on "Save and Transform" button 
