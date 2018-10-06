@@ -19,7 +19,7 @@ Your will need:
 - DB information for target system: server name, user/password and service name
 - Flat file "webclicks.txt"
 - SQL Developer
-![](images/500/image500_3.png)
+![](images/500/Image500_3.png)
 
 
 ## Execute Data Preparation Elevated Task
