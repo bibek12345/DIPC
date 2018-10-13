@@ -1,5 +1,5 @@
 
-# Lab 900 - Oracle Streams Analytics 
+# Lab 900 - Oracle Streams Analytics - Retail Demo
 
 ## Start Ravello OSA App and determine instance url
 ![](images/900/image900_1.png)
