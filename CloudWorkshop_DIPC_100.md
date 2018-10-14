@@ -88,7 +88,7 @@ In this section, you create an Oracle Data Integration Platform Cloud instance u
     - Email Address: (a valid email address to receive provisioning status)
     - Cluster Size: 2
     - Service Edition: Governance Edition ![](images/100/image100_13.png)
-4. Complete the Database Configuration fields as follows:
+4. Click "Next" and complete the Database Configuration fields as follows:
     - Oracle Database Cloud Service Instance Name: DBCSABC
     - PDB Name: PDB1
     - Administration Username: SYS
