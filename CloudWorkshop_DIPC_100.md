@@ -29,7 +29,7 @@ Click Services or Go to Dashboard to access My Oracle Services.
 
 ## Creating an Oracle Database Cloud Instance
 
-1. Locate Database in your list of services, then select "Open Service Console" from the Action menu. ![](images/100/image100_2.png)
+1. Locate "Database Classic" in your list of services, then select "Open Service Console" from the Action menu. ![](images/100/image100_2.png)
 
 2. On the Services page, click "Create Instance" button. This launches the Create DBC instance wizard. ![](images/100/image100_3.png)
 
