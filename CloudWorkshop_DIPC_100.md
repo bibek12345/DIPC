@@ -6,7 +6,7 @@
 
 ### Objectives
 - Review steps to provision a Database Cloud Service to be used for DIPC
-- Provision a Data Integration Cloud Service instance (DIPC).
+- Provision a Data Integration Cloud Service instance (DIPC). 
 
 ### Time to Complete
 Approximately 30 minutes, not including wait time for service activations.
