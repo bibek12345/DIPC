@@ -38,6 +38,7 @@ Click Services or Go to Dashboard to access My Oracle Services.
     - Description: ABC Replication Database for Data Integration Platform Cloud
     - Notification Email: (a valid email address to receive provisioning status)
     - Region: No Preference
+    - License Type: Select "Subscribe to a new Oracle Database software license and the Oracle Database Cloud Service."
     - Software Release: Oracle Database 12c Release 1
     - Software Edition: Enterprise Edition
     - Database Type: Single Instance ![](images/100/image100_4.png)
