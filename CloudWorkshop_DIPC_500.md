@@ -43,11 +43,8 @@ If you receive the following error message:
 
 Click on "Select a default staging connection" hyperlink. You will navigate to the admin screen in which you can define this defualt connection.
 
-1. Click on "Edit" 
-![](images/500/Image500_6.png)
-2. Open the "Oracle" field drop-down menu and select "SALES_TRG"
-3. Now, we are going to create the target connection. Open the drop-down menu from the top far right corner and then select “Connection”  ![](images/200/image200_15.png)
-4.	Enter the following information:
+1. Now, we are going to create the target connection. Open the drop-down menu from the top far right corner and then select “Connection”  ![](images/200/image200_15.png)
+2. Enter the following information:
     - Name: SALES_TRG 
     - Description: Sales OLTP Replicated Data
     - Agent: **{LOCAL_AGENT}**
@@ -65,14 +62,14 @@ where:
     {TARGET_DB_NAME} - Name of the target database server
     {TARGET_DB_SERVICE_NAME} - Service name string for the target database server
 ```
-5. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
-6. Click "Save" button. 
+3. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
+4. Click "Save" button. 
 ![](images/500/Image500_7.png)
-7. You are now ready to run your "Data Preparation" task. Using the left panel, click on "Home".
+5. You are now ready to run your "Data Preparation" task. Using the left panel, click on "Home".
 ![](images/500/image500_8.png)
-8. In the Home Page click on "Next" icon (>) located at the far right side of the top panel to locate the "Data Preparation" task icon 
+6. In the Home Page click on "Next" icon (>) located at the far right side of the top panel to locate the "Data Preparation" task icon 
 ![](images/500/image500_3.png)
-9. Once you have located the "Data Preparation" task icon, click on it 
+7. Once you have located the "Data Preparation" task icon, click on it 
 ![](images/500/Image500_4.png)
 
 
