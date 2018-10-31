@@ -90,7 +90,7 @@ $JAVA_HOME/bin/keytool -import -alias uscom-central-1oraclecloudcom  -keystore $
 5.	Unzip the file, execute: unzip agent-linux.64.bit.zip
 6.	Move to the agent directory, execute: cd dicloud
 7.	Execute command to install agent: 
-./dicloudConfigureAgent.sh -recreate -debug -dipchost=**{DIPC SERVER}** -dipcport=443 -user=**{YOUR_USER}** -password=**{YOUR_PASSWORD}** -authType=OAUTH2 -idcsServerUrl=https://idcs-bfb16122271a47fc91ada73842325e52.identity.oraclecloud.com -agentIdcsScope=https://919181A11AC6494CBCFA146EBC9A2A48.uscom-central-1.oraclecloud.com:443external -agentClientId=ec9958f548e7414f872cc480c0bf3455 -agentClientSecret=77321de1-6f4a-4997-945e-8acb271b0473
+./dicloudConfigureAgent.sh -recreate -debug -dipchost=**{DIPC SERVER HostName eg osc######DIPC##-oscnas001.uscom-central-1.oraclecloud.com}** -dipcport=443 -user=**{YOUR_CLOUD_ACCOUNT_USERNAME}** -password=**{YOUR_CLOUD_ACCOUNT_PASSWORD}** -authType=OAUTH2 -idcsServerUrl=https://idcs-bfb16122271a47fc91ada73842325e52.identity.oraclecloud.com -agentIdcsScope=https://919181A11AC6494CBCFA146EBC9A2A48.uscom-central-1.oraclecloud.com:443external -agentClientId=ec9958f548e7414f872cc480c0bf3455 -agentClientSecret=77321de1-6f4a-4997-945e-8acb271b0473
 	```
 	where:
 		{DIPC SERVER} - This have been provided in your environment page. Look for entry DIPC SERVER.
