@@ -97,7 +97,7 @@ $JAVA_HOME/bin/keytool -import -alias uscom-central-1oraclecloudcom  -keystore $
 		{YOUR_USER} - This is the login you use to log into Oracle Cloud/DIPC server
 		{YOUR_PASSWORD} - This is the password of the login you use to log into Oracle Cloud/DIPC server
 	```
-8.	New directories will be created, to look at then execute: ls
+8.	New directories will be created, to look at them execute: ls
 9.	We will take a look at the configuration file (agent.properties) and we will change the port in which this agent will talk to DIPC
 10.	Open the editor, select “Applications > Accessories > Editor” from the top left corner of the screen 
 ![](images/300/image300_9.png)
