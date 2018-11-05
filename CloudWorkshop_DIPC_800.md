@@ -65,7 +65,7 @@ Before we execute the task, we will navigate to the Object Storage container and
     - Type: Oracle Object Storage Classic.
     - Domain: Storage-oscnas001. **From the Rest EndPoint URL you saved previously copy and paste the last part. That is from "https://uscom-east-1.storage.oraclecloud.com/v1/Storage-oscnas100" copy "Storage-oscnas001"**
 	- Service URL: https://oscnas001.us.storage.oraclecloud.com. **From the Rest EndPoint URL you saved previously copy and paste the server URL. That is from "https://uscom-east-1.storage.oraclecloud.com/v1/Storage-oscnas100" copy "https://uscom-east-1.storage.oraclecloud.com"**
-	- Container: DIPC_Workshop
+	- Container: DIPC Workshop
     - Username: <YOUR_USERNAME>. **For example: osc.dipcws01**
     - Password: <YOUR_PASSWORD>
 	```

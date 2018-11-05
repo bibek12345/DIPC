@@ -99,7 +99,7 @@ If you would like to associate a tag or a contact to this entity, click on “Ed
     - Port: 1521
     - Username: SALES_TRG 
     - Password: Welcome#123
-    - Service Name: **{TARGET_DB_SERVICE_NAME}**
+    - Service Name: 
     - Schema Name: SALES_TRG  (Default)
     ![](images/200/image200_16.png)
 ```
