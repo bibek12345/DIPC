@@ -1,4 +1,3 @@
-
 # Lab 200 - Data Synch Elevated Task
 ![](images/200/image200_0.png)
 

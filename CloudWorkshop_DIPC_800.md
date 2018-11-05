@@ -1,5 +1,4 @@
 # Lab 800 - Data Lake Builder Elevated Task 
-
 ![](images/800/image800_0.png)
 
 ## Before You Begin
