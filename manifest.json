@@ -130,14 +130,14 @@
             },
             {
                 "number": "300",
-                "filename": "CloudWorkshop_DIPC_300.md",
+                "filename": "CloudWorkshop_DIPC_301.md",
                 "title": "Lab 300: Remote Agent Install & Sync on-prem databases",
-                "description": "RRemote Agent Install and On-prem to On-prem DB Synchronization",
+                "description": "Remote Agent Install and On-prem to On-prem DB Synchronization",
                 "labels": {"version": "Self-Guided"}
             },
             {
                 "number": "400",
-                "filename": "CloudWorkshop_DIPC_400.md",
+                "filename": "CloudWorkshop_DIPC_401.md",
                 "title": "Lab 400: Migrate on-prem to Cloud",
                 "description": "Migrate On-Prem Database to Cloud",
                 "labels": {"version": "Self-Guided"}
