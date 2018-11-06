@@ -16,7 +16,7 @@ This lab supports the following use cases:
 -   Synchronize two On-Premise Databases
    
 ### Time to complete
-Approximately 45 minutes.
+Approximately 30 minutes.
 
 ### What Do You Need?
 Your will need:
@@ -55,23 +55,23 @@ $JAVA_HOME/bin/keytool -import -alias uscom-central-1oraclecloudcom  -keystore $
 		{YOUR_PASSWORD} - This is the password of the login you use to log into Oracle Cloud/DIPC server
 	```
 8.	New directories will be created, to look at them execute: ls
-9.	We will take a look at the configuration file (agent.properties) and we will change the port in which this agent will talk to DIPC
-10.	Open the editor, select “Applications > Accessories > Editor” from the top left corner of the screen 
+9.	We will take a look at the configuration file (agent.properties) and we will change the port in which this agent will talk to DIPC. Move to the configuration directory, execute: cd /home/oracle/dipcagent/dicloud/agent/dipcagent001/conf
+10.	Open the file: vi agent.properties 
 ![](images/300/image300_9.png)
-11.	Click on “Open” then “Other Documents” 
+11.	Using the arrows move your cursor to parameter "agentPort=7005", on top of the second zero (0)
 ![](images/300/image300_10.png)
-12.	Browse to “/home/oracle/dipcagent/dicloud/agent/dipcagent001/conf/agent.properties” 
+12.	Change the port to 7010, type "cw", then "10" and finally press the ESC key
 ![](images/300/image300_11.png)
-13.	Modify agent port "agentPort" in parameter file "agent.properties" to 7010 
+13.	Save your changes, type ":" then "x" and press the ENTER key
 ![](images/300/image300_12.png)
-14.	Save and close. Click on “Save” button then on "Close" icon (top right corner)
+
 
 
 ### Start the Agent
-1.	We will move to the directory with the necessary commands to start the agent; execute: cd agent/dipcagent001/bin
+1.	We will move to the directory with the necessary commands to start the agent; execute: cd /home/oracle/dipcagent/dicloud/agent/dipcagent001/bin
 2.	We will start the agent by executing:
 nohup ./startAgentInstance.sh &
-3.	Your agent is now running. Go back to Firefox and look the “Agent” screen in DIPC 
+3.	Your agent is now running. Inside the DIPC server and navigate to the "Agents" screen; look at the new remote agent you have started 
 ![](images/300/image300_14.png)
 
 

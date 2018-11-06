@@ -99,13 +99,13 @@ $JAVA_HOME/bin/keytool -import -alias uscom-central-1oraclecloudcom  -keystore $
 8.	New directories will be created, to look at them execute: ls
 9.	We will take a look at the configuration file (agent.properties) and we will change the port in which this agent will talk to DIPC
 10.	Open the editor, select “Applications > Accessories > Editor” from the top left corner of the screen 
-![](images/300/image300_9.png)
+![](images/300/image300_9a.png)
 11.	Click on “Open” then “Other Documents” 
-![](images/300/image300_10.png)
+![](images/300/image300_10a.png)
 12.	Browse to “/home/oracle/dipcagent/dicloud/agent/dipcagent001/conf/agent.properties” 
-![](images/300/image300_11.png)
+![](images/300/image300_11a.png)
 13.	Modify agent port "agentPort" in parameter file "agent.properties" to 7010 
-![](images/300/image300_12.png)
+![](images/300/image300_12a.png)
 14.	Save and close. Click on “Save” button then on "Close" icon (top right corner)
 
 
