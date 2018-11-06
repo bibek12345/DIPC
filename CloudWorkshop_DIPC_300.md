@@ -56,15 +56,14 @@ $JAVA_HOME/bin/keytool -import -alias uscom-central-1oraclecloudcom  -keystore $
 	```
 8.	New directories will be created, to look at them execute: ls
 9.	We will take a look at the configuration file (agent.properties) and we will change the port in which this agent will talk to DIPC. Move to the configuration directory, execute: cd /home/oracle/dipcagent/dicloud/agent/dipcagent001/conf
-10.	Open the file: vi agent.properties 
+10.	Open the file: nano agent.properties 
 ![](images/300/image300_9.png)
-11.	Using the arrows move your cursor to parameter "agentPort=7005", on top of the second zero (0)
+11.	Locate parameter "agentPort"
 ![](images/300/image300_10.png)
-12.	Change the port to 7010, type "cw", then "10" and finally press the ESC key
+12.	Change the port from "7005" to "7010"
 ![](images/300/image300_11.png)
-13.	Save your changes, type ":" then "x" and press the ENTER key
+13.	Save your changes, press ctrl-x, "Y", then press the ENTER key
 ![](images/300/image300_12.png)
-
 
 
 ### Start the Agent
