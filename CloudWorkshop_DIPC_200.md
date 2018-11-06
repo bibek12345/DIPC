@@ -54,8 +54,8 @@ You will be navigated to your DIPC server Home page.
     ```
     where:
         {LOCAL_AGENT} - Select the local DIPC agent 
-        {SOURCE_DB_NAME} - Name of the source database server
-        {CDB_SOURCE_SERVICE_NAME} - CDB Service name string for the source database server
+        {SOURCE_DB_NAME} - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
+        {CDB_SOURCE_SERVICE_NAME} - CDB Service name string for the source database server. This have been provided in your environment page; look for entry CDB_SOURCE_SERVICE_NAME
     ```
 4. Click "Test Connection" button and when the test is successful click "Save" button.
 5. Open the drop-down menu from the top far right corner and then select “Connection”. ![](images/200/image200_15.png)
@@ -75,8 +75,8 @@ You will be navigated to your DIPC server Home page.
     ```
     where:
         {LOCAL_AGENT} - Select the local DIPC agent 
-        {SOURCE_DB_NAME} - Name of the source database server
-        {SOURCE_DB_SERVICE_NAME} - Service name string for the source database server
+        {SOURCE_DB_NAME} - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
+        {SOURCE_DB_SERVICE_NAME} - Service name string for the source database server. This have been provided in your environment page; look for entry SOURCE_DB_SERVICE_NAME
     ```
 7. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
     **Note: Data Entities are harvested and profiled at the time the connection is created, their popularity is also calculated by reviewing the DB query logs. This process may take some time (5 minutes or so), the Catalog will show a message when new updates are available**
@@ -99,14 +99,14 @@ If you would like to associate a tag or a contact to this entity, click on “Ed
     - Port: 1521
     - Username: SALES_TRG 
     - Password: Welcome#123
-    - Service Name: 
+    - Service Name: **{TARGET_DB_SERVICE_NAME}**
     - Schema Name: SALES_TRG  (Default)
     ![](images/200/image200_16.png)
 ```
 where:
     {LOCAL_AGENT} - Select the local DIPC agent 
-    {TARGET_DB_NAME} - Name of the target database server
-    {TARGET_DB_SERVICE_NAME} - Service name string for the target database server
+    {TARGET_DB_NAME} - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
+    {TARGET_DB_SERVICE_NAME} - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
 ```
 16. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
 

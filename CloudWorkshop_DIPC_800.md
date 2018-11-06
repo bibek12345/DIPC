@@ -63,14 +63,18 @@ Before we execute the task, we will navigate to the Object Storage container and
     - Description: Connection to Object Storage to create a Data Lake
     - Agent: **{LOCAL_AGENT}**
     - Type: Oracle Object Storage Classic.
-    - Domain: Storage-oscnas001. **From the Rest EndPoint URL you saved previously copy and paste the last part. That is from "https://uscom-east-1.storage.oraclecloud.com/v1/Storage-oscnas100" copy "Storage-oscnas001"**
-	- Service URL: https://oscnas001.us.storage.oraclecloud.com. **From the Rest EndPoint URL you saved previously copy and paste the server URL. That is from "https://uscom-east-1.storage.oraclecloud.com/v1/Storage-oscnas100" copy "https://uscom-east-1.storage.oraclecloud.com"**
+    - Domain: **{OBJECT_STORAGE_DOMAIN}**
+	- Service URL: **{OBJECT_STORAGE_URL}**
 	- Container: DIPC Workshop
-    - Username: <YOUR_USERNAME>. **For example: osc.dipcws01**
-    - Password: <YOUR_PASSWORD>
+    - Username: **{YOUR_USER}**
+    - Password: **{YOUR_PASSWORD}**
 	```
 	where:
 		{LOCAL_AGENT} - Select the local DIPC agent 
+		{OBJECT_STORAGE_DOMAIN} - From the Rest EndPoint URL you saved previously copy and paste the last part. That is from "https://uscom-east-1.storage.oraclecloud.com/v1/Storage-oscnas100" copy "Storage-oscnas001. Or this have been provided in your environment page; look for entry OBJECT_STORAGE_DOMAIN
+		{OBJECT_STORAGE_URL} - From the Rest EndPoint URL you saved previously copy and paste the server URL. That is from "https://uscom-east-1.storage.oraclecloud.com/v1/Storage-oscnas100" copy "https://uscom-east-1.storage.oraclecloud.com". Or this have been provided in your environment page; look for entry OBJECT_STORAGE_URL
+		{YOUR_USER} - This is the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_USER
+		{YOUR_PASSWORD} - This is the password of the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_PASSWORD
 	```
 3. Click "Test Connection" button and when the test is successful click "Save" button. 
 ![](images/800/image800_9.png)
@@ -99,7 +103,7 @@ Before we execute the task, we will navigate to the Object Storage container and
 	- File Path: **{YOUR_USERNAME}**
 	```
 	where:
-		{YOUR_USER} - This is the login you use to log into Oracle Cloud/DIPC server. For example: osc.dipcws01
+		{YOUR_USER} - This is the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_USER. Please use your user name to assure the file has a unique name and there is no problems with other workshop participants.
 	```
 3. Click on "Save & Execute" button located on the top right corner of the screen to execute the task 
 ![](images/800/image800_15.png)

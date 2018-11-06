@@ -50,9 +50,9 @@ $JAVA_HOME/bin/keytool -import -alias uscom-central-1oraclecloudcom  -keystore $
 ./dicloudConfigureAgent.sh -recreate -debug -dipchost=**{DIPC SERVER HostName eg osc######DIPC##-oscnas001.uscom-central-1.oraclecloud.com}** -dipcport=443 -user=**{YOUR_CLOUD_ACCOUNT_USERNAME}** -password=**{YOUR_CLOUD_ACCOUNT_PASSWORD}** -authType=OAUTH2 -idcsServerUrl=https://idcs-bfb16122271a47fc91ada73842325e52.identity.oraclecloud.com -agentIdcsScope=https://919181A11AC6494CBCFA146EBC9A2A48.uscom-central-1.oraclecloud.com:443external -agentClientId=ec9958f548e7414f872cc480c0bf3455 -agentClientSecret=77321de1-6f4a-4997-945e-8acb271b0473
 	```
 	where:
-		{DIPC SERVER} - This have been provided in your environment page. Look for entry DIPC SERVER.
-		{YOUR_USER} - This is the login you use to log into Oracle Cloud/DIPC server
-		{YOUR_PASSWORD} - This is the password of the login you use to log into Oracle Cloud/DIPC server
+		{DIPC SERVER} - This is the name of your DIPC Server. This have been provided in your environment page; look for entry DIPC SERVER.
+		{YOUR_USER} - This is the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_USER
+		{YOUR_PASSWORD} - This is the password of the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_PASSWORD
 	```
 8.	New directories will be created, to look at them execute: ls
 9.	We will take a look at the configuration file (agent.properties) and we will change the port in which this agent will talk to DIPC. Move to the configuration directory, execute: cd /home/oracle/dipcagent/dicloud/agent/dipcagent001/conf
@@ -93,15 +93,15 @@ nohup ./startAgentInstance.sh &
     - Description: Connection to on-prem database schema with source tables. AMER
 	- Agent: **{REMOTE_AGENT}**
 	- Type: Oracle
-  	- Hostname: **{COMPUTE_INSTANCE_IP}**
+  	- Hostname: **{SERVER_IP_ADDRESS}**
 	- Port: 1521
 	- Username: AMER_SRC
 	- Password: Welcome#123
 	- Service Name: PDB1
     ```
     where:
-        {REMOTE_AGENT} - Select the remote (on-prem) DIPC agent 
-        {COMPUTE_INSTANCE_IP} - IP Address of the compute instance we are using to simulate on-premise environment        
+        {REMOTE_AGENT} - Select the remote DIPC agent 
+        {SERVER_IP_ADDRESS} - IP Address of the compute instance we are using to simulate on-premise environment. This have been provided in your environment page; look for entry SERVER _IP_ADDRESS        
     ```
 5. Click "Test Connection" button and when the test is successful click "Save" button.
 ![](images/400/image400_1.png)
@@ -120,9 +120,9 @@ nohup ./startAgentInstance.sh &
     - Schema Name: EMEA_CL_TRG (Default)
 ```
 where:
-    {REMOTE_AGENT} - Select the remote (on-prem) DIPC agent 
-    {TARGET_DB_NAME} - Name of the target database server
-    {TARGET_DB_SERVICE_NAME} - Service name string for the target database server
+    {REMOTE_AGENT} - Select the remote DIPC agent 
+    {TARGET_DB_NAME} - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
+    {TARGET_DB_SERVICE_NAME} - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
 ```
 8. Click "Test Connection" button and when the test is successful click "Save" button
 ![](images/400/image400_3.png)

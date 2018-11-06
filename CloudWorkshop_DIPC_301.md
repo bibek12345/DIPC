@@ -92,9 +92,9 @@ $JAVA_HOME/bin/keytool -import -alias uscom-central-1oraclecloudcom  -keystore $
 ./dicloudConfigureAgent.sh -recreate -debug -dipchost=**{DIPC SERVER HostName eg osc######DIPC##-oscnas001.uscom-central-1.oraclecloud.com}** -dipcport=443 -user=**{YOUR_CLOUD_ACCOUNT_USERNAME}** -password=**{YOUR_CLOUD_ACCOUNT_PASSWORD}** -authType=OAUTH2 -idcsServerUrl=https://idcs-bfb16122271a47fc91ada73842325e52.identity.oraclecloud.com -agentIdcsScope=https://919181A11AC6494CBCFA146EBC9A2A48.uscom-central-1.oraclecloud.com:443external -agentClientId=ec9958f548e7414f872cc480c0bf3455 -agentClientSecret=77321de1-6f4a-4997-945e-8acb271b0473
 	```
 	where:
-		{DIPC SERVER} - This have been provided in your environment page. Look for entry DIPC SERVER.
-		{YOUR_USER} - This is the login you use to log into Oracle Cloud/DIPC server
-		{YOUR_PASSWORD} - This is the password of the login you use to log into Oracle Cloud/DIPC server
+		{DIPC SERVER} - This is the name of your DIPC Server. This have been provided in your environment page; look for entry DIPC SERVER.
+		{YOUR_USER} - This is the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_USER
+		{YOUR_PASSWORD} - This is the password of the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_PASSWORD
 	```
 8.	New directories will be created, to look at them execute: ls
 9.	We will take a look at the configuration file (agent.properties) and we will change the port in which this agent will talk to DIPC
@@ -137,8 +137,8 @@ nohup ./startAgentInstance.sh &
 	- Service Name: onprem
 	```
 	where:
-		{REMOTE_AGENT} - Select theremote DIPC agent you just created
-		{SERVER_IP_ADDRESS} - IP Address of the compute instance (simulated OnPrem environment)
+		{REMOTE_AGENT} - Select the remote DIPC agent you just created
+		{SERVER_IP_ADDRESS} - IP Address of the compute instance (simulated OnPrem environment). This have been provided in your environment page; look for entry SERVER _IP_ADDRESS
 	```
 5. Click "Test Connection" button and when the test is successful click "Save" button.
 6. Open the drop-down menu from the top far right corner and then select “Connection”.
@@ -157,7 +157,7 @@ nohup ./startAgentInstance.sh &
 	```
 	where:
 		{REMOTE_AGENT} - Select the remote DIPC agent you just created
-		{SERVER_IP_ADDRESS} - IP Address of the compute instance (simulated OnPrem environment)
+		{SERVER_IP_ADDRESS} - IP Address of the compute instance (simulated OnPrem environment). This have been provided in your environment page; look for entry SERVER _IP_ADDRESS
 	```
 8. Click on "Test Connection" button at the bottom. a green message should appear on top when everything is in order
 9. Click on "Save" 
@@ -177,8 +177,8 @@ nohup ./startAgentInstance.sh &
     - Schema Name: EMEA_TRG (Default)	
 	```
 	where:
-		{REMOTE_AGENT} - Select theremote DIPC agent you just created
-		{SERVER_IP_ADDRESS} - IP Address of the compute instance (simulated OnPrem environment)
+		{REMOTE_AGENT} - Select the remote DIPC agent you just created
+		{SERVER_IP_ADDRESS} - IP Address of the compute instance (simulated OnPrem environment). This have been provided in your environment page; look for entry SERVER _IP_ADDRESS
 	```	
 12. Click on "Test Connection" button at the bottom. a green message should appear on top when everything is in order
 13. Click on "Save" 
