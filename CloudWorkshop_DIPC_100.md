@@ -67,7 +67,7 @@ Click Services or Go to Dashboard to access My Oracle Services.
     - Password: Enter your password for Oracle Storage Cloud
     - Select "Create Cloud Storage Container" to create a new container. 
     ![](images/100/image100_10.png)
-7. Review the Service Details for your DBCS instance. If you need to make changes, click "Previous" or use the navigation train to go back. Otherwise, click __"CANCEL". Please DO NOT Create!__, the instance creation process can take some time; that is why we have already created the instances in advance. Proceeed to the next section.
+7. Review the Service Details for your DBCS instance. If you need to make changes, click "Previous" or use the navigation train to go back. Otherwise, click "CANCEL" button. **Please DO NOT Create!**, the instance creation process can take some time; that is why we have already created the instances in advance. Proceeed to the next section.
 
 ## Creating an Oracle Data Integration Platform Cloud Instance
 
@@ -94,18 +94,14 @@ In this section, you create an Oracle Data Integration Platform Cloud instance u
     - Cloud Storage Password: Enter your password for Oracle Storage Cloud ![](images/100/image100_15.png)
 6. Complete the Weblogic fields as follows:
     - Compute Shape: OC3m - 4.0 OCPU, 60.0GB RAM
-    - SSH Public Key:
-      
-        a. Click Edit.
-      
+    - SSH Public Key:      
+        a. Click Edit.      
         b. In the SSH Public Key for VM Access dialog, select Create a New Key and then click Enter.
-
         c. In the Download Keys dialog, click Download and save your  "SSHkeybundle.zip" to your local machine.
-
     - Administrator Username: weblogic
     - Admin Password: Enter the admin password that you'll use later to login to all the consoles for this service instance, with the correspondent username you have had specified. For example welcome1
     - Confirm Admin Password: Reenter the admin password ![](images/100/image100_16.png)
-7. Click "Next" button and review your Data Integration Platform Cloud instance configuration details. If you need to make any changes, click "Previous" or use the navigation train to go back. Otherwise, click **"CANCEL". Please DO NOT Create!**, the instance creation process would normally take up to 30 minutes, so we have already created the instance in advance for the workshop.
+7. Click "Next" button and review your Data Integration Platform Cloud instance configuration details. If you need to make any changes, click "Previous" or use the navigation train to go back. Otherwise, click "CANCEL" button. **Please DO NOT Create!**, the instance creation process would normally take up to 30 minutes, so we have already created the instance in advance for the workshop.
 
 
 ## Summary

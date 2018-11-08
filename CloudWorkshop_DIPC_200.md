@@ -32,7 +32,7 @@ You will be navigated to your DIPC server Home page. ![](images/200/image200_4.p
 
 ### Login into DIPC using direct URL
 
-1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one <https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud>
+1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one "https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud"
 2. Provide your user name and password, then click "Sign In" button ![](images/200/image200_1.png)
 You will be navigated to your DIPC server Home page.
 
@@ -102,12 +102,12 @@ If you would like to associate a tag or a contact to this entity, click on “Ed
     - Service Name: **{TARGET_DB_SERVICE_NAME}**
     - Schema Name: SALES_TRG  (Default)
     ![](images/200/image200_16.png)
-```
-where:
-    {LOCAL_AGENT} - Select the local DIPC agent 
-    {TARGET_DB_NAME} - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
-    {TARGET_DB_SERVICE_NAME} - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
-```
+    ```
+    where:
+        {LOCAL_AGENT} - Select the local DIPC agent 
+        {TARGET_DB_NAME} - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
+        {TARGET_DB_SERVICE_NAME} - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
+    ```
 16. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
 
 
