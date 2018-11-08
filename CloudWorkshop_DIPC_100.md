@@ -67,7 +67,7 @@ Click Services or Go to Dashboard to access My Oracle Services.
     - Password: Enter your password for Oracle Storage Cloud
     - Select "Create Cloud Storage Container" to create a new container. 
     ![](images/100/image100_10.png)
-7. Review the Service Details for your DBCS instance. If you need to make changes, click "Previous" or use the navigation train to go back. Otherwise, click **"CANCEL". Please DO NOT Create!**, the instance creation process can take some time; that is why we have already created the instances in advance. Proceeed to the next section.
+7. Review the Service Details for your DBCS instance. If you need to make changes, click "Previous" or use the navigation train to go back. Otherwise, click __"CANCEL". Please DO NOT Create!__, the instance creation process can take some time; that is why we have already created the instances in advance. Proceeed to the next section.
 
 ## Creating an Oracle Data Integration Platform Cloud Instance
 
