@@ -31,7 +31,7 @@ Click Services or Go to Dashboard to access My Oracle Services.
 
 1. Locate "Database Classic" in your list of services, then select "Open Service Console" from the Action menu. ![](images/100/image100_2.png)
 
-2. On the Services page, click "Create Instance" button. This launches the Create DBC instance wizard. ![](images/100/image100_3.png)
+2. On the Services page, click "Create Instance" button. This launches the Create DBCS instance wizard. ![](images/100/image100_3.png)
 
 3. Complete the Service form as follows and then click "Next" button:
     -  Instance Name: DBCSABC
@@ -50,28 +50,23 @@ Click Services or Go to Dashboard to access My Oracle Services.
     - Total Data File Storage (GB) - Based on your entry of the previous field ( Usable Database Storage), this field will be updated to reflect the amount of storage that will be allocated to your instance; including space for operating system and product binaries, supporting files, database data and configuration files, and so on. After you create the service instance, you can add more data storage as needed. 
     - Compute Shape: OC4
     - Click Edit for SSH Public Key.
-
-    In the SSH Public Key for VM Access dialog, select Create a New Key, then click Enter.     ![](images/100/image100_5.png)
-
-    Click Download in the Download Keys dialog box. ![](images/100/image100_6.png)
-
-    Save the sshkeybundle.zip file to your computer. ![](images/100/image100_7.png)
-
-    Confirm that the SSH Public Key field now contains a public key value. ![](images/100/image100_8.png)
-
+        a. In the SSH Public Key for VM Access dialog, select Create a New Key, then click Enter. ![](images/100/image100_5.png)
+        b. Click Download in the Download Keys dialog box. ![](images/100/image100_6.png)
+        c. Save the sshkeybundle.zip file to your computer. ![](images/100/image100_7.png)
+        d. Confirm that the SSH Public Key field now contains a public key value. ![](images/100/image100_8.png)
 5. Expand Advanced Settings, and then complete the fields as follows:
     - Listener Port: 1521
     - Select your timezone from the Timezone menu.
     - Select "Enable Oracle GoldenGate".
-    - Deselect "Include 'Demos' PDB" to save database space. ![](images/100/image100_9.png)
-
+    - Deselect "Include 'Demos' PDB" to save database space. 
+    ![](images/100/image100_9.png)
 6. Complete the Backup and Recovery Configuration fields as follows, and then click "Next" button:
     - Backup Destination: Both Cloud Storage and Local Storage
     - Cloud Storage Container: Enter the name of your storage container in the format, Storage-**\<identity domain name>**/**\<container name>**. For example: https://oscnas001.us.storage.oraclecloud.com/v1/Storage-oscnas001/dbcs-TT.
     - Username: Enter your username for Oracle Storage Cloud
     - Password: Enter your password for Oracle Storage Cloud
-    - Select "Create Cloud Storage Container" to create a new container. ![](images/100/image100_10.png)
-
+    - Select "Create Cloud Storage Container" to create a new container. 
+    ![](images/100/image100_10.png)
 7. Review the Service Details for your DBCS instance. If you need to make changes, click "Previous" or use the navigation train to go back. Otherwise, click **"CANCEL". Please DO NOT Create!**, the instance creation process can take some time; that is why we have already created the instances in advance. Proceeed to the next section.
 
 ## Creating an Oracle Data Integration Platform Cloud Instance
@@ -92,7 +87,7 @@ In this section, you create an Oracle Data Integration Platform Cloud instance u
     - Oracle Database Cloud Service Instance Name: DBCSABC
     - PDB Name: PDB1
     - Administration Username: SYS
-    - Password: Welcome_123# ![](images/100/image100_14.png)
+    - Password: Welcome#123 ![](images/100/image100_14.png)
 5. Complete the Backup and Recovery Configuration fields as follows:
     - Cloud Storage Container: Storage-dipc/dipcABC
     - Cloud Storage User Name: Enter your username for Oracle Storage Cloud
