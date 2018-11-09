@@ -164,7 +164,8 @@ DIPC has created and orchestrated the initial load and the data synchronization 
 
 ### Verify Data in Source and Target DBs (Optional)
 Up until this point, we have monitored the job within DIPC but it would nice to see the data in both source and target to verify that they are the same. For such task, we will use SQL Developer; please refer to Appendix 3 to learn how to create connections against the workshop databases.
-1.	Start SQL Developer. On the connections panel, select your source database (WS - SALES_SRC) and click on the plus (+) sign to open the connection ![](images/200/image200_34.png)
+1.	Start SQL Developer. On the connections panel, select your source database (WS - SALES_SRC) and click on the plus (+) sign to open the connection 
+![](images/200/image200_34.png)
 2.	Once opened, copy and paste the following statements in the panel on the right:
 ```
 SELECT COUNT(*) AGE_GROUP FROM SRC_AGE_GROUP;
@@ -176,10 +177,12 @@ SELECT COUNT(*) PRODUCTS FROM SRC_PRODUCT;
 SELECT COUNT(*) REGION FROM SRC_REGION;
 SELECT COUNT(*) SALES_PERSON FROM SRC_SALES_PERSON;
 ```
-3.	Execute the statements by clicking on the “Run script” icon (second icon from left to right on the icon bar; right-ponting green arrow head on top of a page)
 ![](images/200/image200_35.png)
-4.	This will show all entities count on the results panel (lower section) ![](images/200/image200_36.png)
-5.	Repeat steps 1 through 4 for connection “WS - SALES_TRG ”     ![](images/200/image200_37.png)
+3.	Execute the statements by clicking on the “Run script” icon (second icon from left to right on the icon bar; right-ponting green arrow head on top of a page)
+4.	This will show all entities count on the results panel (lower section) 
+![](images/200/image200_36.png)
+5.	Repeat steps 1 through 4 for connection “WS - SALES_TRG ”     
+![](images/200/image200_37.png)
 This will show that the count in both data bases is exactly the same.
 
 
