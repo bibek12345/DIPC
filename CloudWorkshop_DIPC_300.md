@@ -61,12 +61,10 @@ Your will need:
 1.	We will move to the directory with the necessary commands to start the agent; execute: cd /home/oracle/dipcagent/dicloud/agent/dipcagent001/bin
 2.	We will start the agent by executing:
 nohup ./startAgentInstance.sh &
-3.	Your agent is now running. Inside the DIPC server and navigate to the "Agents" screen; look at the new remote agent you have started 
+3.	Your agent is now running. If your not logged, log into your DIPC server and navigate to the "Agents" screen
 ![](images/300/image300_14.png)
-4. Log into your DIPC server and navigate to the "Agents" screen
+4. You will see the new remote agent
 ![](images/300/image300_14a.png)
-5. You will see the new remote agent
-![](images/300/image300_14b.png)
 
 
 ## On-Prem to On-Prem synchronization
