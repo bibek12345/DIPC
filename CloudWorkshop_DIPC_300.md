@@ -31,17 +31,7 @@ Your will need:
 - SQL developer
 
 
-## Remote Agent
-
-### Add Certificate to Keystore ($$$)
-1. Open an SSH session into your compute server (we will simulate on-prem with a compute instance); please refer to Appendix 1 to learn how to establish a SSH session
-2. Impersonate oracle user by execute the following command:
-sudo su - oracle
-3.	Import the client side certificate into the cacerts in your system. Execute:
-$JAVA_HOME/bin/keytool -import -alias uscom-central-1oraclecloudcom  -keystore $JAVA_HOME/jre/lib/security/cacerts -file /home/oracle/Certificate/dipc.crt
-3.	Provide password: “changeit”
-4.	Answer “yes” to question “trust this certificate?”
-
+## Remote Agent A
 
 ### Install Agent
 1.	Open an SSH session into your compute server (we will simulate on-prem with a compute instance); please refer to Appendix 1 to learn how to establish a SSH session
