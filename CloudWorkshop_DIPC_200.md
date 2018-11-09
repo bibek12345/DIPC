@@ -167,16 +167,16 @@ Up until this point, we have monitored the job within DIPC but it would nice to 
 1.	Start SQL Developer. On the connections panel, select your source database (WS - SALES_SRC) and click on the plus (+) sign to open the connection 
 ![](images/200/image200_34.png)
 2.	Once opened, copy and paste the following statements in the panel on the right:
-```
-SELECT COUNT(*) AGE_GROUP FROM SRC_AGE_GROUP;
-SELECT COUNT(*) CITY FROM SRC_CITY;
-SELECT COUNT(*) CUSTOMER FROM SRC_CUSTOMER;
-SELECT COUNT(*) ORDER_LINES FROM SRC_ORDER_LINES;
-SELECT COUNT(*) ORDERS FROM SRC_ORDERS;
-SELECT COUNT(*) PRODUCTS FROM SRC_PRODUCT;
-SELECT COUNT(*) REGION FROM SRC_REGION;
-SELECT COUNT(*) SALES_PERSON FROM SRC_SALES_PERSON;
-```
+    ```
+    SELECT COUNT(*) AGE_GROUP FROM SRC_AGE_GROUP;
+    SELECT COUNT(*) CITY FROM SRC_CITY;
+    SELECT COUNT(*) CUSTOMER FROM SRC_CUSTOMER;
+    SELECT COUNT(*) ORDER_LINES FROM SRC_ORDER_LINES;
+    SELECT COUNT(*) ORDERS FROM SRC_ORDERS;
+    SELECT COUNT(*) PRODUCTS FROM SRC_PRODUCT;
+    SELECT COUNT(*) REGION FROM SRC_REGION;
+    SELECT COUNT(*) SALES_PERSON FROM SRC_SALES_PERSON;
+    ```
 ![](images/200/image200_35.png)
 3.	Execute the statements by clicking on the “Run script” icon (second icon from left to right on the icon bar; right-ponting green arrow head on top of a page)
 4.	This will show all entities count on the results panel (lower section) 
