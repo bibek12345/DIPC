@@ -96,9 +96,9 @@ nohup ./startAgentInstance.sh &
 7. Enter the following information:
     - Name: ONPREM_SRC
     - Description: Connection to on-prem database schema with source tables. AMER
-	- Agent: {REMOTE_AGENT}
+	- Agent: **{REMOTE_AGENT}**
 	- Type: Oracle
-  	- Hostname: {SERVER_IP_ADDRESS}
+  	- Hostname: **{SERVER_IP_ADDRESS}**
 	- Port: 1521
 	- Username: AMER_SRC
 	- Password: Welcome#123
@@ -117,9 +117,9 @@ nohup ./startAgentInstance.sh &
 11. Enter the following information:
     - Name: ONPREM_TRG
     - Description: Connection to target schema onprem_trg EMEA
-	- Agent: {REMOTE_AGENT}
+	- Agent: **{REMOTE_AGENT}**
 	- Type: Oracle
-	- Hostname: {SERVER_INSTANCE_IP}
+	- Hostname: **{SERVER_INSTANCE_IP}**
 	- Port: 1521
 	- Username: EMEA_TRG
 	- Password: Welcome#123
