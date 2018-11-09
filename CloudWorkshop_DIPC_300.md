@@ -31,18 +31,19 @@ Your will need:
 - SQL developer
 
 
-## Remote Agent A
+## Remote Agent
 
 ### Install Agent
 1.	Open an SSH session into your compute server (we will simulate on-prem with a compute instance); please refer to Appendix 1 to learn how to establish a SSH session
-3.	Move to the directory where the remote agent was downloaded, execute: cd dipcagent/dicloud
+3.	Move to the directory where the remote agent was downloaded, execute: cd /home/oracle/dipcagent/dicloud
 7.	Execute command to install agent: 
-./dicloudConfigureAgent.sh -recreate -debug -dipchost=**{DIPC SERVER HostName eg osc######DIPC##-oscnas001.uscom-central-1.oraclecloud.com}** -dipcport=443 -user=**{YOUR_CLOUD_ACCOUNT_USERNAME}** -password=**{YOUR_CLOUD_ACCOUNT_PASSWORD}** -authType=OAUTH2 -idcsServerUrl=https://idcs-bfb16122271a47fc91ada73842325e52.identity.oraclecloud.com -agentIdcsScope=https://919181A11AC6494CBCFA146EBC9A2A48.uscom-central-1.oraclecloud.com:443external -agentClientId=ec9958f548e7414f872cc480c0bf3455 -agentClientSecret=77321de1-6f4a-4997-945e-8acb271b0473
+./dicloudConfigureAgent.sh -recreate -debug -dipchost=**{DIPC SERVER HostName eg osc######DIPC##-oscnas001.uscom-central-1.oraclecloud.com}** -dipcport=443 -user=**{YOUR_CLOUD_ACCOUNT_USERNAME}** -password=**{YOUR_CLOUD_ACCOUNT_PASSWORD}** -authType=OAUTH2 -idcsServerUrl=https://idcs-bfb16122271a47fc91ada73842325e52.identity.oraclecloud.com -agentIdcsScope=**{YOUR_DIPC_SECAPP}** -agentClientId=4b8201b85cb946eab6f0006c37093f26 -agentClientSecret=c5e45679-aa81-4d98-a574-01c0484b37b6
 	```
 	where:
 		{DIPC SERVER} - This is the name of your DIPC Server. This have been provided in your environment page; look for entry DIPC SERVER.
 		{YOUR_USER} - This is the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_USER
 		{YOUR_PASSWORD} - This is the password of the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_PASSWORD
+		{YOUR_DIPC_SECAPP} - This is the scope of the security application defined in the Identity Server. This have been provided in your environment page; look for entry YOUR_DIPC_SECAPP
 	```
 8.	New directories will be created, to look at them execute: ls
 9.	We will take a look at the configuration file (agent.properties) and we will change the port in which this agent will talk to DIPC. Move to the configuration directory, execute: cd /home/oracle/dipcagent/dicloud/agent/dipcagent001/conf
@@ -62,6 +63,10 @@ Your will need:
 nohup ./startAgentInstance.sh &
 3.	Your agent is now running. Inside the DIPC server and navigate to the "Agents" screen; look at the new remote agent you have started 
 ![](images/300/image300_14.png)
+4. Log into your DIPC server and navigate to the "Agents" screen
+![](images/300/image300_14a.png)
+5. You will see the new remote agent
+![](images/300/image300_14b.png)
 
 
 ## On-Prem to On-Prem synchronization
