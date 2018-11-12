@@ -68,12 +68,6 @@ nohup ./startAgentInstance.sh &
 
 ## Migrate On-Prem to the Cloud
 
-### Verify Data in Source and Target DBs (Optional)
-** MISSING STEPS
-** Saves images 15 to 29 for this section
-** Images for source could be the same as in Lab300, images for target need to be new
-
-
 ### Execute Data Synch Elevated Task
 1. You should be logged into DIPC, if that is NOT the case, log in.
 2. From the left side panel, SELECT "Home" 
@@ -139,7 +133,7 @@ where:
 ![](images/400/image400_7.png)
 
 
-### Verify Data in Target DB (Optional)
+### Verify Data in Source and Target DBs (Optional)
 Up until this point, we have monitored the job within DIPC but it would nice to see the data in both source and target to verify that they are the same. For such task, we will use SQL Developer; please refer to Appendix 3 to learn how to create connections against the workshop databases.
 1.	Start SQL Developer. On the connections panel, select your source database (WS - AMER_SRC) and click on the plus (+) sign to open the connection 
 ![](images/200/image400_8.png)
