@@ -37,26 +37,25 @@ SELECT COUNT(*) FROM TRG_SALES;
 
 ### Create ODI Execution task
 1.	Log into your DIPC server, provide the URL (it should look like this): 
-https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
+https://dipc01-orasenatdpltintegration02.adipc.ocp.oraclecloud.com/dicloud/app/index.html
 2.	Provide your user name and password, then click "Sign In" button 
 ![](images/300/image300_2.png)
 Or, if you are already in the application, go to the "Home" page by selecting the "Home"hyperlink from the left panel. 
 3.	In the Home Page click on "Next" icon (>) located at the far right side of the top panel to locate the "ODI Execution" task icon 
-![](images/500/image500_3.png) 
-4.	Once you have located the “ODI Execution” task icon, click on the “Create" button.  ![](images/600/image600_4.png)
+4.	Once you have located the “ODI Execution” task icon, click on the “Create" button.  ![](images/600/image600_4p.png)
 5.	Provide the following information:
 	- Name:  Load Sales DWH
-	- Description: Execute ODI Scenario to load OLTP data into DWH 
-	![](images/600/image600_5.png)
+	- Description: Execute ODI Scenario to load OLTP data into DW 
+	![](images/600/image600_5p.png)
 6.	In the “Connections” section, click on “Import" button to import a deployment archive created in ODI Studio that contains the Scenario we want to execute.
 7.	Navigate to the directory in which you copied the files provided for the labs and select “LD_SALES_DIPC_18.2.3.zip”. Click on “Open” button. 
-![](images/600/image600_6.png)
+![](images/600/image600_6p.png)
 8.	Wait for the import operation to complete (this will take some time). Once completed, click on “Scenario” drop-down menu 
-![](images/600/image600_7.png)
+![](images/600/image600_7p.png)
 9.	Select “LD_TRG_SALES_001”. This will show the connections the scenario uses and that we need to map 
-![](images/600/image600_8.png)
+![](images/600/image600_8p.png)
 10.	We already have some connections defined but we will define a new connection to our DWH. Click on the plus icon on the first row 
-![](images/600/image600_9.png)
+![](images/600/image600_9p.png)
 11.	Provide the following information:
 	- Name: DIPC_DWH
 	- Description: Data Warehouse
@@ -65,7 +64,7 @@ Or, if you are already in the application, go to the "Home" page by selecting th
 	- Hostname: **{TARGET_DB_NAME}**
 	- Port: 1521
 	- Username: TRG_AGG_SALES
-	- Password: Welcome#123
+	- Password: **{_DB_PASSWORD}**
 	- Service Name: **{TARGET_DB_SERVICE_NAME}**
 	- Schema Name: TRG_AGG_SALES (Default)
 	```
@@ -75,14 +74,15 @@ Or, if you are already in the application, go to the "Home" page by selecting th
     	{TARGET_DB_SERVICE_NAME} - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
 	```
 12.	Click on “Test Connection” button at the bottom. A green message should appear on top when everything is in order 
-![](images/600/image600_10.png)
-13.	Click on “Save” button at the bottom. DIPC will create the connection and return to the original screen with that connection selected. 
-![](images/600/image600_11.png)
+![](images/600/image600_010.png)
+![](images/600/image600_110.png)
+
+13.	Click on “Save” button at the bottom. DIPC will create the connection and return to the original screen with that connection selected.
 14.	Using the drop-down menu on the “Schema” attribute of the first row, select “TRG_AGG_SALES” 
-![](images/600/image600_12.png)
+![](images/600/image600_12p.png)
 15.	Using the drop-down menu on the “Connection” attribute of the second row, select “SALES_SRC”
 16.	Using the drop-down menu on the “Schema” attribute of the second row, select “SALES_SRC” 
-![](images/600/image600_13.png)
+![](images/600/image600_13p.png)
 17.	Click on “Save and Run” button located on the top right corner of the screen to execute the task
 18.	You will be navigated to the “Monitor” screen. After some time, a message will appear in the notification bar 
 ![](images/600/image600_14.png)
@@ -104,7 +104,7 @@ Or, if you are already in the application, go to the "Home" page by selecting th
 1.	Go to SQL Developer. On the connections panel, select your DWH (WS - TRG_AGG_SALES) and click on the plus (+) sign to open the connection 
 ![](images/600/image600_1.png)
 2.	Once opened, copy and paste the following statements in the panel on the right:
-SELECT COUNT(*) FROM TRG_SALES; 
+SELECT COUNT(*) FROM TRG_SALES;
 ![](images/600/image600_2.png)
 3.	Execute the statements by clicking on the “Run script” ( ) icon (second from left to right on the icon bar
 4.	This will show the count on the results panel (lower section) 
