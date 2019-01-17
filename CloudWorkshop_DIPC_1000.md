@@ -15,22 +15,66 @@ Your will need:
 - Oracle Managed DIPC Instance URL
 - DIPC User and Password
 - DB information for source system: server name, user/password and service name
-- DB information for target system: ADWC wallet, admin user password and service names
+- DB information for target system: client credentials file, admin user password and service names
 - SQL Developer
 - General understanding of RDBMS and data integration concepts
 
 ## Configure Oracle Autonomous Data Warehouse Cloud for Replication
+In the Oracle Autonomous Data Warehouse Cloud database, complete the following tasks:
 
-- Configure Oracle Autonomous Data Warehouse Cloud for Replication.
-	1. Unlock the pre-created Oracle GoldenGate database user ggadmin in Oracle Autonomous Data Warehouse Cloud.
-	2. Create new application user user_target.
-	3. Create target database tables for replication.
-- Obtain Oracle Autonomous Data Warehouse Cloud client credentials file.
-- Configure Oracle Data Integration Platform Cloud for replication.
-	1. Transfer the client credentials file that you downloaded from Oracle Autonomous Data Warehouse Cloud.
-    2. Configure the sqlnet.ora file.
-	3. Configure the tnsnames.ora file.
-	4. Create a useridalias for the ggadmin Oracle Autonomous Data Warehouse Cloud user.
+1. Oracle Autonomous Data Warehouse Cloud has a pre-existing database user created for Oracle GoldenGate called ggadmin. The ggadmin user has been granted the right set of privileges for Oracle GoldenGate Replicat to work. By default, this user is locked. To unlock the ggadmin user, connect to your Oracle Autonomous Data Warehouse Cloud database as the ADMIN user using any SQL client tool.
+
+For example, in SQL Developer 18.3 and higher in the Connection Type field select the value Cloud Wallet that allows you to enter a credentials file. SQL Developer then presents a list of the available connections in the Service field (the connections are included in the credentials files).
+
+If your application provides support for wallets or provides specific support for an Autonomous Data Warehouse connection,for example, Oracle SQL Developer, Oracle recommends that you use that type of connection.
+
+![](images/1000/image1000_1.png)
+
+2. Run the alter user command to unlock the ggadmin user and set the password for it.
+    ```
+    alter user ggadmin identified by <password> account unlock;
+    ```
+3. Create the Target Schema for the data replication.
+    ```
+    create user sales_tgt identified by password;
+    grant create session, resource, create view, create table to sales_tgt;
+    ```
+4. Connect to Oracle Autonomous Data Warehouse Cloud database as the sales_tgt user and create target tables for which DDL replication is not enabled
+
+## Obtain Oracle Autonomous Data Warehouse Cloud client credentials file.
+To establish connection to your Oracle Autonomous Data Warehouse Cloud database, you can download the client credentials file from the Oracle Autonomous Data Warehouse Cloud service console.
+    ```
+    Note: If you do not have administrator access to Oracle Autonomous Data Warehouse Cloud, you should ask your service administrator to download and provide the client credentials file to you.
+    ```
+1. Log into your Oracle Autonomous Data Warehouse Cloud account.
+2. From the Instance page, click the menu option for the Oracle Autonomous Data Warehouse Cloud instance and select Service Console.
+3. Log into the service console using the admin username and its associated password.
+4. In the service console, click the Administration tab.
+5. Click Download Client Credentials.
+6. Enter a password to secure your client credentials file and click Download.
+7. Save the client credentials file to your local system.
+
+The client credentials file contains the following files:
+- cwallet.sso
+- ewallet.p12
+- keystore.jks
+- ojdbc.properties
+- sqlnet.ora
+- tnsnames.ora
+- truststore.jks
+
+You refer to the sqlnet.ora and tnsnames.ora files while configuring Oracle Data Integration Platform Cloud to work with Oracle Autonomous Data Warehouse Cloud.
+
+## Configure Oracle Data Integration Platform Cloud for replication.
+Complete the following tasks in the system where ADIPC agent which will be used to connect to ADWC in configured, In this Lab we will be using a compute instance COMPUTE_DIPC01 to configure the DIPC agent:
+
+1. Transfer the client credentials file that you downloaded from Oracle Autonomous Data Warehouse Cloud to your compute instance
+![](images/1000/image1000_2.png)
+
+2. In the compute instance, unzip the client credentials file into a new directory. For example, /home/oracle/adwc_credentials. This will be your key directory
+![](images/1000/image1000_3.png)
+
+3. 
 
 
 ## Log into DIPC Server
