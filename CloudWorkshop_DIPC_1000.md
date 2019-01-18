@@ -99,25 +99,33 @@ For Oracle GoldenGate replication, use ADWC_Database_Name_low
 
 ![](images/1000/image1000_6.png)
 
-
-
-
 ## Log into DIPC Server
 
 ### Login into DIPC using Oracle Cloud Services Dashboard
 
 1. In your web browser, navigate to cloud.oracle.com, then click Sign in.
+
 2. Provide the cloud account: orasenatdpltintegration02 then **{Enter}**
-3. Provide your user name and password, then click "Sign In" button Or You can log in with Oracle SSO. You will land in the Dasboard screen ![](images/1000/image1000_1.png)
-4. In the Dasboard search for  "Autonomous Data Integration Platform Cloud" and click on the service
- ![](images/1000/image1000_2.png)
-5. Click on the hamburger menu of the DIPC server assigned to you, then click "Data Integration Platform Console" ![](images/1000/image1000_3.png)
-You will be navigated to your DIPC server Home page. ![](images/1000/image1000_4.png)
+
+3. Provide your user name and password, then click "Sign In" button Or You can log in with Oracle SSO. You will land in the Dasboard screen.
+
+![](images/1000/image1000_7.png)
+
+4. In the Dasboard search for  "Autonomous Data Integration Platform Cloud" and click on the service.
+ 
+ ![](images/1000/image1000_8.png)
+
+5. Click on the hamburger menu of the DIPC server assigned to you, then click "Data Integration Platform Console" ![]
+
+(images/1000/image1000_9.png)
+
+You will be navigated to your DIPC server Home page. ![](images/1000/image1000_10.png)
 
 ### Login into DIPC using direct URL
 
-1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one "https://dipc01-orasenatdpltintegration02.adipc.ocp.oraclecloud.com/dicloud"
-2. Provide your user name and password, then click "Sign In" button ![](images/1000/image1000_1.png)
+1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one "https://dipc01-orasenatdpltintegration02.adipc.ocp.oraclecloud.com/dicloud".
+
+2. Provide your user name and password, then click "Sign In" button ![](images/1000/image1000_7.png)
 You will be navigated to your DIPC server Home page.
 
 
