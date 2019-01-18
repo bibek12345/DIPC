@@ -85,7 +85,8 @@ Complete the following tasks in the system where ADIPC agent which will be used 
 4. Edit the tnsnames.ora file in the /home/oracle/dicloud/oci/ location to include the connection details that is available in the tnsnames.ora file in your key directory (the directory where you unzipped the client credentials file downloaded from Oracle Autonomous Data Warehouse Cloud).
 
 ```
-Note: The tnsnames.ora file provided with the client credentials file contains three database service names identifiable as:
+Note: The tnsnames.ora file provided with the client credentials file contains three database service names 
+identifiable as:
 ADWC_Database_Name_low
 ADWC_Database_Name_medium
 ADWC_Database_Name_high
@@ -117,7 +118,7 @@ For Oracle GoldenGate replication, use ADWC_Database_Name_low
 
 5. Click on the hamburger menu of the DIPC server assigned to you, then click "Data Integration Platform Console" ![]
 
-(images/1000/image1000_9.png)
+ ![](images/1000/image1000_9.png)
 
 You will be navigated to your DIPC server Home page. ![](images/1000/image1000_10.png)
 
