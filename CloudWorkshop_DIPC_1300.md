@@ -1,5 +1,5 @@
 # Lab 1300 - Replicate Data - Oracle to Kafka
-![](images/1300/image1300_1.jpg)
+![](images/1300/image1300_1.JPG)
 
 ## Before You Begin
 
