@@ -192,26 +192,26 @@ You will be navigated to your DIPC server Home page.
 
     ![](images/1000/image1000_16.png)
 
-14.	Now, we are going to create the target connection. Open the drop-down menu from the top far right corner and then select “Connection”  ![](images/1000/image1000_15.png)
-15.	Enter the following information:
-    - Name: SALES_TRG 
-    - Description: Sales OLTP Replicated Data
+8.	Now, we are going to create the target connection for Autonomous Data Warehouse. Open the drop-down menu from the top far right corner and then select “Connection”  ![](images/1000/image1000_17.png)
+
+9.	Enter the following information:
+    - Name: ADWC_TGT 
+    - Description: Connection for ADWC Target
     - Agent: **{LOCAL_AGENT}**
-    - Type Oracle – selecting Oracle will expand the Connection Settings
-    - Hostname: **{TARGET_DB_NAME}**
-    - Port: 1521
-    - Username: SALES_TRG 
-    - Password: Welcome#123
-    - Service Name: **{TARGET_DB_SERVICE_NAME}**
-    - Schema Name: SALES_TRG  (Default)
+    - Type : Oracle Autonomous Data Warehouse Cloud
+    - Username: ggadmin 
+    - Password: Wel_Come#123
+    - Credential File : **{Upload the creadential file downloaded}**
+    - Connection URL : **{Select from drop down}**
+    - Service Name: dipcadw_low
+    - Schema Name: SALES_TGT  (Default)
     ```
     where:
         {LOCAL_AGENT} - Select the local DIPC agent 
-        {TARGET_DB_NAME} - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
-        {TARGET_DB_SERVICE_NAME} - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
+              
     ```
-    ![](images/1000/image1000_16.png)
-16. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
+    ![](images/1000/image1000_14.png)
+10. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
 
 
 ## Create Synchronize Data Elevated Task
