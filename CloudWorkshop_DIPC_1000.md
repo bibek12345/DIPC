@@ -192,7 +192,7 @@ You will be navigated to your DIPC server Home page.
 
     ![](images/1000/image1000_16.png)
 
-8.	Now, we are going to create the target connection for Autonomous Data Warehouse. Open the drop-down menu from the top far right corner and then select “Connection”  ![](images/1000/image1000_17.png)
+8.	Now, we are going to create the target connection for Autonomous Data Warehouse. Open the drop-down menu from the top far right corner and then select “Connection”  ![](images/1000/image1000_13.png)
 
 9.	Enter the following information:
     - Name: ADWC_TGT 
@@ -210,7 +210,7 @@ You will be navigated to your DIPC server Home page.
         {LOCAL_AGENT} - Select the local DIPC agent 
               
     ```
-    ![](images/1000/image1000_14.png)
+    ![](images/1000/image1000_17.png)
 10. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
 
 
