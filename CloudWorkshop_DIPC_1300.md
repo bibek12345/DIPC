@@ -1,5 +1,5 @@
 # Lab 1300 - Replicate Data - Oracle to Kafka
-![](images/1000/image1000_0.png)
+![](images/1300/image1300_1.png)
 
 ## Before You Begin
 
@@ -46,15 +46,21 @@ Complete the following tasks in the system where ADIPC agent which will be used 
 
 ![](images/1300/image1300_2.png)
 
+
 4. In the Dasboard search for  "Autonomous Data Integration Platform Cloud" and click on the service.
  
+
  ![](images/1300/image1300_3.png)
 
 5. Click on the hamburger menu of the DIPC server assigned to you, then click "Data Integration Platform Console" ![]
 
+
  ![](images/1300/image1300_4.png)
 
-You will be navigated to your DIPC server Home page. ![](images/1300/image1300_5.png)
+
+You will be navigated to your DIPC server Home page. 
+
+![](images/1300/image1300_5.png)
 
 
 ## Create Connections For Oracle Database (Source) and Kafka(Target)
