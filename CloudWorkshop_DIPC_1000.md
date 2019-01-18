@@ -71,12 +71,35 @@ You refer to the sqlnet.ora and tnsnames.ora files while configuring Oracle Data
 Complete the following tasks in the system where ADIPC agent which will be used to connect to ADWC in configured, In this Lab we will be using a compute instance COMPUTE_DIPC01 to configure the DIPC agent:
 
 1. Transfer the client credentials file that you downloaded from Oracle Autonomous Data Warehouse Cloud to your compute instance
+
 ![](images/1000/image1000_2.png)
 
 2. In the compute instance, unzip the client credentials file into a new directory. For example, /home/oracle/adwc_credentials. This will be your key directory
+
 ![](images/1000/image1000_3.png)
 
-3. 
+3. To configure the connection details, We need to create the tns files in the DIPC agent. Copy sqlnet.ora and tnsnames.ora files from the client credentials to /home/oracle/dicloud/oci/ location
+
+![](images/1000/image1000_4.png)
+
+4. Edit the tnsnames.ora file in the /home/oracle/dicloud/oci/ location to include the connection details that is available in the tnsnames.ora file in your key directory (the directory where you unzipped the client credentials file downloaded from Oracle Autonomous Data Warehouse Cloud).
+
+```
+Note: The tnsnames.ora file provided with the client credentials file contains three database service names identifiable as:
+ADWC_Database_Name_low
+ADWC_Database_Name_medium
+ADWC_Database_Name_high
+
+For Oracle GoldenGate replication, use ADWC_Database_Name_low
+```
+
+![](images/1000/image1000_5.png)
+
+5. Edit this sqlnet.ora file to include your key directory.
+
+![](images/1000/image1000_6.png)
+
+
 
 
 ## Log into DIPC Server
