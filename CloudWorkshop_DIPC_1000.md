@@ -216,28 +216,15 @@ You will be navigated to your DIPC server Home page.
 
 
 ## Create Replicate Data Elevated Task
-1.	Connections have been defined. We are ready to create and execute our “Synch Data” elevated task. From the top bar, open the drop-down menu from the top far right corner and then select “Synchronize Data” 
-![](images/1000/image1000_15.png) 
-2.	Provide the following information:
-    - Name: Sync Sales Data
-    - Description: Sync Schemas - SALES_SRC to SALES_TRG  
-    - Source – Connection: SALES_SRC
-    - Source – Schema: SALES_SRC – The default schema will be automatically selected. Leave it
-    - Target – Connection: SALES_TRG 
-    - Target – Schema: SALES_TRG  – The default schema will be automatically selected. Leave it
-    - Advanced – Include Initial Load: SELECTED
-    - Advanced – Include Replication: SELECTED
-    The “Advanced Options” allow you to optionally enable or disable the initial load and/or the on-going schema replication.
+1.	Connections have been defined. We are ready to create and execute our “Replicate Data” elevated task. From the top bar, open the drop-down menu from the top far right corner and then select “Replicate Data” 
+![](images/1000/image1000_13.png) 
+2.	Provide the following information and Click Design:
+    - Name: Replicate Data to ADWC
+    - Identifier: Sync Schemas - SALES_SRC to SALES_TRG  
+    - Description: Replicate Data to ADWC 
     **Note: If you run into any issues when trying to select a Connection refresh the page manually. The Schemas may take some time to appear as well, this is expected.**
-    ![](images/1000/image1000_17.png)
-3.	Next click on “Configure Entities” on the top bar to filter the objects that will be transferred from source into target. ![](images/1000/image1000_18.png)
-4.	The “Configure Entities” screen allows you to create include or exclude rules to define precisely which database objects will be moved over to the target schema. By default, all data entities are transferred. Enter SRC_C* in the "Rules" field and click on “-” button. ![](images/1000/image1000_19.png)  
-5.	Please note how the "Selected Data Entities" list changes when the rule is applied. Select the hamburger menu   (located on the right side of the row) of the rule you just created and select “Delete". You should end up with the original rule only
-6.	Click on “Save & Run” button on the top right to execute the task ![](images/1000/image1000_20.png)
-7.	A message will appear in the notification bar and you will be navigated to the “Monitor” screen. ![](images/1000/image1000_22.png)
-8.	The job will automatically appear within the Jobs page. This may take some time ![](images/1000/image1000_23.png) 
-Auto-refresh is on, statuses will be updated frequently.
-As the job executes, the Initial Load process is created in ODI while DIPC configures OGG for the Source Capture and Target Delivery.
+    ![](images/1000/image1000_18.png)
+3. Now provide the 
 
 
 ## Review Task Execution
