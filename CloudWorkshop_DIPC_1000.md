@@ -43,6 +43,7 @@ If your application provides support for wallets or provides specific support fo
 
 ## Obtain Oracle Autonomous Data Warehouse Cloud client credentials file.
 To establish connection to your Oracle Autonomous Data Warehouse Cloud database, you can download the client credentials file from the Oracle Autonomous Data Warehouse Cloud service console.
+
     ```
     Note: If you do not have administrator access to Oracle Autonomous Data Warehouse Cloud, you should ask your service administrator to download and provide the client credentials file to you.
     ```
