@@ -211,11 +211,11 @@ You will be navigated to your DIPC server Home page.
               
     ```
     ![](images/1000/image1000_17.png)
-    
+
 10. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
 
 
-## Create Synchronize Data Elevated Task
+## Create Replicate Data Elevated Task
 1.	Connections have been defined. We are ready to create and execute our “Synch Data” elevated task. From the top bar, open the drop-down menu from the top far right corner and then select “Synchronize Data” 
 ![](images/1000/image1000_15.png) 
 2.	Provide the following information:
