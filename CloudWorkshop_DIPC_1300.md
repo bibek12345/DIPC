@@ -44,24 +44,24 @@ Complete the following tasks in the system where ADIPC agent which will be used 
 
 3. Provide your user name and password, then click "Sign In" button Or You can log in with Oracle SSO. You will land in the Dasboard screen.
 
-![](images/1000/image1300_2.png)
+![](images/1300/image1300_2.png)
 
 4. In the Dasboard search for  "Autonomous Data Integration Platform Cloud" and click on the service.
  
- ![](images/1000/image1300_3.png)
+ ![](images/1300/image1300_3.png)
 
 5. Click on the hamburger menu of the DIPC server assigned to you, then click "Data Integration Platform Console" ![]
 
- ![](images/1000/image1300_4.png)
+ ![](images/1300/image1300_4.png)
 
-You will be navigated to your DIPC server Home page. ![](images/1000/image1300_5.png)
+You will be navigated to your DIPC server Home page. ![](images/1300/image1300_5.png)
 
 
 ## Create Connections For Oracle Database (Source) and Kafka(Target)
 1. Log into your Workshop DIPC Server.
 2. Navigate to Catalog tab and Click on Create and Select 'Connection'
 
- ![](images/1000/image1300_6.png)
+ ![](images/1300/image1300_6.png)
 
 3.	Enter the following information
     - Name: SRC_CDB
@@ -74,7 +74,7 @@ You will be navigated to your DIPC server Home page. ![](images/1000/image1300_5
     - Password: Wel_Come#123
     - Service Name: **{CDB_SOURCE_SERVICE_NAME}**
 
-    ![](images/1000/image1300_7.png)    
+    ![](images/1300/image1300_7.png)    
     ```
     where:
         {LOCAL_AGENT} - Select the local DIPC agent 
