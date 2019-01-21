@@ -70,7 +70,7 @@ You will be navigated to your DIPC server Home page.
  ![](images/1300/image1300_6.png)
 
 3.	Enter the following information
-    - Name: SRC_CDB
+    - Name: O2K_Oracle_Connection
     - Description: CDB User for Source DB
     - Agent: **{LOCAL_AGENT}**
     - Type: Oracle CDB
@@ -84,29 +84,33 @@ You will be navigated to your DIPC server Home page.
     ```
     where:
         {LOCAL_AGENT} - Select the local DIPC agent 
-        {SOURCE_DB_NAME} - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
-        {CDB_SOURCE_SERVICE_NAME} - CDB Service name string for the source database server. This have been provided in your environment page; look for entry CDB_SOURCE_SERVICE_NAME
+        {SERVICE_NAME} - CDB Service name string for the source database server. 
+
     ```
 4. Click "Test Connection" button and when the test is successful click "Save" button.
-5. Open the drop-down menu from the top far right corner and then select “Connection”. ![](images/1000/image1000_15.png)
+
+5. Open the drop-down menu from the top far right corner and then select “Connection”. 
+
 6. Enter the following information:
-    - Name: SALES_SRC
-    - Description: Sales OLTP Source Data
+    - Name: O2K_ORACLEPDB_CONNECTION
+    - Description: Replicate data from Oracle to Kafka
     - Agent: **{LOCAL_AGENT}**
-    - Type Oracle: selecting Oracle will expand the Connection Settings ![](images/1000/image1000_6.png)
+    - Type: Oracle Database
+    - Subtype - Oracle 
     - Hostname: **{SOURCE_DB_NAME}**
     - Port: 1521
     - Username: SALES_SRC
-    - Password: Welcome#123
+    - Password: Wel_Come#123
     - Service Name: **{SOURCE_DB_SERVICE_NAME}**
     - Schema Name: SALES_SRC (Default) – When you try to select the schema, you are testing the connection at the same time
-    - CDB Connection: SRC_CDB 
-    ![](images/1000/image1000_7.png)
+    - CDB Connection: O2K_Oracle_Connection (This was created before)
+
+    ![](images/1300/image1300_8.png)
     ```
     where:
         {LOCAL_AGENT} - Select the local DIPC agent 
-        {SOURCE_DB_NAME} - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
-        {SOURCE_DB_SERVICE_NAME} - Service name string for the source database server. This have been provided in your environment page; look for entry SOURCE_DB_SERVICE_NAME
+        {SOURCE_DB_SERVICE_NAME} - Service name string for the source database server. 
+        
     ```
 7. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
     **Note: Data Entities are harvested and profiled at the time the connection is created, their popularity is also calculated by reviewing the DB query logs. This process may take some time (5 minutes or so), the Catalog will show a message when new updates are available**
