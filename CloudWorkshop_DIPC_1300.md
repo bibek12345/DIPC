@@ -68,6 +68,7 @@ You will be navigated to your DIPC server Home page.
 2. Navigate to Catalog tab and Click on Create and Select 'Connection'
 
  ![](images/1300/image1300_6.JPG)
+ 
 3.	Enter the following information
     - Name: O2K_Oracle_Connection
     - Description: CDB User for Source DB
