@@ -80,7 +80,7 @@ You will be navigated to your DIPC server Home page.
     - Password: Wel_Come#123
     - Service Name: **{CDB_SOURCE_SERVICE_NAME}**
 
-    ![](images/1300/image1300_7.png)    
+    ![](images/1300/image1300_7.JPG)    
     ```
     where:
         {LOCAL_AGENT} - Select the local DIPC agent 
@@ -105,12 +105,12 @@ You will be navigated to your DIPC server Home page.
     - Schema Name: SALES_SRC (Default) – When you try to select the schema, you are testing the connection at the same time
     - CDB Connection: O2K_Oracle_Connection (This was created before)
 
-    ![](images/1300/image1300_8.png)
+    ![](images/1300/1300_8.JPG)
     ```
     where:
         {LOCAL_AGENT} - Select the local DIPC agent 
         {SOURCE_DB_SERVICE_NAME} - Service name string for the source database server. 
-        
+
     ```
 7. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
     **Note: Data Entities are harvested and profiled at the time the connection is created, their popularity is also calculated by reviewing the DB query logs. This process may take some time (5 minutes or so), the Catalog will show a message when new updates are available**
