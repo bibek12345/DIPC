@@ -146,7 +146,7 @@ You will be navigated to your DIPC server Home page.
 
 2.	Provide the following information:
     - Name: O2K_Replication
-    - Description: Sync Schemas - Oracle to Kafka Replication
+    - Description: Oracle to Kafka Replication
 
 ![](images/1300/image1300_12.JPG)
 
