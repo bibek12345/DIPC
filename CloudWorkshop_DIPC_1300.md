@@ -89,7 +89,7 @@ You will be navigated to your DIPC server Home page.
     ```
 4. Click "Test Connection" button and when the test is successful click "Save" button.
 
-5. Open the drop-down menu from the top far right corner and then select “Connection”. 
+5. Create another Connection for PDB. Open the drop-down menu from the top far right corner and then select “Connection”. 
 
 6. Enter the following information:
     - Name: O2K_ORACLEPDB_CONNECTION
@@ -114,34 +114,29 @@ You will be navigated to your DIPC server Home page.
     ```
 7. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
     **Note: Data Entities are harvested and profiled at the time the connection is created, their popularity is also calculated by reviewing the DB query logs. This process may take some time (5 minutes or so), the Catalog will show a message when new updates are available**
-    ![](images/1000/image1000_8.png)
-8. Click on entity “SRC_CUSTOMER” to drill down in it and look at the information DIPC brought in ![](images/1000/image1000_9.png) 
-If you would like to associate a tag or a contact to this entity, click on “Edit” button on the top right corner.
-9. Click on the “Metadata” tab on top ![](images/1000/image1000_10.png) 
-    DIPCS shows attributes, primary keys, data types and some sample values of the selected entity. If you click in one of the attributes, profiling information will be shown on the right side of the screen. ![](images/1000/image1000_11.png)  
-10.	Click on the “Data” tab on top ![](images/1000/image1000_12.png) 
-11.	Click on the back icon, located on the top left corner (left of the entity name) to go back to the Catalog
-12.	In the catalog you can use the drop-down menu located at the top to select the type of object that will be shown ![](images/1000/image1000_13.png)
-13.	It is also possible to use the filter to search for a specific object ![](images/1000/image1000_14.png)
-14.	Now, we are going to create the target connection. Open the drop-down menu from the top far right corner and then select “Connection”  ![](images/1000/image1000_15.png)
-15.	Enter the following information:
-    - Name: SALES_TRG 
-    - Description: Sales OLTP Replicated Data
+    ![](images/1300/image1300_9.JPG)
+
+8.	Now, we are going to create the target connection (For Kafka). Open the drop-down menu from the top far right corner and then select “Connection”  
+
+![](images/1300/image1300_6.png)
+
+9.	Enter the following information:
+    - Name: OK_Kafka_Connection 
+    - Description: Relicate data from Oracle to Kafka
     - Agent: **{LOCAL_AGENT}**
-    - Type Oracle – selecting Oracle will expand the Connection Settings
-    - Hostname: **{TARGET_DB_NAME}**
-    - Port: 1521
-    - Username: SALES_TRG 
-    - Password: Welcome#123
-    - Service Name: **{TARGET_DB_SERVICE_NAME}**
-    - Schema Name: SALES_TRG  (Default)
-    ```
-    where:
-        {LOCAL_AGENT} - Select the local DIPC agent 
-        {TARGET_DB_NAME} - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
-        {TARGET_DB_SERVICE_NAME} - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
-    ```
-    ![](images/1000/image1000_16.png)
+    - Type Oracle – Kafka Connect
+    - Kafka Producer Config file - kafkaconnect.properties
+    - Topic Mapping Template: {FullyQualifiedTableName}
+    - Key Mapping Template: {primarykeys} 
+    - Java ClassPath: Confluent kafka Home path
+
+    Leave all the checkboxes as default selection. Also Java ClassPath will be a combination of following :
+    dirprm/:kafkaconnect.properties:{kafka_home}/share/java/kafka-serde-tools/*:{kafka_home}/share/java/kafka/*:{kafka_home}/share/java/confluent-common/*
+
+    Where your Kafka home will be kafka Installation directory.
+
+    ![](images/1300/image1300_10.JPG)
+
 16. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
 
 
