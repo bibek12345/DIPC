@@ -15,7 +15,7 @@ Your will need:
 - Oracle Managed DIPC Instance URL
 - DIPC User and Password
 - DB information for source system: server name, user/password and service name
-- COnfluent Kafka Installation 
+- Confluent Kafka Installation 
 - General understanding of Kafka Processes and RDBMS 
 
 ## Configure Source Database (oracle) for Replication
@@ -145,8 +145,8 @@ You will be navigated to your DIPC server Home page.
 ![](images/1300/image1300_11.JPG)
 
 2.	Provide the following information:
-    - Name: Sync Sales Data
-    - Description: Sync Schemas - SALES_SRC to SALES_TRG  
+    - Name: O2K_Replication
+    - Description: Sync Schemas - Oracle to Kafka Replication
 
 ![](images/1300/image1300_12.JPG)
 
@@ -194,7 +194,7 @@ Auto-refresh is on, statuses will be updated frequently.
 ## Summary
 You have now successfully completed the Hands-on Lab, and have successfully performed an Data Replication between Oracle Database as Source and Confluent Kafka as Target through Oracle’s Data Integration Platform Cloud.
 
-##References
+## References
 1. Downloading Confluent Kafka:
 https://www.confluent.io/download/
 
