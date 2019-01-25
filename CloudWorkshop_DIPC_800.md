@@ -26,15 +26,15 @@ Before we execute the task, gather the necessary Object Storage container inform
 2. Provide the cloud account: orasenatdpltintegration02 then <Enter>
 3. Provide your user name and password, then click Sign In. 
 ![](images/800/image800_1.png)
-4. Get the below details for the object storage container from the instructor.
-	4.1 Domain
-	4.2 Service URL
-	4.3 Container
+4. Get the below details for the object storage container from the instructor. <br />
+	4.1 Domain <br />
+	4.2 Service URL <br />
+	4.3 Container <br /> <br />
 
-	Example:
-	Domain: Storage-natdburlnthubtrainingenv1
-	Service URL: https://uscom-central-1b.storage.oraclecloud.com
-	Container: sensorwio
+	Example: <br />
+	Domain: Storage-natdburlnthubtrainingenv1 <br />
+	Service URL: https://uscom-central-1b.storage.oraclecloud.com <br />
+	Container: sensorwio <br />
 8. Store it in a notepad or other text editor, you will need this URL later
 
 
@@ -47,21 +47,23 @@ Before we execute the task, gather the necessary Object Storage container inform
 	- Description: Read Files
 	- Agent: **{LOCAL_AGENT}**
 	- Type: File
-	- Directory: /home/DIPC
+	- Directory: /home/oracle
 	```
 	where:
 		{LOCAL_AGENT} - Select the local DIPC agent 
 	```
+	![](images/800/image800_7.1.png)
+
  4. Click "Test Connection" button and when the test is successful click "Save" button 
- ![](images/800/image800_7.png)
+ 	![](images/800/image800_7.2.png)
 
 
 ### Create Connection to Object Storage (Target)
 1. From the "Create" drop down menu on the top right corner select "Connection" 
 ![](images/800/image800_8.png)
 2.	Enter the following information:
-    - Name: DATA_LAKE
-    - Description: Connection to Object Storage to create a Data Lake
+    - Name: forAdw 
+    - Description: Connection to Object Storage Classic
     - Agent: **{LOCAL_AGENT}**
     - Type: Oracle Object Storage Classic.
     - Domain: **{OBJECT_STORAGE_DOMAIN}**
@@ -137,4 +139,4 @@ Before we execute the task, gather the necessary Object Storage container inform
 
 
 ## Summary
-In this lab, we have seen how it is create a data pipeline to object storage; this data can then be used by other application (Big Data, etc.)
+In this lab, we have seen how to create a data pipeline to object storage; this data can then be used by other application (Big Data, etc.)
