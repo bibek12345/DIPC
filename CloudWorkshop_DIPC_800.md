@@ -117,15 +117,16 @@ Before we execute the task, gather the necessary Object Storage container inform
 		- Click on the "Select" button on the right of the field 
 		![](images/800/image800_15.png)
 		- Click on  "webclicks.txt" file and then click on "Select" button 
+			- Connection: DATA_LAKE
+			- Data Entity: Web_Clicks
+			- Type: Parquet
+			- File Path: **{YOUR_USERNAME}**
+			```
+			where:
+				{YOUR_USER} - This is the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_USER. Please use your user name to assure the file has a unique name and there is no problems with other workshop participants.
+			```
 		![](images/800/image800_16.png)
-	- Connection: DATA_LAKE
-	- Data Entity: Web_Clicks
-	- Type: Parquet
-	- File Path: **{YOUR_USERNAME}**
-	```
-	where:
-		{YOUR_USER} - This is the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_USER. Please use your user name to assure the file has a unique name and there is no problems with other workshop participants.
-	```
+
 3. Click on "Save & Execute" button located on the top right corner of the screen to execute the task 
 ![](images/800/image800_17.png)
 4.	A meesage  will appear in the notification bar to inform that the test has been created and you will be navigated to the “Monitor” screen. 
