@@ -52,7 +52,8 @@ Before we execute the task, gather the necessary Object Storage container inform
 	where:
 		{LOCAL_AGENT} - Select the local DIPC agent 
 	```
-	![](images/800/image800_7.1.png)
+	
+![](images/800/image800_7.1.png)
 
  4. Click "Test Connection" button and when the test is successful click "Save" button 
  	![](images/800/image800_7.2.png)
