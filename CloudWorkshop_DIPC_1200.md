@@ -390,7 +390,7 @@ then click “Finish”
 ### Copy Reference Data
 To save time, we will copy reference data previously created into our project. 
 
-1. Please download the Examples project from the link (images/1200/Examples.dxi)
+1. Please download the Examples project from the link <a href='https://github.com/OracleCPS/DIPC/blob/master/images/1200/Examples.dxi'> Examples.dxi </a>
 
 2. Click on "File" in Director and select "Open Package File..."
 
