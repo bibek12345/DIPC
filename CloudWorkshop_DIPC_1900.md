@@ -19,10 +19,6 @@
     - Customer will need to access DIPCS instance using VNC or through SSH from laptop computer.   They will access GoldenGate through ggsci command line tool.
     - For the hands on use case perhaps use a uni-directional data flow from the DIS Master V4 GoldenGate workshop.
     - It might make sense to have this already implemented in a scripable way using GoldenGate OBEY files so that they customer can just run the script rather than having to type everything in.
-- EDQ Lab (optional)
-    - EDQ Docs  for DIPCS: https://docs.oracle.com/en/cloud/paas/data-integration-platform-cloud/using/validating-data-quality.html
-    - Follow similar pattern of using VNC as above.
-    - Use existing EDQ lab use case from DIS Master V4.
 
 ### Useful VNC Server commands 
 
