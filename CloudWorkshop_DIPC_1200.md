@@ -392,6 +392,8 @@ To save time, we will copy reference data previously created into our project.
 
 1. Please download the Examples project from the link <a href='https://github.com/OracleCPS/DIPC/blob/master/images/1200/Examples.dxi'> Examples.dxi </a>
 
+![](images/1200/image1200_119.png)
+
 2. Click on "File" in Director and select "Open Package File..."
 
 ![](images/1200/image1200_67.png)
@@ -416,7 +418,7 @@ To save time, we will copy reference data previously created into our project.
  
  ![](images/1200/image1200_71.png)
 
-9.  Right click on the Examples.dxi package and select "Close Package File".
+9.  Right click on the Examples.dxi package and select "Close Package File". This action will close the package file in EDQ director.
 
 ![](images/1200/image1200_72.png)
 
