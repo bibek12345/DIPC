@@ -300,11 +300,11 @@ By now, you will surely see that this dataset needs some fine tuning to make it 
 ![](images/1200/image1200_49.png)
 
 32.	Click the “Run” icon in the toolbar (top of the Project Canvas) to run the process
-33.	Click on the “Record Completeness Profiler” processor to view the results in the Results Browser. You can see that only 207 of the customers have all 17 of 17 attributes filled. Click the "Show Additional Information" icon.
+33.	Click on the “Record Completeness Profiler” processor to view the results in the Results Browser. You can see that only 294 of the customers have all 15 of 15 attributes filled. Click the "Show Additional Information" icon.
 
 ![](images/1200/image1200_50.png)
 
-Notice that those 207 complete records only make up 3.8% of the entire dataset
+Notice that those 294 complete records only make up 5.4% of the entire dataset
 
 ![](images/1200/image1200_51.png)
 
@@ -335,11 +335,11 @@ We will take advantage of the results generated while we were profiling the data
 
 3.	Right-click and select “Create Reference Data”. 
 
-![](images/1200/image1200_56.png)
+![](images/1200/image1200_57.png)
 
 4.	The "New Reference Data" dialog appears. Rename the attribute name to “Gender”, click “Next”
 
-![](images/1200/image1200_57.png)
+![](images/1200/image1200_56.png)
  
 5.	Add “Gender” to the Lookup Column using the   button, then click “Next”. Click “Next” on the next two screens to keep the defaults
 
