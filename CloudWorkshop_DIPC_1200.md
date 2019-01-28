@@ -431,7 +431,7 @@ We will now begin to create a new Process for Auditing our US Customer data. The
  
 2.	Select “US Customer Data”, then click “Next”. Click “Next” on the next screen (we will not add any profiling here). Provide the following Data:
     - Name: Auditing Customer Data
-    - Description: Auditing Customer Data
+    - Description: Auditing Customer Data  <Not Mandatory>
 
     Click “Finish” to continue
 
