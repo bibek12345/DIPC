@@ -19,6 +19,7 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 -  Lab 600 - ODI Execution Task
 -  Lab 700 - Under the covers DIPCS
 -  Lab 800 - Data Lake Builder Elevated Task
+-  Lab 1200 - Enterprise Data Quality (EDQ)
 - Appendix 1 - SSH Session Configuration
 - Appendix 2 - VNC Viewer Configuration
 - Appendix 3 - SQL Developer
@@ -108,6 +109,15 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 ### Objectives
 -   Review how to create connections to Oracle Object Storage
 -   Review how to execute a Data Lake Builder task
+
+## Lab 1200:  Enterprise Data Quality (EDQ)
+
+**Documentation**: [CloudWorkshop\_DIPC\_800.md](CloudWorkshop\_DIPC\_1200.md)
+
+### Objectives
+-   Review EDQ Capabilities
+-   Connect to sample data, understand how to profile the data and know how to correct the data in EDQ
+
 
 ## Appendix 1:  SSH Session Configuration
 
