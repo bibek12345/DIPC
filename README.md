@@ -112,7 +112,7 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 
 ## Lab 1200:  Enterprise Data Quality (EDQ)
 
-**Documentation**: [CloudWorkshop\_DIPC\_800.md](CloudWorkshop\_DIPC\_1200.md)
+**Documentation**: [CloudWorkshop\_DIPC\_1200.md](CloudWorkshop\_DIPC\_1200.md)
 
 ### Objectives
 -   Review EDQ Capabilities
