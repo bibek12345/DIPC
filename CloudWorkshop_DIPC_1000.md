@@ -212,6 +212,8 @@ You will be navigated to your DIPC server Home page.
     ```
     ![](images/1000/image1000_17.png)
 
+    ![](images/1000/image1000_18.png)
+
 10. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
 
 
@@ -223,7 +225,7 @@ You will be navigated to your DIPC server Home page.
     - Identifier: Sync Schemas - SALES_SRC to SALES_TRG  
     - Description: Replicate Data to ADWC 
     **Note: If you run into any issues when trying to select a Connection refresh the page manually. The Schemas may take some time to appear as well, this is expected.**
-    ![](images/1000/image1000_18.png)
+    
 3. Now provide the 
 
 
