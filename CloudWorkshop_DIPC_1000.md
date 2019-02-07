@@ -288,5 +288,7 @@ You will be navigated to your DIPC server Home page.
     ![](images/1000/image1000_33.png) 
 
 
-Using DIPC for replicating to ADWC
+```
+Using DIPC for replicating to ADWC below link as the reference :
 https://docs.oracle.com/en/cloud/paas/data-integration-platform-cloud/using/replicate-data-oracle-autonomous-data-warehouse-cloud.html
+```
