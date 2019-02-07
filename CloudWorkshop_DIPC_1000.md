@@ -253,7 +253,15 @@ You will be navigated to your DIPC server Home page.
 
     ![](images/1000/image1000_25.png) 
 
+## Testing the Data Replication from Source to ADWC Target
 
+1. If you log in to the compute instance where the DIPC agent is configured. You can find the Goldengate Processes created for
+   Replicate data task.
+
+    ![](images/1000/image1000_26.png) 
+
+
+2. 
 
 Using DIPC for replicating to ADWC
 https://docs.oracle.com/en/cloud/paas/data-integration-platform-cloud/using/replicate-data-oracle-autonomous-data-warehouse-cloud.html
