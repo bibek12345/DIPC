@@ -261,7 +261,32 @@ You will be navigated to your DIPC server Home page.
     ![](images/1000/image1000_26.png) 
 
 
-2. 
+2. Now lets log in to the source DB and create a table and see it getting replicated. 
+
+    ![](images/1000/image1000_27.png) 
+
+    ![](images/1000/image1000_28.png) 
+
+3. These changes are captured by the extract
+
+    ![](images/1000/image1000_29.png) 
+
+4. The should appear in the ADWC target :
+
+    ![](images/1000/image1000_30.png) 
+
+5. I will insert one record to the new table at the source Database and then update it.
+
+    ![](images/1000/image1000_31.png) 
+
+6. Changes will appear in the target ADWC 
+
+    ![](images/1000/image1000_32.png) 
+
+7. We can go to the Monitor section in the DIPC Console and go to the job and see the statistics in the cosole
+
+    ![](images/1000/image1000_33.png) 
+
 
 Using DIPC for replicating to ADWC
 https://docs.oracle.com/en/cloud/paas/data-integration-platform-cloud/using/replicate-data-oracle-autonomous-data-warehouse-cloud.html
