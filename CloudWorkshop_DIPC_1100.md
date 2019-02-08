@@ -44,31 +44,31 @@ finished successfully or failed.
     these pages has three tiles and a table:
     ![](images/1100/image1100_2.png)
 
-```
-    - Agent Health: The Agent Health tile reports whether capture and delivery
+
+    - **Agent Health:** The Agent Health tile reports whether capture and delivery
     plugins related to Oracle Data Integration Platform Cloud tasks are running
     on the data sources or not which is different from the status of the agents
     displayed on the Agents page.
 
-    - Job Health: The Job Health tile located in the Monitor page of Oracle
+    - **Job Health:** The Job Health tile located in the Monitor page of Oracle
     Data Integration Platform Cloud displays information for all the Jobs
     ever run on the server.
 
-    - Top Duration Report: The Top Duration tile in the Summary page of Monitor
+    - **Top Duration Report:** The Top Duration tile in the Summary page of Monitor
     displays the top three jobs with the longest duration. Duration of a job is
     the job's end time minus its start time.
 
-    - Top Data Report: The Top Data Report tile displays the top three Jobs
+    - **Top Data Report:** The Top Data Report tile displays the top three Jobs
     with highest throughput in the past three days. Throughput is the number
     of operations replicated in the past three days in Megabytes/second.
 
-    - Top Lag Report: The Top Lag Report tile displays the top three running
+    - **Top Lag Report:** The Top Lag Report tile displays the top three running
     Jobs with the most lag. The replication lag is calculated as difference in
     seconds between the time that a record was processed in the target and the
     timestamp of that process received through Data Integration Platform
     Cloud’s running agents on the source.
 
-```
+
 
 ###   Here is how you can see all the jobs created in previous labs.
 
