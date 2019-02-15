@@ -1,7 +1,7 @@
 # Data Integration Platform Cloud Workshop
 
 ## How to Prepare for This Workshop 
-
+MAGU Branch
 - To log issues and view the lab guide source, go to the [github oracle](https://github.com/OracleCPS/DIPC) repository.
 
 - The Labguides are best viewed using the workshop's [GitHub Pages Website URL](https://oraclecps.github.io/DIPC/) 
