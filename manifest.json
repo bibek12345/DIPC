@@ -82,7 +82,7 @@
             {
                 "number": "1000",
                 "filename": "CloudWorkshop_DIPC_1000.md",
-                "title": "Lab 1000: Replicate Data to ADWC",
+                "title": "Lab 1000: Replicate Data Elevated Task For Autonomous Data Warehouse",
                 "description": "Replicate Data to ADWC",
                 "labels": {"version": "Instructor Led"}
             },
@@ -96,7 +96,7 @@
             {
                 "number": "1300",
                 "filename": "CloudWorkshop_DIPC_1300.md",
-                "title": "Lab 1300: Replicate Data to Kafka",
+                "title": "Lab 1300: Replicate Data - Oracle to Kafka",
                 "description": "Replicate Data to Kafka",
                 "labels": {"version": "Instructor Led"}
             },
