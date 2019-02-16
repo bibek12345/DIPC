@@ -192,6 +192,27 @@
                 "labels": {"version": "Self-Guided"}
             },
             {
+                "number": "1000",
+                "filename": "CloudWorkshop_DIPC_1000.md",
+                "title": "Lab 1000: Replicate Data Elevated Task For Autonomous Data Warehouse",
+                "description": "Replicate Data to ADWC",
+                "labels": {"version": "Instructor Led"}
+            },
+            {
+                "number": "1200",
+                "filename": "CloudWorkshop_DIPC_1200.md",
+                "title": "Lab 1200: Enterprise Data Quality (EDQ)",
+                "description": "Enterprise Data Quality (EDQ)",
+                "labels": {"version": "Instructor Led"}
+            },
+            {
+                "number": "1300",
+                "filename": "CloudWorkshop_DIPC_1300.md",
+                "title": "Lab 1300: Replicate Data - Oracle to Kafka",
+                "description": "Replicate Data to Kafka",
+                "labels": {"version": "Instructor Led"}
+            },
+            {
                 "number": "10100",
                 "filename": "CloudWorkshop_DIPC_Ap1.md",
                 "title": "Appendix1: SSH Session Configuration",
