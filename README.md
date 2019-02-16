@@ -110,6 +110,14 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 -   Review how to create connections to Oracle Object Storage
 -   Review how to execute a Data Lake Builder task
 
+## Lab 1000:  Replicate Data to ADWC
+
+**Documentation**: [CloudWorkshop\_DIPC\_1000.md](CloudWorkshop\_DIPC\_1000.md)
+
+### Objectives
+-   Review how to create connections
+-   Review how to execute a Replicate Data elevated task for Autonomous Data Warehouse
+
 ## Lab 1200:  Enterprise Data Quality (EDQ)
 
 **Documentation**: [CloudWorkshop\_DIPC\_1200.md](CloudWorkshop\_DIPC\_1200.md)
@@ -118,6 +126,13 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 -   Review EDQ Capabilities
 -   Connect to sample data, understand how to profile the data and know how to correct the data in EDQ
 
+## Lab 1300:  Replicate Data - Oracle to Kafka
+
+**Documentation**: [CloudWorkshop\_DIPC\_1300.md](CloudWorkshop\_DIPC\_1300.md)
+
+### Objectives
+-   Review how to create connections
+-   Review how to execute a Replicate Data Task between Oracle and Kafka
 
 ## Appendix 1:  SSH Session Configuration
 
