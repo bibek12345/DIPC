@@ -19,7 +19,9 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 -  Lab 600 - ODI Execution Task
 -  Lab 700 - Under the covers DIPCS
 -  Lab 800 - Data Lake Builder Elevated Task
+-  Lab 1000 - Replicate Data Elevated Task For Autonomous Data Warehouse
 -  Lab 1200 - Enterprise Data Quality (EDQ)
+-  Lab 1300 - Replicate Data - Oracle to Kafka
 - Appendix 1 - SSH Session Configuration
 - Appendix 2 - VNC Viewer Configuration
 - Appendix 3 - SQL Developer
