@@ -80,10 +80,24 @@
                 "labels": {"version": "Instructor Led"}
             },
             {
+                "number": "1000",
+                "filename": "CloudWorkshop_DIPC_1000.md",
+                "title": "Lab 1000: Replicate Data to ADWC",
+                "description": "Replicate Data to ADWC",
+                "labels": {"version": "Instructor Led"}
+            },
+            {
                 "number": "1200",
                 "filename": "CloudWorkshop_DIPC_1200.md",
                 "title": "Lab 1200: Enterprise Data Quality (EDQ)",
                 "description": "Enterprise Data Quality (EDQ)",
+                "labels": {"version": "Instructor Led"}
+            },
+            {
+                "number": "1300",
+                "filename": "CloudWorkshop_DIPC_1300.md",
+                "title": "Lab 1300: Replicate Data to Kafka",
+                "description": "Replicate Data to Kafka",
                 "labels": {"version": "Instructor Led"}
             },
             {
