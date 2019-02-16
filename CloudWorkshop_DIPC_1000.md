@@ -34,15 +34,15 @@ If your application provides support for wallets or provides specific support fo
 
 2. Run the alter user command to unlock the ggadmin user and set the password for it.
     ```
-    alter user ggadmin identified by <password> account unlock;
+    alter user ggadmin identified by \<password\> account unlock;
     ```
 
 3. Create the Target Schema for the data replication.
     ```
-    create user sales_tgt identified by password;
-    grant create session, resource, create view, create table to sales_tgt;
+    create user sales_TRG identified by password;
+    grant create session, resource, create view, create table to sales_TRG;
     ```
-4. Connect to Oracle Autonomous Data Warehouse Cloud database as the sales_tgt user and create target tables for which DDL replication is not enabled
+4. Connect to Oracle Autonomous Data Warehouse Cloud database as the sales_TRG user and create target tables for which DDL replication is not enabled
 
 MAGU: These steps should be performed as part of the workshop provisioning; the target user should be already created in ADW and GG user should have the correct permission by the time the users start the workshop. They should NOT have to perform these steps
 
@@ -120,7 +120,7 @@ MAGU: sqlnet.ora is in teh key directory so why should i modify the file I just 
 ## Logging Into Oracle Cloud Instance
 
 1. In your web browser, navigate to cloud.oracle.com, then click Sign in.
-2. Provide the cloud account: oscnas001 then <Enter>
+2. Provide the cloud account: oscnas001 then \<Enter\>
 ![](images/100/image100_01.png)
 3. Provide your user name and password, then click Sign In. ![](images/100/image100_1.png)
 
@@ -138,19 +138,19 @@ Click Services or Go to Dashboard to access My Oracle Services.
 3.	Enter the following information
     - Name: SRC_CDB
     - Description: CDB User for Source DB
-    - Agent: **<LOCAL_AGENT>**
+    - Agent: **\<AGENT\>**
     - Type: Oracle CDB
-    - Hostname: **<SOURCE_DB_NAME>**
+    - Hostname: **\<SOURCE_DB_NAME\>**
     - Port: 1521
     - Username: C##GGSRC
     - Password: Wel_Come#123
-    - Service Name: **<CDB_SOURCE_SERVICE_NAME>**
+    - Service Name: **\<CDB_SOURCE_SERVICE_NAME\>**
 
 ![](images/1000/image1000_12.png) 
 
     ```
     where:
-        <LOCAL_AGENT> - Select the local DIPC agent 
+        <AGENT> - Select the DIPC agent you created 
         <SOURCE_DB_NAME> - Name of the source database server. This have been provided in your environment page; 
         look for entry SOURCE_DB_NAME
         <CDB_SOURCE_SERVICE_NAME> - CDB Service name string for the source database server. This have been provided
@@ -165,19 +165,19 @@ Click Services or Go to Dashboard to access My Oracle Services.
 6. Enter the following information:
     - Name: SALES_SRC
     - Description: Sales OLTP Source Data
-    - Agent: **<LOCAL_AGENT>**
+    - Agent: **\<AGENT\>**
     - Type Oracle: selecting Oracle will expand the Connection Settings ![](images/1000/image1000_14.png)
-    - Hostname: **<SOURCE_DB_NAME>**
+    - Hostname: **\<SOURCE_DB_NAME\>**
     - Port: 1521
     - Username: SALES_SRC
     - Password: Wel_Come#123
-    - Service Name: **<SOURCE_DB_SERVICE_NAME>**
+    - Service Name: **\<SOURCE_DB_SERVICE_NAME\>**
     - Schema Name: SALES_SRC (Default) – When you try to select the schema, you are testing the connection at the same time
     - CDB Connection: SRC_CDB 
     ![](images/1000/image1000_15.png)
     ```
     where:
-        <LOCAL_AGENT> - Select the local DIPC agent 
+        <AGENT> - Select the DIPC agent you created 
         <SOURCE_DB_NAME> - Name of the source database server. This have been provided in your environment page;
         look for entry SOURCE_DB_NAME
         <SOURCE_DB_SERVICE_NAME> - Service name string for the source database server. This have been provided 
@@ -190,21 +190,21 @@ Click Services or Go to Dashboard to access My Oracle Services.
     ![](images/1000/image1000_16.png)
 
 8.	Now, we are going to create the target connection for Autonomous Data Warehouse. Open the drop-down menu from the top far right corner and then select “Connection”  ![](images/1000/image1000_13.png)
-
+******HERE password for GGADMIN
 9.	Enter the following information:
-    - Name: ADWC_TGT 
+    - Name: ADWC_TRG 
     - Description: Connection for ADWC Target
-    - Agent: **<LOCAL_AGENT>**
+    - Agent: **\<AGENT\>**
     - Type : Oracle Autonomous Data Warehouse Cloud
     - Username: ggadmin 
     - Password: Wel_Come#123
-    - Credential File : **<Upload the creadential file downloaded>**
-    - Connection URL : **<Select from drop down>**
+    - Credential File : **\<Upload the credential file downloaded\>**
+    - Connection URL : **\<Select from drop down\>**
     - Service Name: dipcadw_low
-    - Schema Name: SALES_TGT  (Default)
+    - Schema Name: SALES_TRG  (Default)
     ```
     where:
-        <LOCAL_AGENT> - Select the local DIPC agent 
+        <AGENT> - Select the DIPC agent you created 
               
     ```
     ![](images/1000/image1000_17.png)
@@ -240,7 +240,7 @@ Click Services or Go to Dashboard to access My Oracle Services.
 
     ![](images/1000/image1000_22.png) 
 
-6. Now in the Schemas/Topics tab select the target schema : SALES_TGT and click Save & Run
+6. Now in the Schemas/Topics tab select the target schema : SALES_TRG and click Save & Run
 
     ![](images/1000/image1000_23.png) 
 
