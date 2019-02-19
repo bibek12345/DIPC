@@ -8,7 +8,7 @@
 - Review how to execute a Replicate Data elevated task for Autonomous Data Warehouse
 
 ### Time to Complete 
-Approximately 60 minutes.
+Approximately 60 minutes.???
 
 ### What Do You Need?
 Your will need:
@@ -34,12 +34,12 @@ If your application provides support for wallets or provides specific support fo
 
 2. Run the alter user command to unlock the ggadmin user and set the password for it.
     ```
-    alter user ggadmin identified by \<password\> account unlock;
+    alter user ggadmin identified by <password> account unlock;
     ```
 
 3. Create the Target Schema for the data replication.
     ```
-    create user sales_TRG identified by password;
+    create user sales_TRG identified by <password>;
     grant create session, resource, create view, create table to sales_TRG;
     ```
 4. Connect to Oracle Autonomous Data Warehouse Cloud database as the sales_TRG user and create target tables for which DDL replication is not enabled
@@ -76,7 +76,7 @@ The client credentials file contains the following files:
 You refer to the sqlnet.ora and tnsnames.ora files while configuring Oracle Data Integration Platform Cloud to work with Oracle Autonomous Data Warehouse Cloud.
 
 ## Configure Oracle Data Integration Platform Cloud for replication.
-MAGU: Steps in this section should be performed as part of the workshop provisioning. Users should NOT have to perform these steps
+MAGU: Steps in this section should be performed as part of the workshop provisioning. Users should NOT have to perform these steps. ARE THESE STEPS necessary????
 
 Complete the following tasks in the system where ADIPC agent which will be used to connect to ADWC in configured, In this Lab we will be using a compute instance COMPUTE_DIPC01 to configure the DIPC agent:
 
@@ -112,7 +112,7 @@ For Oracle GoldenGate replication, use ADWC_Database_Name_low
 
 5. Edit this sqlnet.ora file to include your key directory.
 
-MAGU: sqlnet.ora is in teh key directory so why should i modify the file I just copied ???? And the sqlnet.ora in compute02 points to directory /tmp/apt which is another copy of the key directory. Why is that???
+MAGU: sqlnet.ora is in the key directory so why should I modify the file I just copied ???? And the sqlnet.ora in compute02 points to directory /tmp/apt which is another copy of the key directory. Why is that???
 
 ![](images/1000/image1000_6.png)
 
@@ -190,22 +190,23 @@ Click Services or Go to Dashboard to access My Oracle Services.
     ![](images/1000/image1000_16.png)
 
 8.	Now, we are going to create the target connection for Autonomous Data Warehouse. Open the drop-down menu from the top far right corner and then select “Connection”  ![](images/1000/image1000_13.png)
-******HERE password for GGADMIN
+
 9.	Enter the following information:
     - Name: ADWC_TRG 
     - Description: Connection for ADWC Target
     - Agent: **\<AGENT\>**
     - Type : Oracle Autonomous Data Warehouse Cloud
-    - Username: ggadmin 
+    - Username: GGADMIN 
     - Password: Wel_Come#123
-    - Credential File : **\<Upload the credential file downloaded\>**
-    - Connection URL : **\<Select from drop down\>**
+    - Credential File: **\<CREDENTIAL_FILE\>**
+    - Connection URL: **\<CONNECTION_URL\>**
     - Service Name: dipcadw_low
     - Schema Name: SALES_TRG  (Default)
     ```
     where:
         <AGENT> - Select the DIPC agent you created 
-              
+        <CREDENTIAL_FILE> - Select the ADW credential file (ZIP) you downloaded previously. This will populate the drop down on "Service Name" field.
+        <CONNECTION_URL> - a URL will automatically populate after selecting the service.  
     ```
     ![](images/1000/image1000_17.png)
 
@@ -219,7 +220,7 @@ Click Services or Go to Dashboard to access My Oracle Services.
 
 ![](images/1000/image1000_13.png) 
 
-2.	Provide the following information and Click Design:
+2.	Provide the following information and click on "Design" button:
     - Name: Replicate Data to ADWC
     - Identifier: Replicate Data to ADWC  
     - Description: Replicate Data to ADWC 
@@ -232,7 +233,7 @@ Click Services or Go to Dashboard to access My Oracle Services.
 
     ![](images/1000/image1000_20.png) 
 
-4. Next in the schemas tab select the source schema : SALES_SRC
+4. Next in the schemas tab select the source schema: SALES_SRC
 
     ![](images/1000/image1000_21.png) 
 
@@ -289,3 +290,5 @@ Click Services or Go to Dashboard to access My Oracle Services.
 Using DIPC for replicating to ADWC below link as the reference :
 https://docs.oracle.com/en/cloud/paas/data-integration-platform-cloud/using/replicate-data-oracle-autonomous-data-warehouse-cloud.html
 ```
+
+MAGU: If we explained how to connect using SQLDeveloper, shouldn't we use it to do teh testing? (create table, update row, etc.) and use DIPC monitoring to see the # of rows inserted, deleted, updated, etc. instead of GGSCI
