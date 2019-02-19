@@ -24,23 +24,23 @@ Your will need:
 ### Login into DIPC using Oracle Cloud Services Dashboard
 
 1. In your web browser, navigate to cloud.oracle.com, then click Sign in.
-2. Provide the cloud account: oscnas001 then **{Enter}**
-3. Provide your user name and password, then click "Sign In" button. You will land in the Dasboard screen ![](images/200/image200_1.png)
-4. In the "Data Integration Platform Cloud" service box click on the hamburguer menu and then select "Open Service Console" ![](images/200/image200_2.png)
-5. Click on the hamburger menu of the DIPC server assigned to you, then click "Data Integration Platform Console" ![](images/200/image200_3.png)
-You will be navigated to your DIPC server Home page. ![](images/200/image200_4.png)
+2. Provide the cloud account: XXXXXXX then **{Enter}**
+3. Provide your user name and password, then click "Sign In" button. You will land in the Dasboard screen. ![](images/200/image200_1.png)
+4. Select the hamburger menu button on the top left corner. Locate "Autonomous Data Integration" in your list of services, then select the service. ![](images/200/image200_2p.png)
+5. Click on the right-hand-side hamburger menu of the DIPC instance assigned to you, then click the first option to open the console. ![](images/200/image200_3p.png)
+You will be navigated to your DIPC instance web console home page. ![](images/200/image200_4p.png)
 
 ### Login into DIPC using direct URL
 
-1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one "https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud"
+1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look something like this one "https://dipc01-orasenatdpltintegration02.adipc.ocp.oraclecloud.com/dicloud"
 2. Provide your user name and password, then click "Sign In" button ![](images/200/image200_1.png)
-You will be navigated to your DIPC server Home page.
+You will be navigated to your DIPC instance web console home page.
 
 
 ## Create Connections and Review Catalog
-1. Log into your Workshop DIPC Server.
-2. For synchronization jobs we will need a CDB (Container DB) connection to our DB. In the Home Page click the “Create" button in the "Connection” box from top section. ![](images/200/image200_5.png)
-3.	Enter the following information
+1. Log into your Workshop DIPC instance.
+2. For synchronization jobs we will need a CDB (Container DB) connection to our DB. In the home page scroll right on the "Get started" panel and click the “Create" button in the "Connection” box. ![](images/200/image200_5p.png)
+3.	Enter the following information:
     - Name: SRC_CDB
     - Description: CDB User for Source DB
     - Agent: **{LOCAL_AGENT}**
@@ -50,7 +50,8 @@ You will be navigated to your DIPC server Home page.
     - Username: C##GGSRC
     - Password: Welcome#123
     - Service Name: **{CDB_SOURCE_SERVICE_NAME}**
-    ![](images/200/image200_5a.png)    
+    ![](images/200/image200_5ap.png)
+    ![](images/200/image200_5bp.png)    
     ```
     where:
         {LOCAL_AGENT} - Select the local DIPC agent 
@@ -58,38 +59,40 @@ You will be navigated to your DIPC server Home page.
         {CDB_SOURCE_SERVICE_NAME} - CDB Service name string for the source database server. This have been provided in your environment page; look for entry CDB_SOURCE_SERVICE_NAME
     ```
 4. Click "Test Connection" button and when the test is successful click "Save" button.
-5. Open the drop-down menu from the top far right corner and then select “Connection”. ![](images/200/image200_15.png)
+5. Open the drop-down menu from the top far right corner and then select “Connection”. ![](images/200/image200_15p.png)
 6. Enter the following information:
     - Name: SALES_SRC
     - Description: Sales OLTP Source Data
     - Agent: **{LOCAL_AGENT}**
-    - Type Oracle: selecting Oracle will expand the Connection Settings ![](images/200/image200_6.png)
+    - Type Oracle: selecting Oracle will expand the Connection Settings
     - Hostname: **{SOURCE_DB_NAME}**
     - Port: 1521
+    ![](images/200/image200_6p.png)
     - Username: SALES_SRC
     - Password: Welcome#123
     - Service Name: **{SOURCE_DB_SERVICE_NAME}**
     - Schema Name: SALES_SRC (Default) – When you try to select the schema, you are testing the connection at the same time
-    - CDB Connection: SRC_CDB 
-    ![](images/200/image200_7.png)
+    - CDB Connection: SRC_CDB
+    ![](images/200/image200_7p.png)
     ```
     where:
         {LOCAL_AGENT} - Select the local DIPC agent 
         {SOURCE_DB_NAME} - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
         {SOURCE_DB_SERVICE_NAME} - Service name string for the source database server. This have been provided in your environment page; look for entry SOURCE_DB_SERVICE_NAME
     ```
-7. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
+7. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema.
+
     **Note: Data Entities are harvested and profiled at the time the connection is created, their popularity is also calculated by reviewing the DB query logs. This process may take some time (5 minutes or so), the Catalog will show a message when new updates are available**
     ![](images/200/image200_8.png)
 8. Click on entity “SRC_CUSTOMER” to drill down in it and look at the information DIPC brought in ![](images/200/image200_9.png) 
 If you would like to associate a tag or a contact to this entity, click on “Edit” button on the top right corner.
-9. Click on the “Metadata” tab on top ![](images/200/image200_10.png) 
-    DIPCS shows attributes, primary keys, data types and some sample values of the selected entity. If you click in one of the attributes, profiling information will be shown on the right side of the screen. ![](images/200/image200_11.png)  
+9. Click on the “Attributes” tab on top ![](images/200/image200_10p.png) 
+    DIPCS shows attributes, primary keys, data types and some sample values of the selected entity. If you click in one of the attributes, profiling information will be shown on the right side of the screen. ![](images/200/image200_11p.png)  
 10.	Click on the “Data” tab on top ![](images/200/image200_12.png) 
 11.	Click on the back icon, located on the top left corner (left of the entity name) to go back to the Catalog
 12.	In the catalog you can use the drop-down menu located at the top to select the type of object that will be shown ![](images/200/image200_13.png)
 13.	It is also possible to use the filter to search for a specific object ![](images/200/image200_14.png)
-14.	Now, we are going to create the target connection. Open the drop-down menu from the top far right corner and then select “Connection”  ![](images/200/image200_15.png)
+14.	Now, we are going to create the target connection. Open the drop-down menu from the top far right corner and then select “Connection”  ![](images/200/image200_15p.png)
 15.	Enter the following information:
     - Name: SALES_TRG 
     - Description: Sales OLTP Replicated Data
@@ -97,23 +100,26 @@ If you would like to associate a tag or a contact to this entity, click on “Ed
     - Type Oracle – selecting Oracle will expand the Connection Settings
     - Hostname: **{TARGET_DB_NAME}**
     - Port: 1521
+    ![](images/200/image200_16p.png)
     - Username: SALES_TRG 
     - Password: Welcome#123
     - Service Name: **{TARGET_DB_SERVICE_NAME}**
     - Schema Name: SALES_TRG  (Default)
+    - CDB Connection: SRC_CDB
+    ![](images/200/image200_16ap.png)
     ```
     where:
         {LOCAL_AGENT} - Select the local DIPC agent 
         {TARGET_DB_NAME} - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
         {TARGET_DB_SERVICE_NAME} - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
     ```
-    ![](images/200/image200_16.png)
+
 16. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
 
 
 ## Create Synchronize Data Elevated Task
 1.	Connections have been defined. We are ready to create and execute our “Synch Data” elevated task. From the top bar, open the drop-down menu from the top far right corner and then select “Synchronize Data” 
-![](images/200/image200_15.png) 
+![](images/200/image200_15ap.png) 
 2.	Provide the following information:
     - Name: Sync Sales Data
     - Description: Sync Schemas - SALES_SRC to SALES_TRG  
@@ -125,28 +131,18 @@ If you would like to associate a tag or a contact to this entity, click on “Ed
     - Advanced – Include Replication: SELECTED
     The “Advanced Options” allow you to optionally enable or disable the initial load and/or the on-going schema replication.
     **Note: If you run into any issues when trying to select a Connection refresh the page manually. The Schemas may take some time to appear as well, this is expected.**
-    ![](images/200/image200_17.png)
+    ![](images/200/image200_17p.png)
 3.	Next click on “Configure Entities” on the top bar to filter the objects that will be transferred from source into target. ![](images/200/image200_18.png)
-4.	The “Configure Entities” screen allows you to create include or exclude rules to define precisely which database objects will be moved over to the target schema. By default, all data entities are transferred. Enter SRC_C* in the "Rules" field and click on “-” button. ![](images/200/image200_19.png)  
+4.	The “Configure Entities” screen allows you to create include or exclude rules to define precisely which database objects will be moved over to the target schema. By default, all data entities are transferred. Enter SRC_C* in the "Rules" field and click on “-” button. ![](images/200/image200_19p.png)  
 5.	Please note how the "Selected Data Entities" list changes when the rule is applied. Select the hamburger menu   (located on the right side of the row) of the rule you just created and select “Delete". You should end up with the original rule only
-6.	Click on “Save & Run” button on the top right to execute the task ![](images/200/image200_20.png)
-7.	A message will appear in the notification bar and you will be navigated to the “Monitor” screen. ![](images/200/image200_22.png)
+6.	Click on “Save & Run” button on the top right to execute the task ![](images/200/image200_20p.png)
+7.	A message will appear in the notification bar and you will be navigated to the “Monitor” screen. ![](images/200/image200_22p.png)
 8.	The job will automatically appear within the Jobs page. This may take some time ![](images/200/image200_23.png) 
 Auto-refresh is on, statuses will be updated frequently.
 As the job executes, the Initial Load process is created in ODI while DIPC configures OGG for the Source Capture and Target Delivery.
 
 
 ## Review Task Execution
-
-### In ODI Console (Optional)
-The Initial Load process uses Data Pump and can be monitored within ODI Console. 
-
-1.	Click on the picture icon located on the top right corner of the screen and then select “Open ODI” ![](images/200/image200_24.png)  
-2.	Click on “Proceed” button ![](images/200/image200_25.png)  
-3.	On the hierarchical panel on the left select “Runtime > Sessions > Sessions”. Then select the row. ![](images/200/image200_26.png)
-4.	Now click on the “View” icon (sunglasses located on top left corner). This will open a tab on the right side with information about the executed sessions. ![](images/200/image200_27.png)
-5.	Click on the session name to drill down and look at more detail ![](images/200/image200_28.png)
-6.	Scroll down to see the detailed steps. When finished, you can close the browser tab with ODI Console ![](images/200/image200_29.png)
 
 
 ### Review Job in DIPC
@@ -186,16 +182,6 @@ Up until this point, we have monitored the job within DIPC but it would nice to 
 This will show that the count in both data bases is exactly the same.
 
 
-### Verify GG processes (Optional)
-If you want to take a look and verify that the GG processes (extract and replicat) are running, these are the steps:
-
-1.	Open an SSH session into the DIPC server; please refer to Appendix 1 to learn how to establish a SSH session against the DIPC server
-2.	Execute: source .ggsetup 
-3.	Execute: /u01/app/oracle/suite/gghome/ggsci ![](images/200/image200_38.png)
-4.	You are now in GG console, execute: info all ![](images/200/image200_39.png)
-Now you have verified that both Extract and Replicat are running. Exit from GGSCI
-
-
 ## Monitor Data Changes 
 
 We are going to apply some changes to the source DB and verify how our “Synchronize Data” task takes care of these changes and replicates them to the target.
@@ -227,7 +213,7 @@ As data is updated, inserted or deleted from the source the data will be automat
 13.	Now, we will perform a delete. On your “WS - SALES_SRC” connection (SQL Developer) select “SRC_CUSTOMER” table
 14.	On the right panel, select “Data” tab and look for “Peter Parker”, select it.
 ![](images/200/image200_48.png)
-15.	Click on “delete icon (fourth icon from left to right on the icon bar; red X) 
+15.	Click on “Delete" icon (fourth icon from left to right on the icon bar; red X) 
 16.	Click on “Commit” (fifth icon from left to right on the icon bar; green checkmark on top of a disk) icon 
 17.	Let’s verify the deletion in the target. On your “WS - SALES_TRG ” connection (SQL Developer) select “SRC_CUSTOMER” table
 18.	Look for “Peter Parker”, it will not be there
