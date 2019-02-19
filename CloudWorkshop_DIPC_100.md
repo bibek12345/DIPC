@@ -31,7 +31,7 @@ Click Services or Go to Dashboard to access My Oracle Services.
 
 In this section, you create an Oracle Data Integration Platform Cloud instance using the instance creation wizard.
 
-1. Select the hamburger menu button on the top left corner. Locate "Autonomous Data Integration" in your list of services, then select the service. ![](images/100/image100_11p.png)
+1. Select the hamburger menu button on the top left corner. Locate "Data Integration" in your list of services, then select the service. ![](images/100/image100_11p.png)
 
 2. In the Services page, click "Create Instance". ![](images/100/image100_12p.png)
 
