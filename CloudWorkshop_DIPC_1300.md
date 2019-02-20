@@ -127,24 +127,21 @@ You will be navigated to your DIPC server Home page.
     - Description: Relicate data from Oracle to Kafka
     - Agent: **\<LOCAL_AGENT\>**
     - Type Oracle: Kafka Connect
-    - Java ClassPath: **\<KafkaHomePath\>**
+    - Java ClassPath: dirprm:/home/oracle/Confluent_kafka/confluent-5.1.0/share/java/kafka-serde-tools/*:/home/oracle/Confluent_kafka/confluent-5.1.0/share/java/kafka/*:/home/oracle/Confluent_kafka/confluent-5.1.0/share/java/confluent-common/*
     - Kafka Producer Config file:  kafkaconnect.properties
-    - Topic Mapping Template: **\<FullyQualifiedTableName\>**
-    - Key Mapping Template: **\<PrimaryKeys\>**
-    - Checkboxes: Leave all the checkboxes as default selection
+    - Topic Mapping Template: FullyQualifiedTableName
+    - Key Mapping Template: PrimaryKeys
+    - Checkboxes: Leave all the checkboxes with default selection
     ```
     where:
         <LOCAL_AGENT> - Select the DIPC agent you created
-        <KafkaHomePath> - 
-        This is a combination of following:
-        dirprm/:kafkaconnect.properties:<KafkaInstallDir>/share/java/kafka-serde-tools/*:<KafkaInstallDir>/share/java/kafka/*:<KafkaInstallDir>/share/java/confluent-common/*
-        <FullyQualifiedTableName> - 
-        <PrimaryKeys> -  
     ```    
 
     ![](images/1300/image1300_10.JPG)
 
 16. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
+
+MAGU: Once we have the workshop environment, provide the value for Java ClassPath
 
 
 ## Data Replication Tasks
@@ -165,6 +162,8 @@ Click the Design Tab to start designing the Source and Target Functionalities
 
 4.	Next Click the "Schemas" Tab and Select SALES_SRC Schema and in the Text Area append ".kafka" to it. You will notice that the bottom right corner #Rule Applied Confirmation.
 
+MAGU: Step 4 is NOT clear in what needs to be done. additionally, why not usethe tables that we already have?
+
 ![](images/1300/image1300_14.JPG)  
 
 5.	Next Click on the "Target"  and in the "Details" Tab select the Name of the Kafka Connection that we had created.
@@ -184,6 +183,7 @@ Auto-refresh is on, statuses will be updated frequently.
 
 
 ## Replicate Data Test Case Execution
+MAGU: Use SQLDeveloper for this
 
 1.	Login to The Source PDB Database, Create a table Kafka and Insert one Record in the table
 
@@ -197,6 +197,7 @@ Auto-refresh is on, statuses will be updated frequently.
 
 ![](images/1300/image1300_21.JPG)
 
+MAGU: How do you do that? provide the path (in compute instance), the credentials and the command(s). It might be a good idea to create a document for the group in which you provide a few commands: to check if kafka is running, start kafka and zookeeper, the topics crerated, verify content in a topic, etc. We will need a document with the setup steps for Kafka to deliver to the group that will provide the workshop environments
 
 ## Summary
 You have now successfully completed the Hands-on Lab, and have successfully performed an Data Replication between Oracle Database as Source and Confluent Kafka as Target through Oracle’s Data Integration Platform Cloud.
