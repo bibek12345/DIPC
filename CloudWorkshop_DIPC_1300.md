@@ -19,11 +19,15 @@ Your will need:
 - General understanding of Kafka Processes and RDBMS 
 
 ## Configure Source Database (oracle) for Replication
+MAGU: Steps in this section should be performed as part of the workshop provisioning. Users should NOT have to perform these steps
+
 In the Oracle database, complete the following tasks:
 
 1. Create a Oracle 12c CDB database and inside it create a PDB. We need to have a Schema created for which we will configure the Replication. In this case we will use SALES_SRC Schema under PDB1. We will Replicate a table called as Kafka under SALES_SRC schema.
 
 ## Configure Destination (Kafka) for Replication
+MAGU: Steps in this section should be performed as part of the workshop provisioning. Users should NOT have to perform these steps
+
 1. Install Confluent Kafka 5.1 on the target box. Kafka is basically a stream processing Software. Once the Installation is completed, Start the following processes within Kafka
 (i) Zookeeper 
 (ii) Kafka Server
@@ -40,7 +44,7 @@ In this Lab we will be using a compute instance COMPUTE_DIPC01 to configure the 
 
 1. In your web browser, navigate to cloud.oracle.com, then click Sign in.
 
-2. Provide the cloud account: orasenatdpltintegration02 then **{Enter}**
+2. Provide the cloud account: orasenatdpltintegration02 then **\<Enter\>**
 
 3. Provide your user name and password, then click "Sign In" button Or You can log in with Oracle SSO. You will land in the Dasboard screen.
 
@@ -72,20 +76,19 @@ You will be navigated to your DIPC server Home page.
 3.	Enter the following information
     - Name: O2K_Oracle_Connection
     - Description: CDB User for Source DB
-    - Agent: **{LOCAL_AGENT}**
+    - Agent: **\<LOCAL_AGENT\>**
     - Type: Oracle CDB
-    - Hostname: **{SOURCE_DB_NAME}**
+    - Hostname: **\<SOURCE_DB_NAME\>**
     - Port: 1521
     - Username: C##GGSRC
     - Password: Wel_Come#123
-    - Service Name: **{CDB_SOURCE_SERVICE_NAME}**
+    - Service Name: **\<CDB_SOURCE_SERVICE_NAME\>**
 
     ![](images/1300/image1300_7.JPG)    
     ```
     where:
-        {LOCAL_AGENT} - Select the local DIPC agent 
-        {SERVICE_NAME} - CDB Service name string for the source database server. 
-
+        <LOCAL_AGENT> - Select the DIPC agent you created
+        <SERVICE_NAME> - CDB Service name string for the source database server. 
     ```
 4. Click "Test Connection" button and when the test is successful click "Save" button.
 
@@ -94,23 +97,22 @@ You will be navigated to your DIPC server Home page.
 6. Enter the following information:
     - Name: O2K_ORACLEPDB_CONNECTION
     - Description: Replicate data from Oracle to Kafka
-    - Agent: **{LOCAL_AGENT}**
+    - Agent: **\<LOCAL_AGENT\>**
     - Type: Oracle Database
     - Subtype - Oracle 
-    - Hostname: **{SOURCE_DB_NAME}**
+    - Hostname: **\<SOURCE_DB_NAME\>**
     - Port: 1521
     - Username: SALES_SRC
     - Password: Wel_Come#123
-    - Service Name: **{SOURCE_DB_SERVICE_NAME}**
+    - Service Name: **\<SOURCE_DB_SERVICE_NAME\>**
     - Schema Name: SALES_SRC (Default) – When you try to select the schema, you are testing the connection at the same time
     - CDB Connection: O2K_Oracle_Connection (This was created before)
 
     ![](images/1300/1300_8.JPG)
     ```
     where:
-        {LOCAL_AGENT} - Select the local DIPC agent 
-        {SOURCE_DB_SERVICE_NAME} - Service name string for the source database server. 
-
+        <LOCAL_AGENT> - Select the DIPC agent you created
+        <SOURCE_DB_SERVICE_NAME> - Service name string for the source database server. 
     ```
 7. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
     **Note: Data Entities are harvested and profiled at the time the connection is created, their popularity is also calculated by reviewing the DB query logs. This process may take some time (5 minutes or so), the Catalog will show a message when new updates are available**
@@ -118,22 +120,27 @@ You will be navigated to your DIPC server Home page.
 
 8.	Now, we are going to create the target connection (For Kafka). Open the drop-down menu from the top far right corner and then select “Connection”  
 
-![](images/1300/image1300_6.png)
+    ![](images/1300/image1300_6.JPG)
 
 9.	Enter the following information:
     - Name: OK_Kafka_Connection 
     - Description: Relicate data from Oracle to Kafka
-    - Agent: **{LOCAL_AGENT}**
-    - Type Oracle – Kafka Connect
-    - Kafka Producer Config file - kafkaconnect.properties
-    - Topic Mapping Template: {FullyQualifiedTableName}
-    - Key Mapping Template: {primarykeys} 
-    - Java ClassPath: Confluent kafka Home path
-
-    Leave all the checkboxes as default selection. Also Java ClassPath will be a combination of following :
-    dirprm/:kafkaconnect.properties:{kafka_home}/share/java/kafka-serde-tools/*:{kafka_home}/share/java/kafka/*:{kafka_home}/share/java/confluent-common/*
-
-    Where your Kafka home will be kafka Installation directory.
+    - Agent: **\<LOCAL_AGENT\>**
+    - Type Oracle: Kafka Connect
+    - Java ClassPath: **\<KafkaHomePath\>**
+    - Kafka Producer Config file:  kafkaconnect.properties
+    - Topic Mapping Template: **\<FullyQualifiedTableName\>**
+    - Key Mapping Template: **\<PrimaryKeys\>**
+    - Checkboxes: Leave all the checkboxes as default selection
+    ```
+    where:
+        <LOCAL_AGENT> - Select the DIPC agent you created
+        <KafkaHomePath> - 
+        This is a combination of following:
+        dirprm/:kafkaconnect.properties:<KafkaInstallDir>/share/java/kafka-serde-tools/*:<KafkaInstallDir>/share/java/kafka/*:<KafkaInstallDir>/share/java/confluent-common/*
+        <FullyQualifiedTableName> - 
+        <PrimaryKeys> -  
+    ```    
 
     ![](images/1300/image1300_10.JPG)
 
