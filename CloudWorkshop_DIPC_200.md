@@ -24,7 +24,7 @@ Your will need:
 ### Login into DIPC using Oracle Cloud Services Dashboard
 
 1. In your web browser, navigate to cloud.oracle.com, then click Sign in.
-2. Provide the cloud account: oscnas001 then **{Enter}**
+2. Provide the cloud account: oscnas001 then **\<Enter\>**
 3. Provide your user name and password, then click "Sign In" button. You will land in the Dasboard screen ![](images/200/image200_1.png)
 4. In the "Data Integration Platform Cloud" service box click on the hamburguer menu and then select "Open Service Console" ![](images/200/image200_2.png)
 5. Click on the hamburger menu of the DIPC server assigned to you, then click "Data Integration Platform Console" ![](images/200/image200_3.png)
@@ -43,40 +43,40 @@ You will be navigated to your DIPC server Home page.
 3.	Enter the following information
     - Name: SRC_CDB
     - Description: CDB User for Source DB
-    - Agent: **{LOCAL_AGENT}**
+    - Agent: **\<LOCAL_AGENT\>**
     - Type: Oracle CDB
-    - Hostname: **{SOURCE_DB_NAME}**
+    - Hostname: **\<SOURCE_DB_NAME\>**
     - Port: 1521
     - Username: C##GGSRC
     - Password: Welcome#123
-    - Service Name: **{CDB_SOURCE_SERVICE_NAME}**
+    - Service Name: **\<CDB_SOURCE_SERVICE_NAME\>**
     ![](images/200/image200_5a.png)    
     ```
     where:
-        {LOCAL_AGENT} - Select the local DIPC agent 
-        {SOURCE_DB_NAME} - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
-        {CDB_SOURCE_SERVICE_NAME} - CDB Service name string for the source database server. This have been provided in your environment page; look for entry CDB_SOURCE_SERVICE_NAME
+        <LOCAL_AGENT> - Select the local DIPC agent 
+        <SOURCE_DB_NAME> - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
+        <CDB_SOURCE_SERVICE_NAME> - CDB Service name string for the source database server. This have been provided in your environment page; look for entry CDB_SOURCE_SERVICE_NAME
     ```
 4. Click "Test Connection" button and when the test is successful click "Save" button.
 5. Open the drop-down menu from the top far right corner and then select “Connection”. ![](images/200/image200_15.png)
 6. Enter the following information:
     - Name: SALES_SRC
     - Description: Sales OLTP Source Data
-    - Agent: **{LOCAL_AGENT}**
+    - Agent: **\<LOCAL_AGENT\>**
     - Type Oracle: selecting Oracle will expand the Connection Settings ![](images/200/image200_6.png)
-    - Hostname: **{SOURCE_DB_NAME}**
+    - Hostname: **\<SOURCE_DB_NAME\>**
     - Port: 1521
     - Username: SALES_SRC
     - Password: Welcome#123
-    - Service Name: **{SOURCE_DB_SERVICE_NAME}**
+    - Service Name: **\<SOURCE_DB_SERVICE_NAME\>**
     - Schema Name: SALES_SRC (Default) – When you try to select the schema, you are testing the connection at the same time
     - CDB Connection: SRC_CDB 
     ![](images/200/image200_7.png)
     ```
     where:
-        {LOCAL_AGENT} - Select the local DIPC agent 
-        {SOURCE_DB_NAME} - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
-        {SOURCE_DB_SERVICE_NAME} - Service name string for the source database server. This have been provided in your environment page; look for entry SOURCE_DB_SERVICE_NAME
+        <LOCAL_AGENT> - Select the local DIPC agent 
+        <SOURCE_DB_NAME> - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
+        <SOURCE_DB_SERVICE_NAME> - Service name string for the source database server. This have been provided in your environment page; look for entry SOURCE_DB_SERVICE_NAME
     ```
 7. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
     **Note: Data Entities are harvested and profiled at the time the connection is created, their popularity is also calculated by reviewing the DB query logs. This process may take some time (5 minutes or so), the Catalog will show a message when new updates are available**
@@ -93,19 +93,19 @@ If you would like to associate a tag or a contact to this entity, click on “Ed
 15.	Enter the following information:
     - Name: SALES_TRG 
     - Description: Sales OLTP Replicated Data
-    - Agent: **{LOCAL_AGENT}**
+    - Agent: **\<LOCAL_AGENT\>**
     - Type Oracle – selecting Oracle will expand the Connection Settings
-    - Hostname: **{TARGET_DB_NAME}**
+    - Hostname: **\<TARGET_DB_NAME\>**
     - Port: 1521
     - Username: SALES_TRG 
     - Password: Welcome#123
-    - Service Name: **{TARGET_DB_SERVICE_NAME}**
+    - Service Name: **\<TARGET_DB_SERVICE_NAME\>**
     - Schema Name: SALES_TRG  (Default)
     ```
     where:
-        {LOCAL_AGENT} - Select the local DIPC agent 
-        {TARGET_DB_NAME} - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
-        {TARGET_DB_SERVICE_NAME} - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
+        <LOCAL_AGENT> - Select the local DIPC agent 
+        <TARGET_DB_NAME> - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
+        <TARGET_DB_SERVICE_NAME> - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
     ```
     ![](images/200/image200_16.png)
 16. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
