@@ -52,15 +52,15 @@ Your will need:
     - Domain: **\<OBJECT_STORAGE_DOMAIN\>**
 	- Service URL: **\<OBJECT_STORAGE_URL\>**
 	- Container: DIPC Workshop
-    - Username: **<USERNAME_TO_CONNECT_OBJECT_STORAGE\>**
-    - Password: **<PASSWORD\>**
+    - Username: **<YOUR_USER\>**
+    - Password: **<YOUR_PASSWORD\>**
 	```
 	where:
 		<REMOTE_AGENT> - Select the DIPC agent you created 
 		<OBJECT_STORAGE_DOMAIN> - This have been provided in your environment page; look for entry OBJECT_STORAGE_DOMAIN
 		<OBJECT_STORAGE_URL> - This have been provided in your environment page; look for entry OBJECT_STORAGE_URL
-		<USERNAME_TO_CONNECT_OBJECT_STORAGE> - This is the login you use to connect to object storage classic.
-		<YOUR_PASSWORD> - This is the password of the login you use to log into Oracle Cloud/DIPC server.
+		<YOUR_USERNAME> - This is the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_USER.
+		<YOUR_PASSWORD> - This is the password of the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_PASSWORD.
 	```
 3. Click "Test Connection" button and when the test is successful click "Save" button. 
 ![](images/800/image800_9.png)

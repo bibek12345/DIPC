@@ -1,5 +1,7 @@
+# Lab 600 - ODI Execution Elevated Task 
+![](images/1200/image1200_0.png)
+
 ## Before You Begin
-![](images/1000/image1200_0.png)
 
 ### Purpose
 This lab introduces you to the Enterprise Data Quality (EDQ) in DIPC. You will connect to sample data, understand how to profile the data and know how to correct the data in EDQ.
