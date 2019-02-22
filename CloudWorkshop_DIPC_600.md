@@ -62,7 +62,7 @@ Or, if you are already in the application, go to the "Home" page by selecting th
 11.	Provide the following information:
 	- Name: DIPC_DWH
 	- Description: Data Warehouse
-	- Agent: **\<LOCAL_AGENT\>**
+	- Agent: **\<REMOTE_AGENT\>**
 	- Type Oracle
 	- Hostname: **\<TARGET_DB_NAME\>**
 	- Port: 1521
@@ -72,7 +72,7 @@ Or, if you are already in the application, go to the "Home" page by selecting th
 	- Schema Name: TRG_AGG_SALES (Default)
 	```
 	where:
-		<LOCAL_AGENT> - Select the local DIPC agent
+		<REMOTE_AGENT> - Select the DIPC agent you created
 		<TARGET_DB_NAME> - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
     	<TARGET_DB_SERVICE_NAME> - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
 	```

@@ -106,7 +106,7 @@ For Oracle GoldenGate replication, use ADWC_Database_Name_low
 
 1. In your web browser, navigate to cloud.oracle.com, then click Sign in.
 
-2. Provide the cloud account: orasenatdpltintegration02 then **{Enter}**
+2. Provide the cloud account: orasenatdpltintegration02 then **\<Enter\>**
 
 3. Provide your user name and password, then click "Sign In" button Or You can log in with Oracle SSO. You will land in the Dasboard screen.
 
@@ -141,23 +141,21 @@ You will be navigated to your DIPC server Home page.
 3.	Enter the following information
     - Name: SRC_CDB
     - Description: CDB User for Source DB
-    - Agent: **{LOCAL_AGENT}**
+    - Agent: **\<LOCAL_AGENT\>**
     - Type: Oracle CDB
-    - Hostname: **{SOURCE_DB_NAME}**
+    - Hostname: **\<SOURCE_DB_NAME\>**
     - Port: 1521
     - Username: C##GGSRC
     - Password: Wel_Come#123
-    - Service Name: **{CDB_SOURCE_SERVICE_NAME}**
+    - Service Name: **\<CDB_SOURCE_SERVICE_NAME\>**
 
 ![](images/1000/image1000_12.png) 
 
     ```
     where:
-        {LOCAL_AGENT} - Select the local DIPC agent 
-        {SOURCE_DB_NAME} - Name of the source database server. This have been provided in your environment page; 
-        look for entry SOURCE_DB_NAME
-        {CDB_SOURCE_SERVICE_NAME} - CDB Service name string for the source database server. This have been provided
-        in your environment page; look for entry CDB_SOURCE_SERVICE_NAME
+        <LOCAL_AGENT> - Select the local DIPC agent 
+        <SOURCE_DB_NAME> - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
+        <CDB_SOURCE_SERVICE_NAME> - CDB Service name string for the source database server. This have been provided in your environment page; look for entry CDB_SOURCE_SERVICE_NAME
     ```
 4. Click "Test Connection" button and when the test is successful click "Save" button.
 
@@ -168,23 +166,21 @@ You will be navigated to your DIPC server Home page.
 6. Enter the following information:
     - Name: SALES_SRC
     - Description: Sales OLTP Source Data
-    - Agent: **{LOCAL_AGENT}**
+    - Agent: **\<LOCAL_AGENT\>**
     - Type Oracle: selecting Oracle will expand the Connection Settings ![](images/1000/image1000_14.png)
-    - Hostname: **{SOURCE_DB_NAME}**
+    - Hostname: **\<SOURCE_DB_NAME\>**
     - Port: 1521
     - Username: SALES_SRC
     - Password: Wel_Come#123
-    - Service Name: **{SOURCE_DB_SERVICE_NAME}**
+    - Service Name: **\<SOURCE_DB_SERVICE_NAME\>**
     - Schema Name: SALES_SRC (Default) – When you try to select the schema, you are testing the connection at the same time
     - CDB Connection: SRC_CDB 
     ![](images/1000/image1000_15.png)
     ```
     where:
-        {LOCAL_AGENT} - Select the local DIPC agent 
-        {SOURCE_DB_NAME} - Name of the source database server. This have been provided in your environment page;
-        look for entry SOURCE_DB_NAME
-        {SOURCE_DB_SERVICE_NAME} - Service name string for the source database server. This have been provided 
-        in your environment page; look for entry SOURCE_DB_SERVICE_NAME
+        <LOCAL_AGENT> - Select the local DIPC agent 
+        <SOURCE_DB_NAME> - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
+        <SOURCE_DB_SERVICE_NAME> - Service name string for the source database server. This have been provided in your environment page; look for entry SOURCE_DB_SERVICE_NAME
     ```
 7. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
     
@@ -197,17 +193,17 @@ You will be navigated to your DIPC server Home page.
 9.	Enter the following information:
     - Name: ADWC_TGT 
     - Description: Connection for ADWC Target
-    - Agent: **{LOCAL_AGENT}**
+    - Agent: **\<LOCAL_AGENT\>**
     - Type : Oracle Autonomous Data Warehouse Cloud
     - Username: ggadmin 
     - Password: Wel_Come#123
-    - Credential File : **{Upload the creadential file downloaded}**
-    - Connection URL : **{Select from drop down}**
+    - Credential File : **\<Upload the creadential file downloaded\>**
+    - Connection URL : **\<Select from drop down\>**
     - Service Name: dipcadw_low
     - Schema Name: SALES_TGT  (Default)
     ```
     where:
-        {LOCAL_AGENT} - Select the local DIPC agent 
+        <LOCAL_AGENT> - Select the local DIPC agent 
               
     ```
     ![](images/1000/image1000_17.png)

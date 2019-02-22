@@ -43,7 +43,7 @@ You will be navigated to your DIPC server Home page.
 3.	Enter the following information
     - Name: SRC_CDB
     - Description: CDB User for Source DB
-    - Agent: **\<LOCAL_AGENT\>**
+    - Agent: **\<REMOTE_AGENT\>**
     - Type: Oracle CDB
     - Hostname: **\<SOURCE_DB_NAME\>**
     - Port: 1521
@@ -53,7 +53,7 @@ You will be navigated to your DIPC server Home page.
     ![](images/200/image200_5a.png)    
     ```
     where:
-        <LOCAL_AGENT> - Select the local DIPC agent 
+        <REMOTE_AGENT> - Select the DIPC agent you created
         <SOURCE_DB_NAME> - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
         <CDB_SOURCE_SERVICE_NAME> - CDB Service name string for the source database server. This have been provided in your environment page; look for entry CDB_SOURCE_SERVICE_NAME
     ```
@@ -62,7 +62,7 @@ You will be navigated to your DIPC server Home page.
 6. Enter the following information:
     - Name: SALES_SRC
     - Description: Sales OLTP Source Data
-    - Agent: **\<LOCAL_AGENT\>**
+    - Agent: **\<REMOTE_AGENT\>**
     - Type Oracle: selecting Oracle will expand the Connection Settings ![](images/200/image200_6.png)
     - Hostname: **\<SOURCE_DB_NAME\>**
     - Port: 1521
@@ -74,7 +74,7 @@ You will be navigated to your DIPC server Home page.
     ![](images/200/image200_7.png)
     ```
     where:
-        <LOCAL_AGENT> - Select the local DIPC agent 
+        <REMOTE_AGENT> - Select the DIPC agent you created 
         <SOURCE_DB_NAME> - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
         <SOURCE_DB_SERVICE_NAME> - Service name string for the source database server. This have been provided in your environment page; look for entry SOURCE_DB_SERVICE_NAME
     ```
@@ -93,7 +93,7 @@ If you would like to associate a tag or a contact to this entity, click on “Ed
 15.	Enter the following information:
     - Name: SALES_TRG 
     - Description: Sales OLTP Replicated Data
-    - Agent: **\<LOCAL_AGENT\>**
+    - Agent: **\<REMOTE_AGENT\>**
     - Type Oracle – selecting Oracle will expand the Connection Settings
     - Hostname: **\<TARGET_DB_NAME\>**
     - Port: 1521
@@ -103,7 +103,7 @@ If you would like to associate a tag or a contact to this entity, click on “Ed
     - Schema Name: SALES_TRG  (Default)
     ```
     where:
-        <LOCAL_AGENT> - Select the local DIPC agent 
+        <REMOTE_AGENT> - Select the DIPC agent you created 
         <TARGET_DB_NAME> - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
         <TARGET_DB_SERVICE_NAME> - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
     ```

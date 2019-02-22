@@ -31,7 +31,6 @@ Your will need:
 - SQL developer
 
 ## Remote Agent
-If you have already downloaded the agent to your "On-Prem" environment, please skip this section
 
 ### Install Agent
 1.	Open an SSH session into your compute server (we will simulate on-prem with a compute instance); please refer to Appendix 1 to learn how to establish a SSH session
