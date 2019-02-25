@@ -21,7 +21,7 @@ Your will need:
 ## Logging Into Oracle Cloud Instance
 
 1. In your web browser, navigate to cloud.oracle.com, then click Sign in.
-2. Provide the cloud account: XXXXXXXXX then <Enter>
+2. Provide the cloud account: for example XXXXXXXXX then <Enter>
 ![](images/100/image100_01.png)
 3. Provide your user name and password, then click Sign In. ![](images/100/image100_1.png)
 
