@@ -40,9 +40,6 @@ In the Oracle Autonomous Data Warehouse Cloud database, complete the following t
     create user sales_TRG identified by <password>;
     grant create session, resource, create view, create table to sales_TRG;
     ```
-4. Connect to Oracle Autonomous Data Warehouse Cloud database as the sales_TRG user and create target tables for which DDL replication is not enabled
-
-MAGU: These steps should be performed as part of the workshop provisioning; the target user should be already created in ADW and GG user should have the correct permission by the time the users start the workshop. They should NOT have to perform these steps
 
 ## Obtain Oracle Autonomous Data Warehouse Cloud client credentials file.
 MAGU: Steps in this section should be performed as part of the workshop provisioning. Users should NOT have to perform these steps
