@@ -1,7 +1,5 @@
 # Lab 300 - Remote Agent Install and On-prem to On-prem DB Synchronization
 
-Brian and Danny January 7 2019
-
 ![](images/300/image300_0.png)
 
 ## Before You Begin
@@ -11,11 +9,11 @@ Brian and Danny January 7 2019
 This lab covers installation and configuration of DIPC remote agent along with synchronization of two on-prem database schemas. Agents allow synchronization of data from sources outside Oracle Cloud. The target and source schemas will reside in the same database.
 
 This lab supports the following use cases:
--   Configure Remote DIPC Agent
--   Synchronize two On-Premise Databases
+-   Configure the Remote DIPC Agent
+-   Execute a Synchonize Data elevated task to synchronize two On-Premise Databases
 
 ### Objectives
--	Review downloading process, installation and configuration of DIPC remote agent
+-	Download, install and configure DIPC remote agent
 -   Synchronize two On-Premise Databases
    
 ### Time to complete
