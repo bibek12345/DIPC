@@ -39,7 +39,6 @@ In the Oracle Autonomous Data Warehouse Cloud database, complete the following t
     create user sales_tgt identified by password;
     grant create session, resource, create view, create table to sales_tgt;
     ```
-4. Connect to Oracle Autonomous Data Warehouse Cloud database as the sales_tgt user and create target tables for which DDL replication is not enabled
 
 ## Obtain Oracle Autonomous Data Warehouse Cloud client credentials file.
 To establish connection to your Oracle Autonomous Data Warehouse Cloud database, you can download the client credentials file from the Oracle Autonomous Data Warehouse Cloud service console.
