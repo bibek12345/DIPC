@@ -35,12 +35,6 @@ In the Oracle Autonomous Data Warehouse Cloud database, complete the following t
     alter user ggadmin identified by <password> account unlock;
     ```
 
-3. Create the Target Schema for the data replication.
-    ```
-    create user sales_TRG identified by <password>;
-    grant create session, resource, create view, create table to sales_TRG;
-    ```
-
 ## Obtain Oracle Autonomous Data Warehouse Cloud client credentials file.
 MAGU: Steps in this section should be performed as part of the workshop provisioning. Users should NOT have to perform these steps
 
