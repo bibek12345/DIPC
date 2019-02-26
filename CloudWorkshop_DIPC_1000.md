@@ -36,18 +36,15 @@ In the Oracle Autonomous Data Warehouse Cloud database, complete the following t
     ```
 
 ## Obtain Oracle Autonomous Data Warehouse Cloud client credentials file.
-MAGU: Steps in this section should be performed as part of the workshop provisioning. Users should NOT have to perform these steps
 
 To establish connection to your Oracle Autonomous Data Warehouse Cloud database, you can download the client credentials file from the Oracle Autonomous Data Warehouse Cloud service console.
 
     Note: If you do not have administrator access to Oracle Autonomous Data Warehouse Cloud, you should ask your 
     service administrator to download and provide the client credentials file to you.
 
-MAGU: It is possible to download the files from the console. It is NOT necessary to log with ADMIN
-
 1. Log into your Oracle Autonomous Data Warehouse Cloud account.
 2. From the Instance page, click the menu option for the Oracle Autonomous Data Warehouse Cloud instance and select Service Console.
-3. Log into the service console using the admin username and its associated password. MAGU: IT did NOT ask for any login user
+3. Log into the service console using the admin username and its associated password.
 4. In the service console, click the Administration tab.
 5. Click Download Client Credentials.
 6. Enter a password to secure your client credentials file and click Download.
