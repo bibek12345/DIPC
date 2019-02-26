@@ -54,7 +54,7 @@ Enterprise Data Quality brings to DIPC the necessary functionality for deliverin
 1.	Log into your Workshop DIPC Server. In your web browser, provide your DIPC server URL. The URL will be provided by the instructor and will look like this one:
 https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
 2. Provide your user name and password, then click "Sign In" button 
-![](images/200/image200_1.png)
+![](images/Common/Login/imageCommL_02.png)
 You will be navigated to your DIPC server Home page.
 3. Click on the picture icon located on the top right corner of the screen and then select “Open EDQ” 
 ![](images/700/image700_EDQ_1.png)

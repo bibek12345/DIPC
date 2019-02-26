@@ -25,7 +25,7 @@ Your will need:
 
 1. In your web browser, navigate to cloud.oracle.com, then click Sign in.
 2. Provide the cloud account: oscnas001 then **\<Enter\>**
-3. Provide your user name and password, then click "Sign In" button. You will land in the Dasboard screen ![](images/200/image200_1.png)
+3. Provide your user name and password, then click "Sign In" button. You will land in the Dasboard screen ![](images/Common/Login/imageCommL_02.png)
 4. In the "Data Integration Platform Cloud" service box click on the hamburguer menu and then select "Open Service Console" ![](images/200/image200_2.png)
 5. Click on the hamburger menu of the DIPC server assigned to you, then click "Data Integration Platform Console" ![](images/200/image200_3.png)
 You will be navigated to your DIPC server Home page. ![](images/200/image200_4.png)
@@ -33,7 +33,7 @@ You will be navigated to your DIPC server Home page. ![](images/200/image200_4.p
 ### Login into DIPC using direct URL
 
 1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one "https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud"
-2. Provide your user name and password, then click "Sign In" button ![](images/200/image200_1.png)
+2. Provide your user name and password, then click "Sign In" button ![](images/Common/Login/imageCommL_02.png)
 You will be navigated to your DIPC server Home page.
 
 

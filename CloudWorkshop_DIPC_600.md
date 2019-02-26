@@ -42,7 +42,7 @@ SELECT COUNT(*) FROM TRG_SALES;
 1.	Log into your DIPC server, provide the URL (it should look like this): 
 https://dipc01-orasenatdpltintegration02.adipc.ocp.oraclecloud.com/dicloud/app/index.html
 2.	Provide your user name and password, then click "Sign In" button 
-![](images/300/image300_2.png)
+![](images/Common/Login/imageCommL_02.png)
 Or, if you are already in the application, go to the "Home" page by selecting the "Home"hyperlink from the left panel. 
 3.	In the Home Page click on "Next" icon (>) located at the far right side of the top panel to locate the "ODI Execution" task icon 
 4.	Once you have located the “ODI Execution” task icon, click on the “Create" button.  ![](images/600/image600_4p.png)
