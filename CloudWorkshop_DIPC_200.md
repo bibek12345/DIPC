@@ -215,7 +215,7 @@ We are going to apply some changes to the source DB and verify how our “Synchr
 8.	On the right panel, select “Data” tab. You will need to scroll all the way down to see the new row. ![](images/200/image200_44p.png)
 As data is updated, inserted or deleted from the source the data will be automatically synchronized with the replicated schema by the DIPC Sync Sales Data Job. 
 9.	Go back to DIPC, you should be in the detail screen of the Data Synch job.
-10.	Verify that the screen has auto refresh ON so you will see the changes ![](images/200/image200_45.png)
+10.	Verify that the screen has auto refresh ON so you will see the changes. ![](images/200/image200_45.png)
 
 11.	It might take some time. The screen will reflect the insertion in the source. ![](images/200/image200_46p.png)
 12.	And the insertion in the target. ![](images/200/image200_47p.png)
@@ -226,17 +226,17 @@ As data is updated, inserted or deleted from the source the data will be automat
 17.	Let’s verify the deletion in the target. On your target database connection “WS - SALES_TRG ” (SQL Developer) select “SRC_CUSTOMER” table.
 18.	Look for “Peter Parker”, it will not be there.
 19.	Go back to DIPC, you should be in the detail screen of the Data Synch job
-20.	It might take some time. The screen will reflect the deletion in the source ![](images/200/image200_49p.png)
+20.	It might take some time. The screen will reflect the deletion in the source. ![](images/200/image200_49p.png)
 21.	And the deletion in the target ![](images/200/image200_50p.png)
-22.	Now let’s perform an update. On your target database connection “WS - SALES_SRC” connection (SQL Developer) select “SRC_CUSTOMER” table
-23.	On the right panel, select “Data” tab and look for “Paul Brown”, double click in his age ![](images/200/image200_51p.png)
-24.	Change it to 25 ![](images/200/image200_52p.png)
-25.	Click on “Commit” (fifth icon from left to right on the icon bar; green checkmark on top of a disk) icon. This row will be automatically updated on the target as the DIPC Job picks up the change
-26.	Let’s verify the update in the target. On your target database connection “WS - SALES_TRG” (SQL Developer) select “SRC_CUSTOMER” table
+22.	Now let’s perform an update. On your target database connection “WS - SALES_SRC” connection (SQL Developer) select “SRC_CUSTOMER” table.
+23.	On the right panel, select “Data” tab and look for “Paul Brown”, double click in his age. ![](images/200/image200_51p.png)
+24.	Change it to 25. ![](images/200/image200_52p.png)
+25.	Click on “Commit” (fifth icon from left to right on the icon bar; green checkmark on top of a disk) icon. This row will be automatically updated on the target as the DIPC Job picks up the change.
+26.	Let’s verify the update in the target. On your target database connection “WS - SALES_TRG” (SQL Developer) select “SRC_CUSTOMER” table.
 27.	On the right panel, select “Data” tab and look for “Paul Brown”, his age has changed to 25.
-28.	Go back to DIPC, you should be in the detail screen of the Data Synch job
+28.	Go back to DIPC, you should be in the detail screen of the Data Synch job.
 29.	It might take some time. The screen will reflect the update in the source. ![](images/200/image200_53p.png)
-30.	And the update in the target ![](images/200/image200_54p.png)
+30.	And the update in the target. ![](images/200/image200_54p.png)
 
 
 ## Summary
