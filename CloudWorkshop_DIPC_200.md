@@ -4,8 +4,8 @@
 ## Before You Begin
 
 ### Objectives
-- Review how to create connections
-- Review how to execute a Synchonize Data elevated task
+- Create DIPC connections
+- Execute a Synchonize Data elevated task to synchronize data between two cloud databases
 
 ### Time to Complete 
 Approximately 60 minutes.
