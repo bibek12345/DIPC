@@ -237,30 +237,34 @@ Click Services or Go to Dashboard to access My Oracle Services.
 
     ![](images/1000/image1000_26.png) 
 
+2. On the target ADWC there are no tables with the name 'TEST_TABLE'. We can check that with the below command
+    ```
+    SELECT OBJECT_NAME FROM DBA_OBJECTS WHERE OBJECT_NAME='TEST_TABLE' AND OWNER='SALES_TGT';
+    ```
+    
+     ![](images/1000/image1000_27.png) 
 
-2. Now lets log in to the source DB and create a table and see it getting replicated. 
-
-    ![](images/1000/image1000_27.png) 
+3. Now lets log in to the source DB and create a table and see it getting replicated.    
 
     ![](images/1000/image1000_28.png) 
 
-3. These changes are captured by the extract
+4. These changes are captured by the extract
 
     ![](images/1000/image1000_29.png) 
 
-4. The should appear in the ADWC target :
+5. The should appear in the ADWC target :
 
     ![](images/1000/image1000_30.png) 
 
-5. I will insert one record to the new table at the source Database and then update it.
+6. I will insert one record to the new table at the source Database and then update it.
 
     ![](images/1000/image1000_31.png) 
 
-6. Changes will appear in the target ADWC 
+7. Changes will appear in the target ADWC 
 
     ![](images/1000/image1000_32.png) 
 
-7. We can go to the Monitor section in the DIPC Console and go to the job and see the statistics in the cosole
+8. We can go to the Monitor section in the DIPC Console and go to the job and see the statistics in the cosole
 
     ![](images/1000/image1000_33.png) 
 
