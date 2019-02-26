@@ -28,7 +28,7 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 
 
 ## Workshop architecture
-![](images/100/image80_workshoplayout.png) 
+![](images/Common/General/imageCommG_01.png) 
 
 - Source: DBCS instance
 - Target: DBCS Instance

@@ -21,9 +21,10 @@ Your will need:
 ## Logging Into Oracle Cloud Instance
 
 1. In your web browser, navigate to cloud.oracle.com, then click Sign in.
-2. Provide the cloud account: for example XXXXXXXXX then <Enter>
-![](images/100/image100_01.png)
-3. Provide your user name and password, then click Sign In. ![](images/100/image100_1.png)
+2. Provide the cloud account: oscnas001 then <Enter>
+![](images/Common/Login/imageCommL_01.png)
+3. Provide your user name and password, then click Sign In. 
+![](images/Common/Login/imageCommL_02.png)
 
 Click Services or Go to Dashboard to access My Oracle Services.
 
@@ -33,7 +34,7 @@ In this section, you create an Oracle Data Integration Platform Cloud instance u
 
 1. Select the hamburger menu button on the top left corner. Locate "Data Integration" in your list of services, then select the service. ![](images/100/image100_11p.png)
 
-2. In the Services page, click "Create Instance". ![](images/100/image100_12p.png)
+2. In the Services page, click "Create Instance". ![](images/100/image100_12ap.png)![](images/100/image100_12p.png)
 
 3. Complete the Instance Information fields as follows, and then click the "Next" button:
     - Instance Name: DIPCABC

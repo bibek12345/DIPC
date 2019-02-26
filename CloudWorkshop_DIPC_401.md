@@ -40,7 +40,7 @@ If you have already downloaded the agent to your "On-Prem" environment, please s
 ![](images/300/image300_1.png)
 4.	Navigate to your DIPC server, provide the URL (it should look like this): https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
 5.	Provide your user name and password, then click "Sign In" button 
-![](images/300/image300_2.png)
+![](images/Common/Login/imageCommL_02.png)
 6.	This will bring you to your DIPC server’s  home page
 7.	Click on “Agents” (left part of your screen) 
 ![](images/300/image300_3.png)

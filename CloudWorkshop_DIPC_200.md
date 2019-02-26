@@ -24,6 +24,7 @@ Your will need:
 ### Login into DIPC using Oracle Cloud Services Dashboard
 
 1. In your web browser, navigate to cloud.oracle.com, then click Sign in.
+<<<<<<< HEAD
 2. Provide the cloud account: for example XXXXXXX then **\<Enter\>**.
 3. Provide your user name and password, then click "Sign In" button. You will land in the Dasboard screen. ![](images/200/image200_1.png)
 4. Select the hamburger menu button on the top left corner. Locate "Data Integration" in your list of services, then select the service. ![](images/200/image200_2p.png)
@@ -35,7 +36,6 @@ You will be navigated to your DIPC instance web console home page. ![](images/20
 1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look something like this one "https://dipc01-orasenatdpltintegration02.adipc.ocp.oraclecloud.com/dicloud".
 2. Provide your user name and password, then click "Sign In" button. ![](images/200/image200_1.png)
 You will be navigated to your DIPC instance web console home page.
-
 
 ## Create Connections and Review Catalog
 1. Log into your Workshop DIPC instance.
