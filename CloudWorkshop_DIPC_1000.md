@@ -241,7 +241,7 @@ Click Services or Go to Dashboard to access My Oracle Services.
     ```
     SELECT OBJECT_NAME FROM DBA_OBJECTS WHERE OBJECT_NAME='TEST_TABLE' AND OWNER='SALES_TGT';
     ```
-    
+
      ![](images/1000/image1000_27.png) 
 
 3. Now lets log in to the source DB and create a table and see it getting replicated.    
@@ -269,9 +269,12 @@ Click Services or Go to Dashboard to access My Oracle Services.
     ![](images/1000/image1000_33.png) 
 
 
-```
-Using DIPC for replicating to ADWC below link as the reference :
-https://docs.oracle.com/en/cloud/paas/data-integration-platform-cloud/using/replicate-data-oracle-autonomous-data-warehouse-cloud.html
-```
+## Summary
+You have now successfully completed the Hands-on Lab, and have successfully performed an Data Replication between Oracle Database as Source and Oracle ADWC as Target through Oracle’s Data Integration Platform Cloud.
 
-MAGU: If we explained how to connect using SQLDeveloper, shouldn't we use it to do teh testing? (create table, update row, etc.) and use DIPC monitoring to see the # of rows inserted, deleted, updated, etc. instead of GGSCI
+## References
+
+Using DIPC for replicating to ADWC below link as the reference :
+
+https://docs.oracle.com/en/cloud/paas/data-integration-platform-cloud/using/replicate-data-oracle-autonomous-data-warehouse-cloud.html
+
