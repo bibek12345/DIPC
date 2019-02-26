@@ -24,18 +24,17 @@ Your will need:
 ### Login into DIPC using Oracle Cloud Services Dashboard
 
 1. In your web browser, navigate to cloud.oracle.com, then click Sign in.
-<<<<<<< HEAD
-2. Provide the cloud account: for example XXXXXXX then **\<Enter\>**.
-3. Provide your user name and password, then click "Sign In" button. You will land in the Dasboard screen. ![](images/200/image200_1.png)
-4. Select the hamburger menu button on the top left corner. Locate "Data Integration" in your list of services, then select the service. ![](images/200/image200_2p.png)
-5. Click on the right-hand-side hamburger menu of the DIPC instance assigned to you, then click the first option to open the console. ![](images/200/image200_3p.png)
-You will be navigated to your DIPC instance web console home page. ![](images/200/image200_4p.png)
+2. Provide the cloud account: oscnas001 then **\<Enter\>**.
+3. Provide your user name and password, then click "Sign In" button. You will land in the Dasboard screen. ![](images/Common/Login/imageCommL_02.png)
+4. In the "Data Integration Platform Cloud" service box click on the hamburguer menu and then select "Open Service Console" ![](images/200/image200_2.png)
+5. Click on the hamburger menu of the DIPC server assigned to you, then click "Data Integration Platform Console" ![](images/200/image200_3.png)
+You will be navigated to your DIPC server Home page. ![](images/200/image200_4.png)
 
 ### Login into DIPC using direct URL
 
-1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look something like this one "https://dipc01-orasenatdpltintegration02.adipc.ocp.oraclecloud.com/dicloud".
-2. Provide your user name and password, then click "Sign In" button. ![](images/200/image200_1.png)
-You will be navigated to your DIPC instance web console home page.
+1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one "https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud"
+2. Provide your user name and password, then click "Sign In" button ![](images/Common/Login/imageCommL_02.png)
+You will be navigated to your DIPC server Home page.
 
 ## Create Connections and Review Catalog
 1. Log into your Workshop DIPC instance.
@@ -137,7 +136,7 @@ If you would like to associate a tag or a contact to this entity, click on “Ed
 5.	Please note how the "Selected Data Entities" list changes when the rule is applied. Select the hamburger menu   (located on the right side of the row) of the rule you just created and select “Delete". You should end up with the original rule only.
 6.	Click on “Save & Run” button on the top right to execute the task. ![](images/200/image200_20p.png)
 7.	A message will appear in the notification bar and you will be navigated to the “Monitor” screen. ![](images/200/image200_22p.png)
-8.	The job will automatically appear within the Jobs page. This may take some time. ![](images/200/image200_23.png) 
+8.	The job will automatically appear within the Jobs page. This may take some time. ![](images/200/image200_23p.png) 
 Auto-refresh is on, statuses will be updated frequently.
 As the job executes, the Initial Load process is created in ODI while DIPC configures OGG for the Source Capture and Target Delivery.
 
@@ -177,8 +176,8 @@ Up until this point, we have monitored the job within DIPC but it would nice to 
 3.	Execute the statements by clicking on the “Run script” icon (second icon from left to right on the icon bar; right-ponting green arrow head on top of a page).
 4.	This will show all entities count on the results panel (lower section). 
 ![](images/200/image200_36p.png)
-5.	Repeat steps 1 through 4 for target database (for example "WS - SALES_TGT").     
-![](images/200/image200_37.png)
+5.	Repeat steps 1 through 4 for target database (for example "WS - SALES_TRG").     
+![](images/200/image200_37p.png)
 This will show that the count in both data bases is exactly the same.
 
 
@@ -207,7 +206,7 @@ We are going to apply some changes to the source DB and verify how our “Synchr
 ![](images/200/image200_42p.png)
 
 5.	Click on “Commit” icon to insert the row into the DB (fifth icon from left to right on the icon bar; green checkmark on top of a disk).
-6.	Verify the insert in the target. Go to SQL developer and expand target database connection “WS - SALES_TGT ” connection and its tables.
+6.	Verify the insert in the target. Go to SQL developer and expand target database connection “WS - SALES_TRG ” connection and its tables.
 
 ![](images/200/image200_43p.png)
 
