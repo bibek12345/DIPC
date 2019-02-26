@@ -35,8 +35,7 @@ In order to hit the floor running, you woud need the following applications in y
 ## DIPC Workshop Environment
 Oracle will provide each student with the following environment on the cloud:
 
-![](images/Intro/image80_workshoplayout.png) 
-
+![](images/Common/General/imageCommG_01.png) 
 
 - DIPC Server
 - 2 DBCS instances (Source and Target). DBs environments will be ready to be used (users, schemas, data, etc.) 

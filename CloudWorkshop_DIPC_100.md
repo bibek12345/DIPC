@@ -22,8 +22,11 @@ Your will need:
 
 1. In your web browser, navigate to cloud.oracle.com, then click Sign in.
 2. Provide the cloud account: oscnas001 then <Enter>
-![](images/100/image100_01.png)
-3. Provide your user name and password, then click Sign In. ![](images/100/image100_1.png)
+![](images/Common/Connections/imageCommC_01.png)
+
+3. Provide your user name and password, then click Sign In. 
+![](images/Common/Connections/imageCommC_02.png)
+
 
 Click Services or Go to Dashboard to access My Oracle Services.
 
