@@ -51,12 +51,12 @@ You will be navigated to your DIPC instance web console home page.
     - Password: Welcome#123
     - Service Name: **\<CDB_SOURCE_SERVICE_NAME\>**
     ![](images/200/image200_5ap.png)
-    ![](images/200/image200_5bp.png)    
+    ![](images/200/image200_5bp.png)      
     ```
     where:
-        \<REMOTE_AGENT\> - Select the DIPC agent you created.
-        \<SOURCE_DB_NAME\> - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
-        \<CDB_SOURCE_SERVICE_NAME\> - CDB Service name string for the source database server. This have been provided in your environment page; look for entry CDB_SOURCE_SERVICE_NAME
+        <REMOTE_AGENT> - Select the DIPC agent you created
+        <SOURCE_DB_NAME> - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
+        <CDB_SOURCE_SERVICE_NAME> - CDB Service name string for the source database server. This have been provided in your environment page; look for entry CDB_SOURCE_SERVICE_NAME
     ```
 4. Click "Test Connection" button and when the test is successful click "Save" button.
 5. Open the drop-down menu from the top far right corner and then select “Connection”. ![](images/200/image200_15p.png)
@@ -76,9 +76,9 @@ You will be navigated to your DIPC instance web console home page.
     ![](images/200/image200_7p.png)
     ```
     where:
-        \<REMOTE_AGENT\> - Select the DIPC agent you created.
-        \<SOURCE_DB_NAME\> - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
-        \<SOURCE_DB_SERVICE_NAME\> - Service name string for the source database server. This have been provided in your environment page; look for entry SOURCE_DB_SERVICE_NAME
+        <REMOTE_AGENT> - Select the DIPC agent you created 
+        <SOURCE_DB_NAME> - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
+        <SOURCE_DB_SERVICE_NAME> - Service name string for the source database server. This have been provided in your environment page; look for entry SOURCE_DB_SERVICE_NAME
     ```
 7. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema.
 
@@ -109,9 +109,9 @@ If you would like to associate a tag or a contact to this entity, click on “Ed
     ![](images/200/image200_16ap.png)
     ```
     where:
-        \<REMOTE_AGENT\> - Select the DIPC agent you created.
-        \<TARGET_DB_NAME\> - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
-        \<TARGET_DB_SERVICE_NAME\> - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
+        <REMOTE_AGENT> - Select the DIPC agent you created 
+        <TARGET_DB_NAME> - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
+        <TARGET_DB_SERVICE_NAME> - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
     ```
 
 16. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any).

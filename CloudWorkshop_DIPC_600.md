@@ -72,9 +72,9 @@ Or, if you are already in the application, go to the "Home" page by selecting th
 	- Schema Name: TRG_AGG_SALES (Default)
 	```
 	where:
-		\<REMOTE_AGENT\> - Select the DIPC agent you created
-		\<TARGET_DB_NAME\> - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
-    	\<TARGET_DB_SERVICE_NAME\> - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
+		<REMOTE_AGENT> - Select the DIPC agent you created
+		<TARGET_DB_NAME> - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
+    	<TARGET_DB_SERVICE_NAME> - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
 	```
 12.	Click on “Test Connection” button at the bottom. A green message should appear on top when everything is in order. 
 ![](images/600/image600_010.png)

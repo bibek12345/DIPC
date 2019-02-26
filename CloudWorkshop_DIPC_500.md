@@ -47,20 +47,20 @@ Click on "Select a default staging connection" hyperlink. You will navigate to t
 2. Enter the following information:
     - Name: SALES_TRG 
     - Description: Sales OLTP Replicated Data
-    - Agent: **{LOCAL_AGENT}**
+    - Agent: **\<REMOTE_AGENT\>**
     - Type Oracle – selecting Oracle will expand the Connection Settings
-    - Hostname: **{TARGET_DB_NAME}**
+    - Hostname: **\<TARGET_DB_NAME\>**
     - Port: 1521
     - Username: SALES_TRG 
     - Password: Welcome#123
-    - Service Name: **{TARGET_DB_SERVICE_NAME}**
+    - Service Name: **\<TARGET_DB_SERVICE_NAME\>**
     - Schema Name: SALES_TRG  (Default)
     ![](images/200/image200_16.png)
 ```
 where:
-    {LOCAL_AGENT} - Select the local DIPC agent 
-    {TARGET_DB_NAME} - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
-    {TARGET_DB_SERVICE_NAME} - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
+    <REMOTE_AGENT> - Select the DIPC agent yoy just created
+    <TARGET_DB_NAME> - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
+    <TARGET_DB_SERVICE_NAME\< - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
 ```
 3. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
 4. Click "Save" button. 

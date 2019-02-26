@@ -19,6 +19,9 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 -  Lab 600 - ODI Execution Task
 -  Lab 700 - Under the covers DIPCS
 -  Lab 800 - Data Lake Builder Elevated Task
+-  Lab 1000 - Replicate Data Elevated Task For Autonomous Data Warehouse
+-  Lab 1200 - Enterprise Data Quality (EDQ)
+-  Lab 1300 - Replicate Data - Oracle to Kafka
 - Appendix 1 - SSH Session Configuration
 - Appendix 2 - VNC Viewer Configuration
 - Appendix 3 - SQL Developer
@@ -108,6 +111,30 @@ Welcome to the Oracle Data Integration Platform Cloud Service Workshop. The cont
 ### Objectives
 -   Review how to create connections to Oracle Object Storage
 -   Review how to execute a Data Lake Builder task
+
+## Lab 1000:  Replicate Data to ADWC
+
+**Documentation**: [CloudWorkshop\_DIPC\_1000.md](CloudWorkshop\_DIPC\_1000.md)
+
+### Objectives
+-   Review how to create connections
+-   Review how to execute a Replicate Data elevated task for Autonomous Data Warehouse
+
+## Lab 1200:  Enterprise Data Quality (EDQ)
+
+**Documentation**: [CloudWorkshop\_DIPC\_1200.md](CloudWorkshop\_DIPC\_1200.md)
+
+### Objectives
+-   Review EDQ Capabilities
+-   Connect to sample data, understand how to profile the data and know how to correct the data in EDQ
+
+## Lab 1300:  Replicate Data - Oracle to Kafka
+
+**Documentation**: [CloudWorkshop\_DIPC\_1300.md](CloudWorkshop\_DIPC\_1300.md)
+
+### Objectives
+-   Review how to create connections
+-   Review how to execute a Replicate Data Task between Oracle and Kafka
 
 ## Appendix 1:  SSH Session Configuration
 
