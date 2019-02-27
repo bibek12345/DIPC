@@ -58,7 +58,7 @@ If you receive the following error message:
 
 ![](images/500/Image500_2.png)
 
-this means your system has NO staging area to upload the data temporarily to prep it. 
+this means your system has NO defined staging area  to upload the data temporarily to prep it. 
 
 In order to define the staging area:
 
