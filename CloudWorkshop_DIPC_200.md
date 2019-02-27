@@ -3,12 +3,20 @@
 
 ## Before You Begin
 
+### Introduction
+This lab will introduce you to the basic tasks in DIPC server: how to create a connection and how to browse the catalog. Once that has been done, the lab will guide you on how to create a Data synchronization (data synch) elevated task. 
+
+The synch data task allows you to copy data from source to target and keep both databases synchronized. For example, if your company would like to perform a zero-downtime migration and keep both systems synchronized until you are finished with your tests. 
+
+We will use two databases in the cloud for this lab.
+
 ### Objectives
 - Create DIPC connections
-- Execute a Synchonize Data elevated task to synchronize data between two cloud databases
+- Browse catalog with entity information
+- Synchronize two cloud databases
 
 ### Time to Complete 
-Approximately 60 minutes.
+Approximately 60 minutes
 
 ### What Do You Need?
 Your will need:
@@ -18,6 +26,7 @@ Your will need:
 - DB information for target system: server name, user/password and service name
 - SQL Developer
 - General understanding of RDBMS and data integration concepts
+
 
 ## Log into DIPC Server
 

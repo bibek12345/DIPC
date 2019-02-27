@@ -5,19 +5,16 @@
 ## Before You Begin
 
 ### Introduction
+This lab covers installation and configuration of DIPC remote agent along with synchronization of two on-prem database schemas. Remote agents allow synchronization of data outside Oracle Cloud; that is, the source, the target or both might be outside of the Oracle Cloud. 
 
-This lab covers installation and configuration of DIPC remote agent along with synchronization of two on-prem database schemas. Agents allow synchronization of data from sources outside Oracle Cloud. The target and source schemas will reside in the same database.
-
-This lab supports the following use cases:
--   Configure the Remote DIPC Agent
--   Execute a Synchonize Data elevated task to synchronize two On-Premise Databases
+A VM is used to simulate an On-Prem environment; both source and target schemas reside in the same on-prem database.
 
 ### Objectives
 -	Download, install and configure DIPC remote agent
--   Synchronize two On-Premise Databases
+-   Migrate an On-Premise database to a second On-Premise database and keep them synchronized
    
 ### Time to complete
-Approximately 30 minutes.
+Approximately 30 minutes
 
 ### What Do You Need?
 Your will need:
@@ -25,11 +22,12 @@ Your will need:
 - DIPC User and Password
 - DB information for on-prem source system: server name/ip address, user/password and service name
 - DB information for on-prem target system: server name/ip address, user/password and service name
-- Private keys in OpenSSH format for all instances 
 - OnPremiseVM public IP address
 - Putty for SSH connection to instances
+- Private keys in OpenSSH format for compute instance
 - VNC viewer
 - SQL developer
+- General understanding of RDBMS and data integration concepts
 
 
 ## Remote Agent
