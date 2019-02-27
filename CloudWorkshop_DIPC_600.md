@@ -42,7 +42,7 @@ SELECT COUNT(*) FROM TRG_SALES;
 1.	Log into your DIPC server, provide the URL (it should look like this): 
 https://dipc01-orasenatdpltintegration02.adipc.ocp.oraclecloud.com/dicloud/app/index.html
 2.	Provide your user name and password, then click "Sign In" button 
-![](images/300/image300_2.png)
+![](images/Common/Login/imageCommL_02.png)
 Or, if you are already in the application, go to the "Home" page by selecting the "Home"hyperlink from the left panel. 
 3.	In the Home Page click on "Next" icon (>) located at the far right side of the top panel to locate the "ODI Execution" task icon 
 4.	Once you have located the “ODI Execution” task icon, click on the “Create" button.  ![](images/600/image600_4p.png)
@@ -62,19 +62,19 @@ Or, if you are already in the application, go to the "Home" page by selecting th
 11.	Provide the following information:
 	- Name: DIPC_DWH
 	- Description: Data Warehouse
-	- Agent: **{LOCAL_AGENT}**
+	- Agent: **\<REMOTE_AGENT\>**
 	- Type Oracle
-	- Hostname: **{TARGET_DB_NAME}**
+	- Hostname: **\<TARGET_DB_NAME\>**
 	- Port: 1521
 	- Username: TRG_AGG_SALES
-	- Password: **{_DB_PASSWORD}**
-	- Service Name: **{TARGET_DB_SERVICE_NAME}**
+	- Password: **\<_DB_PASSWORD\>**
+	- Service Name: **\<TARGET_DB_SERVICE_NAME\>**
 	- Schema Name: TRG_AGG_SALES (Default)
 	```
 	where:
-		{LOCAL_AGENT} - Select the local DIPC agent
-		{TARGET_DB_NAME} - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
-    	{TARGET_DB_SERVICE_NAME} - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
+		<REMOTE_AGENT> - Select the DIPC agent you created
+		<TARGET_DB_NAME> - Name of the target database server. This have been provided in your environment page; look for entry TARGET_DB_NAME
+    	<TARGET_DB_SERVICE_NAME> - Service name string for the target database server. This have been provided in your environment page; look for entry TARGET_DB_SERVICE_NAME
 	```
 12.	Click on “Test Connection” button at the bottom. A green message should appear on top when everything is in order 
 ![](images/600/image600_010.png)

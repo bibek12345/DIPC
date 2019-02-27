@@ -1,7 +1,5 @@
 # Lab 300 - Remote Agent Install and On-prem to On-prem DB Synchronization
 
-Brian and Danny January 7 2019
-
 ![](images/300/image300_0.png)
 
 ## Before You Begin
@@ -11,11 +9,11 @@ Brian and Danny January 7 2019
 This lab covers installation and configuration of DIPC remote agent along with synchronization of two on-prem database schemas. Agents allow synchronization of data from sources outside Oracle Cloud. The target and source schemas will reside in the same database.
 
 This lab supports the following use cases:
--   Configure Remote DIPC Agent
--   Synchronize two On-Premise Databases
+-   Configure the Remote DIPC Agent
+-   Execute a Synchonize Data elevated task to synchronize two On-Premise Databases
 
 ### Objectives
--	Review downloading process, installation and configuration of DIPC remote agent
+-	Download, install and configure DIPC remote agent
 -   Synchronize two On-Premise Databases
    
 ### Time to complete
@@ -40,13 +38,13 @@ Your will need:
 1.	Open an SSH session into your compute server (we will simulate on-prem with a compute instance); please refer to Appendix 1 to learn how to establish a SSH session
 3.	Move to the directory where the remote agent was downloaded, execute: cd /home/oracle/dipcagent/dicloud
 7.	Execute command to install agent: 
-./dicloudConfigureAgent.sh -recreate -debug -dipchost=**{DIPC SERVER HostName eg osc######DIPC##-oscnas001.uscom-central-1.oraclecloud.com}** -dipcport=443 -user=**{YOUR_CLOUD_ACCOUNT_USERNAME}** -password=**{YOUR_CLOUD_ACCOUNT_PASSWORD}** -authType=OAUTH2 -idcsServerUrl=https://idcs-bfb16122271a47fc91ada73842325e52.identity.oraclecloud.com -agentIdcsScope=**{YOUR_DIPC_SECAPP}** -agentClientId=4b8201b85cb946eab6f0006c37093f26 -agentClientSecret=c5e45679-aa81-4d98-a574-01c0484b37b6
+./dicloudConfigureAgent.sh -recreate -debug -dipchost=**\<DIPC_SERVER\>** -dipcport=443 -user=**\<YOUR_USER\>** -password=**\<YOUR_PASSWORD\>** -authType=OAUTH2 -idcsServerUrl=https://idcs-bfb16122271a47fc91ada73842325e52.identity.oraclecloud.com -agentIdcsScope=**\<YOUR_DIPC_SECAPP\>** -agentClientId=4b8201b85cb946eab6f0006c37093f26 -agentClientSecret=c5e45679-aa81-4d98-a574-01c0484b37b6
 	```
 	where:
-		{DIPC SERVER} - This is the name of your DIPC Server. This have been provided in your environment page; look for entry DIPC SERVER.
-		{YOUR_USER} - This is the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_USER
-		{YOUR_PASSWORD} - This is the password of the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_PASSWORD
-		{YOUR_DIPC_SECAPP} - This is the scope of the security application defined in the Identity Server. This have been provided in your environment page; look for entry YOUR_DIPC_SECAPP
+		<DIPC_SERVER> - This is the name of your DIPC Server. This have been provided in your environment page; look for entry DIPC_SERVER.  For example: osc######DIPC##-oscnas001.uscom-central-1.oraclecloud.com
+		<YOUR_USER> - This is the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_USER
+		<YOUR_PASSWORD> - This is the password of the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_PASSWORD
+		<YOUR_DIPC_SECAPP> - This is the scope of the security application defined in the Identity Server. This have been provided in your environment page; look for entry YOUR_DIPC_SECAPP
 	```
 8.	New directories will be created, to look at them execute: ls
 9.	We will take a look at the configuration file (agent.properties) and we will change the port in which this agent will talk to DIPC. Move to the configuration directory, execute: cd /home/oracle/dipcagent/dicloud/agent/dipcagent001/conf
@@ -64,10 +62,30 @@ Your will need:
 1.	We will move to the directory with the necessary commands to start the agent; execute: cd /home/oracle/dipcagent/dicloud/agent/dipcagent001/bin
 2.	We will start the agent by executing:
 nohup ./startAgentInstance.sh &
-3.	Your agent is now running. If your not logged, log into your DIPC server and navigate to the "Agents" screen
-![](images/300/image300_14.png)
+3.	Your agent is now running. If you're not logged in, log into your DIPC server and navigate to the "Agents" screen
 4. You will see the new remote agent
 ![](images/300/image300_14a.png)
+
+
+## Log into DIPC Server
+
+### Login into DIPC using Oracle Cloud Services Dashboard
+
+1. In your web browser, navigate to cloud.oracle.com, then click "Sign in".
+2. Provide the cloud account; for example,oscnas001 then **\<Enter\>**
+![](images/Common/Login/imageCommL_01.png)
+3. Provide your user name and password, then click "Sign In" button. You will land in your Home screen ![](images/Common/Login/imageCommL_02.png)
+4. Scroll in your home screen until you locate "Data Integration Platform" service and click on it.  ![](images/Common/Login/imageCommL_03.png)
+5. Click on the hamburger menu of the DIPC server assigned to you, then click "Data Integration Platform Console" ![](images/Common/Login/imageCommL_04.png)
+
+You will be navigated to your DIPC server Home page. ![](images/Common/Login/imageCommL_05.png)
+
+
+### Login into DIPC using direct URL
+
+1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one "https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud"
+2. Provide your user name and password, then click "Sign In" button ![](images/Common/Login/imageCommL_02.png)
+You will be navigated to your DIPC server Home page.
 
 
 ## On-Prem to On-Prem synchronization
@@ -81,17 +99,17 @@ nohup ./startAgentInstance.sh &
 4. Enter the following information:
     - Name: ONPREM_SRC_CDB
     - Description:  CDB User for on-prem source DB
-	- Agent: **{REMOTE_AGENT}**
+	- Agent: **\<REMOTE_AGENT\>**
 	- Type: Oracle
-  	- Hostname: **{SERVER_IP_ADDRESS}**
+  	- Hostname: **\<SERVER_IP_ADDRESS\>**
 	- Port: 1521
 	- Username: C##GGSRC
 	- Password: Welcome#123
 	- Service Name: onprem
 	```
 	where:
-		{REMOTE_AGENT} - Select the remote DIPC agent you just created
-		{SERVER_IP_ADDRESS} - IP Address of the compute instance (simulated OnPrem environment). This have been provided in your environment page; look for entry SERVER _IP_ADDRESS
+		<REMOTE_AGENT\> - Select the remote DIPC agent you just created
+		<SERVER_IP_ADDRESS\> - IP Address of the compute instance (simulated OnPrem environment). This have been provided in your environment page; look for entry SERVER _IP_ADDRESS
 	```
 5. Click "Test Connection" button and when the test is successful click "Save" button.
 6. Open the drop-down menu from the top far right corner and then select “Connection”.
@@ -99,9 +117,9 @@ nohup ./startAgentInstance.sh &
 7. Enter the following information:
     - Name: ONPREM_SRC
     - Description: Connection to on-prem database schema with source tables. AMER
-	- Agent: **{REMOTE_AGENT}**
+	- Agent: **\<REMOTE_AGENT\>**
 	- Type: Oracle
-  	- Hostname: **{SERVER_IP_ADDRESS}**
+  	- Hostname: **\<SERVER_IP_ADDRESS\>**
 	- Port: 1521
 	- Username: AMER_SRC
 	- Password: Welcome#123
@@ -109,8 +127,8 @@ nohup ./startAgentInstance.sh &
     - Schema Name: AMER_SRC (Default)
 	```
 	where:
-		{REMOTE_AGENT} - Select the remote DIPC agent you just created
-		{SERVER_IP_ADDRESS} - IP Address of the compute instance (simulated OnPrem environment). This have been provided in your environment page; look for entry SERVER _IP_ADDRESS
+		<REMOTE_AGENT> - Select the remote DIPC agent you just created
+		<SERVER_IP_ADDRESS> - IP Address of the compute instance (simulated OnPrem environment). This have been provided in your environment page; look for entry SERVER _IP_ADDRESS
 	```
 8. Click on "Test Connection" button at the bottom. a green message should appear on top when everything is in order
 9. Click on "Save" 
@@ -120,9 +138,9 @@ nohup ./startAgentInstance.sh &
 11. Enter the following information:
     - Name: ONPREM_TRG
     - Description: Connection to target schema onprem_trg EMEA
-	- Agent: **{REMOTE_AGENT}**
+	- Agent: **\<REMOTE_AGENT\>**
 	- Type: Oracle
-	- Hostname: **{SERVER_INSTANCE_IP}**
+	- Hostname: **\<SERVER_INSTANCE_IP\>**
 	- Port: 1521
 	- Username: EMEA_TRG
 	- Password: Welcome#123
@@ -130,8 +148,8 @@ nohup ./startAgentInstance.sh &
     - Schema Name: EMEA_TRG (Default)	
 	```
 	where:
-		{REMOTE_AGENT} - Select the remote DIPC agent you just created
-		{SERVER_IP_ADDRESS} - IP Address of the compute instance (simulated OnPrem environment). This have been provided in your environment page; look for entry SERVER _IP_ADDRESS
+		<REMOTE_AGENT> - Select the remote DIPC agent you just created
+		<SERVER_IP_ADDRESS> - IP Address of the compute instance (simulated OnPrem environment). This have been provided in your environment page; look for entry SERVER _IP_ADDRESS
 	```	
 12. Click on "Test Connection" button at the bottom. a green message should appear on top when everything is in order
 13. Click on "Save" 

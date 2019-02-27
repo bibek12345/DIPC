@@ -20,24 +20,6 @@ Your will need:
 
 ## Data Lake Builder Elevated Task
 
-### Navigate to Oracle Object Storage container
-Before we execute the task, gather the necessary Object Storage container information to connect within DIPC, as well as to verify that the container is empty. First of all we will log into you Oracle cloud instance:
-1. In your web browser, navigate to cloud.oracle.com, then click Sign in.
-2. Provide the cloud account: orasenatdpltintegration02 then <Enter>
-3. Provide your user name and password, then click Sign In. 
-![](images/800/image800_1.png)
-4. Get the below details for the object storage container from the instructor. <br />
-	4.1 Domain <br />
-	4.2 Service URL <br />
-	4.3 Container <br /> <br />
-
-	Example: <br />
-	Domain: Storage-natdburlnthubtrainingenv1 <br />
-	Service URL: https://uscom-central-1b.storage.oraclecloud.com <br />
-	Container: sensorwio <br />
-8. Store it in a notepad or other text editor, you will need this URL later
-
-
 ### Create Connection to File (Source)
 1. Log into your Workshop DIPC Server
 2.	In the Home Page click “Create" button on the "Connection” box from top section 
@@ -45,12 +27,12 @@ Before we execute the task, gather the necessary Object Storage container inform
 3. 	Enter the following information:
 	- Name: FILE_SRC
 	- Description: Read Files
-	- Agent: **{LOCAL_AGENT}**
+	- Agent: **\<REMOTE_AGENT\>**
 	- Type: File
 	- Directory: /home/oracle
 	```
 	where:
-		{LOCAL_AGENT} - Select the local DIPC agent 
+		<REMOTE_AGENT> - Select the DIPC agent you created 
 	```
 	
 ![](images/800/image800_7.1.png)
@@ -65,38 +47,34 @@ Before we execute the task, gather the necessary Object Storage container inform
 2.	Enter the following information:
     - Name: forAdw 
     - Description: Connection to Object Storage Classic
-    - Agent: **{LOCAL_AGENT}**
+    - Agent: **\<REMOTE_AGENT\>**
     - Type: Oracle Object Storage Classic.
-    - Domain: **{OBJECT_STORAGE_DOMAIN}**
-	- Service URL: **{OBJECT_STORAGE_URL}**
+    - Domain: **\<OBJECT_STORAGE_DOMAIN\>**
+	- Service URL: **\<OBJECT_STORAGE_URL\>**
 	- Container: DIPC Workshop
-    - Username: **{USERNAME_TO_CONNECT_OBJECT_STORAGE}**
-    - Password: **{PASSWORD}**
+    - Username: **<YOUR_USER\>**
+    - Password: **<YOUR_PASSWORD\>**
 	```
 	where:
-		{LOCAL_AGENT} - Select the local DIPC agent 
-		{OBJECT_STORAGE_DOMAIN} - From the Rest EndPoint URL you saved previously copy and paste the last part. That is from "https://uscom-east-1.storage.oraclecloud.com/v1/Storage-oscnas100" copy "Storage-oscnas001. Or this have been provided in your environment page; look for entry OBJECT_STORAGE_DOMAIN
-		{OBJECT_STORAGE_URL} - From the Rest EndPoint URL you saved previously copy and paste the server URL. That is from "https://uscom-east-1.storage.oraclecloud.com/v1/Storage-oscnas100" copy "https://uscom-east-1.storage.oraclecloud.com". Or this have been provided in your environment page; look for entry OBJECT_STORAGE_URL
-		{USERNAME_TO_CONNECT_OBJECT_STORAGE} - This is the login you use to connect to object storage classic.
-		{YOUR_PASSWORD} - This is the password of the login you use to log into Oracle Cloud/DIPC server.
+		<REMOTE_AGENT> - Select the DIPC agent you created 
+		<OBJECT_STORAGE_DOMAIN> - This have been provided in your environment page; look for entry OBJECT_STORAGE_DOMAIN
+		<OBJECT_STORAGE_URL> - This have been provided in your environment page; look for entry OBJECT_STORAGE_URL
+		<YOUR_USERNAME> - This is the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_USER.
+		<YOUR_PASSWORD> - This is the password of the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_PASSWORD.
 	```
 3. Click "Test Connection" button and when the test is successful click "Save" button. 
 ![](images/800/image800_9.1.png)
 
 
 ### Create Data Lake (Target)
-1. From the "Create" drop down menu on the top right corner select "Connection" 
+1. From the "Create" drop down menu on the top right corner select "Data Lake" 
 ![](images/800/image800_10.png)
 2.	Enter the following information:
     - Name: DATA_LAKE
     - Description: Creating a data lake
-    - Connection: **{OBJECT_STORAGE_CLASSIC_CONNECTION}**
+    - Connection: forAdw
     - Type: Parquet
-	```
-	where:
-		{OBJECT_STORAGE_CLASSIC_CONNECTION} - This is the object storage classic connection name created above. 
-		{Parquet} - This is the default storage format in object storage classic.
-	```
+
 3. Click "Save" button and when the test is successful click "Save" button. 
 ![](images/800/image800_11.1.png)
 
@@ -108,24 +86,25 @@ Before we execute the task, gather the necessary Object Storage container inform
 	- Name:  DATA_LAKE
 	- Description: Create Datalake pipeline
 	- Connection: FILE_SRC
+	![](images/800/image800_13.png)
 	- Directory: /home/oracle 
-		- Click on the "Select" button on the right of the field 
-		![](images/800/image800_13.png)
+		- If you would like to select a different directory, click on the "Select" button on the right of the field 
 		![](images/800/image800_14.png)
-		- Click on "Files" directory and then click on "Select" button 
+		- Navigate to the directory then click on "Select" button 
 	- File: webclicks.txt
-		- Click on the "Select" button on the right of the field 
+		- Click on the "Select" button on the right of the field
 		![](images/800/image800_15.png)
 		- Click on  "webclicks.txt" file and then click on "Select" button 
-			- Connection: DATA_LAKE
-			- Data Entity: Web_Clicks
-			- Type: Parquet
-			- File Path: **{YOUR_USERNAME}**
-			```
-			where:
-				{YOUR_USER} - This is the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_USER. Please use your user name to assure the file has a unique name and there is no problems with other workshop participants.
-			```
-		![](images/800/image800_16.png)
+	- Connection: DATA_LAKE
+	- Data Entity: Web_Clicks
+	- Type: Parquet
+	- File Path: **\<YOUR_USERNAME\>**
+	```
+	where:
+		<YOUR_USER> - This is the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_USER. Please use your user name to assure the file has a unique name and there is no problems with other workshop participants.
+	```
+		
+	![](images/800/image800_16.png)
 
 3. Click on "Save & Execute" button located on the top right corner of the screen to execute the task 
 ![](images/800/image800_17.png)

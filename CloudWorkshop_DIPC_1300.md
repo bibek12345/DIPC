@@ -44,7 +44,7 @@ In this Lab we will be using a compute instance COMPUTE_DIPC01 to configure the 
 
 3. Provide your user name and password, then click "Sign In" button Or You can log in with Oracle SSO. You will land in the Dasboard screen.
 
-![](images/1300/image1300_2.png)
+![](images/Common/Login/imageCommL_02.png)
 
 
 4. In the Dasboard search for  "Autonomous Data Integration Platform Cloud" and click on the service.

@@ -106,7 +106,7 @@ Enterprise Data Quality brings to DIPC the necessary functionality for deliverin
 https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud
 2. Provide your user name and password, then click "Sign In" button
 
-![](images/200/image200_1.png)
+![](images/Common/Login/imageCommL_02.png)
 
 You will be navigated to your DIPC server Home page.
 

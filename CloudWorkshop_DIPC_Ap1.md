@@ -10,13 +10,12 @@
  
 
 2.	In the screen provide the following information:
-    -  Host: **{SERVER_IP_ADDRESS}**
+    -  Host: **\<SERVER_IP_ADDRESS\>**
     - Saved Session: Provide a name 
-
+```
 where:
-
-{SERVER_IP_ADDRESS} - is teh IP address to the server you want to connect (DIPC server, OnPrem server)
-
+    <SERVER_IP_ADDRESS> - is teh IP address to the server you want to connect (DIPC server, OnPrem server)
+```
 ![](images/Ap1/imageAp1_20.png)
  
 3.	Click on “Save” button
@@ -35,12 +34,11 @@ where:
 
 7.	From the hierarchical panel on the left, select “Connection > SSH > Tunnels” and provide the following information:
     - Source port: 6905
-    - Destination: **{SERVER_IP_ADDRESS}**:5901
-
+    - Destination: **\<SERVER_IP_ADDRESS\>**:5901
+```
 where:
-
-{SERVER_IP_ADDRESS} - is teh IP address to the server you want to connect (DIPC server, OnPrem server)
-
+    <SERVER_IP_ADDRESS> - is teh IP address to the server you want to connect (DIPC server, OnPrem server)
+```
 8.	Click on “Add” button
 
  ![](images/Ap1/imageAp1_60.png)
@@ -104,12 +102,11 @@ or
 
 3. Change permission to the key file. Execute:
 
-chmod 0600 **{NameOfKeyFile}** 
-
+chmod 0600 **\<KEY_FILE\>** 
+```
 where:
-
-{NameOfKeyFile} - is the key file that the instructor provided and you copied to your machine (e.g. chmod 0600 dipc_demo_keys.pem)
-
+    <KEY_FILE> - is the key file that the instructor provided and you copied to your machine (e.g. chmod 0600 dipc_demo_keys.pem)
+```
 ![](images/Ap1/imageAp1_160.png)
 
 
@@ -117,18 +114,14 @@ where:
 
 1. To start the SSH session and open the tunnel, execute:
 
-ssh -i **{PathToKeyFile}**/**{NameOfKeyFile}** -L 6905:localhost:5901 opc@**{SERVER_IP_ADDRESS}**
-
+ssh -i **\<KEY_FILE_PATH\>**/**\<KEY_FILE\>** -L 6905:localhost:5901 opc@**\<SERVER_IP_ADDRESS\>**
+```
 where:
 
-{PathToKeyFile} - is path to the file you created in the previous section step 3.
-
-{NameOfKeyFile} - is the name you assigned to the key file.
-
-{SERVER_IP_ADDRESS} - is the IP address of the server you want to connect (DIPC server, OnPrem server)
-
-(e.g. ssh -i /Users/lloywill/oracle/dipc/dipc_demo_keys.pem -L 6905:localhost:5901 opc@129.150.69.118)
-
+    <KEY_FILE_PATH> - is path to the file you created in the previous section step 3.
+    <KEY_FILE> - is the name you assigned to the key file.
+    <SERVER_IP_ADDRESS> - is the IP address of the server you want to connect (DIPC server, OnPrem server) (e.g. ssh -i /Users/lloywill/oracle/dipc/dipc_demo_keys.pem -L 6905:localhost:5901 opc@129.150.69.118)
+```
 ![](images/Ap1/imageAp1_170.png)
 
 You will see a warning message from Oracle saying that this system is only for authorized users. You are now connected to your Oracle cloud instance and have established an SSH tunnel to forward your local port 6905 to port 5901 on the cloud instance.

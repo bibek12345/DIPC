@@ -1,5 +1,7 @@
+# Lab 1200 - Enterprise Data Quality 
+![](images/1200/image1200_0.png)
+
 ## Before You Begin
-![](images/1000/image1200_0.png)
 
 ### Purpose
 This lab introduces you to the Enterprise Data Quality (EDQ) in DIPC. You will connect to sample data, understand how to profile the data and know how to correct the data in EDQ.
@@ -29,7 +31,7 @@ Enterprise Data Quality brings to DIPC the necessary functionality for deliverin
 https://idcs-2e105c979e6741dda7ae6717edc4e7dc.identity.oraclecloud.com/ui/v1/signin
 2. Provide your user name and password, then click "Sign In" button
 
-![](images/1200/image1200_1.png)
+![](images/Common/Login/imageCommL_02.png)
 
 You will be navigated to your cloud Home page.
 
