@@ -4,19 +4,16 @@
 ## Before You Begin
 
 ### Introduction 
-This lab covers synchronization of an on-prem and cloud database using a previously installed remote DIPC agent. Agents allow synchronization of data from sources outside Oracle Cloud. Two VMs will be used to simulate a DIPC instance and an On-Prem database server. The DIPC repository database also host the cloud target schema.
+This lab covers installation and configuration of DIPC remote agent along with synchronization of an on-prem and cloud database using the remote agent. Remote agents allow synchronization of data outside Oracle Cloud; that is, the source, the target or both might be outside of the Oracle Cloud. 
 
-
-This lab supports the following use cases:
--   Configure Remote DIPC  (Optional already done in Lab 300)
--   Synchronize On-Premise Database
+A VM is used to simulate an On-Prem environment.
 
 ### Objectives
--   Review downloading process, installation and configuration of DIPC remote agent
--   Migrate an on-prem database to a database cloud service
+-   Download, install and configure DIPC remote agent (already done in Lab 300)
+-   Migrate an On-Premise database to a Cloud database and keep them synchronized
 
 ### Time to complete
-Approximately 45 minutes.
+Approximately 30 minutes.
 
 ### What Do You Need?
 Your will need:
@@ -24,11 +21,13 @@ Your will need:
 - DIPC User and Password
 - DB information for on-prem source system: server name, user/password and service name
 - DB information for cloud target system: server name, user/password and service name
-- Private keys in OpenSSH format for all instances 
 - OnPremiseVM public IP address
 - Putty for SSH connection to instances
+- Private keys in OpenSSH format for compute instance
 - VNC viewer
 - SQL developer
+- General understanding of RDBMS and data integration concepts
+
 
 ## Remote Agent
 
@@ -36,7 +35,7 @@ Your will need:
 1.	Open an SSH session into your compute server (we will simulate on-prem with a compute instance); please refer to Appendix 1 to learn how to establish a SSH session
 3.	Move to the directory where the remote agent was downloaded, execute: cd dipcagent/dicloud
 7.	Execute command to install agent: 
-./dicloudConfigureAgent.sh -recreate -debug -dipchost=**\<DIPC SERVER\>** -dipcport=443 -user=**\<YOUR_CLOUD_ACCOUNT_USERNAME\>** -password=**\<YOUR_CLOUD_ACCOUNT_PASSWORD\>** -authType=OAUTH2 -idcsServerUrl=https://idcs-bfb16122271a47fc91ada73842325e52.identity.oraclecloud.com -agentIdcsScope=**\<YOUR_DIPC_SECAPP\>** -agentClientId=4b8201b85cb946eab6f0006c37093f26 -agentClientSecret=c5e45679-aa81-4d98-a574-01c0484b37b6
+./dicloudConfigureAgent.sh -recreate -debug -dipchost=**\<DIPC_SERVER\>** -dipcport=443 -user=**\<YOUR_USER\>** -password=**\<YOUR_PASSWORD\>** -authType=OAUTH2 -idcsServerUrl=https://idcs-bfb16122271a47fc91ada73842325e52.identity.oraclecloud.com -agentIdcsScope=**\<YOUR_DIPC_SECAPP\>** -agentClientId=4b8201b85cb946eab6f0006c37093f26 -agentClientSecret=c5e45679-aa81-4d98-a574-01c0484b37b6
 	```
 	where:
 		<DIPC SERVER> - This is the name of your DIPC Server. This have been provided in your environment page; look for entry DIPC SERVER. For example, osc######DIPC##-oscnas001.uscom-central-1.oraclecloud.com
