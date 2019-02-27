@@ -45,7 +45,7 @@ Your will need:
 1. From the "Create" drop down menu on the top right corner select "Connection" 
 ![](images/800/image800_8.png)
 2.	Enter the following information:
-    - Name: forAdw 
+    - Name: objectstorageC 
     - Description: Connection to Object Storage Classic
     - Agent: **\<REMOTE_AGENT\>**
     - Type: Oracle Object Storage Classic.
