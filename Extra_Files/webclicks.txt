@@ -1,0 +1,740 @@
+WROWID,CUSTID,LNAME,FNAME,PAGENAME,PAGEREFERRER,VISITDATE
+1,101,Brendt,Paul,homepage.html,,7/17/2018
+2,102,McCarthy,Robin,homepage.html,watches.html,7/25/2018
+3,103,Travis,Peter,homepage.html,watches.html,7/21/2018
+4,104,Larson,Joe,homepage.html,,7/19/2018
+5,105,Goldschmidt,Tony,homepage.html,housewares.html,7/15/2018
+6,106,Baker,William,homepage.html,housewares.html,7/20/2018
+7,107,Swenson,Jack,homepage.html,housewares.html,7/22/2018
+8,201,Sartois,Jean,homepage.html,,7/12/2018
+9,202,Michaud,Philippe,homepage.html,shoes.html,7/24/2018
+10,203,Robert,Christian,homepage.html,shoes.html,7/11/2018
+11,204,Martin,Christine,homepage.html,,7/16/2018
+12,205,Piaget,Luc,homepage.html,watches.html,7/13/2018
+13,206,Gentil,Michele,homepage.html,watches.html,7/13/2018
+14,207,Dupont,Marie-Chantale,homepage.html,,7/23/2018
+15,301,Edwards,Caroline,homepage.html,,7/12/2018
+16,302,Marlow,Justin,homepage.html,shoes.html,7/14/2018
+17,303,Wilson,John,homepage.html,shoes.html,7/19/2018
+18,304,McCartney,George,homepage.html,,7/19/2018
+19,305,Keegan,Hariett,homepage.html,,7/19/2018
+20,306,Jones,Mary,homepage.html,housewares.html,7/22/2018
+21,307,Hopkins,Priscilla,homepage.html,housewares.html,7/16/2018
+22,401,Diemers,Erika,homepage.html,,7/23/2018
+23,402,Schiller,Jurgen,homepage.html,,7/13/2018
+24,403,Durnstein,Adolph,homepage.html,watches.html,7/17/2018
+25,404,Weimar,Hans,homepage.html,watches.html,7/15/2018
+26,405,Schultz,Herbert,homepage.html,watches.html,7/17/2018
+27,406,Titzman,Silke,homepage.html,,7/18/2018
+28,407,Reinman,Heineke,homepage.html,,7/12/2018
+29,501,Arai,Toshihijo,homepage.html,,7/11/2018
+30,502,Kamata,Mariko,homepage.html,housewares.html,7/18/2018
+31,503,Kamimura,Satoru,homepage.html,housewares.html,7/15/2018
+32,504,Makino,Tatsuo,homepage.html,,7/24/2018
+33,505,Mukumoto,Masayuki,homepage.html,,7/18/2018
+34,506,Oneda,Kenji,homepage.html,,7/18/2018
+35,507,Okumura,Isao,homepage.html,homepage.html,7/15/2018
+36,101,Brendt,Paul,watches.html,housewares.html,7/20/2018
+37,102,McCarthy,Robin,watches.html,housewares.html,7/19/2018
+38,103,Travis,Peter,watches.html,housewares.html,7/16/2018
+39,104,Larson,Joe,watches.html,homepage.html,7/24/2018
+40,105,Goldschmidt,Tony,watches.html,housewares.html,7/19/2018
+41,106,Baker,William,watches.html,housewares.html,7/13/2018
+42,107,Swenson,Jack,watches.html,housewares.html,7/20/2018
+43,201,Sartois,Jean,watches.html,homepage.html,7/14/2018
+44,202,Michaud,Philippe,watches.html,housewares.html,7/19/2018
+45,203,Robert,Christian,watches.html,shoes.html,7/23/2018
+46,204,Martin,Christine,watches.html,shoes.html,7/14/2018
+47,205,Piaget,Luc,watches.html,homepage.html,7/19/2018
+48,206,Gentil,Michele,watches.html,housewares.html,7/15/2018
+49,207,Dupont,Marie-Chantale,watches.html,homepage.html,7/19/2018
+50,301,Edwards,Caroline,watches.html,homepage.html,7/11/2018
+51,302,Marlow,Justin,watches.html,housewares.html,7/20/2018
+52,303,Wilson,John,watches.html,housewares.html,7/19/2018
+53,304,McCartney,George,watches.html,shoes.html,7/18/2018
+54,305,Keegan,Hariett,watches.html,shoes.html,7/12/2018
+55,306,Jones,Mary,watches.html,homepage.html,7/18/2018
+56,307,Hopkins,Priscilla,watches.html,homepage.html,7/12/2018
+57,401,Diemers,Erika,watches.html,housewares.html,7/17/2018
+58,402,Schiller,Jurgen,watches.html,housewares.html,7/17/2018
+59,403,Durnstein,Adolph,watches.html,homepage.html,7/14/2018
+60,404,Weimar,Hans,watches.html,housewares.html,7/19/2018
+61,405,Schultz,Herbert,watches.html,shoes.html,7/23/2018
+62,406,Titzman,Silke,watches.html,shoes.html,7/21/2018
+63,407,Reinman,Heineke,watches.html,homepage.html,7/11/2018
+64,501,Arai,Toshihijo,watches.html,shoes.html,7/17/2018
+65,502,Kamata,Mariko,watches.html,shoes.html,7/11/2018
+66,503,Kamimura,Satoru,watches.html,housewares.html,7/17/2018
+67,504,Makino,Tatsuo,watches.html,homepage.html,7/20/2018
+68,505,Mukumoto,Masayuki,watches.html,shoes.html,7/12/2018
+69,506,Oneda,Kenji,watches.html,shoes.html,7/24/2018
+70,507,Okumura,Isao,watches.html,homepage.html,7/23/2018
+71,101,Brendt,Paul,shoes.html,watches.html,7/14/2018
+72,102,McCarthy,Robin,shoes.html,watches.html,7/15/2018
+73,103,Travis,Peter,shoes.html,housewares.html,7/20/2018
+74,104,Larson,Joe,shoes.html,homepage.html,7/13/2018
+75,105,Goldschmidt,Tony,shoes.html,homepage.html,7/14/2018
+76,106,Baker,William,shoes.html,housewares.html,7/21/2018
+77,107,Swenson,Jack,shoes.html,watches.html,7/18/2018
+78,201,Sartois,Jean,shoes.html,watches.html,7/21/2018
+79,202,Michaud,Philippe,shoes.html,homepage.html,7/21/2018
+80,203,Robert,Christian,shoes.html,homepage.html,7/13/2018
+81,204,Martin,Christine,shoes.html,homepage.html,7/13/2018
+82,205,Piaget,Luc,shoes.html,housewares.html,7/24/2018
+83,206,Gentil,Michele,shoes.html,housewares.html,7/20/2018
+84,207,Dupont,Marie-Chantale,shoes.html,watches.html,7/13/2018
+85,301,Edwards,Caroline,shoes.html,watches.html,7/14/2018
+86,302,Marlow,Justin,shoes.html,housewares.html,7/20/2018
+87,303,Wilson,John,shoes.html,homepage.html,7/15/2018
+88,304,McCartney,George,shoes.html,homepage.html,7/15/2018
+89,305,Keegan,Hariett,shoes.html,homepage.html,7/24/2018
+90,306,Jones,Mary,shoes.html,housewares.html,7/11/2018
+91,307,Hopkins,Priscilla,shoes.html,housewares.html,7/15/2018
+92,401,Diemers,Erika,shoes.html,watches.html,7/21/2018
+93,402,Schiller,Jurgen,shoes.html,watches.html,7/14/2018
+94,403,Durnstein,Adolph,shoes.html,housewares.html,7/14/2018
+95,404,Weimar,Hans,shoes.html,housewares.html,7/22/2018
+96,405,Schultz,Herbert,shoes.html,homepage.html,7/20/2018
+97,406,Titzman,Silke,shoes.html,homepage.html,7/18/2018
+98,407,Reinman,Heineke,shoes.html,housewares.html,7/11/2018
+99,501,Arai,Toshihijo,shoes.html,housewares.html,7/21/2018
+100,502,Kamata,Mariko,shoes.html,watches.html,7/24/2018
+101,503,Kamimura,Satoru,shoes.html,watches.html,7/17/2018
+102,504,Makino,Tatsuo,shoes.html,housewares.html,7/25/2018
+103,505,Mukumoto,Masayuki,shoes.html,housewares.html,7/17/2018
+104,506,Oneda,Kenji,shoes.html,housewares.html,7/17/2018
+105,507,Okumura,Isao,shoes.html,housewares.html,7/21/2018
+106,101,Brendt,Paul,housewares.html,shoes.html,7/19/2018
+107,102,McCarthy,Robin,housewares.html,shoes.html,7/22/2018
+108,103,Travis,Peter,housewares.html,,7/18/2018
+109,104,Larson,Joe,housewares.html,,7/23/2018
+110,105,Goldschmidt,Tony,housewares.html,,7/12/2018
+111,106,Baker,William,housewares.html,shoes.html,7/11/2018
+112,107,Swenson,Jack,housewares.html,shoes.html,7/17/2018
+113,201,Sartois,Jean,housewares.html,shoes.html,7/25/2018
+114,202,Michaud,Philippe,housewares.html,,7/13/2018
+115,203,Robert,Christian,housewares.html,,7/18/2018
+116,204,Martin,Christine,housewares.html,,7/17/2018
+117,205,Piaget,Luc,housewares.html,,7/19/2018
+118,206,Gentil,Michele,housewares.html,,7/24/2018
+119,207,Dupont,Marie-Chantale,housewares.html,,7/23/2018
+120,301,Edwards,Caroline,housewares.html,,7/22/2018
+121,302,Marlow,Justin,housewares.html,,7/14/2018
+122,303,Wilson,John,housewares.html,,7/16/2018
+123,304,McCartney,George,housewares.html,shoes.html,7/20/2018
+124,305,Keegan,Hariett,housewares.html,shoes.html,7/15/2018
+125,306,Jones,Mary,housewares.html,shoes.html,7/19/2018
+126,307,Hopkins,Priscilla,housewares.html,shoes.html,7/11/2018
+127,401,Diemers,Erika,housewares.html,shoes.html,7/16/2018
+128,402,Schiller,Jurgen,housewares.html,,7/19/2018
+129,403,Durnstein,Adolph,housewares.html,,7/18/2018
+130,404,Weimar,Hans,housewares.html,,7/17/2018
+131,405,Schultz,Herbert,housewares.html,,7/14/2018
+132,406,Titzman,Silke,housewares.html,,7/18/2018
+133,407,Reinman,Heineke,housewares.html,,7/18/2018
+134,501,Arai,Toshihijo,housewares.html,,7/23/2018
+135,502,Kamata,Mariko,housewares.html,,7/21/2018
+136,503,Kamimura,Satoru,housewares.html,shoes.html,7/16/2018
+137,504,Makino,Tatsuo,housewares.html,shoes.html,7/16/2018
+138,505,Mukumoto,Masayuki,housewares.html,shoes.html,7/16/2018
+139,506,Oneda,Kenji,housewares.html,shoes.html,7/20/2018
+140,507,Okumura,Isao,housewares.html,shoes.html,7/17/2018
+141,4563,West ,Harrison,watches.html,shoes.html,7/18/2018
+142,5391,Tinsley ,Esther,housewares.html,shoes.html,7/21/2018
+143,8841,Daniel ,Timothy,watches.html,housewares.html,7/14/2018
+144,0469,Seibert ,Perry,shoes.html,homepage.html,7/17/2018
+145,8643,Hancock ,Bryon,watches.html,housewares.html,7/23/2018
+146,5789,Glenn ,Betty,watches.html,shoes.html,7/24/2018
+147,5272,Collins ,Kimberly,watches.html,housewares.html,7/15/2018
+148,4112,Trammel ,Bernard,housewares.html,,7/23/2018
+149,1776,Bruce ,Yvonne,watches.html,shoes.html,7/13/2018
+150,6283,Willett ,Rosalia,homepage.html,shoes.html,7/24/2018
+151,5353,Maldonado ,Janet,watches.html,homepage.html,7/25/2018
+152,2769,Wilson ,Melissa,homepage.html,homepage.html,7/13/2018
+153,7151,Lindemann ,Karen,watches.html,shoes.html,7/13/2018
+154,0050,Ford ,Phyllis,homepage.html,shoes.html,7/18/2018
+155,2184,Toles ,Richard,watches.html,shoes.html,7/20/2018
+156,5997,Thompson ,William,watches.html,homepage.html,7/25/2018
+157,2204,Brown ,Raymond,watches.html,shoes.html,7/22/2018
+158,2575,Trower ,Tasha,homepage.html,housewares.html,7/21/2018
+159,7651,Kerry ,David,homepage.html,housewares.html,7/17/2018
+160,4112,Trammel ,Bernard,homepage.html,,7/24/2018
+161,8841,Daniel ,Timothy,watches.html,housewares.html,7/15/2018
+162,9531,Hill ,Mary,homepage.html,,7/24/2018
+163,1776,Bruce ,Yvonne,shoes.html,homepage.html,7/24/2018
+164,8429,Crist ,Gary,watches.html,shoes.html,7/15/2018
+165,4112,Trammel ,Bernard,homepage.html,watches.html,7/14/2018
+166,0469,Seibert ,Perry,shoes.html,housewares.html,7/14/2018
+167,8569,Brown,Richard,watches.html,shoes.html,7/21/2018
+168,9531,Hill ,Mary,shoes.html,homepage.html,7/16/2018
+169,8860,Terrell ,Walter,watches.html,homepage.html,7/20/2018
+170,4490,Lawson ,Lela,watches.html,shoes.html,7/13/2018
+171,1139,Bevins ,John,watches.html,housewares.html,7/13/2018
+172,9769,Nadeau ,Albert,homepage.html,watches.html,7/16/2018
+173,5766,Arthur ,Lori,shoes.html,homepage.html,7/20/2018
+174,0469,Seibert ,Perry,watches.html,shoes.html,7/23/2018
+175,5353,Maldonado ,Janet,shoes.html,housewares.html,7/25/2018
+176,6819,Maxwell ,Denny,homepage.html,watches.html,7/13/2018
+177,3284,Baxter ,Pedro,homepage.html,shoes.html,7/18/2018
+178,3284,Baxter ,Pedro,homepage.html,housewares.html,7/15/2018
+179,6322,Carr,Zella,watches.html,homepage.html,7/23/2018
+180,6634,Shufelt ,Robert,homepage.html,watches.html,7/24/2018
+181,1916,Mills ,Bradley,watches.html,homepage.html,7/11/2018
+182,8570,Hamilton ,Darren,watches.html,housewares.html,7/21/2018
+183,7474,Carroll ,Rodolfo,homepage.html,watches.html,7/15/2018
+184,8569,Brown,Richard,homepage.html,shoes.html,7/14/2018
+185,7651,Kerry ,David,watches.html,homepage.html,7/20/2018
+186,0399,Johnston ,Walter,homepage.html,watches.html,7/12/2018
+187,5272,Collins ,Kimberly,watches.html,homepage.html,7/16/2018
+188,8188,Acosta ,Alma,watches.html,shoes.html,7/20/2018
+189,5720,Tan ,Marilyn,watches.html,housewares.html,7/14/2018
+190,5677,Gonzalez ,Shirley,shoes.html,watches.html,7/25/2018
+191,1139,Bevins ,John,watches.html,shoes.html,7/14/2018
+192,5993,Drake ,Stephen,watches.html,shoes.html,7/13/2018
+193,8429,Crist ,Gary,homepage.html,shoes.html,7/21/2018
+194,2769,Wilson ,Melissa,watches.html,homepage.html,7/14/2018
+195,2975,Thomas ,Kathryn,housewares.html,shoes.html,7/13/2018
+196,8841,Daniel ,Timothy,homepage.html,shoes.html,7/24/2018
+197,0504,Tapp ,Sheila,watches.html,homepage.html,7/15/2018
+198,5993,Drake ,Stephen,watches.html,homepage.html,7/18/2018
+199,3325,Ramos,William,watches.html,homepage.html,7/11/2018
+200,1916,Mills ,Bradley,homepage.html,,7/18/2018
+201,9257,Johnson ,Margaret,watches.html,shoes.html,7/11/2018
+202,9882,Griffith ,Helen,homepage.html,housewares.html,7/23/2018
+203,8898,Davenport,Dorian,shoes.html,watches.html,7/15/2018
+204,1776,Bruce ,Yvonne,shoes.html,housewares.html,7/24/2018
+205,4787,Dozier ,Aldo,homepage.html,housewares.html,7/23/2018
+206,0469,Seibert ,Perry,watches.html,homepage.html,7/19/2018
+207,2575,Trower ,Tasha,watches.html,homepage.html,7/12/2018
+208,4563,West ,Harrison,homepage.html,shoes.html,7/18/2018
+209,8188,Acosta ,Alma,housewares.html,,7/23/2018
+210,2318,Randolph ,Abigail,watches.html,housewares.html,7/19/2018
+211,6466,Dunbar ,Dan,watches.html,homepage.html,7/18/2018
+212,4112,Trammel ,Bernard,housewares.html,shoes.html,7/15/2018
+213,2318,Randolph ,Abigail,housewares.html,shoes.html,7/12/2018
+214,4569,Obrien ,Martin,watches.html,housewares.html,7/15/2018
+215,4112,Trammel ,Bernard,homepage.html,shoes.html,7/20/2018
+216,4563,West ,Harrison,homepage.html,shoes.html,7/22/2018
+217,4648,Boucher ,Doris,homepage.html,housewares.html,7/15/2018
+218,8429,Crist ,Gary,housewares.html,shoes.html,7/15/2018
+219,9830,Mcalister ,John,homepage.html,homepage.html,7/14/2018
+220,0163,Anderson ,Angela,watches.html,homepage.html,7/16/2018
+221,8898,Davenport,Dorian,shoes.html,watches.html,7/18/2018
+222,0050,Ford ,Phyllis,shoes.html,homepage.html,7/11/2018
+223,6283,Willett ,Rosalia,housewares.html,,7/12/2018
+224,4787,Dozier ,Aldo,homepage.html,,7/20/2018
+225,5993,Drake ,Stephen,watches.html,homepage.html,7/19/2018
+226,4563,West ,Harrison,watches.html,housewares.html,7/19/2018
+227,0050,Ford ,Phyllis,shoes.html,watches.html,7/11/2018
+228,5353,Maldonado ,Janet,homepage.html,shoes.html,7/17/2018
+229,6322,Carr,Zella,shoes.html,homepage.html,7/22/2018
+230,7151,Lindemann ,Karen,homepage.html,shoes.html,7/23/2018
+231,9769,Nadeau ,Albert,watches.html,shoes.html,7/21/2018
+232,1841,Santora ,Christopher,watches.html,housewares.html,7/12/2018
+233,8429,Crist ,Gary,homepage.html,shoes.html,7/25/2018
+234,7896,Saleh ,Barbara,homepage.html,shoes.html,7/11/2018
+235,8188,Acosta ,Alma,watches.html,shoes.html,7/23/2018
+236,7896,Saleh ,Barbara,homepage.html,,7/23/2018
+237,7896,Saleh ,Barbara,housewares.html,,7/17/2018
+238,4112,Trammel ,Bernard,homepage.html,shoes.html,7/23/2018
+239,2318,Randolph ,Abigail,shoes.html,housewares.html,7/12/2018
+240,2318,Randolph ,Abigail,homepage.html,shoes.html,7/17/2018
+241,8247,Robinson ,Robin,shoes.html,homepage.html,7/25/2018
+242,1916,Mills ,Bradley,shoes.html,housewares.html,7/12/2018
+243,9830,Mcalister ,John,homepage.html,shoes.html,7/13/2018
+244,4112,Trammel ,Bernard,watches.html,homepage.html,7/11/2018
+245,7151,Lindemann ,Karen,homepage.html,housewares.html,7/16/2018
+246,2674,Ceaser ,Mary,homepage.html,housewares.html,7/21/2018
+247,8874,Christy ,Lucy,homepage.html,shoes.html,7/19/2018
+248,5353,Maldonado ,Janet,watches.html,housewares.html,7/24/2018
+249,2769,Wilson ,Melissa,watches.html,shoes.html,7/16/2018
+250,0469,Seibert ,Perry,watches.html,homepage.html,7/21/2018
+251,0050,Ford ,Phyllis,homepage.html,watches.html,7/18/2018
+252,4563,West ,Harrison,shoes.html,housewares.html,7/18/2018
+253,5272,Collins ,Kimberly,homepage.html,,7/23/2018
+254,8188,Acosta ,Alma,housewares.html,,7/25/2018
+255,0915,Vincent ,Jane,housewares.html,shoes.html,7/17/2018
+256,5353,Maldonado ,Janet,watches.html,housewares.html,7/16/2018
+257,2904,Young,Lester,shoes.html,watches.html,7/22/2018
+258,7651,Kerry ,David,watches.html,homepage.html,7/21/2018
+259,9531,Hill ,Mary,homepage.html,housewares.html,7/24/2018
+260,7151,Lindemann ,Karen,shoes.html,watches.html,7/23/2018
+261,6743,Varney ,Allison,homepage.html,,7/22/2018
+262,8188,Acosta ,Alma,homepage.html,shoes.html,7/14/2018
+263,6466,Dunbar ,Dan,watches.html,shoes.html,7/25/2018
+264,9769,Nadeau ,Albert,watches.html,shoes.html,7/24/2018
+265,8188,Acosta ,Alma,homepage.html,,7/12/2018
+266,5353,Maldonado ,Janet,homepage.html,housewares.html,7/21/2018
+267,2184,Toles ,Richard,watches.html,housewares.html,7/23/2018
+268,0868,Sanders ,Dreama,housewares.html,,7/20/2018
+269,8188,Acosta ,Alma,homepage.html,,7/24/2018
+270,2769,Wilson ,Melissa,watches.html,homepage.html,7/19/2018
+271,8188,Acosta ,Alma,shoes.html,watches.html,7/25/2018
+272,2575,Trower ,Tasha,watches.html,shoes.html,7/11/2018
+273,9882,Griffith ,Helen,watches.html,homepage.html,7/11/2018
+274,5272,Collins ,Kimberly,homepage.html,watches.html,7/11/2018
+275,8188,Acosta ,Alma,watches.html,housewares.html,7/21/2018
+276,9882,Griffith ,Helen,watches.html,shoes.html,7/21/2018
+277,5997,Thompson ,William,watches.html,shoes.html,7/18/2018
+278,0050,Ford ,Phyllis,housewares.html,shoes.html,7/22/2018
+279,4563,West ,Harrison,shoes.html,housewares.html,7/18/2018
+280,9257,Johnson ,Margaret,watches.html,homepage.html,7/25/2018
+281,6466,Dunbar ,Dan,housewares.html,shoes.html,7/18/2018
+282,2184,Toles ,Richard,watches.html,homepage.html,7/24/2018
+283,8898,Davenport,Dorian,homepage.html,shoes.html,7/14/2018
+284,4112,Trammel ,Bernard,homepage.html,shoes.html,7/25/2018
+285,8429,Crist ,Gary,shoes.html,homepage.html,7/23/2018
+286,2769,Wilson ,Melissa,homepage.html,watches.html,7/20/2018
+287,5993,Drake ,Stephen,watches.html,housewares.html,7/11/2018
+288,0469,Seibert ,Perry,shoes.html,homepage.html,7/18/2018
+289,7896,Saleh ,Barbara,homepage.html,,7/12/2018
+290,5997,Thompson ,William,homepage.html,homepage.html,7/14/2018
+291,5272,Collins ,Kimberly,housewares.html,,7/24/2018
+292,4490,Lawson ,Lela,homepage.html,,7/15/2018
+293,5445,Butler ,Scotty,shoes.html,homepage.html,7/22/2018
+294,5684,Harris ,Ignacio,watches.html,housewares.html,7/20/2018
+295,9950,Bakken,Nathaniel,watches.html,homepage.html,7/25/2018
+296,3284,Baxter ,Pedro,shoes.html,homepage.html,7/24/2018
+297,7896,Saleh ,Barbara,housewares.html,shoes.html,7/15/2018
+298,6819,Maxwell ,Denny,housewares.html,,7/11/2018
+299,8841,Daniel ,Timothy,homepage.html,watches.html,7/22/2018
+300,9950,Bakken,Nathaniel,watches.html,housewares.html,7/17/2018
+301,9882,Griffith ,Helen,shoes.html,watches.html,7/25/2018
+302,7151,Lindemann ,Karen,shoes.html,housewares.html,7/11/2018
+303,8898,Davenport,Dorian,homepage.html,watches.html,7/17/2018
+304,4490,Lawson ,Lela,watches.html,shoes.html,7/14/2018
+305,5445,Butler ,Scotty,housewares.html,shoes.html,7/17/2018
+306,6466,Dunbar ,Dan,watches.html,homepage.html,7/23/2018
+307,8898,Davenport,Dorian,housewares.html,shoes.html,7/14/2018
+308,9950,Bakken,Nathaniel,homepage.html,watches.html,7/14/2018
+309,9049,Schutz ,John,watches.html,shoes.html,7/12/2018
+310,5272,Collins ,Kimberly,homepage.html,shoes.html,7/17/2018
+311,4787,Dozier ,Aldo,watches.html,homepage.html,7/19/2018
+312,0469,Seibert ,Perry,shoes.html,homepage.html,7/24/2018
+313,8985,Lane ,Marilyn,watches.html,housewares.html,7/25/2018
+314,7474,Carroll ,Rodolfo,shoes.html,watches.html,7/12/2018
+315,4563,West ,Harrison,housewares.html,,7/12/2018
+316,6819,Maxwell ,Denny,shoes.html,watches.html,7/15/2018
+317,8188,Acosta ,Alma,housewares.html,shoes.html,7/14/2018
+318,8188,Acosta ,Alma,homepage.html,watches.html,7/15/2018
+319,8376,Nairne,Mudar,watches.html,housewares.html,7/16/2018
+320,2769,Wilson ,Melissa,homepage.html,watches.html,7/23/2018
+321,2769,Wilson ,Melissa,shoes.html,housewares.html,7/12/2018
+322,8898,Davenport,Dorian,homepage.html,,7/15/2018
+323,4112,Trammel ,Bernard,homepage.html,shoes.html,7/20/2018
+324,0504,Tapp ,Sheila,watches.html,homepage.html,7/13/2018
+325,5677,Gonzalez ,Shirley,watches.html,housewares.html,7/13/2018
+326,1025,Bullock ,Deborah,watches.html,housewares.html,7/16/2018
+327,8569,Brown,Richard,watches.html,homepage.html,7/24/2018
+328,4565,Thomas ,Daryl,watches.html,homepage.html,7/13/2018
+329,0050,Ford ,Phyllis,shoes.html,homepage.html,7/23/2018
+330,0469,Seibert ,Perry,homepage.html,homepage.html,7/12/2018
+331,8188,Acosta ,Alma,homepage.html,,7/20/2018
+332,4563,West ,Harrison,homepage.html,homepage.html,7/24/2018
+333,8898,Davenport,Dorian,shoes.html,watches.html,7/21/2018
+334,8429,Crist ,Gary,shoes.html,watches.html,7/17/2018
+335,5272,Collins ,Kimberly,homepage.html,,7/14/2018
+336,2488,Deramus ,Vanessa,shoes.html,watches.html,7/24/2018
+337,4490,Lawson ,Lela,homepage.html,housewares.html,7/20/2018
+338,5993,Drake ,Stephen,homepage.html,shoes.html,7/22/2018
+339,6819,Maxwell ,Denny,shoes.html,watches.html,7/17/2018
+340,7474,Carroll ,Rodolfo,watches.html,housewares.html,7/20/2018
+341,3284,Baxter ,Pedro,watches.html,shoes.html,7/22/2018
+342,0050,Ford ,Phyllis,shoes.html,homepage.html,7/19/2018
+343,2769,Wilson ,Melissa,homepage.html,shoes.html,7/24/2018
+344,0050,Ford ,Phyllis,watches.html,housewares.html,7/11/2018
+345,0050,Ford ,Phyllis,watches.html,shoes.html,7/14/2018
+346,1841,Santora ,Christopher,housewares.html,,7/14/2018
+347,6634,Shufelt ,Robert,homepage.html,watches.html,7/18/2018
+348,2904,Young,Lester,watches.html,housewares.html,7/18/2018
+349,2872,Ellison ,Elizabeth,shoes.html,housewares.html,7/21/2018
+350,1139,Bevins ,John,watches.html,homepage.html,7/23/2018
+351,5677,Gonzalez ,Shirley,homepage.html,shoes.html,7/24/2018
+352,1841,Santora ,Christopher,watches.html,housewares.html,7/12/2018
+353,2575,Trower ,Tasha,homepage.html,watches.html,7/22/2018
+354,0915,Vincent ,Jane,watches.html,shoes.html,7/13/2018
+355,9830,Mcalister ,John,shoes.html,housewares.html,7/16/2018
+356,4563,West ,Harrison,shoes.html,homepage.html,7/18/2018
+357,8188,Acosta ,Alma,shoes.html,housewares.html,7/12/2018
+358,8376,Nairne,Mudar,watches.html,housewares.html,7/12/2018
+359,9049,Schutz ,John,watches.html,shoes.html,7/19/2018
+360,5465,Gandara ,Thomas,homepage.html,housewares.html,7/12/2018
+361,0434,Messenger ,David,shoes.html,watches.html,7/15/2018
+362,4112,Trammel ,Bernard,housewares.html,,7/24/2018
+363,4569,Obrien ,Martin,housewares.html,shoes.html,7/11/2018
+364,2672,Carlisle ,Donald,watches.html,housewares.html,7/23/2018
+365,0050,Ford ,Phyllis,watches.html,housewares.html,7/14/2018
+366,0399,Johnston ,Walter,homepage.html,housewares.html,7/11/2018
+367,8188,Acosta ,Alma,watches.html,homepage.html,7/25/2018
+368,8247,Robinson ,Robin,watches.html,housewares.html,7/20/2018
+369,1025,Bullock ,Deborah,homepage.html,shoes.html,7/11/2018
+370,2318,Randolph ,Abigail,shoes.html,homepage.html,7/20/2018
+371,9972,Hall ,Douglas,homepage.html,shoes.html,7/12/2018
+372,4112,Trammel ,Bernard,shoes.html,homepage.html,7/18/2018
+373,8188,Acosta ,Alma,shoes.html,homepage.html,7/20/2018
+374,9882,Griffith ,Helen,watches.html,homepage.html,7/13/2018
+375,5353,Maldonado ,Janet,watches.html,homepage.html,7/18/2018
+376,1776,Bruce ,Yvonne,homepage.html,housewares.html,7/13/2018
+377,9049,Schutz ,John,homepage.html,watches.html,7/20/2018
+378,9950,Bakken,Nathaniel,watches.html,housewares.html,7/13/2018
+379,4591,Sanroman ,Anna,watches.html,shoes.html,7/12/2018
+380,9049,Schutz ,John,shoes.html,watches.html,7/11/2018
+381,6634,Shufelt ,Robert,shoes.html,homepage.html,7/17/2018
+382,0868,Sanders ,Dreama,watches.html,housewares.html,7/13/2018
+383,8188,Acosta ,Alma,housewares.html,shoes.html,7/14/2018
+384,9442,York ,Lillian,shoes.html,watches.html,7/22/2018
+385,5272,Collins ,Kimberly,homepage.html,watches.html,7/15/2018
+386,4563,West ,Harrison,homepage.html,watches.html,7/21/2018
+387,8860,Terrell ,Walter,watches.html,shoes.html,7/14/2018
+388,9531,Hill ,Mary,watches.html,homepage.html,7/20/2018
+389,4112,Trammel ,Bernard,watches.html,shoes.html,7/14/2018
+390,9049,Schutz ,John,homepage.html,shoes.html,7/12/2018
+391,8188,Acosta ,Alma,homepage.html,watches.html,7/17/2018
+392,9376,Flores ,Sandra,homepage.html,shoes.html,7/13/2018
+393,5789,Glenn ,Betty,housewares.html,shoes.html,7/24/2018
+394,8898,Davenport,Dorian,homepage.html,shoes.html,7/12/2018
+395,9531,Hill ,Mary,housewares.html,,7/25/2018
+396,5993,Drake ,Stephen,shoes.html,watches.html,7/22/2018
+397,8898,Davenport,Dorian,homepage.html,watches.html,7/12/2018
+398,5993,Drake ,Stephen,homepage.html,watches.html,7/21/2018
+399,8188,Acosta ,Alma,watches.html,shoes.html,7/11/2018
+400,0868,Sanders ,Dreama,homepage.html,homepage.html,7/16/2018
+401,2674,Ceaser ,Mary,shoes.html,homepage.html,7/16/2018
+402,5993,Drake ,Stephen,watches.html,housewares.html,7/16/2018
+403,1841,Santora ,Christopher,watches.html,housewares.html,7/23/2018
+404,4112,Trammel ,Bernard,housewares.html,shoes.html,7/15/2018
+405,5272,Collins ,Kimberly,homepage.html,watches.html,7/22/2018
+406,0915,Vincent ,Jane,shoes.html,homepage.html,7/12/2018
+407,9830,Mcalister ,John,homepage.html,,7/18/2018
+408,5353,Maldonado ,Janet,watches.html,housewares.html,7/22/2018
+409,4787,Dozier ,Aldo,housewares.html,,7/16/2018
+410,8841,Daniel ,Timothy,watches.html,housewares.html,7/21/2018
+411,6528,Myers ,Bebe,watches.html,shoes.html,7/25/2018
+412,5391,Tinsley ,Esther,shoes.html,watches.html,7/17/2018
+413,8569,Brown,Richard,watches.html,housewares.html,7/23/2018
+414,9531,Hill ,Mary,watches.html,homepage.html,7/17/2018
+415,1139,Bevins ,John,homepage.html,watches.html,7/18/2018
+416,9830,Mcalister ,John,shoes.html,housewares.html,7/23/2018
+417,2575,Trower ,Tasha,watches.html,homepage.html,7/25/2018
+418,8188,Acosta ,Alma,watches.html,homepage.html,7/19/2018
+419,4112,Trammel ,Bernard,watches.html,housewares.html,7/24/2018
+420,8188,Acosta ,Alma,watches.html,shoes.html,7/24/2018
+421,8860,Terrell ,Walter,shoes.html,housewares.html,7/19/2018
+422,8841,Daniel ,Timothy,watches.html,housewares.html,7/11/2018
+423,5993,Drake ,Stephen,homepage.html,shoes.html,7/12/2018
+424,4569,Obrien ,Martin,homepage.html,watches.html,7/13/2018
+425,8188,Acosta ,Alma,housewares.html,,7/17/2018
+426,0050,Ford ,Phyllis,watches.html,housewares.html,7/19/2018
+427,0163,Anderson ,Angela,shoes.html,homepage.html,7/13/2018
+428,7474,Carroll ,Rodolfo,housewares.html,,7/18/2018
+429,5997,Thompson ,William,watches.html,shoes.html,7/25/2018
+430,8503,Beckett ,Jean,homepage.html,housewares.html,7/12/2018
+431,7474,Carroll ,Rodolfo,watches.html,housewares.html,7/15/2018
+432,5255,Chapa ,Cary,shoes.html,homepage.html,7/11/2018
+433,9950,Bakken,Nathaniel,shoes.html,watches.html,7/17/2018
+434,1841,Santora ,Christopher,watches.html,housewares.html,7/13/2018
+435,0800,Toms ,Teresa,watches.html,shoes.html,7/20/2018
+436,8503,Beckett ,Jean,housewares.html,,7/24/2018
+437,0868,Sanders ,Dreama,watches.html,homepage.html,7/20/2018
+438,9257,Johnson ,Margaret,watches.html,shoes.html,7/21/2018
+439,9950,Bakken,Nathaniel,homepage.html,shoes.html,7/19/2018
+440,5993,Drake ,Stephen,shoes.html,housewares.html,7/16/2018
+441,7896,Saleh ,Barbara,homepage.html,shoes.html,7/15/2018
+442,5993,Drake ,Stephen,watches.html,homepage.html,7/21/2018
+443,4112,Trammel ,Bernard,housewares.html,shoes.html,7/15/2018
+444,2488,Deramus ,Vanessa,homepage.html,homepage.html,7/25/2018
+445,8188,Acosta ,Alma,watches.html,housewares.html,7/20/2018
+446,9257,Johnson ,Margaret,homepage.html,watches.html,7/20/2018
+447,7896,Saleh ,Barbara,housewares.html,,7/15/2018
+448,4112,Trammel ,Bernard,watches.html,homepage.html,7/11/2018
+449,2204,Brown ,Raymond,homepage.html,,7/17/2018
+450,0050,Ford ,Phyllis,shoes.html,watches.html,7/24/2018
+451,5684,Harris ,Ignacio,housewares.html,shoes.html,7/23/2018
+452,6819,Maxwell ,Denny,homepage.html,watches.html,7/24/2018
+453,2769,Wilson ,Melissa,homepage.html,housewares.html,7/12/2018
+454,8188,Acosta ,Alma,homepage.html,shoes.html,7/21/2018
+455,7151,Lindemann ,Karen,homepage.html,watches.html,7/12/2018
+456,8188,Acosta ,Alma,shoes.html,watches.html,7/22/2018
+457,4563,West ,Harrison,watches.html,housewares.html,7/14/2018
+458,8898,Davenport,Dorian,shoes.html,homepage.html,7/22/2018
+459,8860,Terrell ,Walter,homepage.html,homepage.html,7/25/2018
+460,4112,Trammel ,Bernard,shoes.html,housewares.html,7/23/2018
+461,0915,Vincent ,Jane,shoes.html,housewares.html,7/15/2018
+462,4490,Lawson ,Lela,watches.html,housewares.html,7/13/2018
+463,9830,Mcalister ,John,watches.html,shoes.html,7/14/2018
+464,9972,Hall ,Douglas,watches.html,homepage.html,7/19/2018
+465,8247,Robinson ,Robin,watches.html,housewares.html,7/16/2018
+466,9049,Schutz ,John,homepage.html,watches.html,7/17/2018
+467,5353,Maldonado ,Janet,watches.html,housewares.html,7/21/2018
+468,8188,Acosta ,Alma,shoes.html,housewares.html,7/20/2018
+469,1841,Santora ,Christopher,watches.html,shoes.html,7/24/2018
+470,0050,Ford ,Phyllis,watches.html,housewares.html,7/12/2018
+471,0399,Johnston ,Walter,watches.html,shoes.html,7/24/2018
+472,2575,Trower ,Tasha,watches.html,homepage.html,7/21/2018
+473,8841,Daniel ,Timothy,watches.html,homepage.html,7/23/2018
+474,0915,Vincent ,Jane,watches.html,homepage.html,7/15/2018
+475,2674,Ceaser ,Mary,homepage.html,housewares.html,7/17/2018
+476,9950,Bakken,Nathaniel,watches.html,housewares.html,7/16/2018
+477,2575,Trower ,Tasha,shoes.html,housewares.html,7/11/2018
+478,7151,Lindemann ,Karen,watches.html,housewares.html,7/11/2018
+479,6322,Carr,Zella,watches.html,housewares.html,7/15/2018
+480,1916,Mills ,Bradley,homepage.html,homepage.html,7/24/2018
+481,5272,Collins ,Kimberly,homepage.html,shoes.html,7/21/2018
+482,3284,Baxter ,Pedro,watches.html,housewares.html,7/16/2018
+483,6466,Dunbar ,Dan,watches.html,shoes.html,7/13/2018
+484,8898,Davenport,Dorian,homepage.html,shoes.html,7/25/2018
+485,2872,Ellison ,Elizabeth,watches.html,housewares.html,7/14/2018
+486,7474,Carroll ,Rodolfo,homepage.html,housewares.html,7/20/2018
+487,8188,Acosta ,Alma,watches.html,housewares.html,7/16/2018
+488,0469,Seibert ,Perry,watches.html,homepage.html,7/14/2018
+489,8376,Nairne,Mudar,watches.html,housewares.html,7/11/2018
+490,7151,Lindemann ,Karen,watches.html,homepage.html,7/14/2018
+491,5684,Harris ,Ignacio,shoes.html,watches.html,7/25/2018
+492,5997,Thompson ,William,homepage.html,shoes.html,7/20/2018
+493,8513,Boley ,Pamela,homepage.html,shoes.html,7/20/2018
+494,5677,Gonzalez ,Shirley,watches.html,shoes.html,7/22/2018
+495,5445,Butler ,Scotty,watches.html,shoes.html,7/13/2018
+496,5789,Glenn ,Betty,shoes.html,homepage.html,7/23/2018
+497,1776,Bruce ,Yvonne,watches.html,homepage.html,7/15/2018
+498,6819,Maxwell ,Denny,watches.html,homepage.html,7/17/2018
+499,6322,Carr,Zella,watches.html,housewares.html,7/23/2018
+500,9972,Hall ,Douglas,watches.html,homepage.html,7/16/2018
+501,7896,Saleh ,Barbara,housewares.html,shoes.html,7/12/2018
+502,0399,Johnston ,Walter,homepage.html,watches.html,7/19/2018
+503,9049,Schutz ,John,watches.html,shoes.html,7/18/2018
+504,8874,Christy ,Lucy,homepage.html,homepage.html,7/20/2018
+505,0163,Anderson ,Angela,watches.html,housewares.html,7/20/2018
+506,0469,Seibert ,Perry,housewares.html,shoes.html,7/13/2018
+507,2318,Randolph ,Abigail,homepage.html,shoes.html,7/23/2018
+508,7968,Duffy ,Eric,watches.html,homepage.html,7/17/2018
+509,0469,Seibert ,Perry,homepage.html,watches.html,7/24/2018
+510,0652,Robbins ,Helen,shoes.html,watches.html,7/12/2018
+511,0163,Anderson ,Angela,homepage.html,homepage.html,7/16/2018
+512,7651,Kerry ,David,watches.html,shoes.html,7/15/2018
+513,8216,Parmenter ,Doris,watches.html,shoes.html,7/21/2018
+514,1776,Bruce ,Yvonne,watches.html,housewares.html,7/11/2018
+515,2769,Wilson ,Melissa,homepage.html,shoes.html,7/11/2018
+516,5720,Tan ,Marilyn,housewares.html,shoes.html,7/22/2018
+517,8188,Acosta ,Alma,watches.html,housewares.html,7/21/2018
+518,0915,Vincent ,Jane,watches.html,housewares.html,7/25/2018
+519,4563,West ,Harrison,homepage.html,shoes.html,7/22/2018
+520,5993,Drake ,Stephen,watches.html,shoes.html,7/16/2018
+521,0399,Johnston ,Walter,homepage.html,shoes.html,7/11/2018
+522,8841,Daniel ,Timothy,watches.html,shoes.html,7/20/2018
+523,0399,Johnston ,Walter,homepage.html,shoes.html,7/12/2018
+524,6366,Mayo ,Robert,homepage.html,watches.html,7/16/2018
+525,0050,Ford ,Phyllis,watches.html,shoes.html,7/19/2018
+526,0800,Toms ,Teresa,homepage.html,,7/13/2018
+527,8376,Nairne,Mudar,watches.html,shoes.html,7/13/2018
+528,5353,Maldonado ,Janet,homepage.html,watches.html,7/23/2018
+529,9769,Nadeau ,Albert,homepage.html,housewares.html,7/22/2018
+530,4787,Dozier ,Aldo,shoes.html,homepage.html,7/24/2018
+531,4787,Dozier ,Aldo,watches.html,homepage.html,7/23/2018
+532,5272,Collins ,Kimberly,homepage.html,shoes.html,7/11/2018
+533,8860,Terrell ,Walter,watches.html,homepage.html,7/24/2018
+534,8570,Hamilton ,Darren,watches.html,housewares.html,7/12/2018
+535,5677,Gonzalez ,Shirley,housewares.html,,7/19/2018
+536,0448,Royall ,Amalia,homepage.html,homepage.html,7/25/2018
+537,5677,Gonzalez ,Shirley,homepage.html,housewares.html,7/15/2018
+538,0163,Anderson ,Angela,homepage.html,shoes.html,7/17/2018
+539,8216,Parmenter ,Doris,homepage.html,shoes.html,7/24/2018
+540,0399,Johnston ,Walter,watches.html,homepage.html,7/13/2018
+541,0800,Toms ,Teresa,watches.html,housewares.html,7/22/2018
+542,4112,Trammel ,Bernard,housewares.html,,7/13/2018
+543,6634,Shufelt ,Robert,homepage.html,housewares.html,7/19/2018
+544,5789,Glenn ,Betty,housewares.html,,7/15/2018
+545,0469,Seibert ,Perry,homepage.html,housewares.html,7/24/2018
+546,7896,Saleh ,Barbara,watches.html,homepage.html,7/14/2018
+547,1806,Robles ,Brian,watches.html,homepage.html,7/22/2018
+548,6322,Carr,Zella,watches.html,housewares.html,7/19/2018
+549,2204,Brown ,Raymond,homepage.html,housewares.html,7/13/2018
+550,9257,Johnson ,Margaret,housewares.html,shoes.html,7/16/2018
+551,8247,Robinson ,Robin,shoes.html,watches.html,7/11/2018
+552,8503,Beckett ,Jean,shoes.html,homepage.html,7/23/2018
+553,8188,Acosta ,Alma,shoes.html,homepage.html,7/23/2018
+554,9769,Nadeau ,Albert,homepage.html,homepage.html,7/14/2018
+555,6819,Maxwell ,Denny,homepage.html,housewares.html,7/20/2018
+556,2672,Carlisle ,Donald,watches.html,homepage.html,7/12/2018
+557,9376,Flores ,Sandra,watches.html,housewares.html,7/21/2018
+558,5353,Maldonado ,Janet,watches.html,homepage.html,7/24/2018
+559,4112,Trammel ,Bernard,homepage.html,watches.html,7/20/2018
+560,1776,Bruce ,Yvonne,housewares.html,,7/17/2018
+561,8216,Parmenter ,Doris,shoes.html,watches.html,7/11/2018
+562,5993,Drake ,Stephen,watches.html,homepage.html,7/16/2018
+563,2488,Deramus ,Vanessa,watches.html,homepage.html,7/13/2018
+564,6283,Willett ,Rosalia,shoes.html,housewares.html,7/23/2018
+565,0050,Ford ,Phyllis,watches.html,homepage.html,7/12/2018
+566,9049,Schutz ,John,housewares.html,shoes.html,7/24/2018
+567,5993,Drake ,Stephen,homepage.html,watches.html,7/16/2018
+568,5272,Collins ,Kimberly,shoes.html,watches.html,7/21/2018
+569,0050,Ford ,Phyllis,watches.html,shoes.html,7/21/2018
+570,3284,Baxter ,Pedro,shoes.html,watches.html,7/20/2018
+571,8503,Beckett ,Jean,watches.html,shoes.html,7/20/2018
+572,9769,Nadeau ,Albert,watches.html,housewares.html,7/15/2018
+573,5272,Collins ,Kimberly,homepage.html,homepage.html,7/12/2018
+574,6466,Dunbar ,Dan,homepage.html,,7/25/2018
+575,5272,Collins ,Kimberly,watches.html,shoes.html,7/15/2018
+576,2904,Young,Lester,shoes.html,homepage.html,7/11/2018
+577,5684,Harris ,Ignacio,homepage.html,shoes.html,7/19/2018
+578,7151,Lindemann ,Karen,watches.html,shoes.html,7/15/2018
+579,7151,Lindemann ,Karen,watches.html,homepage.html,7/21/2018
+580,6466,Dunbar ,Dan,shoes.html,watches.html,7/18/2018
+581,5255,Chapa ,Cary,watches.html,housewares.html,7/21/2018
+582,2488,Deramus ,Vanessa,watches.html,homepage.html,7/15/2018
+583,2488,Deramus ,Vanessa,shoes.html,watches.html,7/25/2018
+584,8376,Nairne,Mudar,watches.html,housewares.html,7/17/2018
+585,8874,Christy ,Lucy,homepage.html,housewares.html,7/18/2018
+586,2318,Randolph ,Abigail,shoes.html,watches.html,7/11/2018
+587,5272,Collins ,Kimberly,watches.html,homepage.html,7/21/2018
+588,0050,Ford ,Phyllis,homepage.html,shoes.html,7/25/2018
+589,4112,Trammel ,Bernard,watches.html,shoes.html,7/24/2018
+590,6366,Mayo ,Robert,homepage.html,watches.html,7/11/2018
+591,9257,Johnson ,Margaret,homepage.html,shoes.html,7/16/2018
+592,0021,Barbosa ,William,homepage.html,homepage.html,7/16/2018
+593,5272,Collins ,Kimberly,watches.html,homepage.html,7/11/2018
+594,4787,Dozier ,Aldo,homepage.html,shoes.html,7/16/2018
+595,2674,Ceaser ,Mary,homepage.html,shoes.html,7/15/2018
+596,4490,Lawson ,Lela,shoes.html,homepage.html,7/21/2018
+597,8898,Davenport,Dorian,homepage.html,,7/23/2018
+598,5993,Drake ,Stephen,homepage.html,homepage.html,7/18/2018
+599,8985,Lane ,Marilyn,shoes.html,watches.html,7/11/2018
+600,9830,Mcalister ,John,homepage.html,shoes.html,7/20/2018
+601,4787,Dozier ,Aldo,watches.html,housewares.html,7/22/2018
+602,0915,Vincent ,Jane,homepage.html,watches.html,7/17/2018
+603,6819,Maxwell ,Denny,watches.html,shoes.html,7/18/2018
+604,7151,Lindemann ,Karen,housewares.html,shoes.html,7/23/2018
+605,5353,Maldonado ,Janet,homepage.html,shoes.html,7/17/2018
+606,8570,Hamilton ,Darren,homepage.html,shoes.html,7/15/2018
+607,8874,Christy ,Lucy,housewares.html,,7/20/2018
+608,4563,West ,Harrison,housewares.html,,7/13/2018
+609,4563,West ,Harrison,homepage.html,housewares.html,7/18/2018
+610,5993,Drake ,Stephen,homepage.html,shoes.html,7/24/2018
+611,8376,Nairne,Mudar,housewares.html,,7/23/2018
+612,0399,Johnston ,Walter,watches.html,shoes.html,7/19/2018
+613,7151,Lindemann ,Karen,shoes.html,homepage.html,7/16/2018
+614,0652,Robbins ,Helen,homepage.html,watches.html,7/23/2018
+615,7559,Watson ,David,housewares.html,,7/12/2018
+616,8188,Acosta ,Alma,watches.html,homepage.html,7/15/2018
+617,7651,Kerry ,David,shoes.html,homepage.html,7/25/2018
+618,7968,Duffy ,Eric,homepage.html,shoes.html,7/16/2018
+619,5104,Cribb ,Ilene,homepage.html,shoes.html,7/11/2018
+620,7474,Carroll ,Rodolfo,homepage.html,shoes.html,7/20/2018
+621,8188,Acosta ,Alma,shoes.html,homepage.html,7/17/2018
+622,9830,Mcalister ,John,watches.html,homepage.html,7/23/2018
+623,8188,Acosta ,Alma,watches.html,housewares.html,7/14/2018
+624,0915,Vincent ,Jane,homepage.html,,7/13/2018
+625,8513,Boley ,Pamela,shoes.html,homepage.html,7/17/2018
+626,2204,Brown ,Raymond,watches.html,shoes.html,7/14/2018
+627,1139,Bevins ,John,shoes.html,watches.html,7/21/2018
+628,5353,Maldonado ,Janet,watches.html,shoes.html,7/24/2018
+629,4565,Thomas ,Daryl,homepage.html,homepage.html,7/22/2018
+630,5677,Gonzalez ,Shirley,shoes.html,watches.html,7/23/2018
+631,5445,Butler ,Scotty,housewares.html,,7/25/2018
+632,9950,Bakken,Nathaniel,watches.html,housewares.html,7/18/2018
+633,8570,Hamilton ,Darren,watches.html,housewares.html,7/20/2018
+634,5789,Glenn ,Betty,shoes.html,housewares.html,7/20/2018
+635,5993,Drake ,Stephen,shoes.html,watches.html,7/16/2018
+636,9882,Griffith ,Helen,homepage.html,housewares.html,7/11/2018
+637,8376,Nairne,Mudar,shoes.html,housewares.html,7/14/2018
+638,8247,Robinson ,Robin,homepage.html,,7/14/2018
+639,0050,Ford ,Phyllis,shoes.html,homepage.html,7/14/2018
+640,4112,Trammel ,Bernard,watches.html,homepage.html,7/25/2018
+641,4563,West ,Harrison,homepage.html,housewares.html,7/24/2018
+642,4112,Trammel ,Bernard,watches.html,housewares.html,7/12/2018
+643,7151,Lindemann ,Karen,shoes.html,homepage.html,7/15/2018
+644,8188,Acosta ,Alma,watches.html,housewares.html,7/11/2018
+645,6819,Maxwell ,Denny,homepage.html,housewares.html,7/19/2018
+646,0469,Seibert ,Perry,homepage.html,shoes.html,7/24/2018
+647,0800,Toms ,Teresa,shoes.html,watches.html,7/18/2018
+648,1139,Bevins ,John,watches.html,housewares.html,7/22/2018
+649,6819,Maxwell ,Denny,watches.html,homepage.html,7/21/2018
+650,5272,Collins ,Kimberly,watches.html,shoes.html,7/12/2018
+651,2575,Trower ,Tasha,watches.html,shoes.html,7/23/2018
+652,8188,Acosta ,Alma,watches.html,homepage.html,7/15/2018
+653,6466,Dunbar ,Dan,watches.html,housewares.html,7/16/2018
+654,4563,West ,Harrison,watches.html,housewares.html,7/24/2018
+655,5391,Tinsley ,Esther,homepage.html,shoes.html,7/20/2018
+656,6634,Shufelt ,Robert,watches.html,homepage.html,7/20/2018
+657,1110,Hunt ,Christine,housewares.html,,7/14/2018
+658,8429,Crist ,Gary,shoes.html,housewares.html,7/17/2018
+659,8188,Acosta ,Alma,homepage.html,watches.html,7/13/2018
+660,0021,Barbosa ,William,watches.html,housewares.html,7/18/2018
+661,7968,Duffy ,Eric,watches.html,housewares.html,7/23/2018
+662,6466,Dunbar ,Dan,watches.html,homepage.html,7/12/2018
+663,8247,Robinson ,Robin,shoes.html,homepage.html,7/19/2018
+664,4591,Sanroman ,Anna,watches.html,homepage.html,7/12/2018
+665,4112,Trammel ,Bernard,homepage.html,shoes.html,7/12/2018
+666,4112,Trammel ,Bernard,homepage.html,shoes.html,7/16/2018
+667,5677,Gonzalez ,Shirley,shoes.html,watches.html,7/14/2018
+668,9882,Griffith ,Helen,watches.html,housewares.html,7/17/2018
+669,9950,Bakken,Nathaniel,housewares.html,shoes.html,7/19/2018
+670,5993,Drake ,Stephen,watches.html,shoes.html,7/23/2018
+671,2769,Wilson ,Melissa,watches.html,shoes.html,7/23/2018
+672,8188,Acosta ,Alma,homepage.html,watches.html,7/15/2018
+673,0163,Anderson ,Angela,watches.html,homepage.html,7/14/2018
+674,5993,Drake ,Stephen,watches.html,housewares.html,7/13/2018
+675,8898,Davenport,Dorian,watches.html,homepage.html,7/21/2018
+676,5353,Maldonado ,Janet,watches.html,homepage.html,7/25/2018
+677,4563,West ,Harrison,watches.html,homepage.html,7/18/2018
+678,8188,Acosta ,Alma,watches.html,housewares.html,7/25/2018
+679,8898,Davenport,Dorian,homepage.html,shoes.html,7/11/2018
+680,2184,Toles ,Richard,watches.html,housewares.html,7/23/2018
+681,2769,Wilson ,Melissa,watches.html,shoes.html,7/19/2018
+682,9049,Schutz ,John,homepage.html,shoes.html,7/20/2018
+683,1025,Bullock ,Deborah,homepage.html,shoes.html,7/19/2018
+684,1916,Mills ,Bradley,shoes.html,housewares.html,7/13/2018
+685,9769,Nadeau ,Albert,shoes.html,homepage.html,7/23/2018
+686,4591,Sanroman ,Anna,watches.html,housewares.html,7/20/2018
+687,6466,Dunbar ,Dan,homepage.html,,7/20/2018
+688,8188,Acosta ,Alma,watches.html,shoes.html,7/15/2018
+689,5677,Gonzalez ,Shirley,homepage.html,,7/16/2018
+690,2904,Young,Lester,watches.html,homepage.html,7/20/2018
+691,9049,Schutz ,John,shoes.html,watches.html,7/14/2018
+692,4563,West ,Harrison,watches.html,homepage.html,7/22/2018
+693,5677,Gonzalez ,Shirley,watches.html,homepage.html,7/16/2018
+694,8985,Lane ,Marilyn,homepage.html,housewares.html,7/24/2018
+695,9972,Hall ,Douglas,watches.html,shoes.html,7/15/2018
+696,2184,Toles ,Richard,shoes.html,homepage.html,7/11/2018
+697,8429,Crist ,Gary,watches.html,shoes.html,7/12/2018
+698,0911,Reed ,Edith,homepage.html,shoes.html,7/18/2018
+699,7151,Lindemann ,Karen,shoes.html,housewares.html,7/11/2018
+700,5677,Gonzalez ,Shirley,homepage.html,shoes.html,7/20/2018
+701,1916,Mills ,Bradley,homepage.html,shoes.html,7/24/2018
+702,7474,Carroll ,Rodolfo,watches.html,shoes.html,7/17/2018
+703,5105,Macias ,Sonya,shoes.html,watches.html,7/21/2018
+704,8188,Acosta ,Alma,homepage.html,shoes.html,7/25/2018
+705,7474,Carroll ,Rodolfo,watches.html,homepage.html,7/13/2018
+706,0050,Ford ,Phyllis,shoes.html,homepage.html,7/13/2018
+707,5353,Maldonado ,Janet,homepage.html,housewares.html,7/13/2018
+708,4112,Trammel ,Bernard,watches.html,shoes.html,7/25/2018
+709,8188,Acosta ,Alma,watches.html,housewares.html,7/19/2018
+710,6819,Maxwell ,Denny,watches.html,homepage.html,7/13/2018
+711,0652,Robbins ,Helen,shoes.html,watches.html,7/22/2018
+712,8898,Davenport,Dorian,watches.html,housewares.html,7/13/2018
+713,4565,Thomas ,Daryl,shoes.html,homepage.html,7/17/2018
+714,5677,Gonzalez ,Shirley,watches.html,shoes.html,7/22/2018
+715,1110,Hunt ,Christine,homepage.html,shoes.html,7/25/2018
+716,0469,Seibert ,Perry,homepage.html,homepage.html,7/23/2018
+717,0469,Seibert ,Perry,housewares.html,shoes.html,7/25/2018
+718,2575,Trower ,Tasha,watches.html,homepage.html,7/11/2018
+719,5104,Cribb ,Ilene,shoes.html,watches.html,7/25/2018
+720,8985,Lane ,Marilyn,homepage.html,shoes.html,7/19/2018
+721,7474,Carroll ,Rodolfo,homepage.html,shoes.html,7/17/2018
+722,1776,Bruce ,Yvonne,shoes.html,homepage.html,7/16/2018
+723,0163,Anderson ,Angela,watches.html,housewares.html,7/24/2018
+724,7968,Duffy ,Eric,watches.html,homepage.html,7/11/2018
+725,5353,Maldonado ,Janet,watches.html,housewares.html,7/14/2018
+726,8569,Brown,Richard,watches.html,housewares.html,7/20/2018
+727,5677,Gonzalez ,Shirley,homepage.html,shoes.html,7/20/2018
+728,1776,Bruce ,Yvonne,homepage.html,shoes.html,7/24/2018
+729,4112,Trammel ,Bernard,shoes.html,watches.html,7/18/2018
+730,8503,Beckett ,Jean,homepage.html,shoes.html,7/21/2018
+731,2318,Randolph ,Abigail,homepage.html,housewares.html,7/24/2018
+732,4112,Trammel ,Bernard,housewares.html,shoes.html,7/15/2018
+733,4787,Dozier ,Aldo,watches.html,homepage.html,7/11/2018
+734,5993,Drake ,Stephen,homepage.html,shoes.html,7/18/2018
+735,6466,Dunbar ,Dan,homepage.html,shoes.html,7/12/2018
+736,5353,Maldonado ,Janet,watches.html,homepage.html,7/11/2018
+737,5677,Gonzalez ,Shirley,watches.html,homepage.html,7/22/2018
+738,4112,Trammel ,Bernard,watches.html,housewares.html,7/22/2018
+739,9049,Schutz ,John,watches.html,homepage.html,7/16/2018
