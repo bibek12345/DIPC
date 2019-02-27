@@ -41,7 +41,7 @@ Before we execute the task, gather the necessary Object Storage container inform
 ### Create Connection to File (Source)
 1. Log into your Workshop DIPC Server
 2.	In the Home Page click “Create" button on the "Connection” box from top section 
-![](images/800/image800_6.png)
+![](images/800/image800_6.1.png)
 3. 	Enter the following information:
 	- Name: FILE_SRC
 	- Description: Read Files
@@ -81,7 +81,7 @@ Before we execute the task, gather the necessary Object Storage container inform
 		{YOUR_PASSWORD} - This is the password of the login you use to log into Oracle Cloud/DIPC server.
 	```
 3. Click "Test Connection" button and when the test is successful click "Save" button. 
-![](images/800/image800_9.png)
+![](images/800/image800_9.1.png)
 
 
 ### Create Data Lake (Target)
@@ -98,7 +98,7 @@ Before we execute the task, gather the necessary Object Storage container inform
 		{Parquet} - This is the default storage format in object storage classic.
 	```
 3. Click "Save" button and when the test is successful click "Save" button. 
-![](images/800/image800_11.png)
+![](images/800/image800_11.1.png)
 
 
 ### Data Lake Builder task
