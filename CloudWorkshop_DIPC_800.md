@@ -34,7 +34,6 @@ Your will need:
 	where:
 		<REMOTE_AGENT> - Select the DIPC agent you created 
 	```
-	
 ![](images/800/image800_7.1.png)
 
  4. Click "Test Connection" button and when the test is successful click "Save" button 
