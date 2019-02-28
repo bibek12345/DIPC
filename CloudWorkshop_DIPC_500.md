@@ -84,17 +84,17 @@ In order to define the staging area:
 2. For "Source Configuration" click on "Create Connection" button.
 ![](images/500/image500_9.png)
 3. Provide the following information:
-	- Name: WebClicks_File
-	- Description: Website Clicks information
+	- Name: FILE_SRC
+	- Description: Read Files
 	- Agent: **\<REMOTE_AGENT\>**
 	- Type: File
-	- Directory: /home/DIPC
+	- Directory: /home/oracle
    ```
     where:
         <REMOTE_AGENT> - Select the DIPC agent you created
  	```
 4. Click "Test Connection" button and when the test is successful click "Save" button.
-![](images/500/image500_10.png)
+![](images/Common/Connections/imageCommC_03.png)
 5. You will go back to the "Data Prep" task creation screen; the directory field will be already filled in with the information you provided in the connection. Now provide the name of the file:
 	- Click on "Select" button located at the right end of the field
 	- Click on "webclicks.txt" hyperlink and then the "Select" button 
@@ -113,7 +113,6 @@ In order to define the staging area:
 	- Connection: SALES_TRG
 	- Schema: SALES_TRG 
 	- Data Entity: WEB_CLICKS 
-	![](images/500/image500_12.png)
 11. Execute the task, click on "Save and Transform" button .
 ![](images/500/image500_14.png)
 12.	As the file is being parsed and profiled, the following screen will appear . 

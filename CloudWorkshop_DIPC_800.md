@@ -3,12 +3,16 @@
 
 ## Before You Begin
 
+### Introduction
+This lab will explain how to create a data lake and deliver data into it
+
 ### Objectives
--   Review how to create connections to Oracle Object Storage
--   Review how to execute a Data Lake Builder task
+- Create connection to Oracle Object Storage
+- Create a Data Lake 
+- Execute a Data Lake Builder elevated task
 
 ### Time to Complete 
-Approximately 15 minutes.
+Approximately 15 minutes
 
 ### What Do You Need?
 Your will need:
@@ -18,31 +22,49 @@ Your will need:
 - Flat file "webclicks.txt"
 
 
+## Log into DIPC Server
+
+### Login into DIPC using Oracle Cloud Services Dashboard
+
+1. In your web browser, navigate to cloud.oracle.com, then click "Sign in".
+2. Provide the cloud account; for example,oscnas001 then **\<Enter\>**.
+![](images/Common/Login/imageCommL_01.png)
+3. Provide your user name and password, then click "Sign In" button. You will land in your Home screen. ![](images/Common/Login/imageCommL_02.png)
+4. Scroll in your home screen until you locate "Data Integration Platform" service and click on it.  ![](images/Common/Login/imageCommL_03.png)
+5. Click on the hamburger menu of the DIPC server assigned to you, then click "Data Integration Platform Console". ![](images/Common/Login/imageCommL_04.png)
+
+You will be navigated to your DIPC server Home page. ![](images/Common/Login/imageCommL_05.png)
+
+### Login into DIPC using direct URL
+
+1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one "https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud"
+2. Provide your user name and password, then click "Sign In" button. ![](images/Common/Login/imageCommL_02.png)
+You will be navigated to your DIPC server Home page.
+
+
 ## Data Lake Builder Elevated Task
 
 ### Create Connection to File (Source)
-1. Log into your Workshop DIPC Server
-2.	In the Home Page click “Create" button on the "Connection” box from top section 
-![](images/800/image800_6.1.png)
+1. You should be logged into DIPC, if that is NOT the case, log in and navigate to the Catalog.
+2.	If you have NOT created connection "FILE_SRC", click “Create" button on the "Connection” box from top section.
+![](images/Common/General/imageCommG_04.png)
 3. 	Enter the following information:
 	- Name: FILE_SRC
 	- Description: Read Files
 	- Agent: **\<REMOTE_AGENT\>**
 	- Type: File
 	- Directory: /home/oracle
-	```
-	where:
-		<REMOTE_AGENT> - Select the DIPC agent you created 
-	```
-	![](images/800/image800_7.png)
-
- 4. Click "Test Connection" button and when the test is successful click "Save" button 
- 	![](images/800/image800_7.2.png)
+```
+where:
+    <REMOTE_AGENT> - Select the DIPC agent you created
+```
+4. Click "Test Connection" button and when the test is successful click "Save" button.
+![](images/Common/Connections/imageCommC_03.png)	
 
 
 ### Create Connection to Object Storage (Target)
 1. From the "Create" drop down menu on the top right corner select "Connection" 
-![](images/800/image800_8.png)
+![](images/Common/General/imageCommG_04.png)
 2.	Enter the following information:
     - Name: objectstorageC 
     - Description: Connection to Object Storage Classic
