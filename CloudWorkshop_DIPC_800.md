@@ -93,14 +93,14 @@ where:
 2.	Enter the following information:
     - Name: DATA_LAKE
     - Description: Creating a data lake
-    - Connection: forAdw
+    - Connection: objectstorageC
     - Type: Parquet
 
-3. Click "Save" button and when the test is successful click "Save" button. 
+3. Click on "Save" button. 
 ![](images/800/image800_11.1.png)
 
 
-### Data Lake Builder task
+### Data Lake Builder Elevated Task
 1.	From the "Create" drop down menu on the top right corner select "Add Data to Data Lake" 
 ![](images/800/image800_12.png)
 2.	Provide the following information:
@@ -114,12 +114,14 @@ where:
 		- Navigate to the directory then click on "Select" button 
 	- File: webclicks.txt
 		- Click on the "Select" button on the right of the field
-		![](images/800/image800_15.png)
+		![](images/800/image800_14.1.png)
 		- Click on  "webclicks.txt" file and then click on "Select" button 
+		![](images/800/image800_15.png)
+
 	- Connection: DATA_LAKE
 	- Data Entity: Web_Clicks
 	- Type: Parquet
-	- File Path: **\<YOUR_USERNAME\>**
+	- File Path: **\<YOUR_USER\>**
 	```
 	where:
 		<YOUR_USER> - This is the login you use to log into Oracle Cloud/DIPC server. This have been provided in your environment page; look for entry YOUR_USER. Please use your user name to assure the file has a unique name and there is no problems with other workshop participants.
@@ -133,7 +135,7 @@ where:
 5.	The job will appear in the "Monitor" page. This may take up to 1 minute
 
 
-### Review Job in DIPC
+## Review Job in DIPC
 1.	You should be in the “Monitor” screen. Click on the job to see details. The DATA_LAKE job will show "Successful" after a little while 
 ![](images/800/image800_18.png)
 2.	Review the details provided (start and end time, duration, processed rows, etc). Once finished, click on the "Home" hyperlink located on the left panel 
