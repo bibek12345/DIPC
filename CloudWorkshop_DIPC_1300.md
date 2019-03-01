@@ -12,7 +12,7 @@ Approximately 60 minutes.
 
 ### What Do You Need?
 Your will need:
-- Oracle Managed DIPC Instance URL
+- DIPC Instance URL
 - DIPC User and Password
 - DB information for source system: server name, user/password and service name
 - Confluent Kafka Installation 

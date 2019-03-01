@@ -1,4 +1,4 @@
-# Lab 1000 - Replicate Date Elevated Task For Autonomous Data Warehouse
+# Lab 1000 - Replicate Date Elevated Task For Autonomous Data Warehouse (ADW)
 ![](images/1000/image1000_0.png)
 
 ## Before You Begin
