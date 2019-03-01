@@ -17,8 +17,9 @@ EDQ: Approximately 90 minutes
 Your will need:
 - DIPC Instance URL
 - DIPC User and Password
+- ODICS Server IP Address
 - VNC viewer to establish a graphic session against ODICS server
-- Wallet password for ODI Studio
+- Wallet password for ODI Studio credentials
 - General understanding of data quality
 
 
