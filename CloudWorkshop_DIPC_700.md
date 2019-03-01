@@ -18,6 +18,7 @@ Your will need:
 - DIPC Instance URL
 - DIPC User and Password
 - VNC viewer to establish a graphic session against ODICS server
+- Wallet password for ODI Studio
 - General understanding of data quality
 
 
@@ -36,7 +37,11 @@ Your will need:
 - ./odi  
 ![](images/700/image700_ODI_2.png)
 5.	ODI Studio will come up. Click on “Connect to Repository…” 
+-
 ![](images/700/image700_ODI_3.png)
+6.  Enter wallet password for ODI Studio login credentials
+-
+
 6.	Use login “ODIStudio”. Click on “OK” button ![](images/700/image700_ODI_4.png)
 7.	You are now in ODI Studio 
 ![](images/700/image700_ODI_5.png)
