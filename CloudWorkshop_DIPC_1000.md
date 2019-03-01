@@ -44,9 +44,9 @@ You will be navigated to your DIPC server Home page. ![](images/Common/Login/ima
 You will be navigated to your DIPC server Home page.
 
 
-## Create Connections and Review Catalog
+## Create Connections
 1. You should be logged into DIPC, if that is NOT the case, log in.
-2. For synchronization jobs we will need a CDB (Container DB) connection to our DB. In the home page scroll right on the "Get started" panel and click the “Create" button in the "Connection” box. ![](images/Common/Connections/imageCommC_04.png)
+2. If "SRC_CDB" connection has been already created, you can skip to step 8. If not, for synchronization jobs we will need a CDB (Container DB) connection to our DB. In the home page scroll right on the "Get started" panel and click the “Create" button in the "Connection” box. ![](images/Common/Connections/imageCommC_04.png)
 3.	Enter the following information:
     - Name: SRC_CDB
     - Description: CDB User for Source DB

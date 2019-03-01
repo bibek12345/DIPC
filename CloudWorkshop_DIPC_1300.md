@@ -3,12 +3,15 @@
 
 ## Before You Begin
 
+### Introduction
+This labs will guide through the steps required to start a replication stream between an Oracle database and a Kafka queue. The configuration of the Kafka environment is beyond this lab's scope
+
 ### Objectives
-- Review how to create connections
-- Review how to execute a Replicate Data Task between Oracle and Kafka
+- Create connection to Kafka
+- Execute a Replicate Data Elevated Task between Oracle DB and Kafka
 
 ### Time to Complete 
-Approximately 60 minutes.
+Approximately 60 minutes
 
 ### What Do You Need?
 Your will need:
@@ -18,112 +21,87 @@ Your will need:
 - Confluent Kafka Installation 
 - General understanding of Kafka Processes and RDBMS 
 
-## Configure Source Database (oracle) for Replication
-In the Oracle database, complete the following tasks:
-
-1. Create a Oracle 12c CDB database and inside it create a PDB. We need to have a Schema created for which we will configure the Replication. In this case we will use SALES_SRC Schema under PDB1. We will Replicate a table called as Kafka under SALES_SRC schema.
-
-## Configure Destination (Kafka) for Replication
-1. Install Confluent Kafka 5.1 on the target box. Kafka is basically a stream processing Software. Once the Installation is completed, Start the following processes within Kafka
-(i) Zookeeper 
-(ii) Kafka Server
-(iii) Create Topics in kafka which will be used to store the Data coming from Oracle Database(Source)
-
-
-## Configure Oracle Data Integration Platform Cloud for replication.
-In this Lab we will be using a compute instance COMPUTE_DIPC01 to configure the DIPC agent:
-
 
 ## Log into DIPC Server
 
 ### Login into DIPC using Oracle Cloud Services Dashboard
 
-1. In your web browser, navigate to cloud.oracle.com, then click Sign in.
+1. In your web browser, navigate to cloud.oracle.com, then click "Sign in".
+2. Provide the cloud account; for example,oscnas001 then **\<Enter\>**.
+![](images/Common/Login/imageCommL_01.png)
+3. Provide your user name and password, then click "Sign In" button. You will land in your Home screen. ![](images/Common/Login/imageCommL_02.png)
+4. Scroll in your home screen until you locate "Data Integration Platform" service and click on it.  ![](images/Common/Login/imageCommL_03.png)
+5. Click on the hamburger menu of the DIPC server assigned to you, then click "Data Integration Platform Console". ![](images/Common/Login/imageCommL_04.png)
 
-2. Provide the cloud account: orasenatdpltintegration02 then **{Enter}**
-
-3. Provide your user name and password, then click "Sign In" button Or You can log in with Oracle SSO. You will land in the Dasboard screen.
-
-![](images/Common/Login/imageCommL_02.png)
-
-
-4. In the Dasboard search for  "Autonomous Data Integration Platform Cloud" and click on the service.
- 
-
- ![](images/1300/image1300_3.png)
-
-5. Click on the hamburger menu of the DIPC server assigned to you, then click "Data Integration Platform Console" ![]
+You will be navigated to your DIPC server Home page. ![](images/Common/Login/imageCommL_05.png)
 
 
- ![](images/1300/image1300_4.png)
+### Login into DIPC using direct URL
+
+1. Open a browser window an provide your DIPC server URL. The URL will be provided by the instructor and will look like this one "https://osc132657dipc-oscnas001.uscom-central-1.oraclecloud.com/dicloud"
+2. Provide your user name and password, then click "Sign In" button. ![](images/Common/Login/imageCommL_02.png)
+You will be navigated to your DIPC server Home page.
 
 
-You will be navigated to your DIPC server Home page. 
-
-![](images/1300/image1300_5.png)
-
-
-## Create Connections For Oracle Database (Source) and Kafka(Target)
-1. Log into your Workshop DIPC Server.
-2. Navigate to Catalog tab and Click on Create and Select 'Connection'
-
- ![](images/1300/image1300_6.JPG)
- 
-3.	Enter the following information
-    - Name: O2K_Oracle_Connection
+## Create Connections 
+### Oracle (Source)
+## Create Connections
+1. You should be logged into DIPC, if that is NOT the case, log in.
+2. If "SRC_CDB" connection has been already created, you can skip this section. If not, for the replication elevated task, we will need a CDB (Container DB) connection to our DB. In the home page scroll right on the "Get started" panel and click the “Create" button in the "Connection” box. ![](images/Common/Connections/imageCommC_04.png)
+3.	Enter the following information:
+    - Name: SRC_CDB
     - Description: CDB User for Source DB
-    - Agent: **{LOCAL_AGENT}**
+    - Agent: **\<REMOTE_AGENT\>**
     - Type: Oracle CDB
-    - Hostname: **{SOURCE_DB_NAME}**
+    - Hostname: **\<SOURCE_DB_NAME\>**
     - Port: 1521
+    ![](images/Common/Connections/imageCommC_05.png)
     - Username: C##GGSRC
-    - Password: Wel_Come#123
-    - Service Name: **{CDB_SOURCE_SERVICE_NAME}**
-
-    ![](images/1300/image1300_7.JPG)    
+    - Password: Welcome#123
+    - Service Name: **\<CDB_SOURCE_SERVICE_NAME\>**
     ```
     where:
-        {LOCAL_AGENT} - Select the local DIPC agent 
-        {SERVICE_NAME} - CDB Service name string for the source database server. 
-
+        <REMOTE_AGENT> - Select the DIPC agent you created
+        <SOURCE_DB_NAME> - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
+        <CDB_SOURCE_SERVICE_NAME> - CDB Service name string for the source database server. This have been provided in your environment page; look for entry CDB_SOURCE_SERVICE_NAME
     ```
-4. Click "Test Connection" button and when the test is successful click "Save" button.
-
-5. Create another Connection for PDB. Open the drop-down menu from the top far right corner and then select “Connection”. 
-
+4. Click "Test Connection" button and when the test is successful click "Save" button. You will be navigated to the "Catalog" screen.
+![](images/Common/Connections/imageCommC_06.png)
+5. Open the drop-down menu from the top far right corner and then select “Connection”.
+![](images/Common/General/imageCommG_04.png)
 6. Enter the following information:
-    - Name: O2K_ORACLEPDB_CONNECTION
-    - Description: Replicate data from Oracle to Kafka
-    - Agent: **{LOCAL_AGENT}**
-    - Type: Oracle Database
-    - Subtype - Oracle 
-    - Hostname: **{SOURCE_DB_NAME}**
+    - Name: SALES_SRC
+    - Description: Sales OLTP Source Data
+    - Agent: **\<REMOTE_AGENT\>**
+    - Type Oracle: selecting Oracle will expand the Connection Settings
+    - Hostname: **\<SOURCE_DB_NAME\>**
     - Port: 1521
+    ![](images/Common/Connections/imageCommC_07.png)
     - Username: SALES_SRC
-    - Password: Wel_Come#123
-    - Service Name: **{SOURCE_DB_SERVICE_NAME}**
+    - Password: Welcome#123
+    - Service Name: **\<SOURCE_DB_SERVICE_NAME\>**
     - Schema Name: SALES_SRC (Default) – When you try to select the schema, you are testing the connection at the same time
-    - CDB Connection: O2K_Oracle_Connection (This was created before)
-
-    ![](images/1300/1300_8.JPG)
+    - CDB Connection: SRC_CDB
     ```
     where:
-        {LOCAL_AGENT} - Select the local DIPC agent 
-        {SOURCE_DB_SERVICE_NAME} - Service name string for the source database server. 
-
+        <REMOTE_AGENT> - Select the DIPC agent you created 
+        <SOURCE_DB_NAME> - Name of the source database server. This have been provided in your environment page; look for entry SOURCE_DB_NAME
+        <SOURCE_DB_SERVICE_NAME> - Service name string for the source database server. This have been provided in your environment page; look for entry SOURCE_DB_SERVICE_NAME
     ```
-7. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the connection you just created and the entities in that schema
-    **Note: Data Entities are harvested and profiled at the time the connection is created, their popularity is also calculated by reviewing the DB query logs. This process may take some time (5 minutes or so), the Catalog will show a message when new updates are available**
-    ![](images/1300/image1300_9.JPG)
+![](images/Common/Connections/imageCommC_08.png)
+7. Click "Test Connection" button and when the test is successful click "Save" button. 
+8.	Now, we are going to create the target connection for Autonomous Data Warehouse. Open the drop-down menu from the top far right corner and then select “Connection”.
+![](images/Common/General/imageCommG_04.png)
 
-8.	Now, we are going to create the target connection (For Kafka). Open the drop-down menu from the top far right corner and then select “Connection”  
 
-![](images/1300/image1300_6.png)
+### Kafka(Target) ***
+1.	Now, we are going to create the target connection (for Kafka). Open the drop-down menu from the top far right corner and then select “Connection”  
 
-9.	Enter the following information:
+![](images/Common/General/imageCommG_04.png)
+2.	Enter the following information:
     - Name: OK_Kafka_Connection 
     - Description: Relicate data from Oracle to Kafka
-    - Agent: **{LOCAL_AGENT}**
+    - Agent: **{REMOTE_AGENT}**
     - Type Oracle – Kafka Connect
     - Kafka Producer Config file - kafkaconnect.properties
     - Topic Mapping Template: {FullyQualifiedTableName}
@@ -135,9 +113,14 @@ You will be navigated to your DIPC server Home page.
 
     Where your Kafka home will be kafka Installation directory.
 
+    ```
+    where:
+        <REMOTE_AGENT> - Select the DIPC agent you created 
+
+
     ![](images/1300/image1300_10.JPG)
 
-16. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
+3. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
 
 
 ## Data Replication Tasks
