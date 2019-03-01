@@ -10,11 +10,11 @@
  
 
 2.	In the screen provide the following information:
-    -  Host: **\<SERVER_IP_ADDRESS\>**
+    -  Host: **\<COMPUTE_IP_ADDRESS\>**
     - Saved Session: Provide a name 
 ```
 where:
-    <SERVER_IP_ADDRESS> - is teh IP address to the server you want to connect (DIPC server, OnPrem server)
+    <COMPUTE_IP_ADDRESS> - is teh IP address to the server you want to connect (DIPC server, OnPrem server)
 ```
 ![](images/Ap1/imageAp1_20.png)
  
@@ -34,10 +34,10 @@ where:
 
 7.	From the hierarchical panel on the left, select “Connection > SSH > Tunnels” and provide the following information:
     - Source port: 6905
-    - Destination: **\<SERVER_IP_ADDRESS\>**:5901
+    - Destination: **\<COMPUTE_IP_ADDRESS\>**:5901
 ```
 where:
-    <SERVER_IP_ADDRESS> - is teh IP address to the server you want to connect (DIPC server, OnPrem server)
+    <COMPUTE_IP_ADDRESS> - is teh IP address to the server you want to connect (DIPC server, OnPrem server)
 ```
 8.	Click on “Add” button
 
@@ -114,13 +114,13 @@ where:
 
 1. To start the SSH session and open the tunnel, execute:
 
-ssh -i **\<KEY_FILE_PATH\>**/**\<KEY_FILE\>** -L 6905:localhost:5901 opc@**\<SERVER_IP_ADDRESS\>**
+ssh -i **\<KEY_FILE_PATH\>**/**\<KEY_FILE\>** -L 6905:localhost:5901 opc@**\<COMPUTE_IP_ADDRESS\>**
 ```
 where:
 
     <KEY_FILE_PATH> - is path to the file you created in the previous section step 3.
     <KEY_FILE> - is the name you assigned to the key file.
-    <SERVER_IP_ADDRESS> - is the IP address of the server you want to connect (DIPC server, OnPrem server) (e.g. ssh -i /Users/lloywill/oracle/dipc/dipc_demo_keys.pem -L 6905:localhost:5901 opc@129.150.69.118)
+    <COMPUTE_IP_ADDRESS> - is the IP address of the server you want to connect (DIPC server, OnPrem server) (e.g. ssh -i /Users/lloywill/oracle/dipc/dipc_demo_keys.pem -L 6905:localhost:5901 opc@129.150.69.118)
 ```
 ![](images/Ap1/imageAp1_170.png)
 

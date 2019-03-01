@@ -126,15 +126,15 @@ You will be navigated to your DIPC server Home page.
     - Description:  CDB User for on-prem source DB
 	- Agent: **\<REMOTE_AGENT\>**
 	- Type: Oracle
-  	- Hostname: **\<SERVER_IP_ADDRESS\>**
+  	- Hostname: **\<COMPUTE_IP_ADDRESS\>**
 	- Port: 1521
 	- Username: C##GGSRC
 	- Password: Welcome#123
 	- Service Name: onprem
 	```
 	where:
-		<REMOTE_AGENT\> - Select the remote DIPC agent you just created
-		<SERVER_IP_ADDRESS\> - IP Address of the compute instance (simulated OnPrem environment). This have been provided in your environment page; look for entry SERVER _IP_ADDRESS
+		<REMOTE_AGENT> - Select the remote DIPC agent you just created
+		<COMPUTE_IP_ADDRESS> - IP Address of the compute instance (simulated OnPrem environment). This have been provided in your environment page; look for entry SERVER _IP_ADDRESS
 	```
 5. Click "Test Connection" button and when the test is successful click "Save" button.
 ![](images/Common/Connections/imageCommC_01.png)
@@ -145,7 +145,7 @@ You will be navigated to your DIPC server Home page.
     - Description: Connection to on-prem database schema with source tables. AMER
 	- Agent: **\<REMOTE_AGENT\>**
 	- Type: Oracle
-  	- Hostname: **\<SERVER_IP_ADDRESS\>**
+  	- Hostname: **\<COMPUTE_IP_ADDRESS\>**
 	- Port: 1521
 	- Username: AMER_SRC
 	- Password: Welcome#123
@@ -154,7 +154,7 @@ You will be navigated to your DIPC server Home page.
 	```
 	where:
 		<REMOTE_AGENT> - Select the remote DIPC agent you just created
-		<SERVER_IP_ADDRESS> - IP Address of the compute instance (simulated OnPrem environment). This have been provided in your environment page; look for entry SERVER _IP_ADDRESS
+		<COMPUTE_IP_ADDRESS> - IP Address of the compute instance (simulated OnPrem environment). This have been provided in your environment page; look for entry SERVER _IP_ADDRESS
 	```
 8. Click on "Test Connection" button and when the test is successful click "Save" button.
 ![](images/Common/Connections/imageCommC_02.png)
@@ -165,7 +165,7 @@ You will be navigated to your DIPC server Home page.
     - Description: Connection to target schema onprem_trg EMEA
 	- Agent: **\<REMOTE_AGENT\>**
 	- Type: Oracle
-	- Hostname: **\<SERVER_INSTANCE_IP\>**
+	- Hostname: **\<COMPUTE_IP_ADDRESS\>**
 	- Port: 1521
 	- Username: EMEA_TRG
 	- Password: Welcome#123
@@ -174,7 +174,7 @@ You will be navigated to your DIPC server Home page.
 	```
 	where:
 		<REMOTE_AGENT> - Select the remote DIPC agent you just created
-		<SERVER_IP_ADDRESS> - IP Address of the compute instance (simulated OnPrem environment). This have been provided in your environment page; look for entry SERVER _IP_ADDRESS
+		<COMPUTE_IP_ADDRESS> - IP Address of the compute instance (simulated OnPrem environment). This have been provided in your environment page; look for entry SERVER _IP_ADDRESS
 	```	
 11. Click on "Test Connection" button and when the test is successful click "Save" button.
 ![](images/300/image300_35.png)

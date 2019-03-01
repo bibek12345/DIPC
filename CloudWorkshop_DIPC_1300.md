@@ -94,37 +94,32 @@ You will be navigated to your DIPC server Home page.
 ![](images/Common/General/imageCommG_04.png)
 
 
-### Kafka(Target) ***
+### Kafka(Target)
 1.	Now, we are going to create the target connection (for Kafka). Open the drop-down menu from the top far right corner and then select “Connection”  
 
 ![](images/Common/General/imageCommG_04.png)
+
 2.	Enter the following information:
     - Name: OK_Kafka_Connection 
-    - Description: Relicate data from Oracle to Kafka
+    - Description: Replicate data from Oracle DB to Kafka
     - Agent: **{REMOTE_AGENT}**
-    - Type Oracle – Kafka Connect
-    - Kafka Producer Config file - kafkaconnect.properties
-    - Topic Mapping Template: {FullyQualifiedTableName}
-    - Key Mapping Template: {primarykeys} 
-    - Java ClassPath: Confluent kafka Home path
-
-    Leave all the checkboxes as default selection. Also Java ClassPath will be a combination of following :
-    dirprm/:kafkaconnect.properties:{kafka_home}/share/java/kafka-serde-tools/*:{kafka_home}/share/java/kafka/*:{kafka_home}/share/java/confluent-common/*
-
-    Where your Kafka home will be kafka Installation directory.
-
+    - Type Oracle: Kafka Connect
+    - Java ClassPath: dirprm:/home/oracle/Confluent_kafka/confluent-5.1.0/share/java/kafka-serde-tools/*:/home/oracle/Confluent_kafka/confluent-5.1.0/share/java/kafka/*:/home/oracle/Confluent_kafka/confluent-5.1.0/share/java/confluent-common/*
+    - Kafka Producer Config file:  kafkaconnect.properties
+    - Topic Mapping Template: FullyQualifiedTableName
+    - Key Mapping Template: PrimaryKeys
+    - Checkboxes: Leave all the checkboxes with default selection
     ```
     where:
         <REMOTE_AGENT> - Select the DIPC agent you created 
-
+    ```
+3. Click "Test Connection" button and when the test is successful click "Save" button.
 
     ![](images/1300/image1300_10.JPG)
 
-3. Click "Test Connection" button and when the test is successful click "Save" button. DIPC will create the connection and will harvest the entities in the schema. You will be navigated to the Catalog and you will see, after some time, the new connection you just created and the entities in that schema (if any)
 
-
-## Data Replication Tasks
-1.	Connections have been defined. We are ready to create and execute our replication tasks between Oracle and Kafka. From the top bar, open the drop-down menu from the top far right corner and then select "Replicate Data" 
+## Data Replication Elevated Task
+1.	Connections have been defined. We are ready to create and execute our replication task between Oracle and Kafka. From the top bar, open the drop-down menu from the top far right corner and then select "Replicate Data" 
 ![](images/1300/image1300_11.JPG)
 
 2.	Provide the following information:
@@ -133,30 +128,30 @@ You will be navigated to your DIPC server Home page.
 
 ![](images/1300/image1300_12.JPG)
 
-Click the Design Tab to start designing the Source and Target Functionalities
+Click the "Design" tab to start designing the source and target functionalities
 
-3.	Next click on “Source” and in the "Details" tab select the name of the PDB Connection that we had created. 
+3.	Click on “Source” and in the "Details" tab select the DB connection we will use (SALES_SRC). 
 
 ![](images/1300/image1300_13.JPG)
 
-4.	Next Click the "Schemas" Tab and Select SALES_SRC Schema and in the Text Area append ".kafka" to it. You will notice that the bottom right corner #Rule Applied Confirmation.
+4.	Click the "Schemas" tab and select SALES_SRC schema; in the text area append ".kafka" to it. You will see on the bottom right corner "# Rule Applied" a confirmation.
 
 ![](images/1300/image1300_14.JPG)  
 
-5.	Next Click on the "Target"  and in the "Details" Tab select the Name of the Kafka Connection that we had created.
+5.	Click on the "Target" icon;  in the "Details" tab select the Kafka connection that you just created.
 
 ![](images/1300/image1300_15.JPG)
 
-6.  Next Click the "Schemas" Tab and Leave the default values as it is. Once this is completed, Click on Save and Run at the upper Right corner of the Screen.
+6.  Click the "Schemas/Topics" tab and leave the default values as it is. Once this is completed, click on "Save and Run" button at the upper right corner of the screen.
 
 ![](images/1300/image1300_16.JPG)
 
-7.	The job will automatically appear within the Jobs page. It will be shown like this
+7.	The job will automatically appear within the "Monitor" page. It will be shown like this
 
 ![](images/1300/image1300_17.JPG)
 ![](images/1300/image1300_18.JPG)
 
-Auto-refresh is on, statuses will be updated frequently.
+Auto-refresh is on, status will be updated frequently.
 
 
 ## Replicate Data Test Case Execution
