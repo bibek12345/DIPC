@@ -17,6 +17,7 @@ EDQ: Approximately 90 minutes
 Your will need:
 - DIPC Instance URL
 - DIPC User and Password
+- VNC viewer to establish a graphic session against ODICS server
 - General understanding of data quality
 
 
@@ -26,11 +27,13 @@ Your will need:
 ## Oracle Data Integration (ODI)
 
 ### Accessing ODI Studio
-1.	Open an SSH session into the DIPC server; please refer to Appendix 1 to learn how to establish a SSH session against the DIPC server
-2.	Open a VNC viewer; please refer to Appendix 2 to learn how to establish a VNC session against the DIPC server
+1.	Open an SSH session into the ODICS server; please refer to Appendix 1 to learn how to establish a SSH session against the ODICS server
+2.	Open a VNC viewer; please refer to Appendix 2 to learn how to establish a VNC session against the ODICS server
 3.	Open a terminal; select “Applications > System Tools > Terminal” from the top left corner of the screen 
 ![](images/700/image700_ODI_1.png)
-4.	Execute: sh /u01/app/oracle/suite/odi_studio/odi/studio/bin/odi  
+4.	Execute: 
+cd /u01/app/oracle/middleware/odi/studio/bin
+./odi  
 ![](images/700/image700_ODI_2.png)
 5.	ODI Studio will come up. Click on “Connect to Repository…” 
 ![](images/700/image700_ODI_3.png)
