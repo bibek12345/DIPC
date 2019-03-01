@@ -1,4 +1,4 @@
-# Lab 900 - MySQL integration
+# Lab 1100 - MySQL integration
 
 ## Before You Begin
 

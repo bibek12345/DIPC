@@ -154,7 +154,7 @@ Click the "Design" tab to start designing the source and target functionalities
 Auto-refresh is on, status will be updated frequently.
 
 
-## Replicate Data Test Case Execution
+## Testing Data Replication
 
 1.	Login to The Source PDB Database, Create a table Kafka and Insert one Record in the table
 
