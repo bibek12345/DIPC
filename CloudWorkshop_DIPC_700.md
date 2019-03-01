@@ -42,14 +42,16 @@ Your will need:
 
 6.  Enter wallet password for ODI Studio login credentials
 
-![](images/700/image700_ODI_2b.png)
+![](images/700/image700_ODI_4.png)
 
 6.	Use login “ODI_REPO_USER”. Click on “OK” button 
 
-![](images/700/image700_ODI_4.png)
+![](images/700/image700_ODI_5.png)
+
+![](images/700/image700_ODI_6.png)
 
 7.	You are now in ODI Studio 
-![](images/700/image700_ODI_5.png)
+![](images/700/image700_ODI_7.png)
 
 
 ## Enterprise Data Quality (EDQ)
