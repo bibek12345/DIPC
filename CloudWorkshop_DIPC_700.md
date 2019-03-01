@@ -32,8 +32,8 @@ Your will need:
 3.	Open a terminal; select “Applications > System Tools > Terminal” from the top left corner of the screen 
 ![](images/700/image700_ODI_1.png)
 4.	Execute: 
-cd /u01/app/oracle/middleware/odi/studio/bin
-./odi  
+- cd /u01/app/oracle/middleware/odi/studio/bin
+- ./odi  
 ![](images/700/image700_ODI_2.png)
 5.	ODI Studio will come up. Click on “Connect to Repository…” 
 ![](images/700/image700_ODI_3.png)
