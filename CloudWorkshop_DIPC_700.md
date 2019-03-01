@@ -42,6 +42,7 @@ Your will need:
 
 6.  Enter wallet password for ODI Studio login credentials
 
+![](images/700/image700_ODI_2b.png)
 
 6.	Use login “ODIStudio”. Click on “OK” button ![](images/700/image700_ODI_4.png)
 7.	You are now in ODI Studio 
