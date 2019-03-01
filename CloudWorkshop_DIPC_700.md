@@ -17,8 +17,6 @@ EDQ: Approximately 90 minutes
 Your will need:
 - DIPC Instance URL
 - DIPC User and Password
-- SSH acces to DIPC server
-- VNC viewer to establish a graphic session against DIPC server
 - General understanding of data quality
 
 
