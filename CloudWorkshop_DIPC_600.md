@@ -51,13 +51,21 @@ You will be navigated to your DIPC server Home page.
 
 ### Verify Sales table in the DWH before execution (optional)
 Before we execute the ODI task that will aggregate the data, you might want to verify that the Sales table in the DWH is empty.
+
 1.	Go to SQL Developer. On the connections panel, select your DWH (WS - TRG\_AGG\_SALES) and click on the plus (+) sign to open the connection. 
+
 ![](images/600/image600_1.png)
+
 2.	Once opened, copy and paste the following statements in the panel on the right:
+
 SELECT COUNT(*) FROM TRG_SALES; 
+
 ![](images/600/image600_2.png)
+
 3.	Execute the statements by clicking on the “Run script” icon (first one from left to right on the icon bar).
+
 4.	This will show the count on the results panel (lower section). 
+
 ![](images/600/image600_3.png)
 
 
