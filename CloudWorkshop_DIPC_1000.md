@@ -157,7 +157,7 @@ You will be navigated to your DIPC server Home page.
 1. If you log in to the compute instance where the DIPC agent is configured. You can find the Goldengate Processes created for
    Replicate data task.
 
-   please refer to Appendix 1 to learn how to establish an SSH session.
+   Please refer to Appendix 1 to learn how to establish an SSH session.
 
     - Once you log in to the compute instance. Sudo into the oracle user.
     ```
