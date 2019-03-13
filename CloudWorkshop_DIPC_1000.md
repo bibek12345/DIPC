@@ -161,13 +161,13 @@ You will be navigated to your DIPC server Home page.
 
     - Once you log in to the compute instance. Sudo into the oracle user.
     ```
-    sudo su - oracle
+    $ sudo su - oracle
     ```
     -  Set the below environment variables
     ```
-    ORACLE_HOME=/home/oracle/dicloud/dicloud/oci; export ORACLE_HOME
-    TNS_ADMIN=/home/oracle/dicloud/dicloud/oci; export TNS_ADMIN
-    LD_LIBRARY_PATH=/home/oracle/dicloud/dicloud/oci; export LD_LIBRARY_PATH
+    $ ORACLE_HOME=/home/oracle/dicloud/dicloud/oci; export ORACLE_HOME
+    $ TNS_ADMIN=/home/oracle/dicloud/dicloud/oci; export TNS_ADMIN
+    $ LD_LIBRARY_PATH=/home/oracle/dicloud/dicloud/oci; export LD_LIBRARY_PATH
     ```
     -  Now move to the /home/oracle/dicloud/dicloud/gghome directory
     ```
