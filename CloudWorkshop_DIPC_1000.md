@@ -157,6 +157,30 @@ You will be navigated to your DIPC server Home page.
 1. If you log in to the compute instance where the DIPC agent is configured. You can find the Goldengate Processes created for
    Replicate data task.
 
+   please refer to Appendix 1 to learn how to establish an SSH session.
+
+    - Once you log in to the compute instance. Sudo into the oracle user.
+    ```
+    sudo su - oracle
+    ```
+    -  Set the below environment variables
+    ```
+    ORACLE_HOME=/home/oracle/dicloud/dicloud/oci; export ORACLE_HOME
+    TNS_ADMIN=/home/oracle/dicloud/dicloud/oci; export TNS_ADMIN
+    LD_LIBRARY_PATH=/home/oracle/dicloud/dicloud/oci; export LD_LIBRARY_PATH
+    ```
+    -  Now move to the /home/oracle/dicloud/dicloud/gghome directory
+    ```
+    $ cd /home/oracle/dicloud/dicloud/gghome
+    ```
+    - You can open the Goldengate Command line interface and list the goldengate process
+
+    ```
+    $ ./ggsci
+
+    GGSCI> info all
+    ```
+
     ![](images/1000/image1000_26.png) 
 
 2. On the target ADWC there are no tables with the name 'TEST_TABLE'. We can check that with the below command
