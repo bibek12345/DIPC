@@ -2,11 +2,18 @@
 
 Before You Begin
 ----------------
+### Introduction
+
+This lab will explain the monitoring part of the DIPC, also on how to create policies and notifications for your tasks.
 
 ### Objectives
 
 -   Monitor Jobs
 -   Create Policies
+
+## Time to Complete
+
+Approximately 10 Minutes.
 
 ### What Do You Need?
 
